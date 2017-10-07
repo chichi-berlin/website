@@ -46,6 +46,7 @@ $   npm build
   |   +-- Gruppe/Kategorie              [page: item-list]       
   |   |   +-- Model Name B              [page: deailed-item]    -   infos, images, specs, link to post 
   |   |   +-- ...
+  |   +-- Fahrrad-Konfiurator(en)       [embedded/external]
   |   +-- ...
   +-- Teile                             [page: item-list]       -   curated list of parts
   |   +-- Kategorie                     [page: item-list]
@@ -59,9 +60,7 @@ $   npm build
   |   +-- ...                           
   +-- Service                           [page: services]        -   shows offered services in sections 
   +-- Hersteller                        [page: partner-list]    -   manufacturers grupped in sections
-  +-- Partner                           [page: partner-list]    -   partners grupped in sections
-  |                                     
-  +-- Fahrrad-Konfiurator(en)           [embedded/external]
+  +-- Firmenphilosophie                 [page: company-values]  -   sections showing different values
   |                                     
   +-- Blog                              [page: post-list]
       +-- Fancy Category Name           [page: post-list]
@@ -87,3 +86,7 @@ $   npm build
 +   for bikes, parts, accessories:
     -   pages in between start and end should have the same design
     -   in-between levels for grouping are based on certain specs
++   company values: 
+    -   sorted in sections
+    -   should contain topics like supported insurance
+    -   links in footer, not part in header nav
