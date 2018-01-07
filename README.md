@@ -11,7 +11,11 @@ the heart of Berlin Neukölln. The site can be found under [chichi.berlin](http:
 
 ### How to get started?
 
-__Prerequisites:__ Node/NPM, Ruby
+__Prerequisites:__ 
+
+*   Node/NPM
+*   Go
+*   Hugo
 
 
 #### Installation
@@ -48,7 +52,7 @@ $   npm build
   |   |   +-- ...
   |   +-- Fahrrad-Konfiurator(en)       [embedded/external]
   |   +-- ...
-  +-- Teile                             [page: item-list]       -   curated list of parts
+  +-- Komponenten                       [page: item-list]       -   curated list of parts
   |   +-- Kategorie                     [page: item-list]
   |   |   +-- Gruppe                    [page: item-overview]   -   selection of specific items and
   |   |   +-- ...                                                   and related manufacturers
@@ -90,3 +94,29 @@ $   npm build
     -   sorted in sections
     -   should contain topics like supported insurance
     -   links in footer, not part in header nav
++   item-list:
+    -   optional: description text on hover either on top of the tile image or next to
++   blog:
+    -   side nav in list and detailed view
+    -   side nav contains blog categories
+    -   one post can have multiple groups
++   side nav (incl. breadcrumps): https://tympanus.net/Blueprints/MultiLevelMenu/
++   header, sections example: https://tympanus.net/Blueprints/AnimatedHeader
+    
+    
+#### Design
+
+##### Fonts
+
++   American Typewriter Condensed
++   
+
+##### Colors
+
++   Pink:   0/100/0/0   255,0,255
++   Gruen:  50/0/100/0  128,255,0
+
+
+#### Appendix
+
+*   partially inspired by https://github.com/fspoettel/blaupause

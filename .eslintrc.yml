@@ -1,0 +1,858 @@
+
+parserOptions:
+    ecmaVersion: 6
+    sourceType: module
+    ecmaFeatures: 
+        globalReturn: true
+        impliedStrict: true
+        jsx: false
+
+
+# predefined set of globals
+env:
+    browser: true
+    commonjs: true
+    es6: true
+    node: true
+    mocha: true
+    jasmine: true
+    meteor: true
+
+
+# http://eslint.org/docs/user-guide/configuring#specifying-globals
+# true/false --> allow/deny overwriting
+globals: 
+    GlobalA: false
+    MyGlobal: true
+
+
+# http://eslint.org/docs/user-guide/configuring#configuring-plugins
+plugins: [ ]
+
+
+# NOTE: configurations on what should be ignored by ESLint, are referenced in the git
+# hook and points to the '.gitignore' file 
+# for more info, see http://eslint.org/docs/user-guide/configuring#using-an-alternate-file
+# or https://github.com/eslint/eslint/issues/5400
+
+
+
+#extends: 'eslint:recommended'
+
+# see: http://eslint.org/docs/rules/
+#    0 - turn the rule off
+#    1 - turn the rule on as a warning (doesn't affect exit code)
+#    2 - turn the rule on as an error (exit code is 1 when triggered)
+rules:
+    indent: [                               # FIXABLE
+        2,
+        4,
+        {
+            SwitchCase: 1,
+            VariableDeclarator: 1,
+            MemberExpression: 'off',        # NOTE: does not work well with some promises chains   
+            outerIIFEBody: 1,
+            FunctionDeclaration: {
+                parameters: 2,
+                body: 1
+            },
+            FunctionExpression: {
+                parameters: 2,
+                body: 1
+            },
+            CallExpression: { arguments: 1 },
+            ArrayExpression: 1,
+            ObjectExpression: 1,
+            flatTernaryExpressions: true
+        }
+    ]
+    linebreak-style: [ 2, 'unix' ]          # NOTE: may break things
+    quotes: [ 2, 'single', 'avoid-escape' ]
+    semi: [ 2, always ]                     # FIXABLE
+    
+    
+    # http://eslint.org/docs/rules/#possible-errors
+    for-direction: 2
+    no-await-in-loop: 2
+    no-compare-neg-zero: 2
+    no-cond-assign: [ 2, 'always' ]
+    no-console: 1
+    no-constant-condition: 2
+    no-control-regex: 2
+    no-debugger: 2
+    no-dupe-args: 2
+    no-dupe-keys: 2
+    no-duplicate-case: 2
+    no-empty: 2                             # NOTE: just comments are still fine
+    no-empty-character-class: 2
+    no-ex-assign: 2
+    no-extra-boolean-cast: 2
+    no-extra-parens: [ 2, 'functions' ]
+    no-extra-semi: 2                        # FIXABLE
+    no-func-assign: 2
+    no-inner-declarations: [ 2, 'both' ]    # NOTE: might break var usage <= ES5
+    no-invalid-regexp: 2
+    no-irregular-whitespace: 2
+    no-obj-calls: 2
+    no-prototype-builtins: 1
+    no-regex-spaces: 2
+    no-sparse-arrays: 2
+    no-template-curly-in-string: 2
+    no-unexpected-multiline: 2
+    no-unreachable: 2
+    no-unsafe-finally: 2
+    no-unsafe-negation: 2
+    use-isnan: 2
+    valid-jsdoc: 0
+    valid-typeof: 2
+
+
+    # http://eslint.org/docs/rules/#best-practices
+    accessor-pairs: [
+        2,
+        {
+            getWithoutSet: false,
+            setWithoutGet: true
+        }
+    ]
+    array-callback-return: 1                # NOTE: it depends on the functions
+    block-scoped-var: 0                     # NOTE: should be active
+    class-methods-use-this: 2
+    complexity: [ 2, 20 ]                   # INFO: count of how many conditions are in one function
+    consistent-return: 1                    # INFO: return with no explicit value set, throws; sometimes it's more readable to only return within conditions
+    curly: [ 2, 'all' ]                     # INFO: throws when using no braces for block scope
+    default-case: 1
+    dot-location: [ 2, 'property' ]
+    dot-notation: [                         # NOTE: breaks recommended structure of a meteor template logic
+        0,
+        {
+            allowKeywords: true,
+            allowPattern: ''
+        }
+    ]
+    eqeqeq: 2                               # INFO: requires === and !==
+    guard-for-in: 2
+    no-alert: 2
+    no-caller: 2
+    no-case-declarations: 2                 # INFO: to avoid, use block scope (braces) for each case
+    no-div-regex: 2
+    no-else-return: 0                       # NOTE: may needs to be turned off, often more readable with else block
+    no-empty-function: [ 2, allow: [] ]     # NOTE: functions containing only comment, wont throw
+    no-empty-pattern: 2
+    no-eq-null: 2
+    no-eval: 2
+    no-extend-native: [ 2, exceptions: [] ]  # NOTE: will break polyfilling, then deactivate it
+    no-extra-bind: 2                         # INFO: flags also every bind usage on arrow function
+    no-extra-label: 2
+    no-fallthrough: 2
+    no-floating-decimal: 2
+    no-global-assign: [                      # NOTE: breaks meteor <= 1.2 (package globals)
+        1,
+        exceptions: []
+    ]
+    no-implicit-coercion: [
+        2,
+        {
+            boolean: true,
+            number: true,
+            string: true,
+            allow: []
+        }
+    ]
+    no-implicit-globals: 2                  # NOTE: may break meteor projects < v1.3
+    no-implied-eval: 2
+    no-invalid-this: 0                      # NOTE: may needs to be turned off; breaks 'this' in callbacks
+    no-iterator: 2
+    no-labels: [
+        2,
+        {
+            allowLoop: false,
+            allowSwitch: false
+        }
+    ]
+    no-lone-blocks: 2
+    no-loop-func: 2
+    no-magic-numbers: [
+        0,
+        {
+            ignore: [],
+            ignoreArrayIndexes: false,
+            enforceConst: false,
+            detectObjects: false
+        }
+    ]
+    no-multi-spaces: [                      # FIXABLE
+        1,                                  # NOTE: need more testing and adjustment
+        {
+            ignoreEOLComments: true,
+            exceptions: {
+                VariableDeclarator: true,
+                ImportDeclaration: true,
+#                BinaryExpression: true,
+#                ReturnStatement: true
+            }
+        }
+    ]
+    no-multi-str: 2
+    no-new: 1                               # INFO: using 'new' in assignments is still valid; might be okay for showing explicitly that the instance has no further usage (e.g. new Promise)
+    no-new-func: 2
+    no-new-wrappers: 2
+    no-octal: 2
+    no-octal-escape: 2
+    no-param-reassign: [                    # NOTE: it is deactivated on purpose, might reconsider
+        0,
+        {
+            props: false
+        }
+    ]
+    no-proto: 2                             # INFO: use 'Object.getPrototypeOf( foo )' instead
+    no-redeclare: [
+        2,
+        {
+            builtinGlobals: true            # NOTE: may break things in meteor < v1.3
+        }
+    ]
+    no-restricted-properties: [             # NOTE: useful for deprecating certain API usage
+        0,
+        {
+            object: 'disallowedObjectName',
+            property: 'anotherDisallowedPropertyName',
+            message: 'Please use allowedObjectName.allowedPropertyName.'
+        }
+    ]
+    no-return-assign: [ 2, 'always' ]
+    no-return-await: 2
+    no-script-url: 2
+    no-self-assign: 2
+    no-self-compare: 2
+    no-sequences: 2
+    no-throw-literal: 2
+    no-unmodified-loop-condition: 2         # NOTE: not sure if I understand this correctly, let's try
+    no-unused-expressions: [
+        2,
+        {
+            allowShortCircuit: true,
+            allowTernary: false
+        }
+    ]
+    no-unused-labels: 2
+    no-useless-call: 2                      # INFO: cant detect usage with dynamic expression
+    no-useless-concat: 0                    # INFO: disabled in favour of higher readability
+    no-useless-escape: 2
+    no-useless-return: 2
+    no-void: 2
+    no-warning-comments: [                  # NOTE: currently it just warns
+        1,
+        {
+            terms: [ 'fixme'],
+            location: 'start'
+
+        }
+    ]
+    no-with: 2
+    # TODO prefer-promise-reject-errors: 2
+    radix: [ 2, 'always' ]
+    require-await: 1                        # NOTE: unsure; lack of experience
+    vars-on-top: 0                          # INFO: 'vars' means just 'var', not 'const' or 'let'
+    wrap-iife: [ 2, 'outside' ]             # e.g. (function( param1 ){}( availableAsParam1 ))
+    yoda: [                                 # NOTE: need adjustment
+        2,
+        'never',
+        {
+            exceptRange: true,
+            onlyEquality: false
+        }
+    ]
+
+
+    # http://eslint.org/docs/rules/#strict-mode
+    strict: [ 2, 'safe' ]                   # INFO: okay for meteor (non-modules) in project-level,
+                                            # but breaks implicit package-globals
+
+
+    # http://eslint.org/docs/rules/#variables
+    init-declarations: [
+        0,
+        'always'
+        #{ ignoreForLoopInit: true }        # NOTE: only valid when 'never' is set
+    ]
+    no-catch-shadow: 0                      # INFO: ignoring <= IE8 here
+    no-delete-var: 2                        # INFO: to delete variables, set them to ``undefined`
+    no-label-var: 2
+    no-restricted-globals: [
+        1,
+        'event'
+    ]
+    no-shadow: [                            # NOTE: may needs to be turned off; too much generic
+        1,                                  # names in global env scopes, e.g. 'name', 'length'
+        {
+            builtinGlobals: true,
+            hoist: 'functions',
+            allow: []                       # NOTE: depending on the env and if set to 2, some of
+        }                                   # some of the typical usages might need to become allowed
+    ]
+    no-shadow-restricted-names: 2
+    no-undef: [                             # NOTE: disabled, because it might breaks meteor code < 1.3
+        0,
+        {
+            typeof: false
+        }
+    ]
+    no-undef-init: 0                        # INFO: the opposite is preferred (no implicit initialization)
+    no-undefined: 0                         # INFO: using undefined should be allowed
+    no-unused-vars: [
+        1,
+        {
+            vars: 'local',
+            args: 'none',
+            varsIgnorePattern: '',
+            argsIgnorePattern: ''
+        }
+    ]
+    no-use-before-define: [                 # NOTE: convention over configuration (see style-guide)
+        0,
+        {
+            functions: false,
+            classes: true
+        }
+    ]
+
+
+    # http://eslint.org/docs/rules/#nodejs-and-commonjs
+    callback-return: [                      # INFO: may throw when it's done right but within a condition
+        2,
+        [
+            'cb',
+            'callback',
+            'next'
+        ]
+    ]
+    global-require: 2
+    handle-callback-err: [
+        2,
+        '^(err|error)$'                     # NOTE: may need some expansion
+    ]
+    no-buffer-constructor: 2
+    no-mixed-requires: [                    # INFO: partly disabled, because not sure how it will work
+        2,
+#        {
+#            grouping: false,
+#            allowCall: true
+#        }
+    ]
+    no-new-require: 2
+    no-path-concat: 2
+    no-process-env: 0                       # NOTE: should be enabled, but is used in meteor sometimes
+    no-process-exit: 2                      # INFO: the developers knows what she is doing (it should be spotted in a code review)
+    no-restricted-modules: [                # INFO: typically used to control what is available for project devs to implement features
+        0,
+        # 'deniedModuleName'
+    ]
+    no-sync: 2                              # INFO: use Promises, Generator or async/await to prevent callback hell
+
+
+
+    # http://eslint.org/docs/rules/#stylistic-issues
+    array-bracket-newline: [
+        2,
+        {
+            multiline: true,
+            # minItems: 2
+        }
+    ]
+    array-bracket-spacing: [
+        2,                                  # FIXABLE, SELF: if enabled, it's just my personal flavor
+        'always',
+        {
+            singleValue: true,              # INFO: set to true, to enable, because it's set to
+            objectsInArrays: true,          # 'always'. for 'never' it's the other way around
+            arraysInArrays: true
+        }
+    ]
+    array-element-newline: [
+        0,
+        {
+            multiline: true
+        }
+    ]
+    block-spacing: [                        # FIXABLE, SELF: if enabled, it's just my personal flavor
+        2,
+        'always'
+    ]
+    brace-style: [                          # INFO: fully support this format, except try-catch (where catch goes into a new line)
+        1,
+        '1tbs',
+        { allowSingleLine: true }
+    ]
+    camelcase: [                            # NOTE: third party APIs might require other formats
+        1,
+        { properties: 'always' }
+    ]
+    capitalized-comments: [
+        0,
+        'never',
+        {
+            ignorePattern: '',
+            ignoreInlineComments: true,
+            ignoreConsecutiveComments: true
+        }
+    ]
+    comma-dangle: [
+        2,
+        {
+            arrays: 'never',
+            objects: 'never',
+            imports: 'never',
+            exports: 'never',
+            functions: 'never'
+        },
+
+    ]
+    comma-spacing: [                        # FIXABLE
+        2,
+        {
+            before: false,
+            after: true
+        }
+    ]
+    comma-style: [ 2, 'last' ]
+    computed-property-spacing: [            # FIXABLE, SELF: if enabled, it's just my personal flavor
+        2,
+        'always'
+    ]
+    consistent-this: [ 
+        2, 
+        'self',
+        'ctx',
+        'instance'
+    ]
+    eol-last: [ 2, 'unix' ]                 # FIXABLE
+    func-call-spacing: [ 2, 'never' ]       # FIXABLE, SELF: if enabled, it's just my personal flavor
+    func-name-matching: [
+        2,
+        'always',
+        {
+            includeCommonJSModuleExports: false
+        }
+    ]
+    func-names: [                           # NOTE: in ES6 it's not a problem any more
+        2,
+        'as-needed'
+    ]
+    func-style: [                           # NOTE: might need to be turned off
+        0,
+        'declaration',
+        { allowArrowFunctions: true }
+    ]
+    id-blacklist: [
+        0, 
+        'undefined', 'arguments'
+        # more blacklisted identifier names (var, fn, prop)
+    ]
+    id-length: [
+        1,
+        {
+            min: 2,
+            max: 30,
+            properties: 'never',
+            exceptions: [ 'a', 'b', 'c', 'x', 'y' ]
+        }
+    ]
+    id-match: [                             # INFO: more fexible then the camelcase rule
+        0, 
+        '^[a-z]+([A-Z][a-z]+)*$',           # currently same as camelcase
+        { properties: false }
+    ]
+    # indent --> relocated to the first few rules (above)
+    jsx-quotes: [ 2, 'prefer-double' ]      # FIXABLE
+    key-spacing: [                          # related to no-multi-spaces rule
+        2,
+        {
+            beforeColon: false,
+            afterColon: true,
+            mode: 'minimum'                 # INFO: enables to do more, if it servs readability
+        }
+    ]
+    keyword-spacing: [                      # FIXABLE, NOTE: needs testing
+        1,
+        {
+            before: false,
+            after: false,
+            overrides: {
+                return: { after: true },
+                function: { before: true },
+                case: { after: true },
+                import: { after: true },
+                export: { after: true },
+                const: { after: true },
+                var: { after: true },
+                let: { after: true },
+                from: { before: true, after: true }
+            }
+        }
+    ]
+    line-comment-position: [
+        0,
+        'beside'                            # NOTE: or 'above'
+    ]
+    # linebreak-style --> relocated to the first few rules (above)
+    lines-around-comment: [
+        0,
+        {
+            beforeBlockComment: false,
+            afterBlockComment: false,
+            beforeLineComment: true,
+            afterLineComment: true,
+            allowBlockStart: false,
+            allowBlockEnd: false,
+            allowObjectStart: true,
+            allowObjectEnd: true,
+            allowArrayStart: true,
+            allowArrayEnd: true,
+
+        }
+    ]
+    max-depth: [ 2, 6 ]
+    max-len: [ 
+        2,
+        {
+            code: 100,
+            # comment: eq code 
+            tabWidth: 4,
+            ignoreComments: false,
+            ignoreTrailingComments: false,
+            ignoreUrls: true
+        }
+    ]
+    max-lines: [
+        0,
+        {
+            max: 300,
+            skipBlankLines: true,
+            skipComments: false
+        }
+    ]
+    max-nested-callbacks: [ 2, 6 ]
+    max-params: [ 2, 10 ]
+    max-statements: [
+        0, 10, { ignoreTopLevelFunctions: true }
+    ]
+    max-statements-per-line: [
+        2,
+        { max: 2 }
+    ]
+    multiline-ternary: [
+        0,
+        'never'
+    ]
+    new-cap: [ 
+        2, 
+        { 
+            newIsCap: true, 
+            capIsNew: false,
+            newIsCapExceptions: [],
+            capIsNewExceptions: [],         # DEFAULT: Array, Boolean, Date, Error, Function, Number, Object, RegExp, String, Symbol
+            properties: false
+        } 
+    ]
+    new-parens: 2
+    newline-per-chained-call: [ 1, { ignoreChainWithDepth: 3 } ]
+    no-array-constructor: 2                 # INFO: don't use constructor anyway, but literal notation
+    no-bitwise: [
+        0,
+        { 
+            int32Hint: false,
+            allow: [ 
+                '~', '^', 
+                '<<', '>>>', '>>', 
+                '|=', '&=', '^=', 
+                '<<=', '>>=', '>>>=' 
+            ]
+        }
+    ]
+    no-continue: 0
+    no-inline-comments: 0
+    no-lonely-if: 0
+    no-mixed-operators: [
+        0
+        # TODO: have a deeper look into the options, especially the operator groups
+    ]
+    no-mixed-spaces-and-tabs: 2
+    no-multi-assign: 0
+    no-multiple-empty-lines: [ 
+        0, 
+        { 
+            max: 7,
+            maxBOF: 2,
+            maxEOF: 1
+        }
+    ]
+    no-negated-condition: 0
+    no-nested-ternary: 0
+    no-new-object: 0
+    no-plusplus: [                          # SELF: if enabled, it's just my personal flavor
+        2, 
+        { allowForLoopAfterthoughts: true } 
+    ]
+    no-restricted-syntax: [                 # see http://eslint.org/docs/rules/no-restricted-syntax
+        2,
+        'ClassDeclaration',                 # INFO: preventing ES6 classes from being used
+        'ClassExpression'    
+    ]
+    no-tabs: 2
+    no-ternary: 0
+    no-trailing-spaces: [                   # FIXABLE
+        1,
+        { skipBlankLines: true }
+    ]
+    no-underscore-dangle: 0
+    no-unneeded-ternary: [
+        2,
+        { defaultAssignment: false }
+    ]
+    no-whitespace-before-property: 2        # INFO: looks like it#s valid, but we are not going to allow it
+    nonblock-statement-body-position: [     # NOE: overwritten by rule: curly
+        2,
+        'beside'
+    ]
+    object-curly-newline: [
+        2,
+        {
+            multiline: true,
+            consistent: true
+        }
+    ]
+    object-curly-spacing: [                 # FIXABLE, SELF: if enabled, it's just my personal flavor
+        2,
+        'always',
+        {
+            objectsInObjects: true,
+            arraysInObjects: true
+        }    
+    ]
+    object-property-newline: [
+        2,
+        {
+           allowMultiplePropertiesPerLine: true
+        }
+    ]
+    one-var: [                              # SELF: if enabled, it's just my personal flavor
+        0,                                  # NOTE: let the dev decide what suffices  
+        {
+            var: never,
+            let: never,
+            const: never
+        }
+    ]
+    one-var-declaration-per-line: [         # SELF: if enabled, it's just my personal flavor
+        0, 
+        'initializations'
+    ]
+    operator-assignment: [ 0, 'always' ]    # NOTE: let the dev decide what suffices
+    operator-linebreak: [                   # NOTE: needs more testing
+        2,
+        'before',
+        {
+            overrides: {
+                ?: after
+            }
+        }
+    ]
+    padded-blocks: [ 0, 'always' ]
+    padding-line-between-statements: [
+        2,
+        { blankLine: 'always', prev: 'break', next: 'case' }
+    ]
+    quote-props: [                          # NOTE: needs more testing
+        1, 
+        'as-needed', 
+        { 
+            keywords: true,
+            unnecessary: false,
+            numbers: true
+        } 
+    ]
+    require-jsdoc: [ 
+        0,
+        require: {
+            FunctionDeclaration: true,
+            ClassDeclaration: false,
+            MethodDefinition: false
+        }
+    ]
+    # semi --> relocated to the first few rules (above)
+    semi-spacing: [                         # FIXABLE
+        2,
+        {
+            before: false,
+            after: true
+        }
+    ]
+    semi-style: [
+        2,
+        'last'
+    ]
+    sort-keys: [
+        0,
+        'asc',
+        {
+            caseSensitive: false,
+            natural: false
+        }
+    ]
+    sort-vars: [
+        0,
+        { ignoreCase: true }
+    ]
+    space-before-blocks: [                  # FIXABLE
+        0,                                  # NOTE: temp. disabled, see https://github.com/eslint/eslint/issues/5776
+        {
+            functions: 'never', 
+            keywords: 'never', 
+            classes: 'never'
+        }
+    ]
+    space-before-function-paren: [          # FIXABLE
+        2,
+        {
+            anonymous: 'never', 
+            named: 'never',
+            asyncArrow: 'always'
+        }
+    ]
+    space-in-parens: [                      # FIXABLE, NOTE: doesn't work with '})'
+        0,
+        'always',
+        {
+            exceptions: [ 'empty', '()', '{}' ]         # more: '{}', '[]', '()'
+        }
+    ]
+    space-infix-ops: [                      # FIXABLE 
+        2, 
+        { int32Hint: false } 
+    ]
+    space-unary-ops: [                      # FIXABLE
+        2,
+        {
+            words: true, 
+            nonwords: false
+        }
+    ]
+    spaced-comment: [                       # FIXABLE, NOTE: would break commented out code
+        1,                                  # SELF: if enabled, it's just my personal flavor
+        'always',
+        {
+            line: {
+                markers: [  ],
+                exceptions: [ '-', '+', '#', '*' ]
+            },
+#            block: { }
+        }
+    ]
+    switch-colon-spacing: [
+        2,
+        {
+            before: false,
+            after: true
+        }
+    ]
+    template-tag-spacing: [
+        2,
+        'never'
+    ]
+    unicode-bom: [                          # NOTE: if file is encodes with other than UTF-8, it
+        2,                                  # might have to become optional
+        'never'
+    ]
+    wrap-regex: 2
+    
+
+
+    # http://eslint.org/docs/rules/#ecmascript-6
+    arrow-body-style: [ 2, 'always' ]
+    arrow-parens: [ 2, 'always' ]
+    arrow-spacing: [                        # FIXABLE, SELF: if enabled, it's just my personal flavor
+        2,
+        {
+            before: false,
+            after: false
+        }
+    ]
+    constructor-super: 2
+    generator-star-spacing: [               # SELF: if enabled, it's just my personal flavor
+        2,
+        {
+            before: true,
+            after: true
+        }
+    ]
+    no-class-assign: 2
+    no-confusing-arrow: 2
+    no-const-assign: 2
+    no-dupe-class-members: 2
+    no-duplicate-imports: [
+        2,                                  # NOTE: might become an issue, when such imports
+        {                                   # affect the load-order somehow
+            includeExports: false
+        }
+    ]
+    no-new-symbol: 2
+    no-restricted-imports: [
+        0,
+        # 'deniedImportName'
+        # { patterns: [ 'import1/*' ], paths: [ 'import2' ]  }
+    ]
+    no-this-before-super: 2
+    no-useless-computed-key: 2
+    no-useless-constructor: 0               # NOTE: opposite would be great, to clarify that the dev didn't forget it by accident
+    no-useless-rename: [
+        2,
+        {
+            ignoreImport: false,
+            ignoreExport: false,
+            ignoreDestructuring: false
+        }
+    ]
+    no-var: 2                               # NOTE: should be turned on in the future
+    object-shorthand: [                     # NOTE: disabled because of (meteors) event maps
+        0,
+        'methods',                          # OR: 'always', 'properties', 'never', 'consistent', 'consistent-as-needed'
+        {
+            avoidQuotes: true,
+            ignoreConstructors: false,
+            avoidExplicitReturnArrows: true
+        }
+    ]
+    prefer-arrow-callback: 0                # INFO: let the dev decide whats best in each case
+    prefer-const: 0                         # INFO: dev should decide, NOTE: may change in the future
+    prefer-destructuring: [                 # INFO: rules should ot be enforced
+        0,
+        { array: true, object: true },
+        { enforceForRenamedProperties: true }
+    ]
+    prefer-numeric-literals: 2
+    prefer-rest-params: 2
+    prefer-spread: 2                        # NOTE: might break things
+    prefer-template: 1                      # INFO: sometimes it's more readable w/ string concat
+    require-yield: 2
+    rest-spread-spacing: [
+        2,
+        'never'
+    ]
+    sort-imports: [
+        0,
+        {
+            ignoreCase: true,
+            ignoreMemberSort: true,
+            memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ]
+        }
+    ]
+    symbol-description: 2
+    template-curly-spacing: [ 2, 'always' ] # FIXABLE, SELF: if enabled, it's just my personal flavor
+    yield-star-spacing: [
+        2,
+        {
+            before: false,
+            after: true
+        }
+    ]

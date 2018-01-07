@@ -1,0 +1,14 @@
+
+@mixin type-size($size) {
+    font-size: rem(font-size($size));
+    line-height: 1.0;
+}
+
+@mixin type($size) {
+    font-size: rem(font-size($size));
+    line-height: line-height($size);
+}
+
+@each $key, $value in $font-sizes {
+  .type-#{$key} { @include type(#{$key}); }
+}

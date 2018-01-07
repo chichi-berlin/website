@@ -1,0 +1,19 @@
+{
+    "presets": [ 
+        [
+            "env"
+        ] 
+    ],
+    "plugins": [ 
+        [
+            "transform-runtime",
+            {
+                "helpers": true, 
+                "polyfill": true, 
+                "regenerator": false, 
+                "moduleName": "babel-runtime"
+            }
+        ],
+        "transform-es2015-modules-umd"
+    ]
+}

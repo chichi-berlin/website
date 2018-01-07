@@ -1,0 +1,29 @@
+@function rem($size) {
+  $remSize: $size / 10;
+  @return #{$remSize}rem;
+}
+
+@function font-size($key) {
+  @return map-get($font-sizes, $key);
+}
+
+@function line-height($key) {
+  @return map-get($line-heights, $key);
+}
+
+@function breakpoint($key) {
+  @return map-get($breakpoints, $key);
+}
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+@function spacing($multiplier){
+    $base: 10;
+    @return $base * $multiplier;
+}
+
+@function percentageDesktopPageWidth($pixels) {
+    @return #{$pixels * 100 / $desktop_max-page-width}
+}

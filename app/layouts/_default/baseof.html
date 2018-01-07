@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+
+    {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
+    <title>{{ $title }}</title>
+
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    {{ partial "head/meta.html" . }}
+
+    {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}"/>
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}"/>
+    {{ end }}
+
+
+    {{ partial "head/static.html" . }}
+</head>
+<body>
+<div class="page">
+    
+    {{ partial "header.html" . }}
+    
+    <main>
+    {{ block "main" . }}
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    
+</div>
+</body>
+</html>

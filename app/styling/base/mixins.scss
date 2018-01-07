@@ -1,0 +1,62 @@
+@mixin bp($prop, $break1, $break2: '') {
+  @if $prop == min {
+    @media screen and (min-width: #{$break1}px) {
+      @content
+    }
+  }
+  @else if $prop == max {
+    @media screen and (max-width: #{-1 + $break1}px) {
+      @content
+    }
+  }
+  @else if $prop == min-max {
+    @media screen and (min-width: #{$break1}px) and (max-width: #{$break2}px) {
+      @content
+    }
+  }
+}
+
+@mixin bp-h($prop, $break1, $break2: '') {
+  @if $prop == min {
+    @media screen and (min-height: #{$break1}px) {
+      @content;
+    }
+  }
+  @else if $prop == max {
+    @media screen and (max-height: #{$break1}px) {
+      @content;
+    }
+  }
+  @else if $prop == min-max {
+    @media screen and (min-height: #{$break1}px) and (max-height: #{$break2}px) {
+      @content;
+    }
+  }
+}
+
+@mixin bp-desktop() {
+    @include bp(min, breakpoint(0)) {
+        @content;
+    }
+}
+
+@mixin bp-mobile() {
+    @include bp(max, breakpoint(0)) {
+        @content;
+    }
+}
+
+@mixin unit($property, $factor: 1) {
+  #{$property}px: $grid-unit * $factor;
+  @include bp(min, $grid-fluid-max-width) {
+    #{$property}px: ($grid-fluid-max-width / $grid-column-count) * $factor * 1px;
+  }
+}
+
+@mixin optimize-type {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+}

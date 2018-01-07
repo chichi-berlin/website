@@ -1,0 +1,23 @@
+{{ $styleFolderPath := "app/static/style" }}
+{{ if ( fileExists $styleFolderPath ) }}
+{{ range ( readDir $styleFolderPath ) }}
+    {{ $fileExtension := split .Name "." | last 1 }}
+    {{ if index $fileExtension 0 | eq "css" }}
+    <link rel="stylesheet" href="/style/{{ .Name }}">
+    {{ end }}
+{{ end }}
+{{ end }}
+
+{{ $scriptFolderPath := "app/static/script" }}
+{{ if ( fileExists $scriptFolderPath ) }}
+{{ range ( readDir $scriptFolderPath ) }}
+    {{ $fileExtension := split .Name "." | last 1 }}
+    {{ if index $fileExtension 0 | eq "js" }}
+    <script defer
+            type="application/javascript"
+            src="/script/{{ .Name }}">
+    </script>
+    {{ end }}
+{{ end }}
+{{ end }}
+

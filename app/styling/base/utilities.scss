@@ -1,0 +1,21 @@
+@mixin no-break-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.no-break-ellipsis { @include no-break-ellipsis; }
+
+
+.desktop--only, .mobile--only {
+    display: none !important;
+}
+.desktop--only {
+    @include bp-desktop() {
+        display: block !important;
+    }
+}
+.mobile--only {
+    @include bp-mobile() {
+        display: block !important;
+    }
+}

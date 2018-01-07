@@ -1,0 +1,110 @@
+baseURL: 'https://chichi.berlin'
+title: 'CHICHI | Fahrradladen'
+
+params:
+
+sitemap:
+  changefreq: 'monthly'
+  priority: 0.5
+  filename: 'sitemap.xml'
+
+# see https://gohugo.io/templates/menu-templates/
+SectionPagesMenu:           ''
+
+# See 'content-management/permalinks'
+permalinks:
+  post: /:title/
+
+# the length of text to show in a .Summary
+summaryLength:              70
+  
+# Allows you to disable all page types and will render nothing related to 'kind';
+# values = 'page', 'home', 'section', 'taxonomy', 'taxonomyTerm', 'RSS', 'sitemap', 'robotsTXT', '404'
+disableKinds: []
+
+# Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
+preserveTaxonomyNames:      false
+taxonomies:
+  - category:               'categories'
+  - tag:                    'tags'
+
+# NOTE: haven't used proper relative paths, because of https://github.com/gohugoio/hugo/issues/4024
+config:                     'config.yml'
+archetypeDir:               'app/types'
+contentDir:                 'app/contents'
+dataDir:                    'app/data'
+layoutDir:                  'app/layouts'
+staticDir:                  'app/static'
+themesDir:                  'app/themes'
+i18ndir:                    'app/i18n'
+source:                     ''
+theme:                      'chi'
+
+publishDir:                 './dist'
+
+defaultExtension:           'html'
+defaultLayout:              'master'
+
+buildDrafts:                false
+buildFuture:                false
+buildExpired:               false
+
+rssLimit:                   15
+enableGitInfo:              false
+
+footnoteAnchorPrefix:       ''
+footnoteReturnLinkContents: ''
+
+# Don't sync permission mode of files
+noChmod:                    true
+noTimes:                    false
+
+paginate:                   6
+paginatePath:               'page'
+
+# Title Case style guide for the title func and other automatic title casing in Hugo.
+# // Valid values are 'AP' (default), 'Chicago' and 'Go' (which was what you had in Hugo <= 0.25.1).
+# // See https://www.apstylebook.com/ and http://www.chicagomanualofstyle.org/home.html
+titleCaseStyle:             'AP'
+
+# Pluralize titles in lists using inflect
+pluralizeListTitles:        true
+
+# if true, use /filename.html instead of /filename/
+uglyURLs:                   false
+relativeURLs:               false
+canonifyURLs:               false
+disablePathToLower:         false
+enableEmoji:                false
+
+metaDataFormat:             'yaml'
+newContentEditor:           ''
+# Do not inject generator meta tag on homepage
+disableHugoGeneratorInject: true
+
+googleAnalytics:            ''
+
+# code block syntax highlighting
+pygmentsCodeFencesGuessSyntax: false
+pygmentsStyle:              'monokai'
+pygmentsUseClasses:         false
+
+defaultContentLanguage:     'en'
+defaultContentLanguageInSubdir: false
+enableMissingTranslationPlaceholders: false
+hasCJKLanguage:             false
+languageCode:               ''
+
+
+cleandestinationdir:        false
+
+
+# TODO: set for dev mode - Enable Logging
+watch:                      true
+disableLiveReload:          false
+verbose:                    false
+log:                        false
+logFile:                    ''
+verboseLog:                 false
+stepAnalysis:               true
+templateMetrics:            false

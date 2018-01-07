@@ -1,4 +1,14 @@
+*.DS_Store*
 .idea
+
+.build
+.npm
+*.vagrant*
 
 node_modules/
 dist/
+
+*npm-debug.log*
+
+app/static/style/
+app/static/script/
