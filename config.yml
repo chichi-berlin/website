@@ -2,6 +2,7 @@ baseURL: 'https://chichi.berlin'
 title: 'CHICHI | Fahrradladen'
 
 params:
+    layout: 'master'
 
 sitemap:
   changefreq: 'monthly'
@@ -38,12 +39,13 @@ staticDir:                  'app/static'
 themesDir:                  'app/themes'
 i18ndir:                    'app/i18n'
 source:                     ''
-theme:                      'chi'
+#theme:                      'chi'
 
 publishDir:                 './dist'
 
-defaultExtension:           'html'
-defaultLayout:              'master'
+# NOTE: for theme authors
+# defaultExtension:           'html'
+# defaultLayout:              'master'
 
 buildDrafts:                false
 buildFuture:                false

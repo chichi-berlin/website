@@ -19,18 +19,26 @@
     {{ partial "head/static.html" . }}
 </head>
 <body>
-<div class="page">
-    
-    {{ partial "header.html" . }}
-    
-    <main>
-    {{ block "main" . }}
-    <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
-    </main>
 
-    {{ partial "footer.html" . }}
+    {{ block "site" . }}
+    <div id="site" class="layout--{{ $.Param "layout" }} type--{{ .Type }} page--{{ .File.BaseFileName }}">
+        
+        {{ block "header" . }}
+        {{ partial "components/header.html" . }}
+        {{ end }}
+        
+        <main>
+        {{ block "main" . }}
+        {{ .Content }}
+        {{ end }}
+        </main>
     
-</div>
+        {{ block "footer" . }}
+        {{ partial "components/footer.html" . }} 
+        {{ end }}
+        
+    </div>    
+    {{ end }}
+
 </body>
 </html>

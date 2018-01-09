@@ -1,3 +1,19 @@
-{{ define "main" }}
-<main>{{ .Content }}</main>
+{{ define "site" }}
+<div id="site" class="layout--{{ $.Param "layout" }} type--{{ .Type }} page--root">
+    
+    {{ block "header" . }}
+    {{ partial "components/header.html" . }}
+    {{ end }}
+    
+    <main>
+    {{ block "main" . }}
+    {{ .Content }}
+    {{ end }}
+    </main>
+
+    {{ block "footer" . }}
+    {{ partial "components/footer.html" . }} 
+    {{ end }}
+    
+</div>    
 {{ end }}
