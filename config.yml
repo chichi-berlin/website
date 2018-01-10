@@ -2,7 +2,7 @@ baseURL: 'https://chichi.berlin'
 title: 'CHICHI | Fahrradladen'
 
 params:
-    layout: 'master'
+    layout-name: 'master'
 
 sitemap:
   changefreq: 'monthly'

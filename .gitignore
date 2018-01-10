@@ -12,3 +12,4 @@ dist/
 
 app/static/style/
 app/static/script/
+app/layouts/partials/svgs

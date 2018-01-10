@@ -1,0 +1,19 @@
+{{ block "site" . }}
+<div id="site" class="layout--master type--{{ .Type }} page--{{ .File.BaseFileName }}">
+    
+    {{ block "header" . }}
+    {{ partial "components/header.html" . }}
+    {{ end }}
+    
+    <main>
+    {{ block "main" . }}
+    {{ .Content }}
+    {{ end }}
+    </main>
+
+    {{ block "footer" . }}
+    {{ partial "components/footer.html" . }} 
+    {{ end }}
+    
+</div>    
+{{ end }}

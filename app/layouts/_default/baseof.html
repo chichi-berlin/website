@@ -21,23 +21,7 @@
 <body>
 
     {{ block "site" . }}
-    <div id="site" class="layout--{{ $.Param "layout" }} type--{{ .Type }} page--{{ .File.BaseFileName }}">
-        
-        {{ block "header" . }}
-        {{ partial "components/header.html" . }}
-        {{ end }}
-        
-        <main>
-        {{ block "main" . }}
-        {{ .Content }}
-        {{ end }}
-        </main>
-    
-        {{ block "footer" . }}
-        {{ partial "components/footer.html" . }} 
-        {{ end }}
-        
-    </div>    
+    {{ partial ( printf "layouts/%s.html" ( $.Param "layout-name" ) ) . }}    
     {{ end }}
 
 </body>
