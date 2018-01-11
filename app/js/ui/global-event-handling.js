@@ -1,22 +1,8 @@
 
-
-
-
-
 const events = {
-    'click .video-wrap video' : function( e ){
+    'click #site' : function( e ){
         const element = this;
 
-        if( element.paused ){
-            element.play();
-        }else{
-            element.pause();
-        }
-    },
-
-    'contextmenu document' : function( e ){
-        e.preventDefault();
-        e.stopPropagation();
     }
 };
 

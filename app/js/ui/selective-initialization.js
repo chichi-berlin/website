@@ -1,10 +1,8 @@
 
 const selectors = {
-    '.video-wrap video' : function(){
+    '#site' : function(){
         const element = this;
 
-        element.muted = false;
-        element.volume = 0.5;
     }
 };
 

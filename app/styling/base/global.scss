@@ -16,16 +16,18 @@ body {
     overflow-x: hidden;
     
     color: color(black);
+    font-weight: 400;
+    font-style: normal;
     
     @include bp-desktop() {
-        @include type(ml);
+        @include type(m);
     }
     @include bp-mobile() {
-        @include type-size(ml);
-        line-height: 1.5;
+        @include type(ml);
     }
 }
 
 ::selection {
-    background-color: color(Black);
+    background-color: color(brand-pink);
+    color: color(white)
 }
