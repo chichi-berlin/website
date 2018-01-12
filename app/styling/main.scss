@@ -15,3 +15,5 @@
 @import './base/normalize.scss';
 @import './base/global.scss';
 @import './site.scss';
+
+@import './../layouts/partials/components/**/*.scss';

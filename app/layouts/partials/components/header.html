@@ -1,3 +1,8 @@
-<header>
-    {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
+<header class="component__header">
+    <div class="header-nav">
+        <div class="logo-wrap">
+            {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
+        </div>
+        {{ partial "components/nav-top.html" . }}
+    </div>
 </header>

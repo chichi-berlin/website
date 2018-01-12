@@ -4,6 +4,7 @@
 .build
 .npm
 *.vagrant*
+.hugo-cache
 
 node_modules/
 dist/

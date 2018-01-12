@@ -22,6 +22,8 @@ summaryLength:              70
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = 'page', 'home', 'section', 'taxonomy', 'taxonomyTerm', 'RSS', 'sitemap', 'robotsTXT', '404'
 disableKinds: []
+outputs: 
+    section: [ 'html' ]
 
 # Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
 preserveTaxonomyNames:      false
@@ -38,6 +40,7 @@ layoutDir:                  'app/layouts'
 staticDir:                  'app/static'
 themesDir:                  'app/themes'
 i18ndir:                    'app/i18n'
+cacheDir:                   './.hugo-cache'
 source:                     ''
 #theme:                      'chi'
 
@@ -51,8 +54,10 @@ buildDrafts:                false
 buildFuture:                false
 buildExpired:               false
 
-rssLimit:                   15
+rssLimit:                   1
 enableGitInfo:              false
+
+paginate:                   10
 
 footnoteAnchorPrefix:       ''
 footnoteReturnLinkContents: ''

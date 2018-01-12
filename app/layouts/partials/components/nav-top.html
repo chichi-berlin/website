@@ -1,0 +1,10 @@
+
+<nav class="component__nav-top">
+    <ul>
+        {{ range .Site.Data.menus.header }}
+            <li>
+                <a href="{{ .}}">{{ . }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>

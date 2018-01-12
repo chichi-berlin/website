@@ -119,4 +119,4 @@ $   npm build
 
 #### Appendix
 
-*   partially inspired by https://github.com/fspoettel/blaupause
+*   project boilerplate is partially inspired by https://github.com/fspoettel/blaupause
