@@ -1,5 +1,6 @@
 
 $font-family: 'Libre Franklin', sans-serif;
+$decorative-font-family: 'American Typewriter Condensed', sans-serif;
 
 $font-sizes: (
     xs: 8,
@@ -18,7 +19,7 @@ $line-heights: (
     s: 1.1,
     xm: 1.1,
     m: 1.2,
-    ml: 1.2,
+    ml: 1.4,
     l: 1.2,
     xl: 1.3,
     xxl: 1.3,
@@ -54,10 +55,10 @@ $colors: (
 
 
 $mobile_max-page-width: 100%;
-$mobile_side-padding: 19;
+$mobile_side-padding: 20;
 $mobile_header-height: 65;
 
-$desktop_max-page-width: 1360;
+$desktop_max-page-width: breakpoint(5);
 $desktop_side-padding: 15;
 $desktop_header-height: 92;
 

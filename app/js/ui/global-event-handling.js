@@ -2,7 +2,6 @@
 const events = {
     'click #site' : function( e ){
         const element = this;
-
     }
 };
 

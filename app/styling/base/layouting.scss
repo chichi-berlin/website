@@ -46,3 +46,14 @@
         }
     }
 }
+
+
+.edge-spacer--h {
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: rem($mobile_side-padding);
+    padding-right: rem($mobile_side-padding);
+    
+    max-width: rem($desktop_max-page-width);
+}

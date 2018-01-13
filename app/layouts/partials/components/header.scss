@@ -1,3 +1,27 @@
+.component__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
 .header-nav {
     background-color: color(brand-pink);
+    
+    
+    .header-nav--inner {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-wrap {
+        max-width: 23%;
+        min-width: rem(240);
+    }
+    
+    .nav-top--wrap {
+        width: 100%;
+    }
 }

@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-@import './base/constants.scss';
-@import './base/webfonts.scss';
-
 @import './base/functions.scss';
 @import './base/mixins.scss';
+
+@import './base/constants.scss';
+@import './base/webfonts.scss';
 
 @import './base/utilities.scss';
 @import './base/animations.scss';
@@ -17,3 +17,4 @@
 @import './site.scss';
 
 @import './../layouts/partials/components/**/*.scss';
+@import './../layouts/partials/layouts/**/*.scss';

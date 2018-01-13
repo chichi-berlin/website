@@ -5,10 +5,12 @@
     {{ partial "components/header.html" . }}
     {{ end }}
     
-    <main>
-    {{ block "main" . }}
-    {{ .Content }}
-    {{ end }}
+    <main class="contents" id="page-contents">
+        <div class="edge-spacer--h">
+        {{ block "main" . }}
+        {{ .Content }}
+        {{ end }}
+        </div>
     </main>
 
     {{ block "footer" . }}

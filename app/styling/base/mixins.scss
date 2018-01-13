@@ -46,12 +46,6 @@
     }
 }
 
-@mixin unit($property, $factor: 1) {
-  #{$property}px: $grid-unit * $factor;
-  @include bp(min, $grid-fluid-max-width) {
-    #{$property}px: ($grid-fluid-max-width / $grid-column-count) * $factor * 1px;
-  }
-}
 
 @mixin optimize-type {
   text-rendering: optimizeLegibility;

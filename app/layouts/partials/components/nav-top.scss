@@ -1,0 +1,12 @@
+.component__nav-top {
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        li {
+            @include type(l);
+        };
+    }
+}

@@ -1,8 +1,12 @@
-<header class="component__header">
-    <div class="header-nav">
-        <div class="logo-wrap">
-            {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
+<header class="component__header" id="page-header">
+    <div class="header-nav" id="page-header-nav" data-state="normal">
+        <div class="edge-spacer--h header-nav--inner">
+            <div class="logo-wrap">
+                {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
+            </div>
+            <div class="nav-top--wrap">
+                {{ partial "components/nav-top.html" . }}
+            </div>
         </div>
-        {{ partial "components/nav-top.html" . }}
     </div>
 </header>

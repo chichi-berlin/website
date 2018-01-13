@@ -1,3 +1,16 @@
 #site {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
     
+    color: color(black);
+    font-weight: 400;
+    font-style: normal;
+    
+    @include bp-desktop() {
+        @include type(m);
+    }
+    @include bp-mobile() {
+        @include type(ml);
+    }
 }
