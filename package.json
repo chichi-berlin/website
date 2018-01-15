@@ -10,7 +10,7 @@
     "build:hugo": "HUGO_ENV='development' hugo",
     "build:clean": "rm -rf ./dist ./app/static/style ./app/static/script ./app/layouts/partials/svgs",
     "build": "npm run build:clean; npm run build:webpack; npm run build:hugo",
-    "build:prod": "npm run build:clean; NODE_ENV='production' webpack --config ./.webpack.config; HUGO_ENV='production' hugo"
+    "build:prod": "npm run build:clean; NODE_ENV='production' webpack --config ./.webpack.config; HUGO_ENV='production' hugo --baseURL http://beta.chichi.berlin/"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0"

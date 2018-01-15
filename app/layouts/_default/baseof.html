@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="{{ .Lang }}">
 <head>
     <meta charset="utf-8">
 
@@ -20,9 +20,25 @@
 </head>
 <body>
 
-    {{ block "site" . }}
-    {{ partial ( printf "layouts/%s.html" ( $.Param "layout-name" ) ) . }}    
-    {{ end }}
+    {{ $slug := delimit (findRE "(?:\\w)+" .Permalink | last 1) "" }}
+    <div id="site" class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} page--{{ $.Param "name" | default $slug }}">
+    
+        {{ block "header" . }}
+        {{ partial "components/header.html" . }}
+        {{ end }}
+        
+        <main class="contents" id="page-contents">
+            {{ partial "components/banner.html" . }}
+            {{ block "main" . }}
+            {{ .Content }}
+            {{ end }}
+        </main>
+    
+        {{ block "footer" . }}
+        {{ partial "components/footer.html" . }} 
+        {{ end }}
+        
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,5 @@
+---
+linkTitle: 'Artikel'
+slug: 'artikel'
+
+---

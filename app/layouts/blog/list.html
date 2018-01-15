@@ -1,3 +1,4 @@
-{{ define "site" }}
-{{ partial ( printf "layouts/%s.html" ( $.Param "layout-name" ) ) . }}
+{{ define "main" }}
+<h1>hello from type:blog & layout:list</h1>
+{{ .Content }}
 {{ end }}

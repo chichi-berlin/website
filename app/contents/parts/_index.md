@@ -1,0 +1,5 @@
+---
+linkTitle: 'Komponenten'
+slug: 'komponenten'
+
+---

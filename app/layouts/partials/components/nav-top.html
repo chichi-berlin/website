@@ -1,10 +1,11 @@
 
 <nav class="component__nav-top">
     <ul>
-        {{ range .Site.Data.menus.header }}
-            <li>
-                <a href="{{ .}}">{{ . }}</a>
-            </li>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.top }}
+        <li class="{{ if or ($currentPage.IsMenuCurrent "top" .) ($currentPage.HasMenuCurrent "top" .) }}active{{end}}">
+            <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        </li>
         {{ end }}
     </ul>
 </nav>

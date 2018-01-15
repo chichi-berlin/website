@@ -1,5 +1,5 @@
-baseURL: 'https://chichi.berlin'
-title: 'CHICHI | Fahrradladen'
+baseURL: 'https://chichi.berlin/'
+title: 'CHICHI | Fahrradfachgeschäft'
 
 params:
     layout-name: 'master'
@@ -9,12 +9,10 @@ sitemap:
   priority: 0.5
   filename: 'sitemap.xml'
 
-# see https://gohugo.io/templates/menu-templates/
-SectionPagesMenu:           ''
-
 # See 'content-management/permalinks'
 permalinks:
-  post: /:title/
+  post: '/:title/'
+  page: '/:slug/'
 
 # the length of text to show in a .Summary
 summaryLength:              70
@@ -24,12 +22,6 @@ summaryLength:              70
 disableKinds: []
 outputs: 
     section: [ 'html' ]
-
-# Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
-preserveTaxonomyNames:      false
-taxonomies:
-  - category:               'categories'
-  - tag:                    'tags'
 
 # NOTE: haven't used proper relative paths, because of https://github.com/gohugoio/hugo/issues/4024
 config:                     'config.yml'
@@ -96,11 +88,29 @@ pygmentsCodeFencesGuessSyntax: false
 pygmentsStyle:              'monokai'
 pygmentsUseClasses:         false
 
-defaultContentLanguage:     'en'
+defaultContentLanguage:     'de'
 defaultContentLanguageInSubdir: false
-enableMissingTranslationPlaceholders: false
+enableMissingTranslationPlaceholders: true
 hasCJKLanguage:             false
 languageCode:               ''
+
+languages:
+  de:
+    languageName: 'Deutsch'
+    permalinks:
+      bicycles:     '/fahrraeder/:slug/'
+      parts:        '/komponenten/:slug/'
+      accessories:  '/ausruestung/:slug/'
+      blog:         '/blog/:url/'
+
+# Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
+preserveTaxonomyNames:      false
+taxonomies:
+  - category:               'categories'
+  - tag:                    'tags'
+  
+# see https://gohugo.io/templates/menu-templates/
+SectionPagesMenu:           ''
 
 
 cleandestinationdir:        false

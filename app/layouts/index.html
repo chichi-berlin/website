@@ -1,3 +1,4 @@
-{{ define "site" }}
-{{ partial ( printf "layouts/%s.html" ( $.Param "layout-name" ) ) . }}
+{{ define "main" }}
+<div class="key-visual" style="background-image: url({{ .Param "key-visual-url" }})"></div>
+{{ .Content }}
 {{ end }}

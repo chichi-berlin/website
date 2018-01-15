@@ -1,4 +1,24 @@
+---
+name: 'home'
+
+title: 'Startzeite'
+description: 'upcycled bicycles'
+keywords:
+ - 'Fahrräder'
+ - 'Ersatzteile'
+ - 'Reparatur'
+ - 'Werkstatt' 
+
+key-visual-url: '/media/images/pictures/key-visual_landing-page.jpg'
+
+---
+
+
+{{< page-section >}}
 # Landing Page
+{{< /page-section >}}
+
+
 {{< page-section >}}
 ### Headline A
 
@@ -10,6 +30,8 @@ Excepturi ut nihil provident aut ut. Eveniet et corporis cum similique ut quia. 
 
 Est doloremque odit dolor ipsum architecto ea. Ipsa reiciendis sequi quos quisquam voluptates autem tenetur. Qui doloremque quis magni.
 {{< /page-section >}}
+
+
 {{< page-section >}}
 ### Headline b
 
@@ -21,6 +43,8 @@ Excepturi ut nihil provident aut ut. Eveniet et corporis cum similique ut quia. 
 
 Est doloremque odit dolor ipsum architecto ea. Ipsa reiciendis sequi quos quisquam voluptates autem tenetur. Qui doloremque quis magni.
 {{< /page-section >}}
+
+
 {{< page-section >}}
 ### Headline c
 
@@ -32,6 +56,8 @@ Excepturi ut nihil provident aut ut. Eveniet et corporis cum similique ut quia. 
 
 Est doloremque odit dolor ipsum architecto ea. Ipsa reiciendis sequi quos quisquam voluptates autem tenetur. Qui doloremque quis magni.
 {{< /page-section >}}
+
+
 {{< page-section >}}
 ### Headline d
 

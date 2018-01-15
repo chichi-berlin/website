@@ -1,8 +1,7 @@
 ---
+slug: 'blog'
+
 outputs: 
   - html
   - rss
 ---
-
-Blog
-===========================

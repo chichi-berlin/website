@@ -1,4 +1,6 @@
 .component__nav-top {
+    flex-grow: 1;
+    
     ul {
         display: flex;
         flex-flow: row nowrap;

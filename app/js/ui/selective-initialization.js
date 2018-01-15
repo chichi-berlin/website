@@ -13,7 +13,7 @@ const selectors = {
         let requestedNewFrame = false;
         
         let scrolled = false;
-        const changeHeaderOn = 150;
+        const changeHeaderOn = 470;
         
         const scrollPage = ()=>{
             if ( isScrollingVertical() >= changeHeaderOn ) {
@@ -40,7 +40,7 @@ const selectors = {
             
                     if( scrolled === false) {
                         scrolled = true;
-                        global.setTimeout( scrollPage, 250 );
+                        global.setTimeout( scrollPage, 150 );
                     }
                     
                     requestedNewFrame = false;
