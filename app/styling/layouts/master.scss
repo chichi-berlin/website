@@ -3,7 +3,11 @@
     
     .contents {
         // NOTE: compensate header height
-        padding-top: 30vh;
+        padding-top: rem($desktop_header-height_big);
+        
+        background-color: color(light-bg);
+        
+        min-height: 100vh;
         
         & > * {
             // NOTE: makes margins not collapsing

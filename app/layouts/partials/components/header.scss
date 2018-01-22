@@ -10,12 +10,12 @@
 
     &[data-state="shrinked"] {
         .header-nav--inner {
-            height: 15vh;
+            height: rem($desktop_header-height_small);
         }
     }
     
     .header-nav--inner {
-        height: 30vh;
+        height: rem($desktop_header-height_big);
         
         display: flex;
         flex-flow: column nowrap;
@@ -40,6 +40,13 @@
         
         svg {
             height: 100%;
+            
+            .bg {
+                fill: color(brand-black)
+            }
+            .char {
+                fill: color(brand-green)
+            }
         }
     }
     

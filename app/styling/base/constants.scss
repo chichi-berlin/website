@@ -41,8 +41,12 @@ $breakpoints: (
 
 
 $colors: (
-    brand-pink: rgb( 255, 0, 255 ),
-    brand-green: rgb( 128, 255, 0 ),
+    brand-pink: rgb( 255, 0, 153 ),
+    brand-green: rgb( 153, 204, 51 ),
+    brand-black: rgb( 26, 23, 27 ),
+    
+    dark-bg: rgb( 28, 29, 34 ),
+    light-bg: rgb( 250, 244, 244 ),
     
     dark-grey: rgb( 140, 140, 140 ),
     light-grey: rgb( 244, 244, 244 ),
@@ -60,6 +64,7 @@ $mobile_header-height: 65;
 
 $desktop_max-page-width: breakpoint(5);
 $desktop_side-padding: 15;
-$desktop_header-height: 330;
+$desktop_header-height_big: 380;
+$desktop_header-height_small: 200;
 
 $radius: 2;

@@ -11,6 +11,6 @@ dist/
 
 *npm-debug.log*
 
-app/static/style/
-app/static/script/
+app/static/style
+app/static/script
 app/layouts/partials/svgs

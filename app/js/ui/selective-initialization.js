@@ -13,7 +13,7 @@ const selectors = {
         let requestedNewFrame = false;
         
         let scrolled = false;
-        const changeHeaderOn = 470;
+        const changeHeaderOn = 180;
         
         const scrollPage = ()=>{
             if ( isScrollingVertical() >= changeHeaderOn ) {
@@ -49,6 +49,61 @@ const selectors = {
             }
             
         }, false );
+    },
+    
+    '#side-menu' : function(){
+        let menuEl = this;
+        const mlmenu = new MLMenu(menuEl, {
+            // breadcrumbsCtrl : true, // show breadcrumbs
+            // initialBreadcrumb : 'all', // initial breadcrumb text
+            backCtrl : false, // show back button
+            // itemsDelayInterval : 60, // delay between each menu item sliding animation
+            onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+        });
+        
+        // mobile menu toggle
+        const openMenuCtrl = document.querySelector('.action--open');
+        const closeMenuCtrl = document.querySelector('.action--close');
+        openMenuCtrl.addEventListener('click', openMenu);
+        closeMenuCtrl.addEventListener('click', closeMenu);
+        
+        function openMenu() {
+            menuEl.classList.add('menu--open');
+            closeMenuCtrl.focus();
+        }
+        function closeMenu() {
+            menuEl.classList.remove( 'menu--open');
+            openMenuCtrl.focus();
+        }
+        
+        // simulate grid content loading
+        var gridWrapper = document.querySelector('.content');
+        function loadDummyData(ev, itemName) {
+            ev.preventDefault();
+            closeMenu();
+            gridWrapper.innerHTML = '';
+            gridWrapper.classList.add('content--loading');
+            setTimeout(function() {
+                gridWrapper.classList.remove( 'content--loading');
+                gridWrapper.innerHTML = '<ul class="products">' + '<li>TODO</li>' + '<ul>';
+            }, 700);
+        }
+        
+    },
+    
+    '#insurance-fee-calculator': function(){
+        const element = this;
+        const { PPIT } = global;
+        
+        if( typeof PPIT === 'undefined' ){ return; }
+        
+        new PPIT.RT({
+            appId: '31d68559-31cf-4794-8ddd-1f93d6bd635c',
+            target: `#${ element.id }`,
+            ns: 'insurance-fee-calculator',
+            iframe: false,
+            inittab: 1
+        });
     }
 };
 

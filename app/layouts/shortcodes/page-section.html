@@ -1,3 +1,7 @@
 <section class="edge-spacer--h">
+{{ if eq (.Get 0) "isParent" }}
+    {{ .Inner }}
+{{ else }}
     {{ .Inner | markdownify }}
+{{ end }}
 </section>

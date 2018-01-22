@@ -6,7 +6,7 @@ title: 'Impressum'
 description: 'TODO'
 
 menu:
-  footer-col1:
+  footer_col1:
     weight: 4
 ---
 

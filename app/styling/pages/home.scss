@@ -1,7 +1,12 @@
 .page--home {
+    
+    .contents {
+        padding-top: rem($desktop_header-height_small);
+    }
+    
     .key-visual {
         width: 100%;
-        height: 70vh;
+        height: calc(100vh - #{rem($desktop_header-height_small)});
         
         background-repeat: no-repeat;
         background-size: cover;

@@ -8,10 +8,17 @@ description: 'TODO'
 menu:
   top:
     weight: 5
-  footer-col1:
+  footer_col1:
     weight: 3
+    
+heads:
+  - 'insurance-fee-calculator'
 
 ---
 
 
 TODO: sections showing services die wir anbieten
+
+
+
+{{< insurance-fee-calculator >}}

@@ -102,6 +102,15 @@ $   npm build
     -   one post can have multiple groups
 +   side nav (incl. breadcrumps): https://tympanus.net/Blueprints/MultiLevelMenu/
 +   header, sections example: https://tympanus.net/Blueprints/AnimatedHeader
+
++   banner in dunkelgrau
++   header nav in type writer
++   absolute header hight in pixel
++   nav active: larger font anf bold, tabs mit dem hellen grau probieren
++   helles grau als bg
++   banner im dunklen grau mit weisser font und weissen horicontal lines
++   footer auch pink
++   landing page: banner, key visual, 3 ros newest articles, sonderangebote im wechsel links image rechts text or vise versa
     
     
 #### Design
@@ -120,3 +129,4 @@ $   npm build
 #### Appendix
 
 *   project boilerplate is partially inspired by https://github.com/fspoettel/blaupause
+*   wertgarantie fee calculator: https://wwwapi.serviceeu.com/rt/31d68559-31cf-4794-8ddd-1f93d6bd635c.html

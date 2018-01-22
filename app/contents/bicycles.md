@@ -10,7 +10,7 @@ description: 'TODO'
 menu:
   top:
     weight: 1
-  footer-col2:
+  footer_col2:
     weight: 1
 
 ---
