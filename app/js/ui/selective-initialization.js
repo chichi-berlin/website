@@ -1,4 +1,8 @@
 
+import SideMenu from './lib/side-menu.js';
+
+
+
 const global = window;
 
 
@@ -53,7 +57,8 @@ const selectors = {
     
     '#side-menu' : function(){
         let menuEl = this;
-        const mlmenu = new MLMenu(menuEl, {
+        
+        const sideMenu = new SideMenu(menuEl, {
             // breadcrumbsCtrl : true, // show breadcrumbs
             // initialBreadcrumb : 'all', // initial breadcrumb text
             backCtrl : false, // show back button
@@ -64,17 +69,17 @@ const selectors = {
         // mobile menu toggle
         const openMenuCtrl = document.querySelector('.action--open');
         const closeMenuCtrl = document.querySelector('.action--close');
-        openMenuCtrl.addEventListener('click', openMenu);
-        closeMenuCtrl.addEventListener('click', closeMenu);
         
         function openMenu() {
             menuEl.classList.add('menu--open');
             closeMenuCtrl.focus();
         }
+        if( openMenuCtrl !== null ){ openMenuCtrl.addEventListener('click', openMenu); }
         function closeMenu() {
             menuEl.classList.remove( 'menu--open');
             openMenuCtrl.focus();
         }
+        if( closeMenuCtrl !== null ){ closeMenuCtrl.addEventListener('click', closeMenu); }
         
         // simulate grid content loading
         var gridWrapper = document.querySelector('.content');

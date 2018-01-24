@@ -1,19 +1,17 @@
-<header class="component__header" id="page-header">
-    <div class="header-nav" id="page-header-nav" data-state="normal">
-        <div class="edge-spacer--h header-nav--inner">
-            <div class="logo-wrap">
-                <a href="/">
-                    {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
-                </a>
-            </div>
-            <div class="nav-top--wrap">
-                {{ partial "components/nav-top.html" . }}
-                <div class="contact">
-                    <a href="tel:00493062986005">+49 (0) 30 62986005</a>
-                    <p>10:00 - 19:00 | Do + So geschl.</p>
-                    <address>Flughafenstr. 50, 12053 Berlin</address>
-                </div>
+<div class="header-nav" id="page-header-nav" data-state="normal">
+    <div class="edge-spacer--h header-nav--inner">
+        <div class="logo-wrap">
+            <a href="/">
+                {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
+            </a>
+        </div>
+        <div class="nav-top--wrap">
+            {{ partial "components/nav-top.html" . }}
+            <div class="contact">
+                <a href="tel:00493062986005">+49 (0) 30 62986005</a>
+                <p>10:00 - 19:00 | Do + So geschl.</p>
+                <address>Flughafenstr. 50, 12053 Berlin</address>
             </div>
         </div>
     </div>
-</header>
+</div>

@@ -1,11 +1,17 @@
 .layout--master {
     
+    .header__wrap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
     
     .contents {
         // NOTE: compensate header height
         padding-top: rem($desktop_header-height_big);
         
-        background-color: color(light-bg);
+        background-color: color(bg-light);
         
         min-height: 100vh;
         
@@ -46,6 +52,11 @@
                 margin-top: rem(60);
             }
         }
+    }
+    
+    
+    .footer__wrap {
+        width: 100%;
     }
 }
 

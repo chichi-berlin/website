@@ -1,3 +1,37 @@
 <nav class="component__nav-aside" id="side-menu">
-    
+    <div class="menu__wrap">
+        {{ $section := .Section }}
+        {{ $currentPage := . }}
+
+        <ul>
+        {{ range (printf "./app/contents/%s" $section | readDir) }}
+            {{ if .IsDir }}
+            {{ with $.Site.GetPage "section" (printf "%s/%s" $section .Name) }}
+            <li class="{{ if eq . $currentPage }}active{{end}}">
+                <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+        {{ end }}
+        </ul>
+
+        {{ range (printf "./app/contents/%s" $section | readDir) }}
+            {{ if .IsDir }}
+            {{ $subSection := .Name }}
+            <ul>
+            {{ range (printf "./app/contents/%s/%s" $section $subSection | readDir) }}
+                {{ if ne .Name "_index.md" }}
+                
+                {{ with $.Site.GetPage "page" (printf "%s/%s/%s" $section $subSection .Name) }}
+                <li class="{{ if eq . $currentPage }}active{{end}}">
+                    <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            
+                {{ end }}
+            {{ end }}
+            </ul>
+            {{ end }}
+        {{ end }}
+    </div>
 </nav>

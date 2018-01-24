@@ -1,0 +1,33 @@
+
+$vertical-margin: 65;
+
+.component__aside {
+    display: inline-block;
+    
+}
+
+.aside-nav {
+    max-width: rem(250);
+    width: 15vw;
+    
+    transition: margin-left 0.5s 2s;
+    
+    border-top-right-radius: rem(5);
+    border-bottom-right-radius: rem(5);
+    
+    background-color: color(bg-dark);
+    min-width: rem(200);  
+    
+    margin-top: rem($vertical-margin);
+    height: calc( 100vh - #{rem($vertical-margin + $desktop_header-height_big + $vertical-margin)});
+    
+    margin-left: -90%;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    &:hover {
+        margin-left: 0%;
+        transition: margin-left 0.2s;    
+    }
+}

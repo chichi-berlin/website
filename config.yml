@@ -92,16 +92,16 @@ defaultContentLanguage:     'de'
 defaultContentLanguageInSubdir: false
 enableMissingTranslationPlaceholders: true
 hasCJKLanguage:             false
-languageCode:               ''
 
 languages:
   de:
     languageName: 'Deutsch'
+    languageCode: 'de'
     permalinks:
-      bicycles:     '/fahrraeder/:slug/'
-      parts:        '/komponenten/:slug/'
-      accessories:  '/ausruestung/:slug/'
-      blog:         '/blog/:url/'
+#      bicycles:     '/fahrraeder/:slug/'
+#      parts:        '/komponenten/:slug/'
+#      accessories:  '/:sections/:slug/'
+#      blog:         '/blog/:url/'
 
 # Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
 preserveTaxonomyNames:      false

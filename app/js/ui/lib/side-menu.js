@@ -3,7 +3,7 @@
 
 
 
-function MLMenu( el, options = {} ){
+function SideMenu( el, options = {} ){
     this.el = el;
     this.options = Object.assign( {}, this.options );
     this.options = Object.assign( this.options, options );
@@ -36,8 +36,8 @@ function MLMenu( el, options = {} ){
 }
 
 
-Object.assign( MLMenu.prototype, {
-    constructor: MLMenu,
+Object.assign( SideMenu.prototype, {
+    constructor: SideMenu,
     
     options: {
         // show breadcrumbs
@@ -115,7 +115,8 @@ Object.assign( MLMenu.prototype, {
             this._addBreadcrumb( 0 );
     
             // Need to add breadcrumbs for all parents of current submenu
-            if( self.menusArr[ self.current_menu ].backIdx != 0 && self.current_menu != 0 ){
+            if( typeof self.menusArr[ self.current_menu ] !== 'undefined' && 
+                self.menusArr[ self.current_menu ].backIdx != 0 && self.current_menu != 0 ){
                 this._crawlCrumbs( self.menusArr[ self.current_menu ].backIdx, self.menusArr );
                 this.breadCrumbs = true;
             }
@@ -358,4 +359,4 @@ Object.assign( MLMenu.prototype, {
 
 
 
-export { MLMenu as default };
+export { SideMenu as default };

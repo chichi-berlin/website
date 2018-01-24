@@ -1,12 +1,14 @@
 ---
 linkTitle: 'Kinderräder'
-slug: 'kinder'
+slug: 'kinderraeder'
+type: 'rubric'
+layout: 'categories'
 
 title: 'Räder für Kinder'
 description: 'TODO'
 
 menu:
-  - aside
+  - aside_bicycles
 
 
 ---

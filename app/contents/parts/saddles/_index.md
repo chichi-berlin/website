@@ -1,12 +1,14 @@
 ---
 linkTitle: 'Sattel'
 slug: 'sattel'
+type: 'rubric'
+layout: 'categories'
 
 title: 'Fahrradsattel' 
 description: 'TODO'
 
 menu:
-  - aside
+  - aside_parts
 
 
 ---

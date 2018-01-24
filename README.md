@@ -126,7 +126,16 @@ $   npm build
 +   Gruen:  50/0/100/0  128,255,0   old: rgb( 153, 204,  51 )
 
 
+#### Developer Notice
+
++ section url overwrite:
+    - https://discourse.gohugo.io/t/override-section-url/6197
+    - https://discourse.gohugo.io/t/how-to-translate-sections/9060
+    - https://discourse.gohugo.io/t/content-organization-not-working-in-multilingual-site/4967
+    - https://github.com/gohugoio/hugo/issues/3354
+
 #### Appendix
 
 *   project boilerplate is partially inspired by https://github.com/fspoettel/blaupause
 *   wertgarantie fee calculator: https://wwwapi.serviceeu.com/rt/31d68559-31cf-4794-8ddd-1f93d6bd635c.html
+

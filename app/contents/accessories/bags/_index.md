@@ -1,12 +1,14 @@
 ---
 linkTitle: 'Taschen'
 slug: 'taschen'
+type: 'rubric'
+layout: 'categories'
 
 title: 'Fahrradtaschen'
 description: 'TODO'
 
 menu:
-  - aside
+  - aside_accessories
 
 
 ---

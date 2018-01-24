@@ -1,12 +1,14 @@
 ---
-linkTitle: 'Mountian Bikes'
+linkTitle: 'Mountainbikes'
 slug: 'mountainbikes'
+type: 'rubric'
+layout: 'categories'
 
 title: 'Räder fürs Gelände'
 description: 'TODO'
 
 menu:
-  - aside
+  - aside_bicycles
 
 
 ---
