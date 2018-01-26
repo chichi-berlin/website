@@ -1,6 +1,6 @@
 ---
 linkTitle: 'Service'
-url: 'service'
+slug: 'service'
 
 title: 'Unser Service' 
 description: 'TODO'

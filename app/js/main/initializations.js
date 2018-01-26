@@ -1,5 +1,5 @@
 
-import SideMenu from './lib/side-menu.js';
+import SideMenu from './../lib/side-menu.js';
 
 
 
@@ -55,47 +55,38 @@ const selectors = {
         }, false );
     },
     
+    
     '#side-menu' : function(){
-        let menuEl = this;
+        let menuElement = this;
         
-        const sideMenu = new SideMenu(menuEl, {
+        const sideMenu = new SideMenu(menuElement, {
             // breadcrumbsCtrl : true, // show breadcrumbs
             // initialBreadcrumb : 'all', // initial breadcrumb text
             backCtrl : false, // show back button
             // itemsDelayInterval : 60, // delay between each menu item sliding animation
-            onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+            onItemClick( e, itemName ){
+                // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item]) 
+                window.location.href = e.target.href;
+            }
         });
-        
+
         // mobile menu toggle
         const openMenuCtrl = document.querySelector('.action--open');
         const closeMenuCtrl = document.querySelector('.action--close');
-        
+
         function openMenu() {
-            menuEl.classList.add('menu--open');
+            menuElement.classList.add('menu--open');
             closeMenuCtrl.focus();
         }
         if( openMenuCtrl !== null ){ openMenuCtrl.addEventListener('click', openMenu); }
         function closeMenu() {
-            menuEl.classList.remove( 'menu--open');
+            menuElement.classList.remove( 'menu--open');
             openMenuCtrl.focus();
         }
         if( closeMenuCtrl !== null ){ closeMenuCtrl.addEventListener('click', closeMenu); }
-        
-        // simulate grid content loading
-        var gridWrapper = document.querySelector('.content');
-        function loadDummyData(ev, itemName) {
-            ev.preventDefault();
-            closeMenu();
-            gridWrapper.innerHTML = '';
-            gridWrapper.classList.add('content--loading');
-            setTimeout(function() {
-                gridWrapper.classList.remove( 'content--loading');
-                gridWrapper.innerHTML = '<ul class="products">' + '<li>TODO</li>' + '<ul>';
-            }, 700);
-        }
-        
     },
     
+
     '#insurance-fee-calculator': function(){
         const element = this;
         const { PPIT } = global;
@@ -114,17 +105,4 @@ const selectors = {
 
 
 
-function initialize(){
-    const { document } = window;
-
-    Object.keys(selectors).forEach((selector)=>{
-        document.querySelectorAll(selector).forEach((element)=>{
-            const fn = selectors[selector];
-            fn.call(element);
-        });
-    });
-}
-
-
-
-export { initialize as default };
+export { selectors as default };

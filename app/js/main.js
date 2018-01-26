@@ -2,16 +2,18 @@
 
 
 
+import bind from './lib/bind-events.js'
+import initialize from './lib/selective-initializer.js';
 
-import bindGlobalHandlers from './ui/global-event-handling';
-import selectiveInitializations from './ui/selective-initialization';
+import events from './main/global-event-handlers.js';
+import selectors from './main/initializations.js';
 
 
 
 function main(){
 
-    bindGlobalHandlers();
-    selectiveInitializations();
+    bind( events );
+    initialize( selectors );
     
 }
 

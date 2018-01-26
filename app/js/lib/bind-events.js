@@ -1,13 +1,5 @@
 
-const events = {
-    'click #site' : function( e ){
-        const element = this;
-    }
-};
-
-
-
-function bind(){
+function bind( events = {} ){
     const { document } = window;
     let bindings = {};
 

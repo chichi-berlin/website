@@ -1,6 +1,6 @@
 ---
 linkTitle: 'Impressum'
-url: 'impressum'
+slug: 'impressum'
 
 title: 'Impressum' 
 description: 'TODO'

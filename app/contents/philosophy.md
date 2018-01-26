@@ -1,6 +1,6 @@
 ---
 linkTitle: 'Philosophie'
-url: 'philosophie'
+slug: 'philosophie'
 
 title: 'Firmenphilosophie' 
 description: 'TODO'

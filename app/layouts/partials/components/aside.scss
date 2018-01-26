@@ -7,8 +7,8 @@ $vertical-margin: 65;
 }
 
 .aside-nav {
-    max-width: rem(250);
-    width: 15vw;
+    max-width: rem(300);
+    width: 20vw;
     
     transition: margin-left 0.5s 2s;
     
@@ -21,13 +21,13 @@ $vertical-margin: 65;
     margin-top: rem($vertical-margin);
     height: calc( 100vh - #{rem($vertical-margin + $desktop_header-height_big + $vertical-margin)});
     
-    margin-left: -90%;
+    margin-left: 0;
+    //margin-left: -90%;
     
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     
-    &:hover {
-        margin-left: 0%;
-        transition: margin-left 0.2s;    
-    }
+    //&:hover {
+    //    margin-left: 0;
+    //    transition: margin-left 0.2s;    
+    //}
 }

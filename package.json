@@ -10,8 +10,8 @@
     "build:hugo": "HUGO_ENV='development' hugo",
     "build:copy": "mkdir -p ./app/static/script/vendors/ && cp ./node_modules/jquery/dist/jquery.min.js \"$_\"",
     "build:clean": "rm -rf ./dist ./app/static/style ./app/static/script/*.js* ./app/layouts/partials/svgs",
-    "build": "npm run build:clean; npm run build:webpack; npm run build:hugo",
-    "build:prod": "npm run build:clean; NODE_ENV='production' webpack --config ./.webpack.config; HUGO_ENV='production' hugo --baseURL http://beta.chichi.berlin/"
+    "build": "npm run build:clean; npm run build:copy; npm run build:webpack; npm run build:hugo",
+    "build:prod": "npm run build:clean; npm run build:copy; NODE_ENV='production' webpack --config ./.webpack.config; HUGO_ENV='production' hugo --baseURL http://beta.chichi.berlin/"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",

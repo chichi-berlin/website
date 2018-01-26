@@ -16,6 +16,9 @@
     {{ end }}
 
     {{ partial "head/csp.html" . }}
+    
+    {{ block "head" . }}        
+    {{ end }}
 
     {{ partial "head/static.html" . }}
 </head>

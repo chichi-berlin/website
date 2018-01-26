@@ -1,13 +1,20 @@
 
 // src: https://github.com/codrops/MultiLevelMenu/blob/master/js/main.js
 
+// NOTE: [20180126] this is a customized version of ./../rubric/lib/side-menu.js.
+// +    animation event support has been removed, thus the following stuffing
+
+
+
+const onEndAnimation = function( item, fn ){
+    if( fn && typeof fn === 'function' ) { fn.call(); }
+};
+
 
 
 function SideMenu( el, options = {} ){
     this.el = el;
-    this.options = Object.assign( {}, this.options );
     this.options = Object.assign( this.options, options );
-
     // the menus (<ul>´s)
     this.menus = [].slice.call( this.el.querySelectorAll( '.menu__level' ) );
 
@@ -69,9 +76,9 @@ Object.assign( SideMenu.prototype, {
             self.menusArr.push( menu );
     
             // set current menu class
-            if( pos === self.current_menu ){
-                menuEl.classList.add( 'menu__level--current' );
-            }
+//            if( pos === self.current_menu ){
+//                menuEl.classList.add( 'menu__level--current' );
+//            }
     
             var menu_x = menuEl.getAttribute( 'data-menu' );
             var links = menuEl.querySelectorAll( '.menu__link' );
@@ -156,23 +163,27 @@ Object.assign( SideMenu.prototype, {
                         subMenuEl = self.el.querySelector( 'ul[data-menu="' + submenu + '"]' );
     
                     // check if there's a sub menu for this item
-                    if( submenu && subMenuEl ){
-                        ev.preventDefault();
-                        // open it
-                        self._openSubMenu( subMenuEl, pos, itemName );
-                    }else{
-                        // add class current
-                        var currentlink = self.el.querySelector( '.menu__link--current' );
-                        if( currentlink ){
-                            self.el
-                                .querySelector( '.menu__link--current' )
-                                .classList.remove( 'menu__link--current' );
-                        }
-                        ev.target.classList.add( 'menu__link--current' );
-    
-                        // callback
-                        self.options.onItemClick( ev, itemName );
-                    }
+//                    if( submenu && subMenuEl ){
+//                        ev.preventDefault();
+//                        // open it
+//                        self._openSubMenu( subMenuEl, pos, itemName );
+//                        
+//                        self.options.onItemClick( ev, itemName );
+//                    }else{
+//                        // add class current
+//                        var currentlink = self.el.querySelector( '.menu__link--current' );
+//                        if( currentlink ){
+//                            self.el
+//                                .querySelector( '.menu__link--current' )
+//                                .classList.remove( 'menu__link--current' );
+//                        }
+//                        ev.target.classList.add( 'menu__link--current' );
+//    
+//                        // callback
+//                        
+//                    }
+                    
+                    self.options.onItemClick( ev, itemName );
                 });
             });
         }
