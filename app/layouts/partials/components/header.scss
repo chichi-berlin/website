@@ -1,40 +1,53 @@
 
+.svg {
+    display: inline-block;
+   	position: relative;
+   	width: 100%;
+   	padding-bottom: 100%; 
+   	vertical-align: middle; 
+   	overflow: hidden;
+    
+    svg {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+
 .header-nav {
     background-color: color(brand-pink);
 
-    &[data-state="shrinked"] {
-        .header-nav--inner {
-            height: rem($desktop_header-height_small);
-        }
-    }
-    
     .header-nav--inner {
-        height: rem($desktop_header-height_big);
+        height: 26vh;
+        max-height: rem($desktop_header-height_big);
+                
+        transition: height 0.3s;
         
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
-        
-        transition: height 0.3s;
     }
     
-    .logo-wrap {
-        //height: 70%;
-        //max-width: 23%;
-        //min-width: rem(240);
-        padding-top: rem(12);
-        padding-bottom: rem(12);
-
-        height: 50%;
-        flex-grow: 1;
-        
+    .flow-wrap {
+        transition: height 0.3s;
+        flex: 1 1 auto;
         width: 100%;
-        text-align: center;
+        
+        position: relative;
+        
+        .logo-wrap {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: rem(14) 0 rem(6);
+        }
         
         svg {
             height: 100%;
-            
             .bg {
                 fill: color(brand-black)
             }
@@ -43,27 +56,66 @@
             }
         }
     }
-    
+
     .nav-top--wrap {
         width: 100%;
         
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        
+        flex: 0 1 auto;
     }
     
     .contact {
-        text-align: right;
+        text-align: center;
         margin-left: rem(120);
-        padding-bottom: rem(8);
         
-        color: color(white);
-        font-weight: 600;
+        color: color(black);
+        font-weight: 500;
         line-height: 1.4;
+        
+        padding: rem(4) 0;
         
         * {
             font-weight: inherit;
         }
+    }
+}
+
+
+#site[data-state_header="shrinked"] {
+    
+    .header-nav--inner {
+        height: rem($desktop_header-height_small);
+        flex-flow: row nowrap;
+        align-items: stretch;
+    }
+
+    .flow-wrap {
+        flex: 0 0 auto;
+        width: rem(144);
+        margin-right: rem(60);
+        
+        .logo-wrap {
+            position: static;
+            width: initial;
+            padding: rem(10) 0;
+            text-align: left;
+        }
+        
+        a {
+            
+        }
+    }
+    
+    .contact {
+        padding: 0 0;
+    }
+    
+    .nav-top--wrap {
+        flex: 1 1 100%;
+        width: 100%;
     }
 }

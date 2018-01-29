@@ -1,0 +1,14 @@
+<nav class="component__nav-footer">
+    <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.footer }}
+        <li class="{{ if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }}active{{end}}">
+            <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        
+        <li class="logo__black">
+            {{ partial "svgs/logo_black.html" }}
+        </li>
+    </ul>
+</nav>

@@ -25,7 +25,11 @@
 <body>
 
     {{ $slug := delimit (findRE "(?:\\w)+" .Permalink | last 1) "" }}
-    <div id="site" class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} page--{{ $.Param "name" | default $slug }}">
+    <div id="site" 
+         class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} page--{{ $.Param "name" | default $slug }}"
+         data-state_header="normal"
+         data-state_footer="invisible"
+    >
     
         <header class="header__wrap" id="page-header">
             {{ block "header" . }}

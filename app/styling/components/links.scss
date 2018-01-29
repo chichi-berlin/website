@@ -1,0 +1,47 @@
+
+$underline-thickness: 1;
+
+.component__nav-footer, .component__nav-top {
+    li {
+        a {
+            display: inline-block;
+                    
+            text-decoration: none;
+            
+            transition: color 0.2s ease-in-out 0s;
+    
+            &:after {
+                content: '';
+                display: block;
+                width: 0;
+                height: rem($underline-thickness);
+                background: color(white);
+                transition: width 0.3s ease-in-out 0s;
+            }
+            
+            &:hover, &:focus {
+                color: color(white);
+                
+                &:after {
+                    width: 100%;    
+                }
+            }    
+        }
+        
+        &.active {
+            a {
+                &:hover, &:focus {
+                    color: color(white);
+                    
+                    &:after {
+                        width: 100%;    
+                    }
+                }   
+            }
+        }
+    }
+}
+
+main {
+
+}

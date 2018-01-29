@@ -11,20 +11,31 @@ const selectors = {
     '#page-header-nav' : function(){
         const viewport = window;
         const $site = document.documentElement;
-        const element = this;
+        const { documentElement: $pane = $site } = document;  
+        const element = document.getElementById('site');
         
         let lastKnownOffset = 0;
         let requestedNewFrame = false;
         
         let scrolled = false;
-        const changeHeaderOn = 180;
+        const changeHeaderOn = 280;
+        const changeFooterOn = $pane.scrollHeight - 100;
         
         const scrollPage = ()=>{
-            if ( isScrollingVertical() >= changeHeaderOn ) {
-                element.dataset.state = 'shrinked';
+            const currentScrollingPosition = isScrollingVertical();
+            
+            if ( currentScrollingPosition >= changeHeaderOn ) {
+                element.dataset.state_header = 'shrinked';
             }else{
-                element.dataset.state = 'normal';
+                element.dataset.state_header = 'normal';
             }
+        
+            if ( currentScrollingPosition + global.innerHeight >= changeFooterOn ) {
+                element.dataset.state_footer = 'visible';
+            }else{
+                element.dataset.state_footer = 'invisible';
+            }
+            
             scrolled = false;
         };
         

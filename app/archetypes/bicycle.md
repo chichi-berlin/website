@@ -1,6 +1,9 @@
 ---
+linktitle: ''
+slug: ''
+
 type: 'rubric'
-layout: 'categories'
+
 
 title:
 description: 

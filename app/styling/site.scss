@@ -14,4 +14,32 @@
     @include bp-mobile() {
         @include type(ml);
     }
+    
+    
+    header, footer {
+        ::selection {
+            background-color: color(white);
+            color: color(black);
+            text-shadow: none;
+        }
+        ::-moz-selection {
+            background-color: color(white);
+            color: color(black);
+            text-shadow: none;
+        }
+    }
+    
+    main {
+        ::selection {
+            background-color: color(brand-pink);
+            color: color(white);
+            text-shadow: none;
+        }
+        
+        ::-moz-selection {
+            background-color: color(brand-pink);
+            color: color(white);
+            text-shadow: none;
+        }
+    }
 }

@@ -8,8 +8,22 @@
     
     
     .contents {
+        
         // NOTE: compensate header height
-        padding-top: rem($desktop_header-height_big);
+        &:before {
+            content: '';
+            height: 26vh;
+            display: block;
+            max-height: rem($desktop_header-height_big);
+        }
+        
+        // NOTE: compensate footer height
+        &:after {
+            content: '';
+            height: 9vh;
+            display: block;
+            max-height: rem($desktop_footer-height);
+        }
         
         background-color: color(bg-light);
         

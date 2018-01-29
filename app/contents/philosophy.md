@@ -6,7 +6,7 @@ title: 'Firmenphilosophie'
 description: 'TODO'
 
 menu:
-  footer_col1:
+  footer:
     weight: 1
 ---
 

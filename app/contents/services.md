@@ -8,8 +8,6 @@ description: 'TODO'
 menu:
   top:
     weight: 5
-  footer_col1:
-    weight: 3
     
 heads:
   - 'insurance-fee-calculator'

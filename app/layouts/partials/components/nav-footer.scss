@@ -1,0 +1,41 @@
+.component__nav-footer {
+    ul {
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        li {
+            font-family: $decorative-font-family;
+            @include type(xxl);
+            
+            & ~ * {
+                margin-left: rem(36);
+            }
+
+            
+            &:first-child {
+                order: 1;
+            }
+            
+            &:nth-child(2) {
+                order: 3;
+            }
+            
+            &.logo__black {
+                height: rem(38);
+                width: rem(46);
+                position: relative;
+                
+                order: 2;
+                
+                svg {
+                    position: absolute;
+                    height: 100%;
+                    fill: color(black);
+                }
+            }
+        }
+    }
+}

@@ -107,15 +107,3 @@ address, i, em {
 \::-webkit-input-placeholder, \:-ms-input-placeholder, \:-moz-placeholder {
     color: color(white);
 }
-
-::-moz-selection {
-    background-color: color(brand-pink);
-    color: color(white);
-    text-shadow: none;
-}
-
-::selection {
-    background-color: color(brand-pink);
-    color: color(white);
-    text-shadow: none;
-}

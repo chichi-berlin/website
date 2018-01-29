@@ -10,7 +10,7 @@ body {
     width: 100%;
 }
 
-::selection {
+::selection, ::-moz-selection {
     background-color: color(brand-pink);
     color: color(white)
 }

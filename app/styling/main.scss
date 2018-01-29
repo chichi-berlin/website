@@ -16,6 +16,8 @@
 @import './base/global.scss';
 @import './site.scss';
 
+@import './components/**/*.scss';
+
 @import './../layouts/partials/components/**/*.scss';
 @import './layouts/**/*.scss';
 @import './pages/**/*.scss';

@@ -10,12 +10,6 @@
         li {
             font-family: $decorative-font-family;
             @include type(xxxl);
-            
-            transition: color 0.2s ease-in-out 0s;
-            
-            &:hover, &:focus, &.active {
-                color: color(white);
-            }
         };
     }
 }
