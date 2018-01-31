@@ -4,13 +4,12 @@ description: 'TODO: summary of this article'
 
 draft: false
 
-publishDate: '2018-05-01'
+publishDate: '2017-05-01'
 keywords: 
 
 ---
 
 
-{{< page-section >}}
 ### Headline A
 
 Qui excepturi tempora sint. Quia aut veniam unde inventore. Delectus laboriosam aut ut. Dolorem fuga quos reiciendis quo possimus nam. Eaque ipsum natus blanditiis similique aut ratione quam officiis.
@@ -20,4 +19,3 @@ Amet consequatur nobis quia. Doloribus aperiam sint sed et cupiditate quis. Omni
 Excepturi ut nihil provident aut ut. Eveniet et corporis cum similique ut quia. Aspernatur reiciendis nihil fuga. Qui voluptates odit qui.
 
 Est doloremque odit dolor ipsum architecto ea. Ipsa reiciendis sequi quos quisquam voluptates autem tenetur. Qui doloremque quis magni.
-{{< /page-section >}}

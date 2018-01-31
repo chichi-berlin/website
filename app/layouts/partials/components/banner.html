@@ -1,6 +1,6 @@
 {{ $enabled := default false ($.Site.Data.banner.isEnabled) }}
 {{ if $enabled }}
-<div id="page-banner">
+<div id="page-banner" class="component__banner">
     {{ $.Site.Data.banner.message | markdownify }}
 </div>
 {{ end }}

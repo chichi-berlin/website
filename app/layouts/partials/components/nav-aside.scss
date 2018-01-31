@@ -1,24 +1,28 @@
 .component__nav-aside {
     color: color(white);
-    
-    width: 100%;
+    position: absolute;
     height: 100%;
+    width: 100%;
     
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
     
+    .menu__breadcrumbs {
+        
+    }
+        
     .menu__wrap {
         position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     
     .menu__level {
-        position: absolute;
+        //position: absolute;
         top: 0;
         left: 0;
         visibility: hidden;
-        overflow: hidden;
-        overflow-y: scroll;
         width: calc(100% + #{rem(50)});
         height: 100%;
         margin: 0;
@@ -33,6 +37,8 @@
     .menu__item {
         display: block;
         width: calc(100% - #{rem(50)});
+        
+        font-size: rem(font-size(ml));
     }
     
     .menu__link {
@@ -40,7 +46,7 @@
         position: relative;
         display: block;
         padding: rem(16) rem(40) rem(16) rem(24);
-        color: #bdbdbd;
+        color: color(grey-light);
         -webkit-transition: color 0.1s;
         transition: color 0.1s;
     }
@@ -50,12 +56,14 @@
         position: absolute;
         right: 0;
         padding: rem(0) rem(20);
-        color: #2a2b30;
+        color: color(bg-light);
+        opacity: 0.3;
     }
     
     .menu__link:hover,
     .menu__link[data-submenu]:hover::after {
         color: color(brand-pink);
+        opacity: 1;
     }
     
     .menu__link--current::before {
@@ -179,39 +187,46 @@
     }
     
     .menu__breadcrumbs {
-        font-size: rem(10.4);
+        font-size: rem(font-size(xm));
         line-height: 1;
         position: relative;
         padding: rem(26) rem(39) rem(15.5) rem(26);
-    }
-    
-    .menu__breadcrumbs a {
-        font-weight: bold;
-        display: inline-block;
-        cursor: pointer;
-        vertical-align: middle;
-        letter-spacing: rem(1);
-        text-transform: uppercase;
-        color: color(brand-pink);
-    }
-    
-    .menu__breadcrumbs a:last-child {
-        pointer-events: none;
-    }
-    
-    .menu__breadcrumbs a:hover {
-        color: #8182e0;
-    }
-    
-    .menu__breadcrumbs a:not(:last-child)::after {
-        content: '\2192';
-        display: inline-block;
-        padding: 0 rem(5.2);
-        color: #33353e;
-    }
-    
-    .menu__breadcrumbs a:not(:last-child):hover::after {
-        color: #33353e;
+        
+        a {
+            font-weight: bold;
+            display: inline-block;
+            cursor: pointer;
+            vertical-align: middle;
+            letter-spacing: rem(1);
+            text-transform: uppercase;
+            color: color(brand-pink);
+
+            //&:last-child {
+            //    pointer-events: none;
+            //}
+
+            &:hover {
+                color: color(white);
+            }
+
+            &:not(:last-child)::after {
+                content: '\2192';
+                display: inline-block;
+                padding: 0 rem(5.2);
+                color: color(brand-pink);
+            }
+
+            &:not(:last-child):hover::after {
+                color: color(brand-pink);
+            }
+            
+            &:not(.is-root):before {
+                content: '\2190';
+                display: inline-block;
+                padding: 0 rem(5.2);
+                color: color(brand-pink);
+            }
+        }    
     }
     
     .menu__back {

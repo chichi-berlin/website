@@ -1,0 +1,60 @@
+<nav class="component__nav-aside" id="side-menu">
+    
+    {{ $contentsPath := "./app/contents" }}
+    {{ $section := .Section }}
+    {{ $parent := .Parent }}
+    {{ $currentPage := . }}    
+    
+    <nav class="menu__breadcrumbs" aria-label="You are here">
+        <a href="{{ $parent.URL | relLangURL }}">
+            {{ if $parent.IsHome }}
+                /
+            {{ else }}
+                {{ $parent.Name }}
+            {{ end }}
+        </a>
+    </nav>
+    
+    <div class="menu__wrap">
+        {{ with $.Site.GetPage "section" (printf "%s" $section) }}
+        <ul data-menu="main" class="menu__level {{ if eq . $currentPage }}menu__level--current{{ end }}">
+        {{ range (printf "%s/%s" $contentsPath $section | readDir) }}
+            {{ if .IsDir }}
+            {{ $subSection := .Name }}
+            {{ with $.Site.GetPage "section" (printf "%s/%s" $section $subSection) }}
+            <li class="menu__item">
+                <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
+                   data-submenu="submenu-{{ $subSection }}" 
+                   href="{{ .URL | relLangURL }}">
+                    {{ .LinkTitle }}
+                </a>
+            </li>
+            {{ end }}
+            {{ end }}
+        {{ end }}
+        </ul>
+        {{ end }}
+
+        {{ range (printf "%s/%s" $contentsPath $section | readDir) }}
+            {{ if .IsDir }}
+            {{ $subSection := .Name }}
+            {{ with $.Site.GetPage "section" (printf "%s/%s" $section $subSection) }}
+            <ul data-menu="submenu-{{ $subSection }}" class="menu__level {{ if eq . $currentPage }}menu__level--current{{ end }}">
+            {{ range (printf "%s/%s/%s" $contentsPath $section $subSection | readDir) }}
+                {{ if ne .Name "_index.md" }}                
+                {{ with $.Site.GetPage "page" (printf "%s/%s/%s" $section $subSection .Name) }}
+                <li class="menu__item">
+                    <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
+                       href="{{ .URL | relLangURL }}">
+                        {{ .LinkTitles }}
+                    </a>
+                </li>
+                {{ end }}            
+                {{ end }}
+            {{ end }}
+            </ul>
+            {{ end }}    
+            {{ end }}
+        {{ end }}
+    </div>
+</nav>

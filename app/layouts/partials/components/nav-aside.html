@@ -1,48 +1,51 @@
 <nav class="component__nav-aside" id="side-menu">
+    
+    {{ $contentsPath := "./app/contents" }}
+    {{ $section := .Section }}
+    {{ $parent := .Parent }}
+    {{ $currentPage := . }}    
+    
+    <nav class="menu__breadcrumbs" aria-label="You are here">
+        <a href="{{ $parent.URL | relLangURL }}" class="{{ if $parent.IsHome }}is-root{{ end }}">
+            {{ if $parent.IsHome }}
+                /
+            {{ else }}
+                {{ $parent.Name }}
+            {{ end }}
+        </a>
+    </nav>
+    
     <div class="menu__wrap">
-        {{ $contentsPath := "./app/contents" }}
-        {{ $section := .Section }}
-        {{ $currentPage := . }}
-
-        {{ with $.Site.GetPage "section" (printf "%s" $section ) }}
-        <ul data-menu="main" class="menu__level {{ if eq . $currentPage }}menu__level--current{{ end }}">
-        {{ range (printf "%s/%s" $contentsPath $section | readDir) }}
+        {{ $currentSectionPath := .Dir }}
+        
+        <ul class="menu__level menu__level--current">
+        {{ range (printf "%s/%s" $contentsPath $currentSectionPath | readDir) }}
+            {{ $referredSectionPath := printf "%s%s" $currentSectionPath .Name }}
+            
             {{ if .IsDir }}
-            {{ $subSection := .Name }}
-            {{ with $.Site.GetPage "section" (printf "%s/%s" $section $subSection) }}
-            <li class="menu__item">
-                <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
-                   data-submenu="submenu-{{ $subSection }}" 
-                   href="{{ .URL | relLangURL }}">
-                    {{ .Name }}
-                </a>
-            </li>
-            {{ end }}
-            {{ end }}
-        {{ end }}
-        </ul>
-        {{ end }}
-
-        {{ range (printf "%s/%s" $contentsPath $section | readDir) }}
-            {{ if .IsDir }}
-            {{ $subSection := .Name }}
-            {{ with $.Site.GetPage "section" (printf "%s/%s" $section $subSection) }}
-            <ul data-menu="submenu-{{ $subSection }}" class="menu__level {{ if eq . $currentPage }}menu__level--current{{ end }}">
-            {{ range (printf "%s/%s/%s" $contentsPath $section $subSection | readDir) }}
-                {{ if ne .Name "_index.md" }}                
-                {{ with $.Site.GetPage "page" (printf "%s/%s/%s" $section $subSection .Name) }}
+                {{ with $.Site.GetPage "section" $referredSectionPath }}
                 <li class="menu__item">
-                    <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
+                    <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
+                       data-submenu="submenu--{{ replace $referredSectionPath "/" "-" }}" 
                        href="{{ .URL | relLangURL }}">
-                        {{ .Name }}
+                        {{ .LinkTitle }}
                     </a>
                 </li>
-                {{ end }}            
                 {{ end }}
             {{ end }}
-            </ul>
-            {{ end }}    
+            
+            {{ if in .Name ".md" }}
+                {{ with $.Site.GetPage "page" $referredSectionPath }}
+                <li class="menu__item">
+                    <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
+                       href="{{ .URL | relLangURL }}">
+                        {{ .LinkTitle }}
+                    </a>
+                </li>
+                {{ end }}
             {{ end }}
+            
         {{ end }}
+        </ul>
     </div>
 </nav>

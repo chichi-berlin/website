@@ -2,8 +2,10 @@
 <nav class="component__nav-top">
     <ul>
         {{ $currentPage := . }}
+        {{ $currentRootSection := index (split $currentPage.URL "/") 1 }}
+        
         {{ range .Site.Menus.top }}
-        <li class="{{ if or ($currentPage.IsMenuCurrent "top" .) ($currentPage.HasMenuCurrent "top" .) }}active{{end}}">
+        <li class="{{ if or ($currentPage.IsMenuCurrent "top" .) ($currentPage.HasMenuCurrent "top" .) (in $currentPage.URL .URL) }}active{{end}}">
             <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         </li>
         {{ end }}

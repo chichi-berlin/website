@@ -66,37 +66,6 @@ const selectors = {
         }, false );
     },
     
-    
-    '#side-menu' : function(){
-        let menuElement = this;
-        
-        const sideMenu = new SideMenu(menuElement, {
-            // breadcrumbsCtrl : true, // show breadcrumbs
-            // initialBreadcrumb : 'all', // initial breadcrumb text
-            backCtrl : false, // show back button
-            // itemsDelayInterval : 60, // delay between each menu item sliding animation
-            onItemClick( e, itemName ){
-                // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item]) 
-                window.location.href = e.target.href;
-            }
-        });
-
-        // mobile menu toggle
-        const openMenuCtrl = document.querySelector('.action--open');
-        const closeMenuCtrl = document.querySelector('.action--close');
-
-        function openMenu() {
-            menuElement.classList.add('menu--open');
-            closeMenuCtrl.focus();
-        }
-        if( openMenuCtrl !== null ){ openMenuCtrl.addEventListener('click', openMenu); }
-        function closeMenu() {
-            menuElement.classList.remove( 'menu--open');
-            openMenuCtrl.focus();
-        }
-        if( closeMenuCtrl !== null ){ closeMenuCtrl.addEventListener('click', closeMenu); }
-    },
-    
 
     '#insurance-fee-calculator': function(){
         const element = this;
