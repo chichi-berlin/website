@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'American Typewriter Condensed';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: url('/fonts/american-typewriter-condensed.eot');
   src: local('American Typewriter Condensed'), local('AmericanTypewriterCondensed'), local('AmericanTypewriter-Condensed'),
        url('/fonts/american-typewriter-condensed.eot?#iefix') format('embedded-opentype'),
@@ -11,6 +11,33 @@
        url('/fonts/american-typewriter-condensed.ttf') format('truetype'),
        url('/fonts/american-typewriter-condensed.svg#american-typewriter-condensed') format('svg');
 }
+
+@font-face {
+  font-family: 'American Typewriter Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/american-typewriter-condensed-bold.eot');
+  src: local('American Typewriter Condensed Bold'), local('AmericanTypewriterCondensedBold'), local('AmericanTypewriter-Condensed-Bold'),
+       url('/fonts/american-typewriter-condensed-bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/american-typewriter-condensed-bold.woff2') format('woff2'),
+       url('/fonts/american-typewriter-condensed-bold.woff') format('woff'),
+       url('/fonts/american-typewriter-condensed-bold.ttf') format('truetype'),
+       url('/fonts/american-typewriter-condensed-bold.svg#american-typewriter-condensed-bold') format('svg');
+}
+
+@font-face {
+  font-family: 'American Typewriter Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/american-typewriter-condensed-light.eot');
+  src: local('American Typewriter Condensed Light'), local('AmericanTypewriterCondensedLight'), local('AmericanTypewriter-Condensed-Light'),
+       url('/fonts/american-typewriter-condensed-light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/american-typewriter-condensed-light.woff2') format('woff2'),
+       url('/fonts/american-typewriter-condensed-light.woff') format('woff'),
+       url('/fonts/american-typewriter-condensed-light.ttf') format('truetype'),
+       url('/fonts/american-typewriter-condensed-light.svg#american-typewriter-condensed-light') format('svg');
+}
+
 
 @font-face {
   font-family: 'Libre Franklin';

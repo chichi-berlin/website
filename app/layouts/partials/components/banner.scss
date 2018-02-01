@@ -1,3 +1,29 @@
 .component__banner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     
+    min-height: rem($desktop_header-height_row-thin);
+    
+    background-color: color(brand-pink);
+    color: color(black);
+    
+    @include type(m);
+    line-height: 1.4;
+    font-weight: 600;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+    .edge-spacer--h {
+        width: 100%;
+        text-align: left;    
+    }
+    
+    a {
+        text-decoration: underline;
+    }
 }

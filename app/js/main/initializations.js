@@ -8,7 +8,8 @@ const global = window;
 
 
 const selectors = {
-    '#page-header-nav' : function(){
+    '#page-header-inner' : function(){
+        const { offset } = this.dataset;
         const viewport = window;
         const $site = document.documentElement;
         const { documentElement: $pane = $site } = document;  
@@ -18,16 +19,28 @@ const selectors = {
         let requestedNewFrame = false;
         
         let scrolled = false;
-        const changeHeaderOn = 280;
+        let changeHeaderOn = 0;
         const changeFooterOn = $pane.scrollHeight - 100;
+        
+        if( offset === 'viewport' ){
+            changeHeaderOn = global.innerHeight;
+        }else{
+            const offsetNumber = parseInt( offset );
+            if( offsetNumber + '' !== 'NaN' ){
+                changeHeaderOn = offsetNumber;
+            }
+        }
+        changeHeaderOn = changeHeaderOn - 84;
         
         const scrollPage = ()=>{
             const currentScrollingPosition = isScrollingVertical();
             
-            if ( currentScrollingPosition >= changeHeaderOn ) {
-                element.dataset.state_header = 'shrinked';
-            }else{
-                element.dataset.state_header = 'normal';
+            if( changeHeaderOn > 0 ){
+                if ( currentScrollingPosition >= changeHeaderOn ) {
+                    element.dataset.state_header = 'untouched';
+                }else{
+                    element.dataset.state_header = 'changed';
+                }                
             }
         
             if ( currentScrollingPosition + global.innerHeight >= changeFooterOn ) {

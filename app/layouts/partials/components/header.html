@@ -1,25 +1,33 @@
-<div class="header-nav" id="page-header-nav">
-    <div class="edge-spacer--h header-nav--inner">
-        <div class="flow-wrap">
-            <div class="logo-wrap">
-                <a href="/">
-                    {{ partial "svgs/logo.html" ( dict "classes" ( slice "logo" ) ) }}
-                </a>
+<div id="page-header-inner" class="header__container" data-offset="{{ index $.Params "scroll-offset-coordinate" | default 0 }}">
+    <div class="header__inner">
+        
+        <div class="row-wrap__contacts">
+            <div class="row-wrap__contacts--inner edge-spacer--h">
+                <ul class="contact">
+                    <li><a href="/">Fahrradgeschäft CHICHI</a></li>
+                    <li>
+                        {{ partial "svgs/icon_phone.html" ( dict "classes" ( slice "icon" "icon--phone" ) ) }}
+                        <a href="tel:00493062986005">
+                            Tel.: 030 / 62986005
+                        </a>
+                    </li>
+                    <li>
+                        {{ partial "svgs/icon_clock.html"  ( dict "classes" ( slice "icon" "icon--clock" ) ) }}
+                        10 bis 19 Uhr | Do + So geschlossen
+                    </li>
+                    <li>
+                        {{ partial "svgs/icon_address.html"  ( dict "classes" ( slice "icon" "icon--address" ) ) }}
+                        <address>
+                            Flughafenstraße 50 | 12053 Berlin
+                        </address>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div class="nav-top--wrap">
+        
+        <div class="row-wrap__nav">
             {{ partial "components/nav-top.html" . }}
-            
-            <div class="contact">
-                <p>10:00 - 19:00 Uhr</p>
-                <p>Do + So geschlossen</p>
-                <a href="tel:00493062986005">Tel 030 / 62986005</a>
-                <address>
-                    Flughafenstraße. 50<br>
-                    12053 Berlin
-                </address>
-            </div>
         </div>
+        
     </div>
 </div>

@@ -15,12 +15,12 @@ $underline-thickness: 1;
                 display: block;
                 width: 0;
                 height: rem($underline-thickness);
-                background: color(white);
+                background: color(black);
                 transition: width 0.3s ease-in-out 0s;
             }
             
             &:hover, &:focus {
-                color: color(white);
+                color: color(black);
                 
                 &:after {
                     width: 100%;    
@@ -30,7 +30,7 @@ $underline-thickness: 1;
         
         &.active {
             a {
-                color: color(white);
+                color: color(black);
                 &:after {
                     width: 100%;    
                 }

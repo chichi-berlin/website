@@ -9,6 +9,7 @@
         li {
             font-family: $decorative-font-family;
             @include type(xxl);
+            font-weight: 400;
             
             & ~ * {
                 margin-left: rem(36);

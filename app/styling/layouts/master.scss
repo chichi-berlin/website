@@ -1,7 +1,8 @@
 .layout--master {
     
-    .header__wrap {
+    .header__flow {
         position: fixed;
+        z-index: 500;
         top: 0;
         width: 100%;
     }
@@ -12,9 +13,9 @@
         // NOTE: compensate header height
         &:before {
             content: '';
-            height: 26vh;
+            height: percentageDesktopPageHeight($desktop_header-height_min);
             display: block;
-            max-height: rem($desktop_header-height_big);
+            min-height: rem($desktop_header-height_min);
         }
         
         // NOTE: compensate footer height
@@ -69,7 +70,10 @@
     }
     
     
-    .footer__wrap {
+    .footer__flow {
+        position: fixed;
+        z-index: 500;
+        top: 100vh;
         width: 100%;
     }
 }

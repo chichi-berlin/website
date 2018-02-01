@@ -1,4 +1,11 @@
 {{ define "main" }}
-<div class="key-visual" style="background-image: url({{ .Param "key-visual-url" }})"></div>
+<div class="key-visual" style="background-image: url({{ .Param "key-visual-url" }})">
+
+    <div class="logo__white">
+        {{ partial "svgs/logo_mono.html" }}
+    </div>
+
+    {{ partial "components/banner.html" . }}
+</div>
 {{ .Content }}
 {{ end }}

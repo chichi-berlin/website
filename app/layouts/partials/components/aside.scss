@@ -18,10 +18,10 @@
     min-width: rem(200);  
     
     margin-top: rem($desktop_side-gap);
-    height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_big + $desktop_side-gap)});
+    height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_min + $desktop_side-gap)});
     
-    margin-left: 0;
-    //margin-left: -90%;
+    //margin-left: 0;
+    margin-left: -90%;
     
     position: relative;
     
@@ -36,7 +36,7 @@
     &[data-state_header="shrinked"] {
 
         .aside-nav {
-            height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_small + $desktop_side-gap)});
+            height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_min + $desktop_side-gap)});
         }
     }
 
@@ -44,7 +44,7 @@
     &[data-state_footer="visible"] {
 
         .aside-nav {
-            height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_small + $desktop_footer-height + $desktop_side-gap)});
+            height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_min + $desktop_footer-height + $desktop_side-gap)});
         }
     }
 }

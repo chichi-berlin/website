@@ -1,14 +1,33 @@
 .page--home {
     
     .contents:before {
-        height: rem($desktop_header-height_small);
+        height: percentageDesktopPageHeight($desktop_header-height_row-thin);
+        min-height: rem($desktop_header-height_row-thin);
     }
     
     .key-visual {
         width: 100%;
-        height: calc(100vh - #{rem($desktop_header-height_small)});
+        height: calc(100vh - #{rem($desktop_header-height_row-thin)});
         
         background-repeat: no-repeat;
         background-size: cover;
+        
+        position: relative;
+        
+        @include flex-center;
+    }
+    
+    .logo__white {
+        min-height: rem(380);
+        height: 42.2%;
+        
+        width: 100%;
+        text-align: center;
+        
+        svg {
+            display: inline;
+            height: 100%;
+            fill: color(white);
+        }
     }
 }

@@ -25,5 +25,9 @@
 }
 
 @function percentageDesktopPageWidth($pixels) {
-    @return #{$pixels * 100 / $desktop_max-page-width}
+    @return $pixels / $desktop_max-page-width * 100%;
+}
+
+@function percentageDesktopPageHeight($pixels) {
+    @return $pixels / 900 * 100%;
 }

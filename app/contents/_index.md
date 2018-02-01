@@ -10,6 +10,7 @@ keywords:
  - 'Werkstatt' 
 
 key-visual-url: '/media/images/pictures/key-visual_landing-page.jpg'
+scroll-offset-coordinate: 'viewport'
 
 ---
 

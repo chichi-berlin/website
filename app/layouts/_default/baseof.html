@@ -27,11 +27,11 @@
     {{ $slug := delimit (findRE "(?:\\w)+" .Permalink | last 1) "" }}
     <div id="site" 
          class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} page--{{ $.Param "name" | default $slug }}"
-         data-state_header="normal"
+         data-state_header="{{ if isset $.Params "scroll-offset-coordinate" }}changed{{ else }}untouched{{ end }}"
          data-state_footer="invisible"
     >
     
-        <header class="header__wrap" id="page-header">
+        <header class="header__flow" id="page-header">
             {{ block "header" . }}
             {{ partial "components/header.html" . }}
             {{ end }}
@@ -42,13 +42,12 @@
         
 
         <main class="contents" id="page-contents">
-            {{ partial "components/banner.html" . }}
             {{ block "main" . }}
             {{ .Content }}
             {{ end }}
         </main>
     
-        <footer class="footer__wrap" id="page-footer">
+        <footer class="footer__flow" id="page-footer">
         {{ block "footer" . }}
         {{ partial "components/footer.html" . }} 
         {{ end }}
