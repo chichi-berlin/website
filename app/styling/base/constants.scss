@@ -61,7 +61,7 @@ $mobile_side-padding: 20;
 $mobile_header-height: 65;
 
 $desktop_max-page-width: breakpoint(5);
-$desktop_side-gap: 40;
+$desktop_aside-gap: 40;
 
 $desktop_header-height_row-thick: 50;
 $desktop_header-height_row-thick_rel: 5.56;
@@ -69,6 +69,7 @@ $desktop_header-height_row-thin: 34;
 $desktop_header-height_row-thin_rel: 3.78;
 $desktop_header-height_min: $desktop_header-height_row-thick + $desktop_header-height_row-thin;
 
-$desktop_footer-height: 100;
+$desktop_footer-height_rel: 9;
+$desktop_footer-height_max: 100;
 
 $radius: 2;

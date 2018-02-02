@@ -3,8 +3,8 @@
 .footer-nav {
     position: relative;
     
-    height: 9vh;
-    max-height: rem($desktop_footer-height);
+    height: $desktop_footer-height_rel * 1vh;
+    max-height: rem($desktop_footer-height_max);
     width: 100%;
     
     .footer-nav-wrap {

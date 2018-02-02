@@ -7,13 +7,19 @@
         width: 100%;
     }
     
+    .aside__flow {
+        position: fixed;
+        z-index: 400;
+        right: 100vw;
+        height: 100vh;
+    }
     
     .contents {
         
         // NOTE: compensate header height
         &:before {
             content: '';
-            height: percentageDesktopPageHeight($desktop_header-height_min);
+            height: ($desktop_header-height_row-thick_rel + $desktop_header-height_row-thin_rel) * 1vh;
             display: block;
             min-height: rem($desktop_header-height_min);
         }
@@ -21,9 +27,9 @@
         // NOTE: compensate footer height
         &:after {
             content: '';
-            height: 9vh;
+            height: $desktop_footer-height_rel * 1vh;
             display: block;
-            max-height: rem($desktop_footer-height);
+            max-height: rem($desktop_footer-height_max);
         }
         
         background-color: color(bg-light);

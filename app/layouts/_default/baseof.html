@@ -35,12 +35,11 @@
             {{ block "header" . }}
             {{ partial "components/header.html" . }}
             {{ end }}
-            
-            {{ block "aside" . }}        
-            {{ end }}
         </header>
-        
-
+    
+        {{ block "aside" . }}        
+        {{ end }}
+    
         <main class="contents" id="page-contents">
             {{ block "main" . }}
             {{ .Content }}

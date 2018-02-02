@@ -1,50 +1,75 @@
 
 .component__aside {
-    display: inline-block;
-    height: 0;
-    position: absolute;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    
+    max-width: rem(300);
+    min-width: rem(200);  
+    width: 20vw;
+    height: 100vh;
+    
+    // NOTE: compensate header height
+    &:before {
+        content: '';
+        height: ($desktop_header-height_row-thick_rel + $desktop_header-height_row-thin_rel) * 1vh;
+        display: block;
+        min-height: rem($desktop_header-height_min);
+    }
+    
+    // NOTE: compensate footer height
+    &:after {
+        content: '';
+        height: 0;
+        display: block;
+        max-height: 0;
+        
+        transition: all 0.18s;
+    }
 }
 
 .aside-nav {
-    max-width: rem(300);
-    width: 20vw;
-    
-    transition: margin-left 0.35s 0.6s, height 0.35s;
+    flex-grow: 1;
+    transition: left 0.35s 0.6s;
     
     border-top-right-radius: rem(5);
     border-bottom-right-radius: rem(5);
     
     background-color: color(bg-dark);
-    min-width: rem(200);  
     
-    margin-top: rem($desktop_side-gap);
-    height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_min + $desktop_side-gap)});
+    margin-top: rem($desktop_aside-gap);
+    margin-bottom: rem($desktop_aside-gap);
     
-    //margin-left: 0;
-    margin-left: -90%;
+    //left: 100%;
+    left: 10%;
     
     position: relative;
     
     &:hover {
-        margin-left: 0;
-        transition: margin-left 0.2s;    
+        left: 100%;
+        transition: left 0.2s;    
     }
 }
 
 
 #site{
-    &[data-state_header="shrinked"] {
+    &[data-state_header="changed"] {
 
-        .aside-nav {
-            height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_min + $desktop_side-gap)});
-        }
     }
 
 
     &[data-state_footer="visible"] {
 
-        .aside-nav {
-            height: calc( 100vh - #{rem($desktop_side-gap + $desktop_header-height_min + $desktop_footer-height + $desktop_side-gap)});
+        .component__aside {
+            // NOTE: compensate footer height
+            &:after {
+                content: '';
+                display: block;
+                height: $desktop_footer-height_rel * 1vh;
+                max-height: rem($desktop_footer-height_max);
+            }
         }
     }
 }

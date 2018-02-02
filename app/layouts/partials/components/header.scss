@@ -14,7 +14,7 @@
     } 
     
     .row-wrap__contacts {
-        height: percentageDesktopPageHeight($desktop_header-height_row-thin);
+        height: $desktop_header-height_row-thin_rel * 1vh;
         min-height: rem($desktop_header-height_row-thin);
         
         background-color: color(bg-dark);
@@ -62,7 +62,7 @@
     }
     
     .row-wrap__nav {
-        height: percentageDesktopPageHeight($desktop_header-height_row-thick);
+        height: $desktop_header-height_row-thick_rel * 1vh;
         min-height: rem($desktop_header-height_row-thick);
         
         background-color: color(brand-pink);
