@@ -7,6 +7,8 @@ layout: 'list'
 title: 'Blog' 
 description: 'TODO'
 
+itemsPerPage: 5
+
 menu:
   top:
     weight: 6

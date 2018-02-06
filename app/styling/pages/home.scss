@@ -19,14 +19,18 @@
     
     .logo__white {
         min-height: rem(380);
-        height: 42.2%;
+        height: 42.2vh;
         
         width: 100%;
         text-align: center;
         
+        padding-left: rem($mobile_side-padding * 2);
+        padding-right: rem($mobile_side-padding * 2);
+        
         svg {
             display: inline;
             height: 100%;
+            max-width: 100%;
             fill: color(white);
         }
     }

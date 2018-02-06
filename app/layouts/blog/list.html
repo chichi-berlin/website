@@ -1,4 +1,37 @@
 {{ define "main" }}
-<h1>hello from type:blog & layout:list</h1>
-{{ .Content }}
+
+{{ $itemsPerPage := index $.Params "itemsPerPage" | default 5 }}
+{{ $articlesSectionPath := printf "%s%s" .Dir "articles" }}
+{{ $articles := $.Site.GetPage "section" $articlesSectionPath }}
+
+{{ if $articles }}
+{{ $paginator := .Paginate ($articles.Pages.ByDate.Reverse) $itemsPerPage }}
+<section class="edge-spacer--h">
+
+    <h1>{{ .Title }}</h1>
+
+    <ul>
+        {{ range $paginator.Pages }}
+        <li>
+            {{ partial "components/article-preview.html" . }}
+        </li>
+        {{ end }}
+    </ul>
+    
+    <div>
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL | relLangURL }}">← <span>Ältere Einträge</span></a>
+        {{ end }}
+        
+        {{ if gt $paginator.TotalPages 1 }}
+        <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+        {{ end }}
+        
+        {{ if $paginator.HasPrev}}
+        <a href="{{ $paginator.Prev.URL | relLangURL }}"><span>Neuere Einträge</span> →</a>
+        {{ end }}
+    </div>
+    
+</section>
+{{ end }}
 {{ end }}

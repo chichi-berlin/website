@@ -1,5 +1,5 @@
 ---
-linkTitle: 'Artikel'
+url: '/404'
 slug: 'artikel'
 
 ---

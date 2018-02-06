@@ -1,5 +1,17 @@
 {{ define "main" }}
-<div class="edge-spacer--h">
-    {{ .Content }}
-</div>
+<section class="edge-spacer--h">
+    
+    {{ partial "components/article.html" . }}
+    
+    <div>
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .PrevInSection.LinkTitle }}</span></a>
+        {{ end }}
+
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink | relLangURL }}"><span>{{ truncate 20 "..." .NextInSection.LinkTitle }}</span> →</a>
+        {{ end }}
+    </div>
+
+</section>
 {{ end }}

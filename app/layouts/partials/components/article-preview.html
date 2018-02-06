@@ -1,0 +1,15 @@
+<article class="component__article--preview">
+    <h2>
+        <a title="{{ .Title }}"
+           href="{{ .URL | relLangURL }}">
+            {{ .Title }}
+        </a>
+    </h2>
+    <h3>
+        {{ printf "%02d.%02d.%d" .PublishDate.Day .PublishDate.Month .PublishDate.Year }}
+    </h3>
+    
+    <div>
+        {{ truncate 250 "..." .Content | replaceRE "<h[^>]+>(.*)</h[^>]+>" "" | safeHTML }}
+    </div>
+</article>
