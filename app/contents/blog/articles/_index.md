@@ -1,5 +1,5 @@
 ---
 url: '/404'
-slug: 'artikel'
+section: 'artikel'
 
 ---

@@ -19,7 +19,10 @@ summaryLength:              70
   
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = 'page', 'home', 'section', 'taxonomy', 'taxonomyTerm', 'RSS', 'sitemap', 'robotsTXT', '404'
-disableKinds: []
+disableKinds: [
+#    'taxonomy', 
+#    'taxonomyTerm'
+]
 outputs: 
     section: [ 'html' ]
 
@@ -98,6 +101,7 @@ languages:
     languageName: 'Deutsch'
     languageCode: 'de'
     permalinks:
+      tags: '/blog/tags/:slug'
 #      bicycles:     '/fahrraeder/:slug/'
 #      parts:        '/komponenten/:slug/'
 #      accessories:  '/:sections/:slug/'
@@ -106,8 +110,10 @@ languages:
 # Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
 preserveTaxonomyNames:      false
 taxonomies:
-  - category:               'categories'
-  - tag:                    'tags'
+  tag:    'tags'
+#  bicycle:      'bicycles'
+#  part:         'parts'
+#  accessory:    'accessories'
   
 # see https://gohugo.io/templates/menu-templates/
 SectionPagesMenu:           ''

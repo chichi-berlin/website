@@ -1,19 +1,18 @@
 {{ define "main" }}
 
 {{ $itemsPerPage := index $.Params "itemsPerPage" | default 5 }}
-{{ $articlesSectionPath := printf "%s%s" .Dir "articles" }}
-{{ $articles := $.Site.GetPage "section" $articlesSectionPath }}
+{{ $articleList := .Data.Pages }}
 
-{{ if $articles }}
-{{ $paginator := .Paginate ($articles.Pages.ByDate.Reverse) $itemsPerPage }}
+{{ $paginator := .Paginate ($articleList.ByDate.Reverse) $itemsPerPage }}
 <section class="edge-spacer--h">
 
-    <h1>{{ .Title }}</h1>
+    <h1>{{ i18n "tag" 1 }}: {{ .Title }}</h1>
 
     <div class="row-2-cols">
         <article>
+        {{ if gt (len $articleList) 0 }}
             <ul>
-                {{ range $paginator.Pages }}
+                {{ range $articleList }}
                 <li>
                     {{ partial "components/article-preview.html" . }}
                 </li>
@@ -21,13 +20,13 @@
             </ul>
             
             {{ partial "components/article-nav.html" $paginator }}
+        {{ else }}
+            {{ i18n "no-article" }}
+        {{ end }}
         </article>
         
         {{ partial "components/blog-sidebar.html" . }}
     </div>
     
-        
-    
 </section>
-{{ end }}
 {{ end }}

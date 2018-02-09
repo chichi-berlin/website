@@ -1,12 +1,14 @@
 ---
 Title: 'Article 6'
 description: 'TODO: summary of this article'
+publishDate: '2017-06-01'
+keywords:
+  - foo
 
 draft: false
 
-publishDate: '2017-05-01'
-keywords: 
-
+tags:
+  - tips
 ---
 
 

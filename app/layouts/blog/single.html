@@ -1,17 +1,37 @@
 {{ define "main" }}
+
+{{ $articles := .Parent.Pages.ByDate.Reverse }}
+{{ $firstArticle := index (first 1 $articles) 0 }}
+{{ $lastArticle := index (last 1 $articles) 0 }}
+
+
 <section class="edge-spacer--h">
     
-    {{ partial "components/article.html" . }}
+    <h1>{{ .Title }}</h1>
     
-    <div>
-        {{ if .PrevInSection }}
-        <a href="{{ .PrevInSection.Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .PrevInSection.LinkTitle }}</span></a>
-        {{ end }}
-
-        {{ if .NextInSection }}
-        <a href="{{ .NextInSection.Permalink | relLangURL }}"><span>{{ truncate 20 "..." .NextInSection.LinkTitle }}</span> →</a>
-        {{ end }}
+    <div class="row-2-cols">
+        <article class="">
+            <div class="article--content">
+                {{ .Content}}
+            </div>
+            
+            <nav>
+                {{ with .NextInSection }}
+                {{ if ne . $firstArticle }}
+                <a class="next" href="{{ .Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .LinkTitle }}</span></a>
+                {{ end }}
+                {{ end }}
+    
+                {{ with .PrevInSection }}
+                {{ if ne . $lastArticle }}
+                <a class="prev" href="{{ .Permalink | relLangURL }}"><span>{{ truncate 20 "..." .LinkTitle }}</span> →</a>
+                {{ end }}
+                {{ end }}
+            </nav>
+        </article>
+        
+        {{ partial "components/blog-sidebar.html" . }}
     </div>
-
+    
 </section>
 {{ end }}

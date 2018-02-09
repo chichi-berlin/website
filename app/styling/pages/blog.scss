@@ -1,0 +1,16 @@
+.section--blog, .section--tags {
+    
+    .contents {
+        
+        .row-2-cols {
+            article {
+                flex-grow: 1;
+            }    
+        }
+        
+        .component__blog-sidebar {
+            max-width: rem(350);
+            margin-left: rem(spacing(4));
+        }
+    }
+}

@@ -4,6 +4,7 @@ import SideMenu from './../lib/side-menu.js';
 
 
 const global = window;
+const FOOTER_SCROLL_THRESHOLD = 100;
 
 
 
@@ -20,12 +21,12 @@ const selectors = {
         
         let scrolled = false;
         let changeHeaderOn = 0;
-        const changeFooterOn = $pane.scrollHeight - 100;
-        
+        let changeFooterOn = $pane.scrollHeight - FOOTER_SCROLL_THRESHOLD;
+       
         if( offset === 'viewport' ){
             changeHeaderOn = global.innerHeight;
         }else{
-            const offsetNumber = parseInt( offset );
+            const offsetNumber = parseInt( offset, 10 );
             if( offsetNumber + '' !== 'NaN' ){
                 changeHeaderOn = offsetNumber;
             }
@@ -42,7 +43,7 @@ const selectors = {
                     element.dataset.state_header = 'changed';
                 }                
             }
-        
+
             if ( currentScrollingPosition + global.innerHeight >= changeFooterOn ) {
                 element.dataset.state_footer = 'visible';
             }else{
@@ -77,6 +78,8 @@ const selectors = {
             }
             
         }, false );
+        
+        scrollPage();
     },
     
 

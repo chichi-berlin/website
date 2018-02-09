@@ -1,0 +1,20 @@
+back-to-list:
+  other: 'Zurück zur Liste'
+back-to-overview:
+  other: 'Zurück zur Übersicht'
+
+newer-articles:
+  other: 'Neuere Beiträge'
+
+older-articles:
+  other: 'Ältere Beiträge'
+
+news:
+  other: 'Neuigkeiten'
+  
+tag:
+  one: 'Kategorie'
+  other: 'Kategorien'
+
+error.no-article:
+  other: 'Kein Artikel zu dieser Kategorie vorhanden.'
