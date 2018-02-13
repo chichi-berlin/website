@@ -1,5 +1,6 @@
 ---
+
 type: 'rubric'
-layout: 'categories'
+
 
 ---
