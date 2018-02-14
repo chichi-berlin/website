@@ -17,9 +17,12 @@
                     </li>
                     <li>
                         {{ partial "svgs/icon_address.html"  ( dict "classes" ( slice "icon" "icon--address" ) ) }}
-                        <address>
-                            Flughafenstraße 50 | 12053 Berlin
-                        </address>
+                        {{ $mapPage := $.Site.GetPage "page" "map" }}
+                        <a href="{{ $mapPage.URL | relLangURL }}">
+                            <address>
+                                Flughafenstraße 50 | 12053 Berlin
+                            </address>
+                        </a>
                     </li>
                 </ul>
             </div>

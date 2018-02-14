@@ -1,14 +1,16 @@
 ---
-linkTitle: 'Individueller Aufbau / Custom'
-slug: 'custom-raeder'
+
 type: 'rubric'
 layout: 'categories'
 
-title: 'Individueller Aufbau / Custom'
+linkTitle: 'Individueller Aufbau'
+slug: 'individueller-aufbau'
+
+title: 'Individueller Aufbau'
 description: 'TODO'
 
+weight: 9
 menu:
   - aside_bicycles
-
 
 ---

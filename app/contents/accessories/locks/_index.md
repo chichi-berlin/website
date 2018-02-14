@@ -1,14 +1,16 @@
 ---
-linkTitle: 'Schlösser'
-slug: 'schloesser'
+
 type: 'rubric'
 layout: 'categories'
 
-title: 'Fahrradschlösser'
+linkTitle: 'Schlöser'
+slug: 'schloesser'
+
+title: 'Schlöser'
 description: 'TODO'
 
+weight: 8
 menu:
-  - aside_accessories
-
+  - aside_accessories  
 
 ---

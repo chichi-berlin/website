@@ -1,14 +1,16 @@
 ---
-linkTitle: 'Rennräder / Gravelbikes'
-slug: 'rennraeder'
+
 type: 'rubric'
 layout: 'categories'
 
-title: 'Rennräder'
+linkTitle: 'Rennräder & Gravelbikes'
+slug: 'rennraeder'
+
+title: 'Rennräder & Gravelbikes'
 description: 'TODO'
 
+weight: 2
 menu:
   - aside_bicycles
-
 
 ---

@@ -1,14 +1,16 @@
 ---
-linkTitle: 'Tour / Vielfahrer'
-slug: 'tourenraeder'
+
 type: 'rubric'
 layout: 'categories'
 
-title: 'Tourenräder'
+linkTitle: 'Tour & Vielfahrer'
+slug: 'tourenraeder'
+
+title: 'Tour & Vielfahrer'
 description: 'TODO'
 
+weight: 1
 menu:
   - aside_bicycles
-
 
 ---

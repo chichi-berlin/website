@@ -15,8 +15,27 @@ heads:
 ---
 
 
-TODO: sections showing services die wir anbieten
+### Werkstatt
+
++   Reparaturen
++   Inspektion
++   Unfallgutachten / Kostenvoranschläge
++   Optimierung
++   Laufradbau
++   Wunschradbau / Custom build
 
 
+### Versicherung
 
 {{< insurance-fee-calculator >}}
+
+
+### Beratung entsprechend individueller Anforderungen an Rad und Ausstattung
+
++   Materialien
++   Rahmengeometrie
++   Sitzposition
++   Einsatzzweck
+
+
+### Kostenlose Erstinspektion in den ersten 4 Monaten für bei uns gekaufte Neuräder
