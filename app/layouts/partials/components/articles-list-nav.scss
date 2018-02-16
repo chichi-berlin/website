@@ -1,0 +1,24 @@
+.component__articles-list-nav {
+    margin-top: rem(45);
+    display: flex;
+    justify-content: space-between;    
+    
+    color: color(grey-dark);
+    font-weight: 300;
+    
+    & > * {
+        width: calc(100% / 3);
+        text-align: center;
+        display: block;    
+        
+        &:first-child {
+            text-align: left;
+        }
+        
+        &:last-child {
+            text-align: right;
+        }
+    }
+    
+    
+}

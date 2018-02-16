@@ -8,10 +8,13 @@
 {{ $paginator := .Paginate ($articles.Pages.ByDate.Reverse) $itemsPerPage }}
 <section class="edge-spacer--h">
 
-    <h1>{{ .Title }}</h1>
-
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with $.Params.subtitle }}
+    <p class="page-subtitle">{{ . }}</p>
+    {{ end }}
+    
     <div class="row-2-cols">
-        <article>
+        <article class="row--left">
             <ul>
                 {{ range $paginator.Pages }}
                 <li>
@@ -20,13 +23,11 @@
                 {{ end }}
             </ul>
             
-            {{ partial "components/article-nav.html" $paginator }}
+            {{ partial "components/articles-list-nav.html" $paginator }}
         </article>
         
         {{ partial "components/blog-sidebar.html" . }}
     </div>
-    
-        
     
 </section>
 {{ end }}

@@ -15,7 +15,7 @@
                 {{ .Content}}
             </div>
             
-            <nav>
+            <nav class="component__article-nav">
                 {{ with .NextInSection }}
                 {{ if ne . $firstArticle }}
                 <a class="next" href="{{ .Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .LinkTitle }}</span></a>

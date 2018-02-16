@@ -1,0 +1,77 @@
+.component__blog-sidebar {
+    
+    .go-up {
+        color: color(grey-dark);
+        font-weight: 300;
+        margin-bottom: rem(26);
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+    }
+    
+    h3 {
+        text-align: center;
+        margin-bottom: rem(20);
+    
+        @include type(l);
+        font-weight: 300;
+        text-transform: uppercase;
+        
+        
+        span {
+            position: relative;
+            &:after {
+                content: '';
+                display: inline;
+                position: absolute;
+                height: rem(1);
+                width: 100%;
+                background-color: rgba( color(brand-pink), 0.5);
+                bottom: rem(-4);
+                left: 0;
+            }
+        }
+    }
+    
+    .news, .tags {
+        @include type(ml);       
+        
+        a {
+            text-decoration: underline;
+            
+            transition: all 0.2s;
+            
+            &:hover, &:focus {
+                text-decoration: none;
+                background-color: rgba( color(brand-pink), 0.8);
+                color: color(white);
+            }
+        }
+    }
+
+    
+    .news {
+        padding: rem(spacing(2));
+        background-color: color(grey);
+        //border: rem(1) rgba( color(grey-light), 0.2) solid; 
+
+    }
+    
+    .tags {
+        margin-top: rem(46);
+        text-align: center;
+        
+        ul {
+            display: inline-block;            
+        }
+        
+        li {
+            text-align: left;
+            
+            & ~ li {
+                margin-top: rem(6);
+            }
+        }
+        
+    }
+}

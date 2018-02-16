@@ -15,6 +15,9 @@ news:
 tag:
   one: 'Kategorie'
   other: 'Kategorien'
+  
+read-more:
+  other: 'weiterlesen'
 
 error.no-article:
   other: 'Kein Artikel zu dieser Kategorie vorhanden.'

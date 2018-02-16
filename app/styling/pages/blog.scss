@@ -3,14 +3,22 @@
     .contents {
         
         .row-2-cols {
-            article {
+            .row--left {
                 flex-grow: 1;
+                
+                ul > li {
+                    
+                    & ~ *{
+                        margin-top: rem(spacing(6))
+                    }
+                    
+                }
             }    
         }
         
         .component__blog-sidebar {
             max-width: rem(350);
-            margin-left: rem(spacing(4));
+            margin-left: rem(spacing(10));
         }
     }
 }

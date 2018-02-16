@@ -1,23 +1,24 @@
 @charset "utf-8";
 
-@import './base/functions.scss';
-@import './base/mixins.scss';
+@import 'lib/functions.scss';
+@import 'lib/mixins.scss';
 
-@import './base/constants.scss';
-@import './base/webfonts.scss';
+@import './constants.scss';
+@import 'lib/webfonts.scss';
 
-@import './base/utilities.scss';
-@import './base/animations.scss';
+@import 'lib/utilities.scss';
+@import 'lib/animations.scss';
 
-@import './base/layouting.scss';
-@import './base/type.scss';
+@import 'lib/layouting.scss';
+@import 'lib/type.scss';
+@import 'lib/buttons.scss';
 
-@import './base/normalize.scss';
-@import './base/global.scss';
+@import 'lib/normalize.scss';
+@import 'lib/global.scss';
 @import './site.scss';
 
 @import './components/**/*.scss';
 
-@import './../layouts/partials/components/**/*.scss';
 @import './layouts/**/*.scss';
 @import './pages/**/*.scss';
+@import './../layouts/partials/components/**/*.scss';

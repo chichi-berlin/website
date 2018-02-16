@@ -4,8 +4,10 @@ slug: 'blog'
 type: 'blog'
 layout: 'list'
 
-title: 'Blog' 
+title: 'Blog'
+subtitle: 'some fasel subtitle words'
 description: 'TODO'
+keywords:
 
 itemsPerPage: 5
 
@@ -18,6 +20,3 @@ outputs:
   - rss
   
 ---
-
-
-TODO: list and paginate all articles

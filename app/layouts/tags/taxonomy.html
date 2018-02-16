@@ -9,7 +9,7 @@
     <h1>{{ i18n "tag" 1 }}: {{ .Title }}</h1>
 
     <div class="row-2-cols">
-        <article>
+        <article class="row--left">
         {{ if gt (len $articleList) 0 }}
             <ul>
                 {{ range $articleList }}
@@ -19,7 +19,7 @@
                 {{ end }}
             </ul>
             
-            {{ partial "components/article-nav.html" $paginator }}
+            {{ partial "components/articles-list-nav.html" $paginator }}
         {{ else }}
             {{ i18n "no-article" }}
         {{ end }}

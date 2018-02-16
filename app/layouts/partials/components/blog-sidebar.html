@@ -3,15 +3,23 @@
 <aside class="component__blog-sidebar">
     
     {{ if .IsPage }}
-    <a href="{{ ($.Site.GetPage "section" "blog").URL | relLangURL }}">← <span>{{ i18n "back-to-list" }}</span></a>
+    <a class="go-up" 
+       href="{{ ($.Site.GetPage "section" "blog").URL | relLangURL }}"
+    >
+        ← <span>{{ i18n "back-to-list" }}</span>
+    </a>
     {{ else if eq .Kind "taxonomy"}}
-    <a href="{{ ($.Site.GetPage "section" "blog").URL | relLangURL }}">← <span>{{ i18n "back-to-overview" }}</span></a>
+    <a class="go-up"
+       href="{{ ($.Site.GetPage "section" "blog").URL | relLangURL }}"
+    >
+        ← <span>{{ i18n "back-to-overview" }}</span>
+    </a>
     {{ end }}
     
     {{ $enabled := default false ($.Site.Data.banner.isEnabled) }}
     {{ if $enabled }}
     <div class="news">
-        <h5>{{ i18n "news" }}:</h5>
+        <h3><span>{{ i18n "news" }}:</span></h3>
         <div>
             {{ $.Site.Data.banner.message | markdownify }}
         </div>
@@ -21,7 +29,7 @@
     {{ $tagCount := len $.Site.Taxonomies.tags }}
     {{ $tagList := .Params.tags }}
     <nav class="tags">
-        <h5>{{ i18n "tag" $tagCount }}</h5>
+        <h3><span>{{ i18n "tag" $tagCount }}</span></h3>
         <ul>
             {{ range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
             <li class="{{ if or (in $tagList .Data.Term) (in $currentPage.URL .URL) }}active{{end}}">

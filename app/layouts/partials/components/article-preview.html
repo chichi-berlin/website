@@ -1,15 +1,23 @@
 <article class="component__article--preview">
-    <h2>
+    <h4>
         <a title="{{ .Title }}"
            href="{{ .URL | relLangURL }}">
             {{ .Title }}
         </a>
-    </h2>
-    <h3>
+    </h4>
+    <h5>
         {{ printf "%02d.%02d.%d" .PublishDate.Day .PublishDate.Month .PublishDate.Year }}
-    </h3>
+    </h5>
     
-    <div>
+    <div class="content-preview">
         {{ truncate 250 "..." .Content | replaceRE "<h[^>]+>(.*)</h[^>]+>" "" | safeHTML }}
     </div>
+    
+    <nav>
+        <a class="btn btn--primary"
+           title="{{ .Title }}"
+           href="{{ .URL | relLangURL }}">
+            <span>{{ i18n "read-more" }}</span>
+        </a>
+    </nav>
 </article>

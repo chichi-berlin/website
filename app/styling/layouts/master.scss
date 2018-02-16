@@ -14,7 +14,30 @@
         height: 100vh;
     }
     
+    h1, h2, h4 {
+        font-family: $decorative-font-family;
+        letter-spacing: rem(1);
+    }
+    
+    h1 {
+        @include type(xxxl);
+        font-size: rem(50);
+        margin: rem(35) 0;
+    }
+    h2 {
+        @include type(xxl);
+        font-size: rem(40);
+    }
+    h4 {
+        @include type(xxxl);
+        font-size: rem(30);
+        margin: rem(20) 0;
+    }
+    
     .contents {
+                        
+        $section-vertical-margin: spacing(10);
+        $headline-section-gap: spacing(9);
         
         // NOTE: compensate header height
         &:before {
@@ -36,33 +59,14 @@
         
         min-height: 100vh;
         
+        @include type(ml);
+        
         & > * {
             // NOTE: makes margins not collapsing
             overflow: hidden;
         }
         
-        h1, h2, h3 {
-            font-family: $decorative-font-family;
-            letter-spacing: rem(1);
-        }
-        
-        h1 {
-            @include type(xxxl);
-            font-size: rem(40);
-            margin: rem(35) 0;
-        }
-        h2 {
-            @include type(xxl);
-            font-size: rem(30);
-        }
-        h3 {
-            @include type(xxxl);
-            margin: rem(20) 0;
-        }
-        
         p {
-            @include type(ml);
-            
             & ~ p {
                 margin-top: rem(30);
             }
@@ -71,6 +75,37 @@
         section {
             & ~ section {
                 margin-top: rem(60);
+            }
+            
+            &:first-child {
+                margin-top: rem($section-vertical-margin);
+            }
+            
+            &:last-child {
+                margin-bottom: rem($section-vertical-margin);
+            }
+        }       
+
+        
+        .page-title {
+            text-align: center;
+            margin: 0 0 rem(spacing(2)) 0;            
+            
+            font-weight: bold;
+            
+            & + :not(.page-subtitle) {
+                margin-top: rem($headline-section-gap);
+            }
+        }
+        
+        .page-subtitle {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 100;
+            color: color(grey-dark);
+            
+            & + * {
+                margin-top: rem($headline-section-gap);
             }
         }
     }

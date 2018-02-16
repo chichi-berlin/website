@@ -1,4 +1,4 @@
-<div id="page-header-inner" class="header__container" data-offset="{{ index $.Params "scroll-offset-coordinate" | default 0 }}">
+<div id="page-header-inner" class="header__container" data-offset="{{ index $.Params " scroll-offset-coordinate" | default 0 }}">
     <div class="header__inner">
         
         <div class="row-wrap__contacts">
@@ -16,7 +16,6 @@
                         10 bis 19 Uhr | Do + So geschlossen
                     </li>
                     <li>
-                        {{ partial "svgs/icon_address.html"  ( dict "classes" ( slice "icon" "icon--address" ) ) }}
                         {{ $mapPage := $.Site.GetPage "page" "map" }}
                         <a href="{{ $mapPage.URL | relLangURL }}">
                             <address>
