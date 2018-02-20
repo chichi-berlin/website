@@ -13,12 +13,47 @@
                     }
                     
                 }
+                
+                h3 {
+                    margin-bottom: rem(30);
+                    @include type(xxxl);
+                    font-weight: 600;
+                }
+                
+                p + h3 {
+                    margin-top: rem(50);
+                }
             }    
         }
         
         .component__blog-sidebar {
             max-width: rem(350);
             margin-left: rem(spacing(10));
+        }
+        
+        
+        figure {
+            text-align: center;
+            
+            margin: rem(30) 0; 
+            
+            img, figcaption {
+                width: 90%;
+            }
+            
+            figcaption {
+                margin-left: auto;
+                margin-right: auto;
+                
+                @include type(m);
+                font-weight: 300;
+                color: color(greyer);
+                
+                p {
+                    font-family: 'Open Sans Italic';
+                    font-weight: inherit;
+                }
+            }
         }
     }
 }

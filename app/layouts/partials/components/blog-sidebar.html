@@ -19,7 +19,7 @@
     {{ $enabled := default false ($.Site.Data.banner.isEnabled) }}
     {{ if $enabled }}
     <div class="news">
-        <h3><span>{{ i18n "news" }}:</span></h3>
+        <h3><span>{{ i18n "news" }}</span></h3>
         <div>
             {{ $.Site.Data.banner.message | markdownify }}
         </div>

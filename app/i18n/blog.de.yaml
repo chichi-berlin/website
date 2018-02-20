@@ -18,6 +18,9 @@ tag:
   
 read-more:
   other: 'weiterlesen'
+  
+figure-caption-photographer:
+  other: '(Bild: {{.Count}})'
 
 error.no-article:
   other: 'Kein Artikel zu dieser Kategorie vorhanden.'

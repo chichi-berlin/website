@@ -1,8 +1,10 @@
 ---
-linkTitle: 'Ausrüstung'
-slug: 'ausruestung'
+
 type: 'rubric'
 layout: 'categories'
+
+linkTitle: 'Ausrüstung'
+slug: 'ausruestung'
 
 title: 'Fahrradausrüstung'
 description: 'TODO'
@@ -12,6 +14,3 @@ menu:
     weight: 3
 
 ---
-
-
-TODO: list of bicycle accessories

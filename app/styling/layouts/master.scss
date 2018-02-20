@@ -67,7 +67,7 @@
         }
         
         p {
-            & ~ p {
+            & + p {
                 margin-top: rem(30);
             }
         }
@@ -89,9 +89,10 @@
         
         .page-title {
             text-align: center;
-            margin: 0 0 rem(spacing(2)) 0;            
+            margin: 0 auto rem(spacing(2));            
             
             font-weight: bold;
+            max-width: 80%;
             
             & + :not(.page-subtitle) {
                 margin-top: rem($headline-section-gap);

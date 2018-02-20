@@ -465,14 +465,14 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/opensans-regularitalic.eot');
-    src: local('Open Sans Regular'), local('OpenSans Regular'), local('OpenSans-Regular'), local('OpenSansRegular'),
-         url('/fonts/opensans-regularitalic.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/opensans-regularitalic.woff2') format('woff2'),
-         url('/fonts/opensans-regularitalic.woff') format('woff'),
-         url('/fonts/opensans-regularitalic.ttf') format('truetype'),
-         url('/fonts/opensans-regularitalic.svg#OpenSansRegularItalic') format('svg');
+    font-family: 'Open Sans Italic';
+    src: url('/fonts/opensans-italic.eot');
+    src: local('Open Sans Italic'), local('OpenSans Italic'), local('OpenSans-Italic'), local('OpenSansItalic'),
+         url('/fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/opensans-italic.woff2') format('woff2'),
+         url('/fonts/opensans-italic.woff') format('woff'),
+         url('/fonts/opensans-italic.ttf') format('truetype'),
+         url('/fonts/opensans-italic.svg#OpenSansItalic') format('svg');
     font-style: italic;
     font-weight: 500;
 }

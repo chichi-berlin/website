@@ -19,33 +19,34 @@
         {{ $currentSectionPath := .Dir }}
         
         <ul class="menu__level menu__level--current">
-        {{ range (printf "%s/%s" $contentsPath $currentSectionPath | readDir) }}
-            {{ $referredSectionPath := printf "%s%s" $currentSectionPath .Name }}
+        {{ if .Pages }}
             
-            {{ if .IsDir }}
-                {{ with $.Site.GetPage "section" $referredSectionPath }}
-                <li class="menu__item">
-                    <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
-                       data-submenu="submenu--{{ replace $referredSectionPath "/" "-" }}" 
-                       href="{{ .URL | relLangURL }}">
-                        {{ .LinkTitle }}
-                    </a>
-                </li>
-                {{ end }}
+            {{ range sort .Pages ".Params.model" "asc" }}
+            <li class="menu__item" data="page">
+                <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
+                   href="{{ .URL | relLangURL }}">
+                    {{ .Params.model }}
+                </a>
+            </li>
+            {{ end }}        
+        
+        {{ else }}
+            
+            {{ range sort .Sections "Params.weight" "asc" }}
+            {{ if .IsNode }}
+            <li class="menu__item" data="node">
+                <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
+                   data-submenu="submenu--{{ delimit (split (trim .URL "/") "/") "-" }}" 
+                   href="{{ .URL | relLangURL }}">
+                    {{ .LinkTitle }}
+                </a>
+            </li>
             {{ end }}
-            
-            {{ if in .Name ".md" }}
-                {{ with $.Site.GetPage "page" $referredSectionPath }}
-                <li class="menu__item">
-                    <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
-                       href="{{ .URL | relLangURL }}">
-                        {{ .LinkTitle }}
-                    </a>
-                </li>
-                {{ end }}
             {{ end }}
             
         {{ end }}
+            
+        
         </ul>
     </div>
 </nav>

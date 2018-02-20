@@ -1,8 +1,10 @@
 ---
-linkTitle: 'Komponenten'
-slug: 'komponenten'
+
 type: 'rubric'
 layout: 'categories'
+
+linkTitle: 'Komponenten'
+slug: 'komponenten'
 
 title: 'Fahrradteile'
 description: 'TODO'
@@ -12,5 +14,3 @@ menu:
     weight: 2
 
 ---
-
-TODO: list of part categories

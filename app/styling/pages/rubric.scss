@@ -1,0 +1,115 @@
+.type--rubric {
+    
+    .contents {
+        
+        section {
+            &:first-child {
+                margin-top: rem($desktop_aside-gap);
+            }
+            
+            &:last-child {
+                margin-bottom: rem($desktop_aside-gap);
+            }
+        } 
+        
+        .rubric--grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+            $desktop-tile-margin: spacing(4);
+
+            & > * {
+                @include bp-desktop() {
+                    width: calc(100% / 3);
+                    height: rem(250);
+                }
+                @include bp-mobile() {
+                    width: 100%;
+                }
+            }
+        
+            & > :nth-child(3n + 1) {
+                @include bp-desktop() {
+                    padding-right: rem($desktop-tile-margin * 2/3);
+                }
+            }
+            & > :nth-child(3n + 2) {
+                @include bp-desktop() {
+                    padding-left: rem($desktop-tile-margin * 1/3);
+                    padding-right: rem($desktop-tile-margin * 1/3);
+                }                
+            }
+            & > :nth-child(3n + 3) {
+                @include bp-desktop() {
+                    padding-left: rem($desktop-tile-margin * 2/3);
+                }
+            }
+            & > :nth-child(n + 4) {
+                @include bp-desktop() {
+                    margin-top: rem(spacing(4));
+                }
+            }
+            
+            & > li {
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    background-color: color(white);
+                                                        
+                    padding: 0 rem(spacing(1));
+                    
+                    &:hover, &:focus {
+                        .bg {
+                            transform: scale(1.1);
+                        }
+                        
+                        .fg {
+                            top: 0;
+                        }
+                    }
+                    
+                    .bg, .fg {
+                        position: inherit;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    .bg {
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-color: transparent;
+                        background-blend-mode: normal;
+                        
+                        transition: transform .4s ease-in-out 0.0s;
+                        transform: scale(1.00);
+                    }
+                    
+                    .fg {
+                        position: absolute;
+                        top: 100%;
+                        
+                        font-size: rem(40);
+                        font-weight: 600;
+                        color: color(brand-pink);
+                        font-family: $decorative-font-family;
+                        padding: 0 15%;
+                        line-height: 1.2;
+                        text-align: center;
+                        
+                        @include flex-center;
+                        
+                        transition: top .25s ease-in-out 0.0s;
+                    }
+                }
+            }
+        }
+    }
+    
+}

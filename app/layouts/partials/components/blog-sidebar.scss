@@ -53,8 +53,7 @@
     .news {
         padding: rem(spacing(2));
         background-color: color(grey);
-        //border: rem(1) rgba( color(grey-light), 0.2) solid; 
-
+        //border: rem(1) rgba( color(grey-light), 0.2) solid;
     }
     
     .tags {
@@ -70,6 +69,10 @@
             
             & ~ li {
                 margin-top: rem(6);
+            }
+            
+            &.active {
+                font-weight: 700;
             }
         }
         
