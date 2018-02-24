@@ -3,36 +3,25 @@
     {{ $contentsPath := "./app/contents" }}
     {{ $section := .Section }}
     {{ $parent := .Parent }}
-    {{ $currentPage := . }}    
+    {{ $currentPage := . }}   
     
     <nav class="menu__breadcrumbs" aria-label="You are here">
-        <a href="{{ $parent.URL | relLangURL }}" class="{{ if $parent.IsHome }}is-root{{ end }}">
-            {{ if $parent.IsHome }}
-                /
-            {{ else }}
-                {{ $parent.Name }}
-            {{ end }}
-        </a>
+        <ol>
+            {{ template "breadcrumb" dict "parentPage" $parent "currentPage" $currentPage "global" $ }}
+        </ol>
     </nav>
     
-    <div class="menu__wrap">
+    <div class="menu__wrap" parent="{{ printf "%#v" $parent.IsHome }}">
         {{ $currentSectionPath := .Dir }}
         
         <ul class="menu__level menu__level--current">
-        {{ if .Pages }}
             
-            {{ range sort .Pages ".Params.model" "asc" }}
-            <li class="menu__item" data="page">
-                <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
-                   href="{{ .URL | relLangURL }}">
-                    {{ .Params.model }}
-                </a>
-            </li>
-            {{ end }}        
-        
-        {{ else }}
+            {{ .Scratch.Set "sections" $parent.Sections }}
+            {{ if $parent.IsHome }}
+                {{ .Scratch.Set "sections" $currentPage.Sections }}
+            {{ end }}
             
-            {{ range sort .Sections "Params.weight" "asc" }}
+            {{ range sort (.Scratch.Get "sections") "Params.weight" "asc" }}
             {{ if .IsNode }}
             <li class="menu__item" data="node">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
@@ -43,10 +32,33 @@
             </li>
             {{ end }}
             {{ end }}
-            
-        {{ end }}
-            
         
         </ul>
     </div>
 </nav>
+
+
+
+
+
+{{ define "breadcrumb" }}
+    {{ $pagesInTopMenu := where .global.Site.Menus.top ".Page.UniqueID" .parentPage.UniqueID }}    
+
+    {{ if and (not .parentPage.IsHome) (le (len $pagesInTopMenu) 0) }}
+
+    {{ if .parentPage.Parent }}
+        {{ template "breadcrumb" dict "parentPage" .parentPage.Parent "currentPage" .currentPage "global" .global }}
+    {{ end }}
+
+    <li>
+        <a href="{{ .parentPage.URL | relLangURL }}" class="{{ if .parentPage.IsHome }}is-root{{ end }}">
+            {{ if .parentPage.IsHome }}
+                /
+            {{ else }}
+                {{ .parentPage.LinkTitle }}
+            {{ end }}
+        </a>
+    </li>
+
+    {{ end }}
+{{ end }}

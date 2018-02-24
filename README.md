@@ -111,6 +111,7 @@ $   npm build
 +   banner im dunklen grau mit weisser font und weissen horicontal lines
 +   footer auch pink
 +   landing page: banner, key visual, 3 ros newest articles, sonderangebote im wechsel links image rechts text or vise versa
++  using synced slider (https://kenwheeler.github.io/slick/) to present images in `rubric/single.html`
     
     
 #### Design
@@ -118,7 +119,7 @@ $   npm build
 ##### Fonts
 
 +   American Typewriter Condensed
-+   
++   Open Sans
 
 ##### Colors
 

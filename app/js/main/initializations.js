@@ -96,6 +96,15 @@ const selectors = {
             iframe: false,
             inittab: 1
         });
+    },
+    
+    
+    '#page-aside-nav': function(){
+        const element = this;
+        
+        global.setTimeout(()=>{
+            element.dataset.state = 'closed';
+        }, 1200 );
     }
 };
 

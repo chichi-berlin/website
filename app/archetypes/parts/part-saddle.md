@@ -6,7 +6,7 @@ type: 'rubric'
 model: ''
 manufacturer: 'Selle Italia'
 
-image: '/media/images/rubrics/parts/'
+image: '/media/images/rubrics/parts/items/'
 
 description: >
     

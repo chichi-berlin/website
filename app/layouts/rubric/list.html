@@ -3,9 +3,14 @@
 
 
 {{ define "aside" }}
+{{ $pagesInTopMenu := where $.Site.Menus.top ".Page.UniqueID" .UniqueID }}    
+
+{{ if le (len $pagesInTopMenu) 0 }}
 <aside class="aside__flow" id="page-aside">
     {{ partial "components/aside.html" . }}
 </aside>
+{{ end }}
+
 {{ end }}
 
 
@@ -23,11 +28,12 @@
     <p class="page-subtitle">{{ . }}</p>
     {{ end }}
     
-    <ul class="rubric--grid">
-        {{ range .Pages }}
+    {{ if gt (len .Sections) 0 }}
+    <ul class="rubric--grid for-categories">
+        {{ range .Sections }}
         <li>
             <a href="{{ .URL | relLangURL }}">
-                <div class="bg" style="background-image: url('{{ .Params.image }}')"></div>
+                <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
                 <div class="fg">
                     {{ .Params.model }}
                 </div>
@@ -35,6 +41,22 @@
         </li>
         {{ end }}
     </ul>
+    {{ else if gt (len .Pages) 0}}
+    <ul class="rubric--grid for-items">
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .URL | relLangURL }}">
+                <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
+                <div class="fg">
+                    {{ .Params.model }}
+                </div>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    
+
     
 </section>
 {{ end }}

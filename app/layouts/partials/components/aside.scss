@@ -43,11 +43,11 @@
     margin-bottom: rem($desktop_aside-gap);
     
     //left: 100%;
-    left: 10%;
+    left: 15%;
     
     position: relative;
     
-    &:hover {
+    &:hover, &[data-state="open"] {
         left: 100%;
         transition: left 0.2s;    
     }

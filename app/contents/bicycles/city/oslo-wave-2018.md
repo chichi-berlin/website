@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Oslo'
 manufacturer: 'BBF Bike'
 
-image: '/media/images/rubrics/bicycles/oslo-wave-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/oslo-wave-2018.jpg'
 
 description: >
      Unser preisgünstigstes Alltagsrad mit Vollausstattung.

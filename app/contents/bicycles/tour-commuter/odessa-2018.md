@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Odessa'
 manufacturer: '6KU'
 
-image: '/media/images/rubrics/bicycles/odessa-2018.jpeg'
+image: '/media/images/rubrics/bicycles/items/odessa-2018.jpeg'
 
 description: >
      The 6KU Ladies City 8speed is an elegant city commuter designed to get the perfect balance 

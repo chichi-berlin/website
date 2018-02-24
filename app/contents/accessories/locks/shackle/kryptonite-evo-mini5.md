@@ -6,11 +6,11 @@ type: 'rubric'
 model: 'Evolution Mini 5'
 manufacturer: 'Kryptonite'
 
-image: '/media/images/rubrics/accessories/kryptonite-evo-mini5-01.jpg'
+image: '/media/images/rubrics/accessories/items/kryptonite-evo-mini5-01.jpg'
 
 images:
-  - '/media/images/rubrics/accessories/kryptonite-evo-mini5-02.jpg'
-  - '/media/images/rubrics/accessories/kryptonite-evo-mini5-03.jpg'
+  - '/media/images/rubrics/accessories/items/kryptonite-evo-mini5-02.jpg'
+  - '/media/images/rubrics/accessories/items/kryptonite-evo-mini5-03.jpg'
 
 description: >
     Die Mini-Ausführung des Evolution. Praktisch, klein und unglaublich stark. Passt sogar in die 

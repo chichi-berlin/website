@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Arise'
 manufacturer: 'Bombtrack'
 
-image: '/media/images/rubrics/bicycles/arise-geared-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/arise-geared-2018.jpg'
 
 description: >
      The Arise geared takes the base Arise frame into a fully commuter friendly package. The durable 

@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Needle'
 manufacturer: 'Bombtrack'
 
-image: '/media/images/rubrics/bicycles/needle-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/needle-2018.jpg'
 
 description: >
      The Needle is all about balance. In Crit racing you need a bike that has enough stiffness to 

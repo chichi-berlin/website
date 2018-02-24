@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Commute Backpack'
 manufacturer: 'Restrap'
 
-image: '/media/images/rubrics/accessories/restrap-commute-backpack-black.jpeg'
+image: '/media/images/rubrics/accessories/items/restrap-commute-backpack-black.jpeg'
 
 description: >
     Carry your things comfortably, whatever your load with Restrap’s super functional backpack.

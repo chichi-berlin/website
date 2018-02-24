@@ -6,11 +6,11 @@ type: 'rubric'
 model: 'Gazzetta Della Strada'
 manufacturer: 'Cinelli'
 
-image: '/media/images/rubrics/bicycles/gazzetta-della-strada-2018_1.jpg'
+image: '/media/images/rubrics/bicycles/items/gazzetta-della-strada-2018_1.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/gazzetta-della-strada-2018_2.jpg'
-  - '/media/images/rubrics/bicycles/gazzetta-della-strada-2018_3.jpg'
+  - '/media/images/rubrics/bicycles/items/gazzetta-della-strada-2018_2.jpg'
+  - '/media/images/rubrics/bicycles/items/gazzetta-della-strada-2018_3.jpg'
 
 description: >
      The Gazzetta della Strada is Cinelli’s cult urban re-interpretation of the classic French 

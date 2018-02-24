@@ -6,7 +6,7 @@ type: 'rubric'
 model: ''
 manufacturer: ''
 
-image: '/media/images/rubrics/accessories/'
+image: '/media/images/rubrics/accessories/items/'
 
 description: >
 

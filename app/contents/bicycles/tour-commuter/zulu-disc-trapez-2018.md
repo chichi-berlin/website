@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Zulu'
 manufacturer: 'Checker Pig'
 
-image: '/media/images/rubrics/bicycles/zulu-disc-trapez-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/zulu-disc-trapez-2018.jpg'
 
 description: >
     Das Zulu hat einen leichten Trekking Alurahmen, innovative LED Beleuchtung und eine 

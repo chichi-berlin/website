@@ -6,10 +6,10 @@ type: 'rubric'
 model: ''
 manufacturer: ''
 
-image: '/media/images/rubrics/parts/tutto-2018'
+image: '/media/images/rubrics/parts/items/tutto-2018'
 
 images:
-  - '/media/images/rubrics/parts/'
+  - '/media/images/rubrics/parts/items/'
   - ''
   - ''
 

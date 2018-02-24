@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Evolution Mini 5'
 manufacturer: 'Kryptonite'
 
-image: '/media/images/rubrics/accessories/kryptonite-evo-mini5-01.jpg'
+image: '/media/images/rubrics/accessories/items/kryptonite-evo-mini5-01.jpg'
 
 images:
   - 'kryptonite-evo-mini5-02.jpg'
