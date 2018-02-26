@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Schlöser'
+linkTitle: 'Schlösser'
 slug: 'schloesser'
 
-title: 'Schlöser'
+title: 'Schlösser'
 description: 'TODO'
 
 weight: 8

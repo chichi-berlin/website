@@ -6,7 +6,7 @@ layout: 'categories'
 linkTitle: 'Singlespeed & Fixed'
 slug: 'singlespeed-fixed'
 
-title: 'Singlespeeder & Fixies'
+title: 'Singlespeed & Fixed'
 description: 'TODO'
 
 weight: 3

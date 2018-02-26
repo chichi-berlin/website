@@ -6,7 +6,7 @@ layout: 'categories'
 linkTitle: 'Mountainbikes'
 slug: 'mountainbikes'
 
-title: 'Räder fürs Gelände'
+title: 'Mountainbikes'
 description: 'TODO'
 
 weight: 8

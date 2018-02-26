@@ -6,7 +6,7 @@ layout: 'categories'
 linkTitle: 'Rahmen'
 slug: 'rahmen'
 
-title: 'Fahrradrahmen' 
+title: 'Rahmen' 
 description: 'TODO'
 
 weight: 12
