@@ -44,19 +44,15 @@
 {{ define "breadcrumb" }}
     {{ $pagesInTopMenu := where .global.Site.Menus.top ".Page.UniqueID" .parentPage.UniqueID }}    
 
-    {{ if and (not .parentPage.IsHome) (le (len $pagesInTopMenu) 0) }}
+    {{ if and (not .parentPage.IsHome) }}
 
     {{ if .parentPage.Parent }}
         {{ template "breadcrumb" dict "parentPage" .parentPage.Parent "currentPage" .currentPage "global" .global }}
     {{ end }}
 
-    <li>
-        <a href="{{ .parentPage.URL | relLangURL }}" class="{{ if .parentPage.IsHome }}is-root{{ end }}">
-            {{ if .parentPage.IsHome }}
-                /
-            {{ else }}
-                {{ .parentPage.LinkTitle }}
-            {{ end }}
+    <li>        
+        <a href="{{ .parentPage.URL | relLangURL }}" class="">
+            {{ .parentPage.LinkTitle }}    
         </a>
     </li>
 

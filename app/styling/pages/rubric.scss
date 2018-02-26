@@ -22,7 +22,6 @@
             & > * {
                 @include bp-desktop() {
                     width: calc(100% / 3);
-                    height: rem(250);
                 }
                 @include bp-mobile() {
                     width: 100%;
@@ -71,11 +70,13 @@
                     display: block;
                     width: 100%;
                     height: 100%;
-                    position: relative;
-                    overflow: hidden;
-                    background-color: color(white);
-                                                        
-                    padding: 0 rem(spacing(1));
+                    
+                    .wrap {
+                        position: relative;
+                        overflow: hidden;
+                        background-color: color(white);                         
+                        padding: 0 rem(spacing(1));
+                    }
                     
                     &:hover, &:focus {
                         .bg {
@@ -85,6 +86,11 @@
                         .fg {
                             top: 0;
                         }
+                        
+                        .subtitle h3 {
+                            bottom: 100%;
+                            transition: bottom .15s ease-in-out 0.0s;
+                        }
                     }
                     
                     .bg, .fg {
@@ -92,7 +98,13 @@
                         top: 0;
                         left: 0;
                         width: 100%;
-                        height: 100%;
+                        
+                        @include bp-desktop() {
+                            height: rem(250);
+                        }
+                        @include bp-mobile() {
+                            height: rem(200);
+                        }
                     }
                     
                     .bg {
@@ -110,17 +122,39 @@
                         position: absolute;
                         top: 100%;
                         
-                        font-size: rem(40);
-                        font-weight: 600;
-                        color: color(brand-pink);
-                        font-family: $decorative-font-family;
                         padding: 0 15%;
-                        line-height: 1.2;
                         text-align: center;
                         
                         @include flex-center;
                         
-                        transition: top .25s ease-in-out 0.0s;
+                        transition: top .25s ease-in-out 0.07s;
+
+                        h2 {
+                            font-size: rem(40);
+                            font-weight: 600;
+                            color: color(brand-pink);
+                            font-family: $decorative-font-family;
+                            line-height: 1.2;                            
+                        }
+                    }
+                    .subtitle {
+                        overflow: hidden;
+                        height: rem(26);
+                        position: relative;
+                        
+                        h3 {
+                            @include type(m);
+                            font-weight: 300;
+                            color: color(greyer);
+                            font-family: 'Open Sans Italic';
+                            text-align: center;
+                            bottom: 0;
+                            position: absolute;
+                            width: 100%;
+                            padding: 0 rem(spacing(2));
+                            
+                            transition: bottom .15s ease-in-out 0.2s;
+                        }
                     }
                 }
             }

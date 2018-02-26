@@ -6,7 +6,7 @@ layout: 'categories'
 linkTitle: 'Kinderräder'
 slug: 'kinderraeder'
 
-title: 'Räder für Kinder'
+title: 'Kinderräder'
 description: 'TODO'
 
 weight: 7

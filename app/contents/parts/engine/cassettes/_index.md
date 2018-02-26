@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Kassetten / Kränze'
+linkTitle: 'Kassetten & Kränze'
 slug: 'kassetten--kraenze'
 
-title: 'Kassetten / Kränze'
+title: 'Kassetten & Kränze'
 description: 'TODO'
 
 weight: 1

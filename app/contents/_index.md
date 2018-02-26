@@ -1,7 +1,7 @@
 ---
 name: 'home'
 
-title: 'Startzeite'
+title: 'Startseite'
 description: 'upcycled bicycles'
 keywords:
  - 'Fahrräder'

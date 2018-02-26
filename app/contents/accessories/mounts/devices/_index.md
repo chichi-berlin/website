@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Karten- / Handy- / Kamera'
+linkTitle: 'Karten-, Handy-, Kamera-Halterungen'
 slug: 'karten--handy--kamera'
 
-title: 'Karten- / Handy- / Kamera'
+title: 'Halterungen für Karten, Handy, Kamera'
 description: 'TODO'
 
 weight: 3

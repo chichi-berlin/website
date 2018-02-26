@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Werkzeug / Werkstattbedarf'
+linkTitle: 'Werkzeug & Werkstattbedarf'
 slug: 'werkzeug--wekstattbedarf'
 
-title: 'Werkzeug / Werkstattbedarf'
+title: 'Werkzeug & Werkstattbedarf'
 description: 'TODO'
 
 weight: 10

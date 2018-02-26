@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Alltag / Commuter'
+linkTitle: 'Alltag & Commuter'
 slug: 'commuter-taschen'
 
-title: 'Alltag / Commuter Taschen'
+title: 'Alltag & Commuter Taschen'
 description: 'TODO'
 
 weight: 2

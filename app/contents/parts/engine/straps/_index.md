@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Straps / Körbchen'
+linkTitle: 'Straps & Körbchen'
 slug: 'straps'
 
-title: 'Straps / Körbchen'
+title: 'Straps & Körbchen'
 description: 'TODO'
 
 weight: 6

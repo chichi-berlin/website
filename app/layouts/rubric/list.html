@@ -30,12 +30,17 @@
     
     {{ if gt (len .Sections) 0 }}
     <ul class="rubric--grid for-categories">
-        {{ range .Sections }}
+        {{ range sort .Sections "Params.weight" "asc" }}
         <li>
             <a href="{{ .URL | relLangURL }}">
-                <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
-                <div class="fg">
-                    {{ .Params.model }}
+                <div class="wrap">
+                    <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
+                    <div class="fg">
+                        <h2>{{ .LinkTitle }}</h2>
+                    </div>
+                </div>
+                <div class="subtitle">
+                    <h3>{{ .LinkTitle }}</h3>
                 </div>
             </a>
         </li>
@@ -43,12 +48,17 @@
     </ul>
     {{ else if gt (len .Pages) 0}}
     <ul class="rubric--grid for-items">
-        {{ range .Pages }}
+        {{ range sort .Pages ".Params.model" "asc" }}
         <li>
             <a href="{{ .URL | relLangURL }}">
-                <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
-                <div class="fg">
-                    {{ .Params.model }}
+                <div class="wrap">
+                    <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
+                    <div class="fg">
+                        <h2>{{ .Params.model }}</h2>
+                    </div>
+                </div>
+                <div class="subtitle">
+                    <h3>{{ .Params.model }} ({{ .Params.manufacturer }})</h3>
                 </div>
             </a>
         </li>

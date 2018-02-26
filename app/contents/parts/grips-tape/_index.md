@@ -3,10 +3,10 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Griffe / Lenkerbänder'
+linkTitle: 'Griffe & Lenkerbänder'
 slug: 'griffe--lenkerbaender'
 
-title: 'Griffe / Lenkerbänder' 
+title: 'Griffe & Lenkerbänder' 
 description: 'TODO'
 
 weight: 6
