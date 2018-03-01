@@ -11,7 +11,7 @@ menu:
 ---
 
 
-### FAIR / ÖKOLOGISCH / NACHHALTIG
+### Fair - Ökologisch - Nachhaltig
 
 So ökologisch das Fahrradfahren selbst ist, so wenig grün, fair und nachhaltig sind die Herstellung
 und der Vertrieb von Fahrrädern, sowie von Teilen und oft auch Zubehör (Und nein, "Bambusräder" sind
@@ -43,7 +43,7 @@ niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden 
 solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
 
 
-### SELBSTVERSTÄNDNIS
+### Selbstverständnis
 
 Wir können, was wir tun.
 Und tun, was wir können - dennoch ist es uns niemals genug.

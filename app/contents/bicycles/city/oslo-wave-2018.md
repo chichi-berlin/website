@@ -22,6 +22,10 @@ specs:
   - brakes: 'V-Brake und Rücktritt'
   - lights: 'Trelock Mini LS592 LED, Schalter; AXA Spark m. Standlicht'
   - weight: '17,5 kg'
+  - sizes:
+    - '45'  
+    - '48'
+    - '53'
   - colors:
     - 'schwarz'
     - 'bordeux'

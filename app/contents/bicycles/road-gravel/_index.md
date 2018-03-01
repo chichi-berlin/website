@@ -7,7 +7,8 @@ linkTitle: 'Rennräder & Gravelbikes'
 slug: 'rennraeder'
 
 title: 'Rennräder & Gravelbikes'
-description: 'TODO'
+description: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
+image: '/media/images/rubrics/bicycles/items/hook2-2018_1.jpg'
 
 weight: 2
 menu:

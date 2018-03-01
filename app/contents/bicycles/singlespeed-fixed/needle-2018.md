@@ -42,6 +42,11 @@ specs:
   - seatpost: 'BT BIKES "SP-DC2X" alloy seatpost'
   - saddle: 'BT BIKES "PRO" rail saddle'
   - weight: '8,6 kg (size M)'
+  - sizes:
+    - '50'
+    - '53'
+    - '56'
+    - '59'
   - color: 'Metallic Black / Lime'
 
 ---

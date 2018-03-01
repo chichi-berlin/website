@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Urban 2.0'
 manufacturer: 'BBF Bike'
 
-image: '/media/images/rubrics/bicycles/items/urban-gruen-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/urban2.0-2018_1.jpg'
 
 description: >
      Alles was Du brauchst, um auf befestigten Wegen schnell zu sein. Leicht genug, um für ein paar 
@@ -22,6 +22,10 @@ specs:
   - tyres: 'Kenda grau mit Reflexring'
   - brakes: 'Promax V-Brake'
   - weight: 'ca. 12,6 kg'
+  - sizes:
+    - '47'
+    - '53'
+    - '57'
   - colors:
     - 'mattgrün'
     - 'mattblau'

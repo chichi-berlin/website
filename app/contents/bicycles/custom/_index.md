@@ -7,7 +7,7 @@ linkTitle: 'Individueller Aufbau'
 slug: 'individueller-aufbau'
 
 title: 'Individueller Aufbau'
-description: 'TODO'
+description: 'Wir bauen Dein Wunschrad'
 
 weight: 9
 menu:

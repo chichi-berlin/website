@@ -38,6 +38,11 @@ specs:
   - saddle: 'BT BIKES "Origin"'
   - fender: 'BT BIKES 50mm plastic fenders'
   - weight: '12,8 kg (Größe M)'
+  - sizes:
+    - '48'
+    - '51'
+    - '54'
+    - '58'
   - color: 'grau-metallic'
 
 ---

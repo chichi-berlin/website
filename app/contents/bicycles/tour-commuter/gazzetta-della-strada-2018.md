@@ -43,12 +43,12 @@ specs:
   - derailleurs: 'front: Braze-on; rear: SHIMANO Claris RD-2400'
   - saddle: 'BROOKS B17'
   - weight: '13,2 kg'
-  - color: 'kozmic blue'
   - sizes:
     - '50'
     - '53'
     - '55'
     - '57'
     - '59'
+  - color: 'kozmic blue'
 
 ---

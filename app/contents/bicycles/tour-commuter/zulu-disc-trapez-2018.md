@@ -26,6 +26,9 @@ specs:
   - brakes: 'Shimano BR-T4000; Scheibenbremse'
   - lights: 'vorn: AXA BlueLine 30; hinten: AXA Slim Steady, mit Standlicht'
   - weight: 'ca. 14.9 kg'
+  - sizes:
+    - '48'
+    - '52'
   - color: 'schwarz matt'
 
 ---

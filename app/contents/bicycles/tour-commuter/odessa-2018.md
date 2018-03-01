@@ -31,6 +31,9 @@ specs:
   - derailleurs: 'Shimano "Altus M310"'
   - saddle: 'Velo Urban Saddle'
   - weight: '12,7 kg (kleinste RH)'
+  - sizes:
+    - '43'
+    - '48'
   - colors:
     - 'perlmutt'
     - 'pastellgrün'

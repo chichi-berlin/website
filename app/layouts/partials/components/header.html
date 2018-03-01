@@ -1,10 +1,10 @@
-<div id="page-header-inner" class="header__container" data-offset="{{ index $.Params " scroll-offset-coordinate" | default 0 }}">
+<div id="page-header-inner" class="header__container" data-offset="{{ index $.Params "scroll-offset-coordinate" | default 0 }}">
     <div class="header__inner">
         
         <div class="row-wrap__contacts">
             <div class="row-wrap__contacts--inner edge-spacer--h">
                 <ul class="contact">
-                    <li><a href="/">Fahrradgeschäft CHICHI</a></li>
+                    <li><a href="{{ ($.Site.GetPage "home").URL }}">Fahrradgeschäft CHICHI</a></li>
                     <li>
                         {{ partial "svgs/icon_phone.html" ( dict "classes" ( slice "icon" "icon--phone" ) ) }}
                         <a href="tel:00493062986005">

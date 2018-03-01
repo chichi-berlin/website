@@ -7,7 +7,7 @@ linkTitle: 'Fahrräder'
 slug: 'fahrraeder'
 
 title: 'Fahrräder'
-description: 'TODO'
+description: 'Auszug unseres Fahrradsortiments'
 
 menu:
   top:

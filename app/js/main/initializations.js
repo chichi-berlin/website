@@ -105,6 +105,11 @@ const selectors = {
         global.setTimeout(()=>{
             element.dataset.state = 'closed';
         }, 1200 );
+    },
+    
+    
+    '.component__image-gallery': function(){
+        const element = this;
     }
 };
 

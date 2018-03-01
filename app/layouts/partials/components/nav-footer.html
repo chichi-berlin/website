@@ -8,7 +8,7 @@
         {{ end }}
         
         <li class="logo__black">
-            {{ partial "svgs/logo_mono.html" }}
+            <a href="{{ ($.Site.GetPage "home").URL }}">{{ partial "svgs/logo_mono.html" }}</a>
         </li>
     </ul>
 </nav>

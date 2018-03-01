@@ -45,6 +45,12 @@ specs:
   - seatpost: 'BT BIKES "612"'
   - saddle: 'BT BIKES "Comp" rail saddle'
   - weight:'10,4 kg (Größe M)'
+  - sizes:
+    - '47'
+    - '50'
+    - '53'
+    - '56'
+    - '59'
   - color: 'grau, schwarz'
 
 ---

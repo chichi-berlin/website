@@ -1,5 +1,17 @@
 {{ define "head" }}
+<link rel="stylesheet" href="/style/vendors/slick.css">
+<link rel="stylesheet" href="/style/vendors/slick-theme.css">
 {{ end }}
+
+{{ define "dependencies" }}
+<script defer
+        src="/script/vendors/jquery.js">
+</script>
+<script defer
+        src="/script/vendors/slick.js">
+</script>
+{{ end }}
+
 
 {{ define "aside" }}
 <aside class="aside__flow" id="page-aside">
@@ -8,8 +20,37 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="edge-spacer--h">
-    single
-    {{ .Content }}
-</div>
+<section class="edge-spacer--h">
+    
+    <h1 class="page-title">{{ $.Params.model }}</h1>
+    {{ with $.Params.manufacturer }}
+    <p class="page-subtitle">{{ . }}</p>
+    {{ end }}
+    
+    <div class="row-2-cols">        
+        <div class="col--left">
+            
+            {{ partial "components/image-gallery.html" . }}
+            
+        </div>        
+        <div class="col--right">
+            
+            <div class="description">
+                {{ default (i18n "no-description") $.Params.description }}
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="specs">
+            <ul>
+                {{ range .Params.specs }}
+                <li></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+    
+</section>
 {{ end }}

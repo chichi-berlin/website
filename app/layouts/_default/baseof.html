@@ -26,7 +26,7 @@
 
     {{ $slug := delimit (findRE "[^/]+" .Permalink | last 1) "" }}
     <div id="site" 
-         class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} section--{{ .Section }} page--{{ $.Param "name" | default $slug }}"
+         class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} {{ with .Section }}section--{{ . }}{{ end }} page--{{ $.Param "name" | default $slug }}"
          data-state_header="{{ if isset $.Params "scroll-offset-coordinate" }}changed{{ else }}untouched{{ end }}"
          data-state_footer="invisible"
     >
@@ -53,6 +53,10 @@
         </footer>
         
     </div>
+
+
+    {{ block "dependencies" . }}        
+    {{ end }}
 
 </body>
 </html>

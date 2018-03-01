@@ -25,6 +25,10 @@ specs:
   - tyres: 'Schwalbe "CX-Comp"'
   - brakes: 'Shimano "BR-M315", hydraulische Scheibenbremse'
   - weight: 'ca. 12,8 kg'
+  - sizes:
+    - '52'
+    - '56'
+    - '60'
   - color: 'schwarz matt'
 
 ---
