@@ -12,6 +12,6 @@ description: >
     Die weltberühmte Histogramgrafik, glänzend, mit weichem Hi-Tech-Gefühl.
 
 specs:
-  - color:'schwarz-weiß'
+  - color: 'schwarz-weiß'
 
 ---

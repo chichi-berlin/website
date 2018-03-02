@@ -1,6 +1,5 @@
 <nav class="component__nav-aside" id="side-menu">
     
-    {{ $contentsPath := "./app/contents" }}
     {{ $section := .Section }}
     {{ $parent := .Parent }}
     {{ $currentPage := . }}   
@@ -12,16 +11,28 @@
     </nav>
     
     <div class="menu__wrap" parent="{{ printf "%#v" $parent.IsHome }}">
-        {{ $currentSectionPath := .Dir }}
         
         <ul class="menu__level menu__level--current">
+        {{ if $currentPage.IsPage }}
             
+            {{ range sort $parent.Pages ".Params.model" "asc" }}
+            <li class="menu__item" data="page">
+                <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
+                   data-submenu="submenu--{{ delimit (split (trim .URL "/") "/") "-" }}" 
+                   href="{{ .URL | relLangURL }}">
+                    {{ .Params.model }} ({{ .Params.manufacturer }})
+                </a>
+            </li>
+            {{ end }}
+
+        {{ else }}
+
             {{ .Scratch.Set "sections" $parent.Sections }}
             {{ if $parent.IsHome }}
                 {{ .Scratch.Set "sections" $currentPage.Sections }}
             {{ end }}
             
-            {{ range sort (.Scratch.Get "sections") "Params.weight" "asc" }}
+            {{ range sort (.Scratch.Get "sections") ".Params.weight" "asc" }}
             {{ if .IsNode }}
             <li class="menu__item" data="node">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
@@ -33,6 +44,7 @@
             {{ end }}
             {{ end }}
         
+        {{ end }}
         </ul>
     </div>
 </nav>

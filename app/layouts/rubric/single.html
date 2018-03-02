@@ -45,9 +45,22 @@
     <div class="row">
         <div class="specs">
             <ul>
-                {{ range .Params.specs }}
-                <li></li>
+            {{ $specs := $.Params.specs }}
+            {{ $splitPoint :=  div (len $specs) 2 | math.Floor }}
+                
+            {{ range $specs }}
+            {{ range $spec, $value := . }}
+                <li>
+                {{ if not (isset $value 0) }}
+                    <span class="label">{{ i18n $spec 1 }}</span>
+                    <span class="value">{{ $value }}</span>
+                {{ else }}
+                    <span class="label">{{ i18n $spec (len $value) }}</span>
+                    <span class="value">{{ delimit $value ", " }}</span>
                 {{ end }}
+                </li>
+            {{ end }}    
+            {{ end }}
             </ul>
         </div>
     </div>

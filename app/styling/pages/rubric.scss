@@ -12,6 +12,7 @@
             }
         } 
         
+        
         .rubric--grid {
             display: flex;
             flex-flow: row wrap;
@@ -155,6 +156,30 @@
                             
                             transition: bottom .15s ease-in-out 0.2s;
                         }
+                    }
+                }
+            }
+        }
+        
+        
+        .description {
+            
+        }
+        
+        .specs {
+            margin-top: rem(spacing(5));
+            
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+                
+                li {
+                    width: 50%;
+                }
+                
+                .label { 
+                    &:after {
+                        content: ':';;
                     }
                 }
             }

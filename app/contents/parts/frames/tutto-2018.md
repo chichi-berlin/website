@@ -22,7 +22,7 @@ specs:
   - fork: 'Columbus Cromor'
   - wheel-size: '622 mm'
   - headset: 'EC 34/28,6 | EC 34/30 (nicht enthalten)'
-  - bottom bracket: 'BSA'
+  - bottom-bracket: 'BSA'
   - tyres: 'bis 35 mm'
   - brakes: 'Cantilever/V-Brake Sockel'
   - seatpost: '27,2 mm'

@@ -20,7 +20,7 @@ specs:
   - height: '140 mm'
   - breadth: '80 mm'
   - weight: '0,98 kg'
-  - holder: 'mit Halterung'
+  - holder: true
   - security-level: '7/10 (nur vergleichbar innerhalb des Kryptonite Level-Systems)'
   - colors:
 

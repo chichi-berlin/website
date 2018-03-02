@@ -19,7 +19,7 @@ specs:
   - frametype: 'Diamant'
   - frame: 'CP Alu Lite'
   - fork: ' Alu Lite Starrgabel'
-  - wheel size: '622mm'
+  - wheel-size: '622mm'
   - speeds: '8-Gang Nabenschaltung'
   - hubs: 'vorne: CP "Pro"; hinten: Shimano "Nexus", LL'
   - tyres: 'Schwalbe "CX-Comp"'

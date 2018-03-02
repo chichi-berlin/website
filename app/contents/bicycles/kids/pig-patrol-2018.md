@@ -17,7 +17,7 @@ specs:
   - frametypes: 'Diamant; Trapez'
   - frame: 'CP Pro Alu MTB'
   - fork: 'Federgabel Suntour SF13-XCT'
-  - wheel size: '559 mm'
+  - wheel-size: '559 mm'
   - speeds: '24-Gang Kettenschaltung'
   - tyres: 'Kenda, schwarz'
   - brakes: 'Tektro V-Brake'

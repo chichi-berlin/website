@@ -25,7 +25,7 @@ description: >
 specs:
   - frametype: 'Wave'
   - frame: 'Aluminium 6061, multiformed'
-  - fork:'Unicrown, Stahlschaft 1 1/8"'
+  - fork: 'Unicrown, Stahlschaft 1 1/8"'
   - wheel-size: '559 und 622'
   - bottom-bracket: 'Thun Basic, BSA'
   - crankset: 'Alukurbel, 38 Zähne'
