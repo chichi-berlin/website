@@ -1,5 +1,5 @@
 no-description:
-  other: 'Keine Beschreibung vorhande.'
+  other: 'Keine Beschreibung vorhanden.'
   
   
 size:
@@ -52,13 +52,13 @@ fork:
   other: 'Gabel'
 
 wheel-size:
-  other: 'Laufradhöhe'
+  other: 'Laufradgröße'
 
-bottom-bracket:
+bottom bracket:
   other: 'Innenlager'
 
 crankset:
-  other: 'Kurbelganitur'
+  other: 'Kettenradgarnitur'
 
 chain:
   other: 'Kette'
@@ -70,10 +70,10 @@ speeds:
   other: 'Gänge'
 
 hub:
-  one: 'Narbe'
-  other: 'Narben'
+  one: 'Nabe'
+  other: 'Naben'
 hubs:
-  other: 'Narben'
+  other: 'Naben'
 
 rim:
   one: 'Felge'
@@ -87,17 +87,17 @@ tyres:
 brakes:
   other: 'Bremsen'
 
-brake-levers:
+brake levers:
   other: 'Bremshebel'
 
 shifter:
-  other: 'Gangschaltung'
+  other: 'Schalthebel'
 
 saddle:
   other: 'Sattel'
 
 rack:
-  other: 'Ständer'
+  other: 'Gepäckträger'
 
 lights:
   other: 'Beleuchtung'
@@ -112,13 +112,13 @@ grips:
   other: 'Griffe'
 
 material-frame:
-  other: 'Rahmen-Material'
+  other: 'Material Rahmen'
 
 chainring:
-  other: 'Kettenkranz'
+  other: 'Kettenblatt'
 
 material-fork:
-  other: 'Gabel-Material'
+  other: 'Material Gabel'
 
 pedals:
   other: 'Pedale'
@@ -136,9 +136,9 @@ drive:
   other: 'Antrieb'
 
 derailleur:
-  other: 'Umwerfer'
+  other: 'Schaltwerk/Umwerfer'
 derailleurs:
-  other: 'Schaltwerk'
+  other: 'Schaltelemente'
 
 seatpost:
   other: 'Sattelstütze'
@@ -147,13 +147,13 @@ features:
   other: 'Merkmale'
 
 measures:
-  other: 'Masse'
+  other: 'Maße'
 
-arm-length:
+arm length:
   other: 'Armlänge'
 
-bottom-bracket-fit:
-  other: 'Innenlager-Mass'
+bottom bracket fit:
+  other: 'Einbaumaße Innenlager'
 
 bcd:
   other: 'Lochkreisdurchmesser'
