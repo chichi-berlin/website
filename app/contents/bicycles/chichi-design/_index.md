@@ -7,7 +7,7 @@ linkTitle: 'CHICHI Design [Archiv]'
 slug: 'chichi-design'
 
 title: 'CHICHI Design'
-description: 'TODO'
+description: 'Unikate made by CHICHI'
 
 weight: 10
 menu:

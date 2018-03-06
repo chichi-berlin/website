@@ -43,9 +43,11 @@
     </div>
     
     <div class="row">
+        {{ $specs := $.Params.specs }}
+        
+        {{ if $specs }}
         <div class="specs">
             <ul>
-            {{ $specs := $.Params.specs }}
             {{ $splitPoint :=  div (len $specs) 2 | math.Floor }}
                 
             {{ range $specs }}
@@ -63,6 +65,7 @@
             {{ end }}
             </ul>
         </div>
+        {{ end }}
     </div>
     
 </section>

@@ -54,7 +54,7 @@ fork:
 wheel-size:
   other: 'Laufradgröße'
 
-bottom bracket:
+bottom-bracket:
   other: 'Innenlager'
 
 crankset:
@@ -87,7 +87,7 @@ tyres:
 brakes:
   other: 'Bremsen'
 
-brake levers:
+brake-levers:
   other: 'Bremshebel'
 
 shifter:
@@ -149,10 +149,10 @@ features:
 measures:
   other: 'Maße'
 
-arm length:
+arm-length:
   other: 'Armlänge'
 
-bottom bracket fit:
+bottom-bracket-fit:
   other: 'Einbaumaße Innenlager'
 
 bcd:
@@ -160,5 +160,3 @@ bcd:
 
 teeth:
   other: 'Zähne'
-
-

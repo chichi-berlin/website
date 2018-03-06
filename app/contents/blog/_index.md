@@ -6,7 +6,7 @@ layout: 'list'
 
 title: 'Blog'
 subtitle: 'some fasel subtitle words'
-description: 'TODO'
+description: 'News, Techinfo, Pflegetipps'
 keywords:
 
 itemsPerPage: 5
