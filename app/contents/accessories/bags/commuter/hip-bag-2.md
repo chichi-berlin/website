@@ -14,7 +14,7 @@ images:
   - '/media/images/rubrics/accessories/items/hip-bag_4.jpeg'
 
 description: >
-    Die Restrap Hüfttasche mit Schloßhalterung ist ein Must-Have Accessoire für unterwegs. Egal ob 
+    Die Restraasfqewv Hüfttasche mit Schloßhalterung ist ein Must-Have Accessoire für unterwegs. Egal ob 
     beim Laufen oder Fahrradfahren, trag all deine Dinge komfortabel und mit maximaler 
     Bewegungsfreiheit. Das einstellbare Hüftband hat einen magnetischen Verschluss. 100% 
     wasserfestes Material. 100% Handarbeit aus Yorkshire, England foo
