@@ -22,7 +22,7 @@ description: >
     Trage Deinen gesamten Hausstand bequem mit Dir herum. Der Commute Backpack fasst einfach 
     alles - von 10 Litern für Anfänger bis zu atemberaubenden 35 Litern für alte Hasen. Dank der 
     Möglichkeit den Rucksack bei geringer Befüllung zu komprimieren, muß die Optik nicht leiden. 
-    Schnell griffbereite Reißverschlusstaschen machen es einfach Deine Dinge sicher zu verwahren. 
+    Schnell zugängliche Reißverschlusstaschen machen es einfach, Deine Dinge sicher zu verwahren. 
     Dabei garantiert die Laptopinnentasche (bis zu 17 Zoll), dass Dein teuerstes Stück immer in 
     Sicherheit bleibt. Wasserfeste Stoffe und antibakterielle Polsterung halten Deine Tasche immer 
     frisch und trocken. 100% Handarbeit aus Yorkshire, England.

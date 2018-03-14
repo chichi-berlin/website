@@ -4,12 +4,12 @@ type: 'rubric'
 
 title: 'Kettenradgarnitur BLB Pista Vera'
 
-image: '/media/images/rubrics/parts/items/drive/crankset-blb-pista-vera_1.jpeg'
+image: '/media/images/rubrics/parts/items/crankset-blb-pista-vera_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/drive/crankset-blb-pista-vera_2.jpeg'
-  - '/media/images/rubrics/parts/items/drive/crankset-blb-pista-vera_3.jpeg'
-  - '/media/images/rubrics/parts/items/drive/crankset-blb-pista-vera_4.jpeg'
+  - '/media/images/rubrics/parts/items/crankset-blb-pista-vera_2.jpeg'
+  - '/media/images/rubrics/parts/items/crankset-blb-pista-vera_3.jpeg'
+  - '/media/images/rubrics/parts/items/crankset-blb-pista-vera_4.jpeg'
 
 description: >
     Elegant and klassisch gestaltete Kettenradgarnitur.
