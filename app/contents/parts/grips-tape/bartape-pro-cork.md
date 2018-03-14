@@ -6,10 +6,10 @@ type: 'rubric'
 model: 'Pro Cork Bar Tape'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/bartape-pro-cork_1.jpeg'
+image: '/media/images/rubrics/parts/items/cockpit/bartape-pro-cork_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/bartape-pro-cork_2.jpeg'
+  - '/media/images/rubrics/parts/items/cockpit/bartape-pro-cork_2.jpeg'
 
 description: >
     Dieses korkartige Lenkerband bietet exzellenten Grip und mildert Erschütterungen. Es ist 

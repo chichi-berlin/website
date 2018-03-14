@@ -8,6 +8,7 @@ slug: 'pedale'
 
 title: 'Pedale'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/drive/pedals-blb-classic-city_1.jpeg'
 
 weight: 5
 menu:

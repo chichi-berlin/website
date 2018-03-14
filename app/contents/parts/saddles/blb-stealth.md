@@ -6,13 +6,13 @@ type: 'rubric'
 model: 'Stealth'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/saddle-blb-stealth_1.jpeg'
+image: '/media/images/rubrics/parts/items/seats/saddle-blb-stealth_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/saddle-blb-stealth_2.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-stealth_3.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-stealth_4.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-stealth_5.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-stealth_2.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-stealth_3.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-stealth_4.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-stealth_5.jpeg'
 
 description: >
     Die optimierte Schaumdichte des Stealth hilft Druck zu reduzieren. Verchromte Sattelstreben 

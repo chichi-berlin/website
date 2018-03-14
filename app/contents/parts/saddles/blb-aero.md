@@ -6,14 +6,14 @@ type: 'rubric'
 model: 'Aero'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/saddle-blb-aero-carbon_1.jpeg'
+image: '/media/images/rubrics/parts/items/seats/saddle-blb-aero-carbon_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/saddle-blb-aero-carbon_2.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-aero-carbon_3.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-aero-cromo_4.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-aero-cromo_5.jpeg'
-  - '/media/images/rubrics/parts/items/saddle-blb-aero-cromo_6.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-aero-carbon_2.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-aero-carbon_3.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-aero-cromo_4.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-aero-cromo_5.jpeg'
+  - '/media/images/rubrics/parts/items/seats/saddle-blb-aero-cromo_6.jpeg'
 
 description: >
     Der Aero ist leicht und schmal. Er ist superbequem, ganz ohne Polsterung. Anatomisch sinnvoll 

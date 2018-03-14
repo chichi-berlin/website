@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Vegan Bar Tape'
 manufacturer: 'Cinelli'
 
-image: '/media/images/rubrics/parts/items/bartape-cinelli-vegan.jpeg'
+image: '/media/images/rubrics/parts/items/cockpit/bartape-cinelli-vegan.jpeg'
 
 description: >
     Neues Eco-Leder Superperformace Band mit exzellenten Anti-Rutsch Eigenschaften. Besonders 
