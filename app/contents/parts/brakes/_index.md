@@ -7,7 +7,8 @@ linkTitle: 'Bremsen'
 slug: 'bremsen'
 
 title: 'Bremsen' 
-description: 'TODO'
+description: 'Bremsen'
+image: '/media/images/rubrics/parts/items/brakes/kategoriebild-bremsen.jpg'
 
 weight: 2
 menu:
