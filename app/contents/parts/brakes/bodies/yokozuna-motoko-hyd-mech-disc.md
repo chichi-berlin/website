@@ -19,8 +19,8 @@ description: >
 
 specs:
   - campatibilities:
-      - 'passt zu mechanischen Bremshebeln'
-      - 'Internationaler Standard/Post Mount Standard (Die Flat Mount Version ist ebenfalls erhältlich)''
+    - 'passt zu mechanischen Bremshebeln'
+    - 'Internationaler Standard/Post Mount Standard (Die Flat Mount Version ist ebenfalls erhältlich)'
   - pistons: '2'
   - weight: '145g'
 

@@ -13,7 +13,7 @@ description: >
     
     
 specs:
-  - '100% Baumwolle'
+  - material: '100% Baumwolle'
   - season: '2014'
     
 ---

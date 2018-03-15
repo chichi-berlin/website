@@ -20,7 +20,7 @@ specs:
   - type: '1-fach'
   - arm-length: '165 mm'
   - bottom-bracket-fit: 'JIS'
-  - chain fit: '1/8"'
+  - chain-fit: '1/8"'
   - bcd: '130 mm'
   - teeth: 44
   - colors: 

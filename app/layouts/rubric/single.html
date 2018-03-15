@@ -72,57 +72,47 @@
     </div>
     
     
-    {{ $specs := $.Params.specs }}
-    {{ if $specs }}
+    {{ $specsList := $.Params.specs }}
+    {{ if $specsList }}
     
+    {{ $.Scratch.Add "specs" slice }}
+    
+    {{ range $specsList }}
+    {{ $spec := . }}
+    {{ range $specName, $value := $spec }}
+        {{ if $value }}
+        {{ $.Scratch.Add "specs" $spec }}
+        {{ end }}
+    {{ end }}
+    {{ end }}
+    
+    {{ $specs := $.Scratch.Get "specs" }}    
     {{ div (len $specs) 2 | $.Scratch.Set "splitPoint" }}
+    
     {{ if not (modBool (len $specs) 2) }}
-    {{ div (len $specs) 2 | math.Ceil | $.Scratch.Set "splitPoint" }} 
+        {{ $.Scratch.Get "splitPoint" | math.Ceil | $.Scratch.Set "splitPoint" }} 
     {{ end }}
     {{ if eq (len $specs) 1 }}
-    {{ $.Scratch.Set "splitPoint" 1 }}
-    {{ end }}
-    {{ if gt ($.Scratch.Get "splitPoint") (len $specs) }}
-    {{ len $specs | $.Scratch.Set "splitPoint" }}
+        {{ $.Scratch.Set "splitPoint" 1 }}
+    {{ else if gt ($.Scratch.Get "splitPoint") (len $specs) }}
+        {{ len $specs | $.Scratch.Set "splitPoint" }}
     {{ end }}
 
+    {{ $splitPoint := $.Scratch.Get "splitPoint" }}
+    
     <div class="specs row-2-cols">
-        {{ $colLeft := first ($.Scratch.Get "splitPoint") $specs }}
+        {{ $colLeft := first $splitPoint $specs }}
         <ul class="col--left">
         {{ range $colLeft }}        
-        {{ range $spec, $value := . }}
-            {{ if $value }}
-            <li>
-            {{ if not (isset $value 0) }}
-                <span class="label">{{ i18n $spec 1 }}</span>
-                <span class="value">{{ $value }}</span>
-            {{ else }}
-                <span class="label">{{ i18n $spec (len $value) }}</span>
-                <span class="value">{{ delimit $value ", " }}</span>
-            {{ end }}
-            </li>
-            {{ end }}
-        {{ end }}    
+            {{ template "spec-item" . }}    
         {{ end }}
         </ul>
 
-        {{ if lt ($.Scratch.Get "splitPoint") (len $specs) }}
-        {{ $colRight := after ($.Scratch.Get "splitPoint") $specs }}
+        {{ if lt $splitPoint (len $specs) }}
+        {{ $colRight := after $splitPoint $specs }}
         <ul class="col--right">
         {{ range $colRight }}        
-        {{ range $spec, $value := . }}
-            {{ if $value }}
-            <li>
-            {{ if not (isset $value 0) }}
-                <span class="label">{{ i18n $spec 1 }}</span>
-                <span class="value">{{ $value }}</span>
-            {{ else }}
-                <span class="label">{{ i18n $spec (len $value) }}</span>
-                <span class="value">{{ delimit $value ", " }}</span>
-            {{ end }}
-            </li>
-            {{ end }}
-        {{ end }}    
+            {{ template "spec-item" . }}    
         {{ end }}
         </ul>
         {{ end }}
@@ -131,4 +121,24 @@
     {{ end }}
     
 </section>
+{{ end }}
+
+
+
+{{ define "spec-item" }}
+    {{ range $spec, $value := . }}
+
+    {{ if $value }}
+    <li>
+    {{ if not (isset $value 0) }}
+        <span class="label">{{ i18n $spec 1 }}</span>
+        <span class="value">{{ $value }}</span>
+    {{ else }}
+        <span class="label">{{ i18n $spec (len $value) }}</span>
+        <span class="value">{{ delimit $value ", " }}</span>
+    {{ end }}
+    </li>
+    {{ end }}
+
+    {{ end }}
 {{ end }}

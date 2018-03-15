@@ -19,7 +19,7 @@ description:
 specs:
   - type: '2-fach'
   - arm-length: '170 mm'
-  - chain fit: '3/32"'
+  - chain-fit: '3/32"'
   - bcd: '130 mm'
   - teeth: '53/39'
   - color: 'silber'

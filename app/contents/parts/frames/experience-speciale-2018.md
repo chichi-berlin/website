@@ -35,7 +35,7 @@ specs:
     - '59'
   - weight: '1.850 g'
   - colors:
-      - 'Supersonic Grey'
-      - 'Black Thunderdome'
+    - 'Supersonic Grey'
+    - 'Black Thunderdome'
 
 ---

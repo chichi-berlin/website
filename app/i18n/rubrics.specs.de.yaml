@@ -174,3 +174,27 @@ bearing:
   
 rail:
   other: 'Rail'
+
+season:
+  other: 'Saison'
+  
+lenght:
+  other: 'Länge'
+  
+extras:
+  other: 'Extras'
+
+campatibility:
+  one: 'Kompatibilität'
+  other: 'Kompatibilitäten'
+campatibilities:
+  other: 'Kompatibilitäten'
+
+piston:
+  one: 'Kolben'
+  other: 'Kolben'
+pistons:
+  other: 'Kolben'
+  
+chain-fit:
+  other: 'Kettenpassung'
