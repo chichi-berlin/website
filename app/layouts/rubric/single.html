@@ -19,7 +19,12 @@
 </aside>
 {{ end }}
 
+
 {{ define "main" }}
+
+{{ $configurable := $.Param "configurable" | default false }}
+{{ $posts := $.Param "related-posts" | default slice }}
+
 <section class="edge-spacer--h">
     
     <h1 class="page-title">{{ $.Params.model }}</h1>
@@ -27,46 +32,103 @@
     <p class="page-subtitle">{{ . }}</p>
     {{ end }}
     
-    <div class="row-2-cols">        
-        <div class="col--left">
-            
-            {{ partial "components/image-gallery.html" . }}
-            
-        </div>        
-        <div class="col--right">
-            
-            <div class="description">
-                {{ default (i18n "no-description") $.Params.description }}
-            </div>
-            
-        </div>
-    </div>
     
     <div class="row">
-        {{ $specs := $.Params.specs }}
         
-        {{ if $specs }}
-        <div class="specs">
+        {{ partial "components/image-gallery.html" . }}
+        
+    </div>
+    
+    
+    <div class="description">
+        {{ default (i18n "no-description") $.Params.description }}
+    </div>
+    
+    
+    <div class="refs">
+        
+        {{ if $configurable }}
+        <div class="configurator-link">
+            <a href="https://hartje-konfigurator.de/de/contoura" target="_blank">{{ i18n "configure-now" }}</a>
+        </div>
+        {{ end }}
+        
+        {{ if gt (len $posts) 0 }}
+        <div class="post-links">
+            <span>{{ i18n "related-posts" }}:</span>
             <ul>
-            {{ $splitPoint :=  div (len $specs) 2 | math.Floor }}
-                
-            {{ range $specs }}
-            {{ range $spec, $value := . }}
+                {{ range $posts }}
+                {{ $path := printf "blog/articles/%s" . }}
+                {{ with $.Site.GetPage "page" $path }}
                 <li>
-                {{ if not (isset $value 0) }}
-                    <span class="label">{{ i18n $spec 1 }}</span>
-                    <span class="value">{{ $value }}</span>
-                {{ else }}
-                    <span class="label">{{ i18n $spec (len $value) }}</span>
-                    <span class="value">{{ delimit $value ", " }}</span>
-                {{ end }}
+                    <a href="{{ .URL | relLangURL }}">{{ .LinkTitle }}</a>
                 </li>
-            {{ end }}    
-            {{ end }}
+                {{ end }}
+                {{ end }}
             </ul>
         </div>
         {{ end }}
+        
     </div>
+    
+    
+    {{ $specs := $.Params.specs }}
+    {{ if $specs }}
+    
+    {{ div (len $specs) 2 | $.Scratch.Set "splitPoint" }}
+    {{ if not (modBool (len $specs) 2) }}
+    {{ div (len $specs) 2 | math.Ceil | $.Scratch.Set "splitPoint" }} 
+    {{ end }}
+    {{ if eq (len $specs) 1 }}
+    {{ $.Scratch.Set "splitPoint" 1 }}
+    {{ end }}
+    {{ if gt ($.Scratch.Get "splitPoint") (len $specs) }}
+    {{ len $specs | $.Scratch.Set "splitPoint" }}
+    {{ end }}
+
+    <div class="specs row-2-cols">
+        {{ $colLeft := first ($.Scratch.Get "splitPoint") $specs }}
+        <ul class="col--left">
+        {{ range $colLeft }}        
+        {{ range $spec, $value := . }}
+            {{ if $value }}
+            <li>
+            {{ if not (isset $value 0) }}
+                <span class="label">{{ i18n $spec 1 }}</span>
+                <span class="value">{{ $value }}</span>
+            {{ else }}
+                <span class="label">{{ i18n $spec (len $value) }}</span>
+                <span class="value">{{ delimit $value ", " }}</span>
+            {{ end }}
+            </li>
+            {{ end }}
+        {{ end }}    
+        {{ end }}
+        </ul>
+
+        {{ if lt ($.Scratch.Get "splitPoint") (len $specs) }}
+        {{ $colRight := after ($.Scratch.Get "splitPoint") $specs }}
+        <ul class="col--right">
+        {{ range $colRight }}        
+        {{ range $spec, $value := . }}
+            {{ if $value }}
+            <li>
+            {{ if not (isset $value 0) }}
+                <span class="label">{{ i18n $spec 1 }}</span>
+                <span class="value">{{ $value }}</span>
+            {{ else }}
+                <span class="label">{{ i18n $spec (len $value) }}</span>
+                <span class="value">{{ delimit $value ", " }}</span>
+            {{ end }}
+            </li>
+            {{ end }}
+        {{ end }}    
+        {{ end }}
+        </ul>
+        {{ end }}
+        
+    </div>
+    {{ end }}
     
 </section>
 {{ end }}

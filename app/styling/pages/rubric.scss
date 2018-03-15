@@ -161,26 +161,35 @@
             }
         }
         
-        
-        .description {
-            
+        .description, .refs {
+            max-width: 70%;
+            margin: rem(spacing(6)) auto;
         }
-        
+            
         .specs {
-            margin-top: rem(spacing(5));
+            max-width: 80%;
+            margin: rem(spacing(6)) auto 0;
+            display: flex;
+            flex-flow: row wrap;
+        
+            .col--left {
+                padding-right: rem(spacing(2));
+            }
+            .col--right {
+                padding-left: rem(spacing(2));
+            }
             
             ul {
-                display: flex;
-                flex-flow: row wrap;
                 
-                li {
-                    width: 50%;
-                }
+            }
+            
+            li {
                 
-                .label { 
-                    &:after {
-                        content: ':';;
-                    }
+            }
+            
+            .label { 
+                &:after {
+                    content: ':';
                 }
             }
         }

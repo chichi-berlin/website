@@ -21,7 +21,7 @@ description:
 specs:
   - type: '1-fach'
   - arm-length: '165 mm'
-  - bottom-bracket fit: 'JIS'
+  - bottom-bracket-fit: 'JIS'
   - chain fit: '1/8"'
   - bcd: '144 mm'
   - teeth: 

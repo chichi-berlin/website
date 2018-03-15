@@ -1,8 +1,24 @@
+{{ slice ($.Param "image") | $.Scratch.Add "images" }}
+{{ range ($.Param "images" | default slice) }}
+    {{ $.Scratch.Add "images" . }}
+{{ end }}
+
 <div class="component__image-gallery">
     
-    <div class="controls"></div>
-    
     <div class="viewport">
-        
+        {{ range $.Scratch.Get "images" }}
+            <div class="item">
+            {{ partial "components/img.html" . }}
+            </div>
+        {{ end }}
     </div>
+    
+    <div class="controls">
+    {{ range $.Scratch.Get "images" }}
+        <div class="item">
+        {{ partial "components/img.html" . }}
+        </div>
+    {{ end }}
+    </div>
+    
 </div>

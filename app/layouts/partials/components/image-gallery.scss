@@ -1,3 +1,60 @@
 .component__image-gallery {
+
+    .viewport {
+        
+        .item {
+            height: rem(520);
+            padding: rem(8);
+        }
+    }
     
+    .controls {
+        max-width: 50%;
+        margin: rem(spacing(3)) auto 0;
+        
+        .item {
+            height: rem(100);
+            background-color: color(white);
+            cursor: pointer;
+            
+            &:focus {
+                outline: none;
+            }
+            
+            & ~ * {
+                margin-left: rem(10);
+            }
+        }
+    }
+    
+    
+    .item {
+        @include flex-center;
+        overflow: hidden;
+        
+        & > * {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    
+    
+    .slick-prev, .slick-next {
+        
+        &:before {
+            color: color(grey-dark);
+            font-weight: 600;            
+        }
+        
+        &.slick-disabled {
+            &:before {
+                opacity: 0;            
+            }            
+        }
+
+    }
+    
+    .slick-dots li button::before {
+        font-size: rem(16);
+    }
 }

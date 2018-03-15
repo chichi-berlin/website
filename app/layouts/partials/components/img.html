@@ -1,0 +1,12 @@
+{{ if isset .  "src" }}
+<img 
+    src="{{ .src }}" 
+    alt="{{ .alt }}"
+>
+{{ else }}
+<img 
+    src="{{ . }}"
+>
+{{ end }}
+
+

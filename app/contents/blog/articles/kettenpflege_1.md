@@ -2,6 +2,7 @@
 
 Title: 'Kettenpflege'
 description: 'Muß ich irgendwas mit meiner Kette machen, außer regelmäßig Öl drauf?'
+slug: 'kettenpflege-teil-1'
 publishDate: '2018-03-10'
 keywords:
   - Pflege
@@ -13,7 +14,7 @@ keywords:
 draft: false
 
 tags:
-  - tips
+  - news
 
 ---
 

@@ -1,8 +1,4 @@
 
-import SideMenu from './../lib/side-menu.js';
-
-
-
 const global = window;
 const FOOTER_SCROLL_THRESHOLD = 100;
 
@@ -99,7 +95,7 @@ const selectors = {
     },
     
     
-    '#page-aside-nav': function(){
+    '#page-aside-nav[data-state="open"]': function(){
         const element = this;
         
         global.setTimeout(()=>{
@@ -110,6 +106,35 @@ const selectors = {
     
     '.component__image-gallery': function(){
         const element = this;
+        const { jQuery } = global;
+        
+        if( typeof jQuery === 'undefined' ){
+            return console.log( 'jquery not available' );
+        }
+        
+        const controls = element.querySelector( '.controls' );
+        const viewport = element.querySelector( '.viewport' );
+
+        jQuery( viewport ).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: controls,
+            dots: true
+        });
+        jQuery( controls ).slick({
+            initialSlide: 0,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: viewport,
+            centerMode: false,
+            focusOnSelect: true,
+            arrows: true,
+            infinite: false,
+            variableWidth: true,
+            draggable: false
+       });
     }
 };
 
