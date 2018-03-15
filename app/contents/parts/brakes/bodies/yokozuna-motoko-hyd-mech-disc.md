@@ -18,7 +18,7 @@ description: >
 
 
 specs:
-  - campatibilities:
+  - compatibilities:
     - 'passt zu mechanischen Bremshebeln'
     - 'Internationaler Standard/Post Mount Standard (Die Flat Mount Version ist ebenfalls erhältlich)'
   - pistons: '2'

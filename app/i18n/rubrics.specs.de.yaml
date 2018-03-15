@@ -173,7 +173,7 @@ bearing:
   other: 'Lager'
   
 rail:
-  other: 'Rail'
+  other: 'Strebe'
 
 season:
   other: 'Saison'
@@ -184,10 +184,10 @@ lenght:
 extras:
   other: 'Extras'
 
-campatibility:
+compatibility:
   one: 'Kompatibilität'
   other: 'Kompatibilitäten'
-campatibilities:
+compatibilities:
   other: 'Kompatibilitäten'
 
 piston:
