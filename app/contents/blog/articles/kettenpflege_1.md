@@ -1,7 +1,7 @@
 ---
 
 Title: 'Kettenpflege'
-description: 'Muß ich irgendwas mit meiner Kette machen, außer regelmäßig Öl drauf?'
+description: 'Fahrrad Kette Pflege Öl Verschleiß Tips Tech Mechaniker'
 slug: 'kettenpflege-teil-1'
 publishDate: '2018-03-10'
 keywords:
@@ -14,12 +14,12 @@ keywords:
 draft: false
 
 tags:
-  - news
+  - tips
 
 ---
 
 
-### Kettenpflege
+### Was tun, was lassen, um die Lebensdauer einer Kette zu verlängern?
 
 Grundsätzlich einmal ist die Kette ein Verschleißteil, weswegen man sich nicht bei dem Versuch, ihren Neuzustand zu konservieren, verkünsteln muß.
 Auch Rost ist in der Regel undramatisch - sie ist verschliessen, bevor sie das Lied "Rost" mit all seinen 3 Strophen zu Ende gequietscht hat.

@@ -1,7 +1,7 @@
 ---
 
 Title: 'STVZO'
-description: 'Ist das Rad verkehrssicher?'
+description: 'STVZO Verkehrssicher Fahrrad Vorschrift Sicherheit Strafe'
 publishDate: '2018-03-17'
 keywords:
   - Sicherheit

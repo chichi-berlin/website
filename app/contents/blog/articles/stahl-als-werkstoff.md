@@ -1,8 +1,8 @@
 ---
 
-Title: 'Stahl - der Alleskönner'
+Title: 'Stahllegierungen im Fahrradbau'
 description: 'Warum Stahl einfach mal das geilste ist'
-publishDate: '2018-03-17'
+publishDate: 'deep future'
 keywords:
   - Material
   - Legierung
@@ -11,7 +11,7 @@ keywords:
   - Rahmenbau
   - Eigenschaften
 
-draft: false
+draft: true
 
 tags:
   - tips
@@ -19,7 +19,7 @@ tags:
 ---
 
 
-### Stahllegierungen im Fahrradbau
+### Stahl - nach wie vor ein attraktive Grundlage für hochwertige Farräder
 
 
 
