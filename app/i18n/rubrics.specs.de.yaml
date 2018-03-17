@@ -2,7 +2,7 @@ size:
   one: 'Grösse'
   other: 'Grössen'
 sizes:
-  other: 'Grösse'
+  other: 'Grössen'
 
 color:
   one: 'Farbe'
