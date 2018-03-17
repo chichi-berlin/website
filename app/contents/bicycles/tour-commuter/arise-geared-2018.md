@@ -6,13 +6,19 @@ type: 'rubric'
 model: 'Arise'
 manufacturer: 'Bombtrack'
 
-image: '/media/images/rubrics/bicycles/items/arise-geared-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/arise-geared-2018_1.jpg'
+
+images:
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_2.jpg'
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_3.jpg'
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_4.jpg'
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_5.jpg'
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_6.jpg'
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_7.jpg'
+  - '/media/images/rubrics/bicycles/items/arise-geared-2018_8.jpg'
 
 description: >
-     The Arise geared takes the base Arise frame into a fully commuter friendly package. The durable 
-     full crmo frame has a geometry well suited for cruising the city streets. Components are 
-     carefully selected for making daily rides all the more comfortable. Fitted with the Shimano 
-     Nexus 8-speed hub, fenders, rack mounts, the Arise geared is ready to take on the urban jungle.
+     Das Arise geared ist mit seiner Rahmengeomerie besonders für Vielfahrer in der Stadt attraktiv. Die Komponenten garantieren besten Komfort bei alltäglicher Nutzung.
 
 specs:
   - frametype: 'Diamant'
