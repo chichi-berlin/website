@@ -3,19 +3,16 @@
 type: 'rubric'
 
 
-model: 'Oslo (Wave)'
+model: 'Oslo (Diamant)'
 manufacturer: 'BBF Bike'
 
-image: '/media/images/rubrics/bicycles/items/oslo-wave-2018_1.jpg'
-
-images:
-  - '/media/images/rubrics/bicycles/items/oslo-wave-2018_2.jpg'
+image: '/media/images/rubrics/bicycles/items/oslo-diamant-2018.jpg'
 
 description: >
      Unser preisgünstigstes Alltagsrad mit Vollausstattung.
 
 specs:
-  - frametype: 'Wave' 
+  - frametype: 'Diamant' 
   - material-frame: 'Stahl'
   - material-fork: 'Stahl'
   - wheel-size: '622mm'
@@ -26,11 +23,10 @@ specs:
   - lights: 'Trelock Mini LS592 LED, Schalter; AXA Spark m. Standlicht'
   - weight: '17,5 kg'
   - sizes:
-    - '45'  
-    - '48'
-    - '53'
+    - '50'  
+    - '55'
+    - '58'
   - colors:
     - 'schwarz'
-    - 'bordeux'
 
 ---

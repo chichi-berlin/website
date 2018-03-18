@@ -8,7 +8,7 @@ slug: 'taschen'
 
 title: 'Fahrradtaschen'
 description: 'TODO'
-image: ''
+image: '/media/images/rubrics/accessories/items/hip-bag_2.jpeg'
 
 weight: 9
 menu:
