@@ -8,7 +8,7 @@ slug: 'bremshebel'
 
 title: 'Bremshebel'
 description: 'TODO'
-image: '/media/images/rubrics/parts/items/'
+image: '/media/images/rubrics/parts/items/brakes/kategoriebild-bremshebel.jpg'
 
 weight: 1
 menu:

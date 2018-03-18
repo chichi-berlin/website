@@ -8,7 +8,7 @@ slug: 'bremskoerper'
 
 title: 'Bremskörper'
 description: 'TODO'
-image: '/media/images/rubrics/parts/items/'
+image: '/media/images/rubrics/parts/items/brakes/kategoriebild-bremskoerper.jpg'
 
 weight: 2
 menu:
