@@ -8,6 +8,7 @@ slug: 'beleuchtung'
 
 title: 'Beleuchtung'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 2
 menu:

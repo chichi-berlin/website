@@ -8,6 +8,7 @@ slug: 'kindersitze'
 
 title: 'Kindersitze'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 6
 menu:

@@ -8,6 +8,7 @@ slug: 'buegelschloesser'
 
 title: 'Bügelschlösser'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 2
 menu:

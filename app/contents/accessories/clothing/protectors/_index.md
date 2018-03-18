@@ -8,6 +8,7 @@ slug: 'protektoren'
 
 title: 'Protektoren'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 7
 menu:

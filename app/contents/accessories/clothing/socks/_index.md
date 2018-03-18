@@ -8,6 +8,7 @@ slug: 'socken'
 
 title: 'Socken'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 6
 menu:

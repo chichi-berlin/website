@@ -8,6 +8,7 @@ slug: 'karten--handy--kamera'
 
 title: 'Halterungen für Karten, Handy, Kamera'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 3
 menu:

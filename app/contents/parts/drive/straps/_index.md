@@ -8,6 +8,7 @@ slug: 'straps'
 
 title: 'Straps & Körbchen'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 6
 menu:

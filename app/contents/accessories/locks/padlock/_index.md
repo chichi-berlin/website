@@ -8,6 +8,7 @@ slug: 'vorhaengeschloesser'
 
 title: 'Vorhängeschlösser'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 5
 menu:

@@ -8,6 +8,7 @@ slug: 'chichi-design'
 
 title: 'CHICHI Design'
 description: 'Unikate made by CHICHI'
+image: '/media/images/rubrics/bicycles/items/'
 
 weight: 10
 menu:

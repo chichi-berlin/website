@@ -8,6 +8,7 @@ slug: 'vorbauten'
 
 title: 'Vorbauten' 
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 10
 menu:

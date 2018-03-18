@@ -8,6 +8,7 @@ slug: 'ruecklichter'
 
 title: 'Rücklichter'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 4
 menu:

@@ -8,6 +8,7 @@ slug: 'kartuschenpumpen'
 
 title: 'Kartuschenpumpen'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 3
 menu:

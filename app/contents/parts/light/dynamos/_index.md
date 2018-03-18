@@ -8,6 +8,7 @@ slug: 'dynamos'
 
 title: 'Dynamos'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 1
 menu:

@@ -8,6 +8,7 @@ slug: 'komponentensicherung'
 
 title: 'Komponentensicherung'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 6
 menu:

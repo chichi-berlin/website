@@ -8,6 +8,7 @@ slug: 'tourenrad-bereifung'
 
 title: 'Rourenrad Bereifung'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 2
 menu:

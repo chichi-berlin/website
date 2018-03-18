@@ -8,6 +8,7 @@ slug: 'bremshebel'
 
 title: 'Bremshebel'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 1
 menu:

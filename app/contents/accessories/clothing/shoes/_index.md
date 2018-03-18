@@ -8,6 +8,7 @@ slug: 'schuhe'
 
 title: 'Schuhe'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 5
 menu:

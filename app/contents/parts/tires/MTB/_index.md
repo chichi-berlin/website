@@ -8,6 +8,7 @@ slug: 'mountainbike-bereifung'
 
 title: 'Mountainbike Bereifung'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 5
 menu:

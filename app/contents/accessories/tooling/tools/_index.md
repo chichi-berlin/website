@@ -8,6 +8,7 @@ slug: 'werkzeuge'
 
 title: 'Werkzeuge'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 2
 menu:

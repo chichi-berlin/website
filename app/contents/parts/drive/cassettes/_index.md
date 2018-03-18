@@ -8,6 +8,7 @@ slug: 'kassetten--kraenze'
 
 title: 'Kassetten & Kränze'
 description: 'TODO'
+image: '/media/images/rubrics/parts/items/'
 
 weight: 1
 menu:

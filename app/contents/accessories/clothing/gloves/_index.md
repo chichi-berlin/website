@@ -8,6 +8,7 @@ slug: 'handschuhe'
 
 title: 'Handschuhe'
 description: 'TODO'
+image: '/media/images/rubrics/accessories/items/'
 
 weight: 4
 menu:
