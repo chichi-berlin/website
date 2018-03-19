@@ -200,19 +200,19 @@ chain-fit:
   other: 'Kettenpassung'
   
 clamp-size-stem:
-  other: 'Clam Size Stem'
+  other: 'Klemm-Maß VB'
 
 clamp-size:
-  one: 'Schellengrösse'
-  other: 'Schellengrössen'
+  one: 'Klemm-Maß'
+  other: 'Klemm-Maß'
 clamp-sizes:
-  other: 'Schellengrössen'
+  other: 'Klemm-Maß'
   
 diameter:
   other: 'Durchmesser'
   
 reach:
-  other: 'Reichweite'
+  other: 'reach'
   
 internal-diameter:
-  other: 'Innerer Durchmesser'
+  other: 'Innerendurchmesser'

@@ -8,7 +8,7 @@ slug: 'antrieb'
 
 title: 'Antrieb'
 description: 'TODO'
-image: '/media/images/rubrics/parts/items/'
+image: '/media/images/rubrics/parts/items/drive/kategoriebild-antrieb.jpg'
 
 weight: 1
 menu:
