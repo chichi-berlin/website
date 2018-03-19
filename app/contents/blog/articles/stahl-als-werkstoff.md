@@ -2,7 +2,7 @@
 
 Title: 'Stahllegierungen im Fahrradbau'
 description: 'Warum Stahl einfach mal das geilste ist'
-publishDate: 'deep future'
+# publishDate: 'TODO'
 keywords:
   - Material
   - Legierung
@@ -19,8 +19,4 @@ tags:
 ---
 
 
-### Stahl - nach wie vor ein attraktive Grundlage für hochwertige Farräder
-
-
-
----
+## Stahl - nach wie vor ein attraktive Grundlage für hochwertige Farräder

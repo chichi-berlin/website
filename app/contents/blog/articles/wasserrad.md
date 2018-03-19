@@ -3,7 +3,7 @@ Title: 'Unikate von CHICHI'
 description: 'Unikat Fahrrad Design Einzelstück Individuell Custom Fahrradbau Chichi'
 slug: ''
 linkTitle: 'Name of the Link'
-publishDate: 'future'
+# publishDate: 'TODO'
 keywords:
   - Custom
   - Chichi
@@ -18,7 +18,7 @@ tags:
 ---
 
 
-### Das Wasserrad
+## Das Wasserrad
 
 Eine unserer ersten Aufbauten war das so genannte Wasserrad. Der hochwertige Stahlrahmen wurde nach einer Vorbehandlung in verschiedenen türkis-, petrol, und aqua-Tönen mehrfach beschichtet.
 

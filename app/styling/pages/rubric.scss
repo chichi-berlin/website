@@ -161,22 +161,59 @@
             }
         }
         
-        .description, .refs {
+        .description {
             max-width: 70%;
             margin: rem(spacing(6)) auto;
+            
+            .post-links {
+                margin-top: rem(spacing(2));
+                ul {
+                    list-style: initial;
+                    margin-left: 1em;
+                    
+                    li:before {
+                        contents: '';
+                    }
+                }
+                
+                a {
+                    @include text-link;
+                }
+            }
+        }
+        
+        .configurator-link {
+            text-align: center;
+            
+            a {
+                @include btn--primary;
+                
+                @include type-size(ml);
+                font-weight: 400;
+                
+                &:before {
+                    margin-bottom: -8%;
+                }
+                
+                &:hover, &:focus {
+                    &:before {
+                        height: 260%;
+                    }
+                }
+            }
         }
             
         .specs {
-            max-width: 80%;
-            margin: rem(spacing(6)) auto 0;
+            max-width: 70%;
+            margin: rem(spacing(6)) auto rem($desktop_aside-gap);
             display: flex;
             flex-flow: row wrap;
         
             .col--left {
-                padding-right: rem(spacing(2));
+                padding-right: rem(spacing(3));
             }
             .col--right {
-                padding-left: rem(spacing(2));
+                padding-left: rem(spacing(3));
             }
             
             ul {

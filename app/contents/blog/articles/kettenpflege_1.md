@@ -19,7 +19,7 @@ tags:
 ---
 
 
-### Was tun, was lassen, um die Lebensdauer einer Kette zu verlängern?
+## Was tun, was lassen, um die Lebensdauer einer Kette zu verlängern?
 
 Grundsätzlich einmal ist die Kette ein Verschleißteil, weswegen man sich nicht bei dem Versuch, ihren Neuzustand zu konservieren, verkünsteln muß.
 Auch Rost ist in der Regel undramatisch - sie ist verschliessen, bevor sie das Lied "Rost" mit all seinen 3 Strophen zu Ende gequietscht hat.
@@ -39,5 +39,3 @@ Eine geölte Kette sieht nicht geölt aus, es sei denn, ...
 ... Du hast es falsch gemacht. In einem solchen Fall verklumpt das Öl schön mit dem Staub der Straßen zu einer dicken schmirgeligen Matsche am ganzen Antrieb inklusive Schaltkomponenten. Die Funktion aller involvierten Teile verschlechtert sich, und der Verschleiß wird beschleunigt. Also, einfach nicht machen. Wenn Du einmal zu großzügig warst, lässt sich der Schaden durch das Abwischen der Kette mit einem trockenen Stofftuch begrenzen.
 
 Viel Erfolg!
-
----

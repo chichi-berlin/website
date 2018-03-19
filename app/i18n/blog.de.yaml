@@ -16,6 +16,13 @@ tag:
   one: 'Kategorie'
   other: 'Kategorien'
   
+page: 
+  one: 'Seite'
+  other: 'Seiten'
+  
+page-number-separator:
+  other: 'von'
+  
 read-more:
   other: 'weiterlesen'
   

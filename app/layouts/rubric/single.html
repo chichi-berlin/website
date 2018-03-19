@@ -41,17 +41,9 @@
     
     
     <div class="description">
-        {{ default (i18n "no-description") $.Params.description }}
-    </div>
-    
-    
-    <div class="refs">
-        
-        {{ if $configurable }}
-        <div class="configurator-link">
-            <a href="https://hartje-konfigurator.de/de/contoura" target="_blank">{{ i18n "configure-now" }}</a>
-        </div>
-        {{ end }}
+        <p>
+            {{ default (i18n "no-description") $.Params.description }}
+        </p>
         
         {{ if gt (len $posts) 0 }}
         <div class="post-links">
@@ -68,8 +60,16 @@
             </ul>
         </div>
         {{ end }}
-        
     </div>
+    
+    
+    {{ if $configurable }}
+    <div class="configurator-link">
+        <a href="https://hartje-konfigurator.de/de/contoura" target="_blank">
+            <span>{{ i18n "configure-now" }}</span>
+        </a>
+    </div>
+    {{ end }}
     
     
     {{ $specsList := $.Params.specs }}
@@ -87,7 +87,7 @@
     {{ end }}
     
     {{ $specs := $.Scratch.Get "specs" }}    
-    {{ div (len $specs) 2 | $.Scratch.Set "splitPoint" }}
+    {{ div (len $specs) 2.0 | $.Scratch.Set "splitPoint" }}
     
     {{ if not (modBool (len $specs) 2) }}
         {{ $.Scratch.Get "splitPoint" | math.Ceil | $.Scratch.Set "splitPoint" }} 
@@ -103,20 +103,19 @@
     <div class="specs row-2-cols">
         {{ $colLeft := first $splitPoint $specs }}
         <ul class="col--left">
-        {{ range $colLeft }}        
-            {{ template "spec-item" . }}    
+        {{ range $colLeft }}
+            {{ template "spec-item" . }}
         {{ end }}
         </ul>
 
         {{ if lt $splitPoint (len $specs) }}
         {{ $colRight := after $splitPoint $specs }}
         <ul class="col--right">
-        {{ range $colRight }}        
-            {{ template "spec-item" . }}    
+        {{ range $colRight }}
+            {{ template "spec-item" . }}
         {{ end }}
         </ul>
         {{ end }}
-        
     </div>
     {{ end }}
     

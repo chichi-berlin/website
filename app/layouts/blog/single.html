@@ -8,7 +8,7 @@
 <section class="edge-spacer--h">
     
     <h1 class="page-title">{{ .Title }}</h1>
-    {{ with $.Params.subtitle }}
+    {{ with $.Params.subtitle | default (printf "%02d.%02d.%d" .PublishDate.Day .PublishDate.Month .PublishDate.Year) }}
     <p class="page-subtitle">{{ . }}</p>
     {{ end }}
     
@@ -19,18 +19,19 @@
             </div>
             
             <nav class="component__article-nav">
-                {{ with .NextInSection }}
-                {{ if ne . $firstArticle }}
-                <a class="next" href="{{ .Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .LinkTitle }}</span></a>
-                {{ end }}
+                {{ with .PrevInSection }}
+                <span class="prev">                    
+                    <a href="{{ .Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .LinkTitle }}</span></a>
+                </span>                
                 {{ end }}
     
-                {{ with .PrevInSection }}
-                {{ if ne . $lastArticle }}
-                <a class="prev" href="{{ .Permalink | relLangURL }}"><span>{{ truncate 20 "..." .LinkTitle }}</span> →</a>
-                {{ end }}
+                {{ with .NextInSection }}
+                <span class="next">
+                    <a href="{{ .Permalink | relLangURL }}"><span>{{ truncate 20 "..." .LinkTitle }}</span> →</a>
+                </span>
                 {{ end }}
             </nav>
+            
         </article>
         
         {{ partial "components/blog-sidebar.html" . }}

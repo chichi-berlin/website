@@ -5,24 +5,67 @@
         .row-2-cols {
             .col--left {
                 flex-grow: 1;
-                
-                ul > li {
-                    
-                    & ~ *{
-                        margin-top: rem(spacing(6))
+
+                .articles, .article--contents {
+                    h3 {
+                        margin-bottom: rem(30);
+                        @include type(xxxl);
+                        font-weight: 600;
                     }
                     
+                    p + h3 {
+                        margin-top: rem(50);
+                    }
                 }
                 
-                h3 {
-                    margin-bottom: rem(30);
-                    @include type(xxxl);
-                    font-weight: 600;
+                .articles {
+                    > li {
+                                        
+                        & ~ *{
+                            margin-top: rem(spacing(6))
+                        }
+                        
+                    }
                 }
                 
-                p + h3 {
-                    margin-top: rem(50);
+                .article--content {
+                    h2 {
+                        font-size: rem(34);
+                        margin-bottom: rem(spacing(4));
+                    }
+                    
+                    p + h2 {
+                        margin-top: rem(60);
+                    }
+                    
+                    ul {
+                        list-style: disc outside;
+                        padding-left: 1em;
+                        
+                        margin: rem(30) 0;
+                        
+                        li {
+                            & ~ li {
+                                margin-top: rem(spacing(1));
+                            }
+                        }
+                        
+                        ul {
+                            list-style: circle outside;
+                            padding-left: 1.5em;
+                            margin: rem(spacing(1)) 0;
+                        }
+                    }
+                    
+                    em {
+                        font-family: 'Open Sans Italic';
+                    }
+                    
+                    a {
+                        @include text-link;
+                    }
                 }
+
             }    
         }
         
@@ -55,5 +98,6 @@
                 }
             }
         }
+        
     }
 }

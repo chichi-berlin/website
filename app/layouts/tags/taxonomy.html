@@ -6,12 +6,18 @@
 {{ $paginator := .Paginate ($articleList.ByDate.Reverse) $itemsPerPage }}
 <section class="edge-spacer--h">
 
-    <h1>{{ i18n "tag" 1 }}: {{ .Title }}</h1>
+    <h1 class="page-title">{{ i18n "tag" 1 }}: {{ .Title }}</h1>
+    <p class="page-subtitle">
+        {{ i18n "page" 1 }}
+        {{ $paginator.PageNumber }}
+        {{ i18n "page-number-separator" }}
+        {{ $paginator.TotalPages }}
+    </p>
 
     <div class="row-2-cols">
         <article class="col--left">
         {{ if gt (len $articleList) 0 }}
-            <ul>
+            <ul class="articles">
                 {{ range $articleList }}
                 <li>
                     {{ partial "components/article-preview.html" . }}

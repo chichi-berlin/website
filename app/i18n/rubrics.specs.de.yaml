@@ -198,3 +198,21 @@ pistons:
   
 chain-fit:
   other: 'Kettenpassung'
+  
+clamp-size-stem:
+  other: 'Clam Size Stem'
+
+clamp-size:
+  one: 'Schellengrösse'
+  other: 'Schellengrössen'
+clamp-sizes:
+  other: 'Schellengrössen'
+  
+diameter:
+  other: 'Durchmesser'
+  
+reach:
+  other: 'Reichweite'
+  
+internal-diameter:
+  other: 'Innerer Durchmesser'

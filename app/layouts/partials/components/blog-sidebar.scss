@@ -37,15 +37,7 @@
         @include type(ml);       
         
         a {
-            text-decoration: underline;
-            
-            transition: all 0.2s;
-            
-            &:hover, &:focus {
-                text-decoration: none;
-                background-color: rgba( color(brand-pink), 0.8);
-                color: color(white);
-            }
+            @include text-link;
         }
     }
 

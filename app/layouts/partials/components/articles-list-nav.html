@@ -2,20 +2,20 @@
 
 {{ if or $paginator.HasNext $paginator.HasPrev }}
 <nav class="component__articles-list-nav">
-    {{ if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL | relLangURL }}">← <span>{{ i18n "older-articles" }}</span></a>
-    {{ else }}
-    <span></span>
-    {{ end }}
+    <span>
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL | relLangURL }}">← <span>{{ i18n "older-articles" }}</span></a>
+        {{ end }}
+    </span>
     
     {{ if gt $paginator.TotalPages 1 }}
     <span class="pages--number">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
     {{ end }}
     
-    {{ if $paginator.HasPrev}}
-    <a href="{{ $paginator.Prev.URL | relLangURL }}"><span>{{ i18n "newer-articles" }}</span> →</a>
-    {{ else }}
-    <span></span>
-    {{ end }}
+    <span>
+        {{ if $paginator.HasPrev}}
+        <a href="{{ $paginator.Prev.URL | relLangURL }}"><span>{{ i18n "newer-articles" }}</span> →</a>
+        {{ end }}
+    </span>
 </nav>
 {{ end }}

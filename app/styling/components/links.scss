@@ -39,6 +39,16 @@ $underline-thickness: 1;
     }
 }
 
-main {
 
+@mixin text-link {
+    text-decoration: underline;
+    
+    transition: all 0.2s;
+    
+    &:hover, &:focus {
+        text-decoration: none;
+        background-color: rgba( color(brand-pink), 0.8);
+        color: color(white);
+    }
 }
+.text-link { @include text-link; }

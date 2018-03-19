@@ -1,9 +1,20 @@
 .component__image-gallery {
 
+    $viewport-height: 520; 
+    
     .viewport {
+
+        // NOTE: html/style defaults to stacking images in viewport under each other. Only 
+        // after a moment, slick logic kicks in and puts them in a row. Since it's async, it's not
+        // ensured, that this will happen before page scroll event, responsible for showing footer, 
+        // has determined overall page height. Eventually this causes the footer not being displayed 
+        // properly when reaching the end of the page.
+        // The following rule ensures this, because viewport height is equal to the height of its
+        // containing items
+        height: rem($viewport-height);
         
         .item {
-            height: rem(520);
+            height: rem($viewport-height);
             padding: rem(8);
         }
     }
@@ -51,8 +62,19 @@
                 opacity: 0;            
             }            
         }
-
     }
+    
+    .slick-prev {
+        &:before {
+            content: '<';
+        }
+    }
+    .slick-next {
+        &:before {
+            content: '>';
+        }
+    }
+     
     
     .slick-dots li button::before {
         font-size: rem(16);
