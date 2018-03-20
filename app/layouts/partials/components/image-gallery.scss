@@ -1,6 +1,7 @@
 .component__image-gallery {
 
-    $viewport-height: 520; 
+    $viewport-height: 520;
+    $controls-height: 100;
     
     .viewport {
 
@@ -17,14 +18,22 @@
             height: rem($viewport-height);
             padding: rem(8);
         }
+        
+        opacity: 0;
+        transition: opacity 0.2s;
+        &.slick-initialized {
+            opacity: 1;
+        }
     }
     
     .controls {
         max-width: 50%;
         margin: rem(spacing(3)) auto 0;
         
+        height: rem($controls-height);
+        
         .item {
-            height: rem(100);
+            height: rem($controls-height);
             background-color: color(white);
             cursor: pointer;
             
@@ -35,6 +44,12 @@
             & ~ * {
                 margin-left: rem(10);
             }
+        }
+        
+        opacity: 0;
+        transition: opacity 0.2s;
+        &.slick-initialized {
+            opacity: 1;    
         }
     }
     

@@ -1,4 +1,6 @@
 {{ define "main" }}
+
+
 <div class="key-visual" style="background-image: url({{ .Param "key-visual-url" }})">
 
     <div class="logo__white edge-spacer--h">
@@ -7,5 +9,39 @@
 
     {{ partial "components/banner.html" . }}
 </div>
-{{ .Content }}
+
+
+<section class="edge-spacer--h">
+
+    {{ $articlesSectionPath := printf "%s/%s" "blog" "articles" }}
+    {{ $articles := $.Site.GetPage "section" $articlesSectionPath }}
+    {{ $articles := first 3 $articles.Pages.ByDate.Reverse }}
+    
+    <h1 class="section-title">{{ i18n "recent-blog-posts" (len $articles) }}</h1>
+    
+    <ul class="article-teasers">
+        {{ range $articles }}
+        <li>
+            {{ .Scratch.Set "teaser-text-length" 500 }}
+            {{ partial "components/article-preview.html" . }}
+        </li>
+        {{ end }}
+    </ul>
+</section>
+
+
+<section class="edge-spacer--h">
+    {{ $offers := $.Site.Data.offers.list }}
+    
+    <h1 class="section-title">{{ i18n "special-offers" (len $offers) }}</h1>
+
+    <ul class="special-offers">
+        {{ range $offers }}
+        <li>
+            {{ partial "components/special-offer.html" . }}
+        </li>
+        {{ end }}
+    </ul>
+</section>
+
 {{ end }}

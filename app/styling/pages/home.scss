@@ -1,8 +1,15 @@
 .page--home {
     
-    .contents:before {
-        height: percentageDesktopPageHeight($desktop_header-height_row-thin);
-        min-height: rem($desktop_header-height_row-thin);
+    .contents {
+        
+        & > section, & > section ~ section {
+            margin-top: rem($headline-section-gap);
+        }
+        
+        &:before {
+            height: percentageDesktopPageHeight($desktop_header-height_row-thin);
+            min-height: rem($desktop_header-height_row-thin);
+        }
     }
     
     .key-visual {
@@ -33,5 +40,71 @@
             max-width: 100%;
             fill: color(white);
         }
+    }
+    
+    
+    .section-title {
+        text-align: center;
+        margin: rem(spacing(4)) auto rem(spacing(3));            
+        
+        max-width: 80%;
+        font-weight: bold;
+        
+        & + :not(.subtitle) {
+            margin-top: rem($headline-section-gap);
+        }
+    }
+    
+    .article-teasers {
+        display: flex;
+        flex-flow: row nowrap;
+        
+        & > *{
+            min-width: 30%;
+            max-width: 100%;
+            flex-grow: 3;
+            
+            padding: 0 rem(spacing(4));
+            
+            &:first-child {
+                padding-left: 0;
+            }
+            
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        
+        nav {
+            padding: rem(spacing(3)) rem(spacing(2)) rem(spacing(1));
+        }
+    }
+    
+    
+    .special-offers {
+        padding: 0 rem(spacing(3));
+        
+        
+        li {
+            
+            & ~ * {
+                margin-top: rem(spacing(8));
+            }
+            
+            &:nth-of-type(2n) .component__special-offer {
+                & > * {
+                    &:first-child {
+                        order: 2;
+                        padding-left: rem(spacing(3));
+                    }
+                    
+                    &:last-child {
+                        order: 1;
+                        padding-right: rem(spacing(3));
+                    }   
+                }
+            }
+        }
+        
     }
 }

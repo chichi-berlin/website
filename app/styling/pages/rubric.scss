@@ -135,7 +135,8 @@
                             font-weight: 600;
                             color: color(brand-pink);
                             font-family: $decorative-font-family;
-                            line-height: 1.2;                            
+                            line-height: 1.2;
+                            margin: 0;
                         }
                     }
                     .subtitle {
@@ -153,6 +154,7 @@
                             position: absolute;
                             width: 100%;
                             padding: 0 rem(spacing(2));
+                            margin: 0;
                             
                             transition: bottom .15s ease-in-out 0.2s;
                         }

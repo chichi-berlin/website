@@ -19,7 +19,7 @@
     {{ $enabled := default false ($.Site.Data.banner.isEnabled) }}
     {{ if $enabled }}
     <div class="news">
-        <h3><span>{{ i18n "news" }}</span></h3>
+        <h4><span>{{ i18n "news" }}</span></h4>
         <div>
             {{ $.Site.Data.banner.message | markdownify }}
         </div>
@@ -29,7 +29,7 @@
     {{ $tagCount := len $.Site.Taxonomies.tags }}
     {{ $tagList := .Params.tags }}
     <nav class="tags">
-        <h3><span>{{ i18n "tag" $tagCount }}</span></h3>
+        <h4><span>{{ i18n "tag" $tagCount }}</span></h4>
         <ul>
             {{ range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
             <li class="{{ if or (in $tagList .Data.Term) (in $currentPage.URL .URL) }}active{{end}}">

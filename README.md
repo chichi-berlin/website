@@ -106,7 +106,7 @@ $   npm build
 +   banner in dunkelgrau
 +   header nav in type writer
 +   absolute header hight in pixel
-+   nav active: larger font anf bold, tabs mit dem hellen grau probieren
++   nav active: larger font and bold, tabs mit dem hellen grau probieren
 +   helles grau als bg
 +   banner im dunklen grau mit weisser font und weissen horicontal lines
 +   footer auch pink

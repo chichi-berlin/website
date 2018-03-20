@@ -12,7 +12,7 @@ menu:
 ---
 
 
-### Farräder
+## Farräder
 
 +   Cinelli
 +   Genesis
@@ -31,7 +31,7 @@ menu:
 +   Winora
   
 
-### Komponenten
+## Komponenten
 
 +   Campagnolo
 +   Busch + Müller
@@ -71,7 +71,7 @@ menu:
 +   YBN
 
   
-### Ausrüstung
+## Ausrüstung
 
 +   Hövding
 +   Bell

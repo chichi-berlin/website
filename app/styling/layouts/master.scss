@@ -14,31 +14,29 @@
         height: 100vh;
     }
     
-    h1, h2, h4 {
+    h1, h2, h3 {
         font-family: $decorative-font-family;
         letter-spacing: rem(1);
     }
     
     h1 {
-        @include type(xxxl);
+        line-height: 1.3;
         font-size: rem(50);
         margin: rem(35) 0;
     }
     h2 {
-        @include type(xxl);
-        font-size: rem(40);
+        line-height: 1.3;
+        font-size: rem(34);
+        margin: rem(25) 0;
     }
-    h4 {
-        @include type(xxxl);
-        font-size: rem(30);
+    h3 {
+        line-height: 1.3;
+        font-size: rem(28);
         margin: rem(20) 0;
     }
     
     .contents {
                         
-        $section-vertical-margin: spacing(10);
-        $headline-section-gap: spacing(9);
-        
         // NOTE: compensate header height
         &:before {
             content: '';

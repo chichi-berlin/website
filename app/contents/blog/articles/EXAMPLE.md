@@ -18,4 +18,9 @@ tags:
 
 ## Sub-Headline
 
-some text
+some more text as an example
+
+*this will be italic text in a new paragraph*
+
+And the following syntax shows how to embed an image properly:
+{{< figure src="/media/images/pictures/key-visual_landing-page.jpg" title="This is a title" caption="My caption can be found here" photographer="CHICH" >}}

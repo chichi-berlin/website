@@ -11,7 +11,7 @@ menu:
 ---
 
 
-### Fair - Ökologisch - Nachhaltig
+## Fair - Ökologisch - Nachhaltig
 
 So ökologisch das Fahrradfahren selbst ist, so wenig grün, fair und nachhaltig sind die Herstellung
 und der Vertrieb von Fahrrädern, sowie von Teilen und oft auch Zubehör (Und nein, "Bambusräder" sind
@@ -43,7 +43,7 @@ niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden 
 solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
 
 
-### Selbstverständnis
+## Selbstverständnis
 
 Wir können, was wir tun.
 Und tun, was wir können - dennoch ist es uns niemals genug.
@@ -82,7 +82,7 @@ entspricht unserem Nachhaltigkeitsprinzip und bewahrt Dich außerdem vor Unfäll
 bekommst Du wertvolle Tipps zur Pflege und zum richtigen Handling Deines Fahrrades.
 
 
-### Wir und alles andere
+## Wir und alles andere
 
 Wir sind dem Kiez treu.
 Uns interessieren keine reichen Leute, die unsere Nachbarn aus ihren Wohnungen klagen, und dann ein

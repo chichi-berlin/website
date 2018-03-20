@@ -1,0 +1,44 @@
+.component__special-offer {
+    
+    & > * {
+        &:first-child {
+            padding-right: rem(spacing(3));
+        }
+        
+        &:last-child {
+            padding-left: rem(spacing(3));
+        }   
+    }
+    
+    .image {
+        @include flex-center;
+        overflow: hidden;
+        
+        height: rem(360);
+    }
+    
+    .text {
+        @include flex-center;
+                
+        h3, p {
+            text-align: center;
+        }
+        
+        h3 {
+            line-height: 1.1;
+            font-size: rem(50);
+            font-family: $decorative-font-family;
+            
+            color: color(brand-pink);
+            font-style: italic;
+            
+            padding: 0 rem(spacing(3));
+        }
+        
+        p {
+            margin-top: rem(spacing(1));
+            color: color(greyer);
+            padding: 0 rem(spacing(5));
+        }
+    }
+}
