@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Innensechkant-Set'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/accessories/items/blb-rainbow-allen-key-set.jpeg'
+image: '/media/images/rubrics/accessories/items/tool-blb-rainbow-allen-key-set.jpeg'
 
 description: >
     Multitools sind zwar fein, wenn die Alternative darin bestünde, Dein Rad von der Piste bis nach 

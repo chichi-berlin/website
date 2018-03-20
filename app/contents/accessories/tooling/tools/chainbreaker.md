@@ -6,13 +6,9 @@ type: 'rubric'
 model: 'Kettenöffner'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/accessories/items/chain-splitter.jpeg'
+image: '/media/images/rubrics/accessories/items/tool-blb-chain-splitter.jpeg'
 
 description: >
-    1/8” chain breaker for track and fixed gear applications. This 1/8” chain breaker works as well 
-    as the Park Tools CT2 but doesn’t cost the earth. The burly handle along with over sized head 
-    ensures this tool will break even the burliest BMX chains without you breaking a sweat. Tough 
-    enough for the use in even the busiest workshops and affordable enough to be found in the bottom 
-    of every cyclists back pack. Features replaceable pins.
+    1/8” Kettenöffner für Singlespeed- Nabenschaltungs- und Fixie- Ketten. Dieser erschwingliche Kettenöffner ist so griffig, daß selbst die fetteste BMX-Kette Dich nicht ins Schwitzen bringt. Die Pins sind austauschbar.
 
 ---

@@ -140,7 +140,7 @@ seatpost:
   other: 'Sattelstütze'
 
 features:
-  other: 'Merkmale'
+  other: 'kommt mit'
 
 measures:
   other: 'Maße'
@@ -215,4 +215,4 @@ reach:
   other: 'reach'
   
 internal-diameter:
-  other: 'Innerendurchmesser'
+  other: 'Innendurchmesser'
