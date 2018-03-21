@@ -1,0 +1,29 @@
+.shortcode__contact-email{
+    white-space: nowrap;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    
+    .domain {
+        &:before {
+            content: '@';
+        }
+    }
+    
+    .tld {
+        &:before {
+            content: '.';
+        }
+    }
+    
+    .separator {
+        overflow: hidden;
+        display: inline-block;
+        width: 0;
+        font-size: 0;
+        
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}

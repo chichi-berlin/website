@@ -1,4 +1,5 @@
 ---
+
 linkTitle: 'Service'
 slug: 'service'
 
@@ -15,7 +16,7 @@ heads:
 ---
 
 
-### Werkstatt
+## Werkstatt
 
 +   Reparaturen
 +   Inspektion
@@ -25,12 +26,12 @@ heads:
 +   Wunschradbau / Custom build
 
 
-### Versicherung
+## Versicherung
 
 {{< insurance-fee-calculator >}}
 
 
-### Beratung entsprechend individueller Anforderungen an Rad und Ausstattung
+## Beratung entsprechend individueller Anforderungen an Rad und Ausstattung
 
 +   Materialien
 +   Rahmengeometrie
@@ -38,4 +39,4 @@ heads:
 +   Einsatzzweck
 
 
-### Kostenlose Erstinspektion in den ersten 4 Monaten für bei uns gekaufte Neuräder
+## Kostenlose Erstinspektion in den ersten 4 Monaten für bei uns gekaufte Neuräder

@@ -1,4 +1,5 @@
 ---
+
 linkTitle: 'Philosophie'
 slug: 'philosophie'
 
@@ -8,6 +9,7 @@ description: 'TODO'
 menu:
   footer:
     weight: 1
+    
 ---
 
 

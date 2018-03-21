@@ -1,4 +1,5 @@
 ---
+
 linkTitle: 'Hersteller'
 slug: 'hersteller'
 

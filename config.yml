@@ -85,6 +85,7 @@ newContentEditor:           ''
 disableHugoGeneratorInject: true
 
 googleAnalytics:            ''
+piwikBaseURL: 'http://localhost:3000/'
 
 # code block syntax highlighting
 pygmentsCodeFencesGuessSyntax: false

@@ -1,9 +1,41 @@
 .type--page {
-    p + h2, ul + h2 {
-        margin-top: rem(60);
-    }
     
-    p + h3, ul + h3 {
-        margin-top: rem(35);
+    .contents {
+
+        p + h2, ul + h2, .shortcode + h2 {
+            margin-top: rem(60);
+        }
+        
+        p + h3, ul + h3 {
+            margin-top: rem(35);
+        }
+        
+        a {
+            @include text-link;
+        }
+        
+        em {
+            font-family: 'Open Sans Italic';
+        }
+        
+        ul {
+            list-style: disc outside;
+            padding-left: 1em;
+            
+            margin: rem(30) 0;
+            
+            li {
+                & ~ li {
+                    margin-top: rem(spacing(1));
+                }
+            }
+            
+            ul {
+                list-style: circle outside;
+                padding-left: 1.5em;
+                margin: rem(spacing(1)) 0;
+            }
+        }
     }
+
 }

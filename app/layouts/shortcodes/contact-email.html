@@ -1,0 +1,7 @@
+<span class="shortcode__contact-email shortcode">
+    <span class="local">{{ .Get "local" | default "mail" }}</span>
+    <span class="separator">+++</span>
+    <span class="domain">{{ .Get "domain" | default "chichi" }}</span>
+    <span class="separator">---</span>
+    <span class="tld">{{ .Get "tld" | default "berlin" }}</span>
+</span>
