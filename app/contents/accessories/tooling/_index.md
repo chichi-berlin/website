@@ -8,7 +8,7 @@ slug: 'werkzeug--wekstattbedarf'
 
 title: 'Werkzeug & Werkstattbedarf'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/'
+image: '/media/images/rubrics/accessories/items/kategoriebild-werkzeug-werkstattbedarf.jpg'
 
 weight: 10
 menu:

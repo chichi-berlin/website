@@ -17,24 +17,21 @@ menu:
 
 ## Angaben gemäß § 5 TMG:
 
-CHICHI              {{< newline >}}
-Salka Köther        {{< newline >}} 
-Flughafenstr. 50    {{< newline >}}
-12053 Berlin        {{< newline >}}
+bitte ein bild einfügen, mein klarname wird in dieser dimension niemals crawlbar sein!
 
 
 ## Kontakt:
 Telefon: +49 (0) 30 62986005 {{< newline >}}
-E-Mail: {{< contact-email >}}
+E-Mail: kontakt@chichi.berlin
 
 
 ## Umsatzsteuer:
 
 Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: {{< newline >}} 
-DE TODO
+DE291966756
 
 
-## Privatsphäre & Datenschutze
+## Privatsphäre & Datenschutz
 
 Unsere Datenschutzerklärung und Informationen über den Stellenwert Ihre Privatsphäre für uns, finden 
 Sie im Bereich zum [Datenschutz](/datenschutzerklaerung "Datenschutzerklärung"). 
