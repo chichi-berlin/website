@@ -7,8 +7,8 @@ linkTitle: 'CHICHI Design [Archiv]'
 slug: 'chichi-design'
 
 title: 'CHICHI Design'
-description: 'Unikate made by CHICHI'
-image: '/media/images/rubrics/bicycles/items/'
+description: 'Unikate von CHICHI'
+image: '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_01.jpg'
 
 weight: 10
 menu:
