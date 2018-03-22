@@ -9,4 +9,126 @@
         }
         
     }
+    
+    a:hover, a:focus {
+        background-color: inherit;
+    }
+    
+    .wgt-nav-tabs {
+        display: flex;
+        
+        & > * {
+            flex-grow: 1;
+        }
+        
+        .wgt-tablink {
+            background-color: transparent;
+        }
+         
+    }
+
+    
+    .wgt-container {
+        
+        .wgt-tabpanel, .wgt-nav, .wgt-tab-content, 
+        .wgt-nav-tabs > li, .wgt-nav-tabs > li > * {
+            background: transparent;
+        }
+        
+        .wgt-nav-tabs > li, .wgt-nav-tabs > li > * {
+            border: none;
+        }
+                
+        
+        .wgt-tarif-box, .wgt-tarif-options {
+            //border: none;
+            //background-color: transparent;
+            border: rem(1) color(grey) solid;
+            background-color: rgba(228, 228, 228, 0.4);
+        }
+        
+        .wgt-form {
+            padding: 0;
+            
+            & > .wgt-row {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                
+                &:before, &:after {
+                    display: none;
+                }
+                
+                & > *:first-of-type {
+                    width: 50%;
+                    
+                    & > * {
+                        width: calc(100% * 2/3);
+                        margin-left: auto !important;
+                        margin-right: auto !important;
+                    }
+                }
+                
+                & > *:last-of-type {
+                    width: 50%;
+                    @include flex-center;
+                    align-items: flex-end;                    
+                            
+                    .wgt-btn-blue {
+                        background: color(brand-pink);
+                        margin: 0 0 rem(50) 0;
+                    }
+                }
+            }
+        }
+        
+        .wgt-tarif-select .wgt-select-box {
+            background-image: none;
+            position: relative;
+    
+             &:before {
+                 content: '∨';
+                 background-color: color(brand-pink);
+                 height: rem(40);
+                 width: rem(40);
+                 position: absolute;
+                 right: rem(0);
+                 top: 0;
+                 color: color(white);
+                 @include flex-center;
+                 font-size: rem(16);
+                 font-weight: 600;
+             }
+            
+            select {
+                position: absolute;
+            }
+        }
+                
+        .wgt-results {
+            
+            .wgt-tarif-options {
+                border-color-top: color(brand-pink);
+            }
+            
+            .wgt-tarif-cover ul li {
+                background-color: color(brand-pink);
+            }
+            
+            .wgt-tarif-price p, .wgt-tarif-wrap h3, .wgt-tarif-wrap p {
+                color: color(brand-pink);
+            }
+            
+            .wgt-btn-white {
+                background: color(white);
+                color: color(brand-pink)
+            }
+            
+            .wgt-btn-red {
+                background: color(brand-pink);
+                color: color(white)
+            }
+        }
+
+    }
 }

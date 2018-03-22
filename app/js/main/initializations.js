@@ -81,11 +81,26 @@ const selectors = {
 
     '#insurance-fee-calculator': function(){
         const element = this;
-        const { PPIT } = global;
+        const { PPIT, jQuery } = global;
         
         if( typeof PPIT === 'undefined' ){ return; }
         
-        new PPIT.RT({
+        const cb = () => {
+            const select = element.querySelector( '.wgt-select-type0 select' );
+            jQuery( select ).val( '0' ).change();
+        };
+        
+        const hideLoader_original = PPIT.RT.prototype.hideLoader;
+        PPIT.RT.prototype.hideLoader = function hideLoader(){
+            const args = arguments;
+            const self = this;
+            
+            cb();
+            
+            hideLoader_original.call( self, ...args );
+        };
+        
+        const rtInstance = new PPIT.RT({
             appId: '31d68559-31cf-4794-8ddd-1f93d6bd635c',
             target: `#${ element.id }`,
             ns: 'insurance-fee-calculator',

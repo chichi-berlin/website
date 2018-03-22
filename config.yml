@@ -3,6 +3,7 @@ title: 'CHICHI | Fahrradfachgeschäft'
 
 params:
     layout-name: 'master'
+    piwikBaseURL: 'https://onwx.org/piwik/'
 
 sitemap:
   changefreq: 'monthly'
@@ -85,7 +86,6 @@ newContentEditor:           ''
 disableHugoGeneratorInject: true
 
 googleAnalytics:            ''
-piwikBaseURL: 'http://localhost:3000/'
 
 # code block syntax highlighting
 pygmentsCodeFencesGuessSyntax: false

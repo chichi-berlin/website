@@ -1,7 +1,23 @@
+{{ $baseURL := $.Page.Site.Params.piwikBaseURL | default $.Site.BaseURL }}
+{{ $path := "style/exports" }}
+{{ $fileName := "piwik-opt-out" }}
+
+
+{{ $styleFolderPath := printf "%s/%s" "app/static" $path }}
+{{ if ( fileExists $styleFolderPath ) }}
+{{ range ( readDir $styleFolderPath ) }}
+    {{ $fileNameParts := split .Name "." }}
+    {{ $fileBasename := first 1 $fileNameParts }}
+    {{ $fileExtension := last 1 $fileNameParts }}
+    {{ if and (index $fileExtension 0 | eq "css") (index $fileBasename 0 | eq $fileName) }}
+        {{ printf "%s%s/%s" $.Site.BaseURL $path .Name | $.Scratch.Set "cssfile"  }}
+    {{ end }}
+{{ end }}
+{{ end }}
+
 <iframe 
-    frameborder="no" 
-    width="100%" 
-    height="200px"
-    class="shortcode"
-    src="{{ $.Page.Site.Params.piwikBaseURL | default $.Page.Site.Params.baseURL }}x_piwik/index.php?module=CoreAdmin Home&action=optOut"
+    class="shortcode__piwik-opt-out shortcode"
+    frameborder="no"
+    src="{{ $baseURL }}index.php?module=CoreAdminHome&action=optOut&fontColor=FFFFFF&language={{ $.Site.LanguageCode }}&{{ with $.Scratch.Get "cssfile" }}style={{ . }}{{ end }}"
 ></iframe>
+
