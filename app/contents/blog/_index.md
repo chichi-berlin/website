@@ -5,7 +5,7 @@ type: 'blog'
 layout: 'list'
 
 title: 'Blog'
-subtitle: 'some fasel subtitle words'
+subtitle: 'Neuigkeiten und Wissenswertes'
 description: 'News, Techinfo, Pflegetipps'
 keywords:
 
