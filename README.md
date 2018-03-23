@@ -3,7 +3,7 @@ CHICHI Public Site
 
 
 
-This is the development environment and repository for the website of CHICHI - the bicycle shop in 
+This is the development environment and repository for the website of CHICHI - the bicycle store in 
 the heart of Berlin Neukölln. The site can be found under [chichi.berlin](http://chichi.berlin)
 
 

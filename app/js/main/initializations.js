@@ -150,6 +150,63 @@ const selectors = {
             variableWidth: true,
             draggable: false
        });
+    },
+    
+    
+    '.shortcode__google-maps': function(){
+        const element = this;
+        const { google: { maps } = {} } = global;
+        
+        const coordinates = {
+            lat: 52.4809994,
+            lng: 13.4258032
+        };
+        
+        const map = new maps.Map(
+            element, 
+            {
+                zoom: 15,
+                center: coordinates
+            }
+        );
+        
+        const service = new maps.places.PlacesService(map);
+
+        service.getDetails(
+            {
+                placeId: 'ChIJqfW4_7tPqEcRyanuzIMrRK0'
+            }, 
+            (place, status)=>{
+                if( status !== maps.places.PlacesServiceStatus.OK ){
+                    const marker = new maps.Marker({
+                        position: coordinates,
+                        map
+                    });
+                    
+                    return;
+                }
+                console.log( 'foo' )             
+                const marker = new maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                
+//                maps.event.addListener( marker, 'click', function(){
+//                    const self = this;
+//                    const infowindow = new maps.InfoWindow();
+//
+//                    infowindow.setContent(
+//                        '<div><strong>' + place.name + '</strong><br>' +
+//                        'Place ID: ' + place.place_id + '<br>' +
+//                        place.formatted_address + '</div>'
+//                    );
+//                    infowindow.open( map, self );
+//                });
+            }
+        );
+
+        
+
     }
 };
 

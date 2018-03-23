@@ -27,7 +27,7 @@
     {{ end }}
 
     {{ $tagCount := len $.Site.Taxonomies.tags }}
-    {{ $tagList := .Params.tags }}
+    {{ $tagList := $.Param "tags" | default slice }}
     <nav class="tags">
         <h4><span>{{ i18n "tag" $tagCount }}</span></h4>
         <ul>

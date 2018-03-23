@@ -2,8 +2,10 @@ baseURL: 'https://chichi.berlin/'
 title: 'CHICHI | Fahrradfachgeschäft'
 
 params:
-    layout-name: 'master'
-    piwikBaseURL: 'https://onwx.org/piwik/'
+  layout-name: 'master'
+  piwikBaseURL: 'https://onwx.org/piwik/'
+  apiKeys:
+    google-maps: 'AIzaSyAohwIl-YXJiyxTf3kxk6RKWSKrNxXUfuQ'
 
 sitemap:
   changefreq: 'monthly'

@@ -30,7 +30,7 @@
     
     {{ if gt (len .Sections) 0 }}
     <ul class="rubric--grid for-categories">
-        {{ range sort .Sections "Params.weight" "asc" }}
+        {{ range sort .Sections ".Params.weight" "asc" }}
         <li>
             <a href="{{ .URL | relLangURL }}">
                 <div class="wrap">

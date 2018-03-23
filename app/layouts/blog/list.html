@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $itemsPerPage := index $.Params "itemsPerPage" | default 5 }}
+{{ $itemsPerPage := $.Param "itemsPerPage" | default 5 }}
 {{ $articlesSectionPath := printf "%s%s" .Dir "articles" }}
 {{ $articles := $.Site.GetPage "section" $articlesSectionPath }}
 

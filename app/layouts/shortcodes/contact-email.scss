@@ -1,15 +1,15 @@
-.shortcode__contact-email{
+.shortcode__contact-epostaddr {
     white-space: nowrap;
     display: inline-flex;
     flex-flow: row nowrap;
     
-    .domain {
+    .two {
         &:before {
             content: '@';
         }
     }
     
-    .tld {
+    .three {
         &:before {
             content: '.';
         }

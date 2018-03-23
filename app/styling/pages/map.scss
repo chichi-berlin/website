@@ -1,0 +1,12 @@
+.page--map {
+    
+    .contents {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    #store-location {
+        flex-grow: 3;
+    }
+}
+

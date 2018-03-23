@@ -1,0 +1,3 @@
+{{ $apiKey := $.Param "apiKeys.google-maps" | default "TODO" }}
+<script src="https://maps.googleapis.com/maps/api/js?key={{ $apiKey }}&libraries=places&language={{ $.Site.LanguageCode }}">
+</script>

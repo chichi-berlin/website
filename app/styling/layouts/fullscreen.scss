@@ -1,0 +1,45 @@
+.layout--fullscreen {
+    
+    .header__flow {
+        position: fixed;
+        z-index: 500;
+        top: 0;
+        width: 100%;
+    }
+    
+    
+    .contents {
+                        
+        // NOTE: compensate header height
+        &:before {
+            content: '';
+            height: ($desktop_header-height_row-thick_rel + $desktop_header-height_row-thin_rel) * 1vh;
+            display: block;
+            min-height: rem($desktop_header-height_min);
+        }
+        
+        // NOTE: compensate footer height
+        &:after {
+            content: '';
+            height: $desktop_footer-height_rel * 1vh;
+            display: block;
+            max-height: rem($desktop_footer-height_max);
+        }
+        
+        background-color: color(bg-light);
+        
+        min-height: 100vh;
+        
+        @include type(ml);
+
+    }
+    
+    
+    .footer__flow {
+        position: fixed;
+        z-index: 500;
+        top: 100vh;
+        width: 100%;
+    }
+}
+

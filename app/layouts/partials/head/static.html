@@ -1,5 +1,6 @@
-{{ range $head := ( .Param "heads" | default slice ) }}
-    {{ printf "head/%s.html" $head | partial }}
+{{ $ctx := . }}
+{{ range $head := ( $.Param "heads" | default slice ) }}
+    {{ partial (printf "head/%s.html" $head) $ctx }}
 {{ end }}
 
 {{ $styleFolderPath := "app/static/style" }}

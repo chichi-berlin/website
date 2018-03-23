@@ -6,7 +6,14 @@ slug: 'karte'
 title: 'Karte' 
 description: 'An diesem Ort könnt ihr uns finden'
 
+layout: 'fullscreen'
+layout-name: 'fullscreen'
+showFooter: true
+
+heads:
+  - 'google-maps'
+
 ---
 
 
-TODO: add google maps in "full screen"
+{{< google-maps id="store-location" >}}

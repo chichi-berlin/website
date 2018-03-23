@@ -42,7 +42,7 @@
     
     <div class="description">
         <p>
-            {{ default (i18n "no-description") $.Params.description }}
+            {{ index .Params "description" | default (i18n "no-description") }}
         </p>
         
         {{ if gt (len $posts) 0 }}

@@ -31,7 +31,8 @@
     .wgt-container {
         
         .wgt-tabpanel, .wgt-nav, .wgt-tab-content, 
-        .wgt-nav-tabs > li, .wgt-nav-tabs > li > * {
+        .wgt-nav-tabs > li, .wgt-nav-tabs > li > *,
+        .wgt-tarif-cover {
             background: transparent;
         }
         
@@ -108,20 +109,51 @@
         .wgt-results {
             
             .wgt-tarif-options {
-                border-color-top: color(brand-pink);
+                border-top: none;
+            }
+            
+            .wgt-tarif-cover {
+                @include flex-center;
+                flex-flow: column nowrap;
             }
             
             .wgt-tarif-cover ul li {
                 background-color: color(brand-pink);
             }
             
-            .wgt-tarif-price p, .wgt-tarif-wrap h3, .wgt-tarif-wrap p {
-                color: color(brand-pink);
+            .wgt-tarif-price {
+                &, p, sup {
+                    color: color(brand-pink);
+                }
+            }
+            
+            .wgt-tarif-wrap h3, .wgt-tarif-wrap p,
+            .wgt-table th, .wgt-table td i, 
+            .wgt-table thead tr td {
+                color: color(grey-dark);
+            }
+            
+            .wgt-table thead tr td {
+                border-top-color: color(grey-dark);
+                border-bottom-color: color(grey-dark);
+            }
+            .wgt-table tfoot tr td {
+                border-top-color: color(grey-dark);
+            }
+            
+            .wgt-information .wgt-nav-tabs li {
+                a {
+                    color: color(grey-dark);
+                }
+                
+                &.wgt-active a {
+                    text-decoration: underline;
+                }
             }
             
             .wgt-btn-white {
                 background: color(white);
-                color: color(brand-pink)
+                color: color(brand-pink);
             }
             
             .wgt-btn-red {
