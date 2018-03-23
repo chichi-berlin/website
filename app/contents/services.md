@@ -23,7 +23,7 @@ heads:
 +   Unfallgutachten / Kostenvoranschläge
 +   Optimierung
 +   Laufradbau
-+   Wunschradbau / Custom build
++   Wir bauen Dein Wunschrad
 
 
 ## Versicherung
