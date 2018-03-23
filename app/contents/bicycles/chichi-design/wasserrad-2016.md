@@ -6,14 +6,14 @@ type: 'rubric'
 model: 'Die Lagune'
 manufacturer: 'CHICHI'
 
-image: '/media/images/rubrics/accessories/items/chichi-design-wasserrad_01.jpg'
+image: '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_01.jpg'
 
 images:
-  - '/media/images/rubrics/accessories/items/chichi-design-wasserrad_02.jpg'
-  - '/media/images/rubrics/accessories/items/chichi-design-wasserrad_03.jpg'
-  - '/media/images/rubrics/accessories/items/chichi-design-wasserrad_04.jpg'
-  - '/media/images/rubrics/accessories/items/chichi-design-wasserrad_05.jpg'
-  - '/media/images/rubrics/accessories/items/chichi-design-wasserrad_06.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_02.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_03.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_04.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_05.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_06.jpg'
 
 description: >
      Mit einem Gang, der Möglichkeit bei Bedarf Schutzbleche hinzuzufügen und der semisportlichen Sitzposition eignet sich das Rad hervorragend für den täglichen Stadtverkehr. Durch etwas schmalere Bereifung und sehr reaktive Bremsen ist es auch für eine sportliche Fahrweise gut ausgestattet. Das Rad geriet in seiner Gesamtheit sehr leicht. Das Fahrverhalten ist lässig schnell, dabei wendig und bequem. 
