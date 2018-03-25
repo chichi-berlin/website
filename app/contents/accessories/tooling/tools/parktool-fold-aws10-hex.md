@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Mini-Tool AWS-10'
+model: 'Mini-Tool Innensechskant-Set'
 manufacturer: 'Parktool'
 
 image: '/media/images/rubrics/accessories/items/tool-parktool-fold-aws10-hex.png'
