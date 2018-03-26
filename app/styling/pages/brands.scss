@@ -1,0 +1,16 @@
+.page--brands {
+    
+    .contents {
+        
+        h2 {
+            margin-bottom: rem(spacing(4));   
+        }
+        
+        p + h2, ul + h2, .shortcode + h2 {
+            margin-top: rem(spacing(8));
+        }
+        
+    }
+    
+}
+

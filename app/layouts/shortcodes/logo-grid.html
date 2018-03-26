@@ -1,5 +1,5 @@
 {{ $list := index $.Page.Site.Data (.Get "data-file") (.Get "list") | default slice }}
-<div class="shortcode__logo-grid">
+<div class="shortcode__logo-grid shortcode">
     {{ if gt (len $list) 0 }}
     <ul class="logo-list">
     {{ range $list }} 

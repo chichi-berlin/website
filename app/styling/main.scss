@@ -18,7 +18,10 @@
 
 @import './components/**/*.scss';
 
-@import './layouts/**/*.scss';
+@import './layouts/master.scss';
+@import './layouts/fullscreen.scss';
+@import './layouts/page.scss';
+
 @import './pages/**/*.scss';
 @import './../layouts/partials/components/**/*.scss';
 @import './../layouts/shortcodes/**/*.scss';
