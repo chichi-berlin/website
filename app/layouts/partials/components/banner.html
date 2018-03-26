@@ -1,8 +1,9 @@
-{{ $enabled := default false ($.Site.Data.banner.isEnabled) }}
+{{ $banner := $.Param "banner" | default dict }}
+{{ $enabled := default false $banner.isEnabled }}
 {{ if $enabled }}
 <div id="page-banner" class="component__banner">
     <div class="edge-spacer--h">
-        {{ $.Site.Data.banner.message | markdownify }}        
+        {{ $banner.message | markdownify }}        
     </div>
 </div>
 {{ end }}

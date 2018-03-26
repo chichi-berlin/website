@@ -11,9 +11,9 @@ layout-name: 'fullscreen'
 showFooter: true
 
 heads:
-  - 'google-maps'
+  - 'leaflet'
 
 ---
 
 
-{{< google-maps id="store-location" >}}
+{{< leaflet-map id="store-location" >}}

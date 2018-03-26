@@ -134,6 +134,10 @@ $   npm build
     - https://discourse.gohugo.io/t/how-to-translate-sections/9060
     - https://discourse.gohugo.io/t/content-organization-not-working-in-multilingual-site/4967
     - https://github.com/gohugoio/hugo/issues/3354
++ embedding a map:
+    - https://leaflet-extras.github.io/leaflet-providers/preview/
+    - https://www.opencyclemap.org/
+    - https://wiki.openstreetmap.org/wiki/Bicycle
 
 #### Appendix
 

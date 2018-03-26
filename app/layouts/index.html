@@ -21,7 +21,7 @@
     
     <ul class="article-teasers">
         {{ range $articles }}
-        <li>
+        <li class="article-teaser">
             {{ .Scratch.Set "teaser-text-length" 500 }}
             {{ partial "components/article-preview.html" . }}
         </li>
@@ -31,7 +31,7 @@
 
 
 <section class="edge-spacer--h">
-    {{ $offers := $.Site.Data.offers.list }}
+    {{ $offers := $.Param "offers" | default slice }}
     
     <h1 class="section-title">{{ i18n "special-offers" (len $offers) }}</h1>
 

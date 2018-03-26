@@ -1,0 +1,13 @@
+.shortcode__leaflet-map {
+    
+    a.leaflet-popup-close-button {
+        text-decoration: none;
+        color: #c3c3c3;
+        background-color: transparent;
+        
+        &:hover, &:focus {
+            color: #999;
+            background-color: transparent;
+        }
+    }
+}

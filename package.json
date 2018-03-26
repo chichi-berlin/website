@@ -8,13 +8,15 @@
     "watch:hugo": "HUGO_ENV='development' hugo serve --port 3000 --noHTTPCache --i18n-warnings",
     "build:webpack": "NODE_ENV='development' webpack --config ./.webpack.config",
     "build:hugo": "HUGO_ENV='development' hugo",
-    "build:clean": "rm -rf ./dist ./app/static/style ./app/static/script/*.js* ./app/layouts/partials/svgs",
+    "build:clean": "rm -rf ./dist ./app/static/style ./app/static/script/*.js* ./app/layouts/partials/svgs app/static/media/images/assets/vendors",
     "build": "npm run build:clean; npm run build:webpack; npm run build:hugo",
     "build:prod": "npm run build:clean; NODE_ENV='production' webpack --config ./.webpack.config; HUGO_ENV='production' hugo --baseURL http://beta.chichi.berlin/"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "jquery": "1.x",
+    "jquery": "^3.3.1",
+    "leaflet": "^1.3.1",
+    "leaflet-providers": "^1.1.17",
     "slick-carousel": "^1.7.1"
   },
   "devDependencies": {

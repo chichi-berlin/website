@@ -1,0 +1,26 @@
+{{ $list := index $.Page.Site.Data (.Get "data-file") (.Get "list") | default slice }}
+<div class="shortcode__logo-grid">
+    {{ if gt (len $list) 0 }}
+    <ul class="logo-list">
+    {{ range $list }} 
+        {{ if or .svg .img }}
+        <li>
+        {{ if .link }}<a class="flow" href="{{ .link }}" title="Logo: {{ .label }}" target="_blank">{{ else }}<div class="flow">{{ end }}
+        
+        {{ if .svg }}
+            <div class="flow--svg">
+                {{ printf "svgs/%s.html" .svg | partial }}
+            </div>
+        {{ else if .img }}
+            <div class="flow--img">
+                {{ partial "components/img.html" .img }}
+            </div>
+        {{ end }}
+        
+        {{ if .link }}</a>{{ else }}</div>{{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+    {{ end }}
+</div>

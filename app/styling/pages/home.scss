@@ -59,7 +59,11 @@
         display: flex;
         flex-flow: row nowrap;
         
-        & > *{
+        .article-teaser {
+            list-style: none;
+        }
+        
+        & > * {
             min-width: 30%;
             max-width: 100%;
             flex-grow: 3;
@@ -86,6 +90,7 @@
         
         
         li {
+            list-style: none;
             
             & ~ * {
                 margin-top: rem(spacing(8));

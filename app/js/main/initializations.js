@@ -153,59 +153,57 @@ const selectors = {
     },
     
     
-    '.shortcode__google-maps': function(){
+    '#store-location': function(){
         const element = this;
-        const { google: { maps } = {} } = global;
+        const { L: leaflet } = global;
         
-        const coordinates = {
-            lat: 52.4809994,
-            lng: 13.4258032
-        };
+        const COORDINATES = [
+            52.4809994,             // lat
+            13.425803200000018      // lng
+        ];
+        const popupContents = `
+            <div class="ll__popup-content">
+                <img src="/media/images/assets/logo_small_black.svg" alt="CHICHI Logo">
+                <div class="contact-info">
+                    <h3>Fahrradgeschäft</h3>
+                    <address>
+                        Flughafenstr. 50<br>
+                        12053 Berlin
+                    </address>
+                </div>
+            </div>
+        `;
+        const ZOOM = 15;
+        const MAP_PROVIDER_NAME = 'Thunderforest.OpenCycleMap';
         
-        const map = new maps.Map(
-            element, 
+        
+        const provider = leaflet.tileLayer.provider( 
+            MAP_PROVIDER_NAME,
             {
-                zoom: 15,
-                center: coordinates
+                apikey: 'edc8a89afa764f77ae70e47c50359b4f'
             }
         );
         
-        const service = new maps.places.PlacesService(map);
-
-        service.getDetails(
-            {
-                placeId: 'ChIJqfW4_7tPqEcRyanuzIMrRK0'
-            }, 
-            (place, status)=>{
-                if( status !== maps.places.PlacesServiceStatus.OK ){
-                    const marker = new maps.Marker({
-                        position: coordinates,
-                        map
-                    });
-                    
-                    return;
-                }
-                console.log( 'foo' )             
-                const marker = new maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                
-//                maps.event.addListener( marker, 'click', function(){
-//                    const self = this;
-//                    const infowindow = new maps.InfoWindow();
-//
-//                    infowindow.setContent(
-//                        '<div><strong>' + place.name + '</strong><br>' +
-//                        'Place ID: ' + place.place_id + '<br>' +
-//                        place.formatted_address + '</div>'
-//                    );
-//                    infowindow.open( map, self );
-//                });
-            }
-        );
-
+        const icon = leaflet.icon({
+            iconUrl: '/media/images/assets/icon_marker.svg',
+            iconSize: [ 28, 42 ],
+            iconAnchor: [ 14, 42 ],
+            popupAnchor: [ 0, -40 ]
+        });
         
+        const marker = leaflet.marker( COORDINATES, { icon } );
+        
+        const popup = leaflet.popup({
+            maxWidth: 300,
+            minWidth: 250
+        });
+        popup.setContent( popupContents );
+        
+        const map = leaflet.map( element ).setView( COORDINATES, ZOOM );
+        provider.addTo( map );
+        marker.addTo( map )
+            .bindPopup( popup )
+            .openPopup();
 
     }
 };

@@ -7,10 +7,10 @@
         frame-src 'self' {{ $.Param "piwikBaseURL" }};
         form-action 'self';
         font-src 'self' https://wwwapi.serviceeu.com;
-        img-src 'self' https://wwwapi.serviceeu.com https://maps.googleapis.com https://maps.gstatic.com;
+        img-src 'self' https://wwwapi.serviceeu.com http{{ if eq (getenv "HUGO_ENV") "production" }}s{{ end }}://*.thunderforest.com;
         media-src 'self';
         object-src 'none';
-        script-src 'self' https://wwwapi.serviceeu.com https://maps.googleapis.com {{ $.Param "piwikBaseURL" }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
+        script-src 'self' https://wwwapi.serviceeu.com {{ $.Param "piwikBaseURL" }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
         style-src 'self' 'unsafe-inline' https://wwwapi.serviceeu.com;
         worker-src 'self';
     ">

@@ -17,7 +17,10 @@ menu:
 
 ## Angaben gemäß § 5 TMG:
 
-bitte ein bild einfügen, mein klarname wird in dieser dimension niemals crawlbar sein!
+CHICHI              {{< newline >}}
+{{< block-img src="/media/images/data/imprint_sk.png" >}} 
+Flughafenstr. 50    {{< newline >}}
+12053 Berlin        {{< newline >}}
 
 
 ## Kontakt:

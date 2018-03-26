@@ -1,0 +1,132 @@
+.shortcode__logo-grid {
+    
+    ul.logo-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        padding: 0;
+        
+        
+        $tiles-per-row: 4;
+        $desktop-tile-margin: spacing(4);
+        
+        & > * {
+            @include bp-desktop() {
+                width: calc(100% / #{$tiles-per-row});
+            }
+            @include bp-mobile() {
+                width: 100%;
+            }
+        }
+        
+        & > :nth-child(#{$tiles-per-row}n + 1) {
+            @include bp-desktop() {
+                padding-right: rem($desktop-tile-margin * 3/$tiles-per-row);
+            }
+        }
+        & > :nth-child(#{$tiles-per-row}n + 2) {
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 1/$tiles-per-row);
+                padding-right: rem($desktop-tile-margin * 2/$tiles-per-row);
+            }                
+        }
+        & > :nth-child(#{$tiles-per-row}n + 3) {
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 2/$tiles-per-row);
+                padding-right: rem($desktop-tile-margin * 1/$tiles-per-row);
+            }
+        }
+        & > :nth-child(#{$tiles-per-row}n + 4) {
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 3/$tiles-per-row);
+            }
+        }
+
+        & > :nth-last-child(3):nth-child(#{$tiles-per-row}n + 1){            
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 1/8);
+                padding-right: rem($desktop-tile-margin * 5/8);
+            }            
+        }
+        & > :nth-last-child(2):nth-child(#{$tiles-per-row}n + 2) {
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 3/8);
+                padding-right: rem($desktop-tile-margin * 3/8);                
+            }
+        }
+        & > :nth-last-child(1):nth-child(#{$tiles-per-row}n + 3) {
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 5/8);
+                padding-right: rem($desktop-tile-margin * 1/8);                
+            }
+        }        
+        
+        & > :nth-last-child(2):nth-child(#{$tiles-per-row}n + 1){
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 2/8);
+                padding-right: rem($desktop-tile-margin * 4/8);                
+            }
+        }
+        & > :nth-last-child(1):nth-child(#{$tiles-per-row}n + 2) {
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 4/8);
+                padding-right: rem($desktop-tile-margin * 2/8);                
+            }
+        }
+        
+        & > :nth-last-child(1):nth-child(#{$tiles-per-row}n + 1){
+            @include bp-desktop() {
+                padding-left: rem($desktop-tile-margin * 3/8);
+                padding-right: rem($desktop-tile-margin * 3/8);                
+            }
+        }
+
+        & > :nth-child(n + 5) {
+            @include bp-desktop() {
+                margin-top: rem($desktop-tile-margin);
+            }
+        }
+        
+        
+        li {
+            list-style: none;
+            height: rem(160);
+            
+            position: relative;
+            
+            & ~ li {
+                margin-top: 0;
+            }
+            
+            .flow {
+                height: 100%;
+                width: 100%;
+                background-color: color(white);
+                display: block;
+                
+                padding: rem(spacing(1));
+                
+                .flow--svg, .flow--img {
+                    overflow: hidden;
+                    @include flex-center;
+                    height: 100%;
+                    width: 100%;
+                }
+                
+                .flow--svg {
+                    
+                }
+                
+                .flow--img {
+                    
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

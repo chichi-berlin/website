@@ -8,5 +8,25 @@
     #store-location {
         flex-grow: 3;
     }
+    
+    .ll__popup-content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        
+        font-size: rem(15);
+        line-height: 1.1;
+        
+        h3 {
+            font-weight: 700;
+            line-height: 1.6;    
+            font-size: rem(16);
+        }
+        
+        img {
+            max-width: rem(70);
+            margin-right: rem(spacing(1.5));
+        }
+    }
 }
 
