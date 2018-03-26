@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Konusschlüssel'
 manufacturer: 'Parktool'
 
-image: '/media/images/rubrics/accessories/items/tool-parktool-konusschlüssel.png'
+image: '/media/images/rubrics/accessories/items/tool-parktool-konusschluessel.png'
 
 description: >
     Dünner als herkömmliche verchromte Schlüssel, um auch auf den schmalsten Konus zu passen – trotzdem sta biler. Phosphatierung statt Verchromung der Oberfläche für äußerst geringe Passtoleranzen und lange Haltbarkeit.

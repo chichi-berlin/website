@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Innensechskant Y- Schlüssel'
 manufacturer: 'Parktool'
 
-image: '/media/images/rubrics/accessories/items/tool-parktool-innensechskant-yschlüssel.png'
+image: '/media/images/rubrics/accessories/items/tool-parktool-innensechskant-yshape.png'
 
 description: >
     Y-Schlüssel mit Innensechskant im Balldriver. Arbeitswinkel bis 25°
