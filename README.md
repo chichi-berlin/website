@@ -7,7 +7,14 @@ This is the development environment and repository for the website of CHICHI - t
 the heart of Berlin Neukölln. The site can be found under [chichi.berlin](http://chichi.berlin)
 
 
+## Editor
 
++   To disable some contents set `headless: true` in 
+    -   `_index.md` for a section
+    -   `page-name.md` for a page 
+
+
+## Developer
 
 ### How to get started?
 
@@ -28,14 +35,14 @@ $   npm install
 #### Development
 
 ```sh
-$   ???
+$   npm start
 ```
 
 
 #### Build and Deploy
 
 ```sh
-$   npm build
+$   npm build[:prod]
 ```
 
 

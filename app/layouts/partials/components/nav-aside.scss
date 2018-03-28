@@ -44,15 +44,37 @@
         padding: rem(16) rem(40) rem(16) rem(24);
         color: color(grey-light);
         transition: color 0.15s;
+                
+        &:hover, &:focus {
+            &:before {
+                content: '\00B7';
+                font-size: rem(24);
+                line-height: 0;
+                position: absolute;
+                top: 50%;
+                left: rem(8);
+                height: rem(4);
+                color: color(brand-pink);
+            }
+        }
     }
     
-    .menu__link[data-submenu]::after {
-        content: '\2026';
-        position: absolute;
-        right: 0;
-        padding: rem(0) rem(20);
-        color: color(bg-light);
-        opacity: 0.3;
+    .menu__link[data-submenu] {
+        &:after {
+            content: '\2026';
+            position: absolute;
+            right: 0;
+            padding: rem(0) rem(20);
+            color: color(bg-light);
+            opacity: 0.3;
+        }
+            
+        &.menu__link--current {
+            &:after {
+                color: color(brand-pink);
+                opacity: 1.0;
+            }
+        }
     }
     
     .menu__link:hover,
@@ -61,15 +83,12 @@
         opacity: 1;
     }
     
-    .menu__link--current::before {
-        content: '\00B7';
-        font-size: rem(24);
-        line-height: 0;
-        position: absolute;
-        top: 50%;
-        left: rem(8);
-        height: rem(4);
+    .menu__link--current {
         color: color(brand-pink);
+        
+        &:after {
+            color: color(brand-pink);
+        }
     }
     
     [class^='animate-'],
@@ -196,22 +215,30 @@
         }
         
         a {
-            font-weight: bold;
             display: inline-block;
             cursor: pointer;
             vertical-align: middle;
             letter-spacing: rem(1);
-            color: color(brand-pink);
-            transition: color 0.15s;
+            opacity: 0.4;
+            transition: opacity 0.15s;
+            font-weight: 600;
 
             &:hover {
                 color: color(grey-light);
+                opacity: 0.8;
+                text-decoration: underline;
+                
+                &:not(.is-root):before {
+                    opacity: 0.8;    
+                }
             }
 
             &:not(.is-root):before {
                 content: '/';
                 display: inline-block;
                 color: color(brand-pink);
+                opacity: 0.8;
+                margin-right: rem(2);
             }
         }
 

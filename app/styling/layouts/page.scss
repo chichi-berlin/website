@@ -2,10 +2,6 @@
     
     .contents {
         
-        h2, h3 {
-            max-width: rem($desktop_max-page-width * 0.75);
-        }
-
         p + h2, ul + h2, .shortcode + h2 {
             margin-top: rem(60);
         }

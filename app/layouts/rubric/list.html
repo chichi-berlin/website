@@ -31,12 +31,13 @@
     {{ if gt (len .Sections) 0 }}
     <ul class="rubric--grid for-categories">
         {{ range sort .Sections ".Params.weight" "asc" }}
+        {{ if not .Params.headless }}
         <li>
             <a href="{{ .URL | relLangURL }}">
                 <div class="wrap">
                     <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
-                    <div class="fg">
-                        <h2>{{ .LinkTitle }}</h2>
+                    <div class="fg {{ if isset .Params "explanation" }}is-explanation{{ end }}">
+                        <h2>{{ index .Params "explanation" | default .LinkTitle }}</h2>
                     </div>
                 </div>
                 <div class="subtitle">
@@ -45,10 +46,12 @@
             </a>
         </li>
         {{ end }}
+        {{ end }}
     </ul>
     {{ else if gt (len .Pages) 0}}
     <ul class="rubric--grid for-items">
         {{ range sort .Pages ".Params.model" "asc" }}
+        {{ if not .Params.headless }}
         <li>
             <a href="{{ .URL | relLangURL }}">
                 <div class="wrap">
@@ -62,6 +65,7 @@
                 </div>
             </a>
         </li>
+        {{ end }}
         {{ end }}
     </ul>
     {{ end }}

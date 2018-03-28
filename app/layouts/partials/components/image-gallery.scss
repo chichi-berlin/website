@@ -66,16 +66,34 @@
     
     
     .slick-prev, .slick-next {
+        height: 100%;
+        opacity: 0.2;
+        background-color: color(grey-light);
+        transition: all 0.2s;
         
         &:before {
             color: color(grey-dark);
-            font-weight: 600;            
+            font-weight: 600;
+            opacity: 1.0;
+            font-size: rem(16);
+            
+            transition: all 0.2s;
         }
         
         &.slick-disabled {
+            height: 0;
+            
             &:before {
-                opacity: 0;            
+                opacity: 0;         
             }            
+        }
+        
+        &:hover, &:focus {
+            opacity: 0.5;
+            
+            &:before {
+                color: color(white);
+            }
         }
     }
     

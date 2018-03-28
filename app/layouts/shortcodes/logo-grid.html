@@ -3,9 +3,8 @@
     {{ if gt (len $list) 0 }}
     <ul class="logo-list">
     {{ range $list }} 
-        {{ if or .svg .img }}
         <li>
-        {{ if .link }}<a class="flow" href="{{ .link }}" title="Logo: {{ .label }}" target="_blank">{{ else }}<div class="flow">{{ end }}
+        {{ if .link }}<a class="flow" href="{{ .link }}" title="Website: {{ .label }}" target="_blank">{{ else }}<div class="flow">{{ end }}
         
         {{ if .svg }}
             <div class="flow--svg">
@@ -13,13 +12,17 @@
             </div>
         {{ else if .img }}
             <div class="flow--img">
-                {{ partial "components/img.html" .img }}
+                {{ $img := dict "src" .img "alt" (printf "Logo: %s" .label) }}
+                {{ partial "components/img.html" $img }}
             </div>
+        {{ else }}
+            <div class="flow--text">
+                <span>{{ .label }}</span>
+            </div>        
         {{ end }}
         
         {{ if .link }}</a>{{ else }}</div>{{ end }}
         </li>
-        {{ end }}
     {{ end }}
     </ul>
     {{ end }}

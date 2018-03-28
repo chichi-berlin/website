@@ -100,6 +100,13 @@
                 margin-top: 0;
             }
             
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: inherit;
+                }
+            }
+            
             .flow {
                 height: 100%;
                 width: 100%;
@@ -108,7 +115,7 @@
                 
                 padding: rem(spacing(2.8)) rem(spacing(2.2));
                 
-                .flow--svg, .flow--img {
+                .flow--svg, .flow--img, .flow--text {
                     overflow: hidden;
                     @include flex-center;
                     height: 100%;
@@ -128,6 +135,16 @@
                     img {
                         max-height: 100%;
                         max-width: 100%;
+                    }
+                }
+                
+                .flow--text {
+                    span {
+                        font-size: rem(40);
+                        font-weight: 600;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 1.1;
                     }
                 }
             }

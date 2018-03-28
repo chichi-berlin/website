@@ -61,6 +61,12 @@
         
         .article-teaser {
             list-style: none;
+            margin-top: 0;
+            
+            .content-preview {
+                overflow: hidden;
+                max-height: rem(240);
+            }
         }
         
         & > * {
