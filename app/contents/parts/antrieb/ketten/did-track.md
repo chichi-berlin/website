@@ -12,8 +12,7 @@ images:
   - '/media/images/rubrics/parts/items/drive/chain-did-track_2'
 
 description: >
-   A new model offering DID quality at a lower price than the Pro with a choice of black or silver finish.
-   High quality reliable chains made in Japan. All nickel silver finish or all black finish, both with 116 links. Includes traditional spring type master link.
+   Dieses Modell bietet Dir D.I.D - Qualität zu einem erträglicheren Preis. Du kannst wählen zwischen silber und schwarz.
 
 specs:
   - length: '116 Links'
