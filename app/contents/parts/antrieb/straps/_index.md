@@ -9,7 +9,7 @@ section: 'straps'
 
 title: 'Straps & Körbchen'
 description: 'TODO'
-image: '/media/images/rubrics/parts/items/'
+image: '/media/images/rubrics/parts/items/straps-blb-doublefreestyle_1.jpeg'
 
 weight: 6
 menu:
