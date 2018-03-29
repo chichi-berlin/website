@@ -6,12 +6,6 @@ type: 'rubric'
 model: 'Salerno'
 manufacturer: 'Contoura Manufaktur'
 
-image: '/media/images/rubrics/bicycles/items/'
-
-images:
-  - '/media/images/rubrics/bicycles/items/'
-  - '/media/images/rubrics/bicycles/items/'
-  - '/media/images/rubrics/bicycles/items/'
 
 description: >
     x

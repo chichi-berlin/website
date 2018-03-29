@@ -9,7 +9,7 @@ section: 'custom'
 
 title: 'Individueller Aufbau'
 description: 'Wir bauen Dein Wunschrad'
-image: '/media/images/rubrics/bicycles/items/'
+i
 
 explanation: 'Wir bauen Dein Wunschrad'
 

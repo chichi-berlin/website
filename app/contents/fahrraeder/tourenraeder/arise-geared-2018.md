@@ -18,17 +18,17 @@ images:
   - '/media/images/rubrics/bicycles/items/arise-geared-2018_8.jpg'
 
 description: >
-     Das Arise geared ist mit seiner Rahmengeomerie besonders für Vielfahrer in der Stadt attraktiv. Die Komponenten garantieren besten Komfort bei alltäglicher Nutzung.
+     Das Arise Geared ist mit seiner Rahmengeomerie besonders für Vielfahrer in der Stadt attraktiv. Die Komponenten garantieren besten Komfort bei alltäglicher Nutzung.
 
 specs:
   - frametype: 'Diamant'
   - frame: '4130 crmo'
   - fork: 'BT BIKES "Arise" fork, 4130 crmo, tapered'
   - wheel-size: '622mm'
-  - headset: 'FSA "Orbit X" sealed a-headset, 1.1/8" '
-  - stem: 'BT BIKES "Origin" forged alloy stem, -7°'
+  - headset: 'FSA "Orbit X" gedichtet, 1.1/8" '
+  - stem: 'BT BIKES "Origin"'
   - handlebar: 'BT BIKES "Origin-flat"; Alu'
-  - bottom-bracket: 'BB68 (BSA) square taper'
+  - bottom-bracket: 'BB68 (BSA)'
   - crankset: 'BT BIKES  "AF19" 6061; Alu'
   - chainring: 'BT BIKES; 42T'
   - pedals: 'ride away pedals'
@@ -42,7 +42,7 @@ specs:
   - brake-levers: 'TEKTRO "ML-520"'
   - seatpost: 'BT BIKES "612"'
   - saddle: 'BT BIKES "Origin"'
-  - fender: 'BT BIKES 50mm plastic fenders'
+  - fender: 'BT BIKES 50mm, Plastik'
   - weight: '12,8 kg (Größe M)'
   - sizes:
     - '48'

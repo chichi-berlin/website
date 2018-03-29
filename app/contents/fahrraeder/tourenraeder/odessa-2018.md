@@ -16,27 +16,25 @@ images:
   - '/media/images/rubrics/bicycles/items/odessa-2018_6.jpeg'
 
 description: >
-     The 6KU City 8speed is an elegant city commuter designed to get the perfect balance 
-     between a responsive ride and a comfortable commute. With it’s classic step thru frame and 
-     Shimano 8 Speed Drivetrain, this is the easiest commuter to ride.
+     Die perfekte Balance zwischen wettertauglichem Alltagsrad und dem kleinen sportlichen, das so wunderbar schnell und unkompliziert ist.
 
 specs:
   - frametype: 'Trapez'
-  - frame: 'High Tensile Steel'
-  - fork: 'High Tensile Steel'
+  - frame: 'Stahl'
+  - fork: 'Stahl'
   - wheel-size: '622 mm'
-  - headset: 'VP 1" Threaded Forged Alloy'
-  - stem: '80mm Quill Stem | 25.4mm clamp'
-  - crankset: 'Forged Alloy (46T)'
+  - headset: 'VP 1"'
+  - stem: '80mm Quill Stem | 25.4mm'
+  - crankset: 'Alu (46T)'
   - pedals: 'Platform'
   - chain: 'KMC Z72'
   - cassette: 'Shimano HG200-8 (11-32T)'
   - speeds: '8-Gang Kettenschaltung'
-  - hubs: 'Novatec Alloy'
-  - tyres: 'Kenda Street 700x28c'
+  - hubs: 'Novatec, Alu'
+  - tyres: 'Kenda Street 28-622'
   - shifter: 'Shimano Altus M310'
   - derailleurs: 'Shimano "Altus M310"'
-  - saddle: 'Velo Urban Saddle'
+  - saddle: 'Velo Urban'
   - weight: '12,7 kg (kleinste RH)'
   - sizes:
     - '43'
