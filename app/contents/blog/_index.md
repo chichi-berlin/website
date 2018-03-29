@@ -1,6 +1,8 @@
 ---
+
 linkTitle: 'Blog'
 slug: 'blog'
+section: 'blog'
 type: 'blog'
 layout: 'list'
 

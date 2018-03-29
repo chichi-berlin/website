@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-{{ $articles := .Parent.Pages.ByDate.Reverse }}
-{{ $firstArticle := index (first 1 $articles) 0 }}
-{{ $lastArticle := index (last 1 $articles) 0 }}
+{{ $posts := .Parent.Pages.ByDate.Reverse }}
+{{ $firstPost := index (first 1 $posts) 0 }}
+{{ $lastPost := index (last 1 $posts) 0 }}
 
 
 <section class="edge-spacer--h">
@@ -14,11 +14,11 @@
     
     <div class="row-2-cols">
         <article class="col--left">
-            <div class="article--content">
+            <div class="post--content">
                 {{ .Content}}
             </div>
             
-            <nav class="component__article-nav">
+            <nav class="component__post-nav">
                 {{ with .PrevInSection }}
                 <span class="prev">                    
                     <a href="{{ .Permalink | relLangURL }}">← <span>{{ truncate 20 "..." .LinkTitle }}</span></a>

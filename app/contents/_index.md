@@ -18,7 +18,7 @@ banner:
   isEnabled: true
   message: |
     Damit Du bei den ersten Sonnenstrahlen nicht Schlange stehst: hol Dir jetzt noch schnell ohne 
-    viel Wartezeit Deine [Frühlingsinspektion](/blog/articles/inspektionen "Blog | Inspektionen")!
+    viel Wartezeit Deine [Frühlingsinspektion](/blog/beitraege/inspektionen "Blog | Inspektionen")!
 
 
 offers:

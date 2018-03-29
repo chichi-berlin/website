@@ -1,11 +1,11 @@
 {{ define "main" }}
 
 {{ $itemsPerPage := $.Param "itemsPerPage" | default 5 }}
-{{ $articlesSectionPath := printf "%s%s" .Dir "articles" }}
-{{ $articles := $.Site.GetPage "section" $articlesSectionPath }}
+{{ $postsSectionPath := printf "%s%s" .Dir "beitraege" }}
+{{ $posts := $.Site.GetPage "section" $postsSectionPath }}
 
-{{ if $articles }}
-{{ $paginator := .Paginate ($articles.Pages.ByDate.Reverse) $itemsPerPage }}
+{{ if $posts }}
+{{ $paginator := .Paginate ($posts.Pages.ByDate.Reverse) $itemsPerPage }}
 <section class="edge-spacer--h">
 
     <h1 class="page-title">{{ .Title }}</h1>
@@ -15,15 +15,15 @@
     
     <div class="row-2-cols">
         <article class="col--left">
-            <ul class="articles">
+            <ul class="posts">
                 {{ range $paginator.Pages }}
                 <li>
-                    {{ partial "components/article-preview.html" . }}
+                    {{ partial "components/post-preview.html" . }}
                 </li>
                 {{ end }}
             </ul>
             
-            {{ partial "components/articles-list-nav.html" $paginator }}
+            {{ partial "components/posts-list-nav.html" $paginator }}
         </article>
         
         {{ partial "components/blog-sidebar.html" . }}

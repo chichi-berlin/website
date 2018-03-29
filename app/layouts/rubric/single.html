@@ -50,7 +50,7 @@
             <span>{{ i18n "related-posts" }}:</span>
             <ul>
                 {{ range $posts }}
-                {{ $path := printf "blog/articles/%s" . }}
+                {{ $path := printf "blog/beitraege/%s" . }}
                 {{ with $.Site.GetPage "page" $path }}
                 <li>
                     <a href="{{ .URL | relLangURL }}">{{ .LinkTitle }}</a>

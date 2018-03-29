@@ -3,10 +3,10 @@ back-to-list:
 back-to-overview:
   other: 'Zurück zur Übersicht'
 
-newer-articles:
+newer-posts:
   other: 'Neuere Beiträge'
 
-older-articles:
+older-posts:
   other: 'Ältere Beiträge'
 
 news:
@@ -29,5 +29,5 @@ read-more:
 figure-caption-photographer:
   other: '(Bild: {{.Count}})'
 
-error.no-article:
+error.no-post:
   other: 'Kein Artikel zu dieser Kategorie vorhanden.'

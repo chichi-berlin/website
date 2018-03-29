@@ -13,17 +13,17 @@
 
 <section class="edge-spacer--h">
 
-    {{ $articlesSectionPath := printf "%s/%s" "blog" "articles" }}
-    {{ $articles := $.Site.GetPage "section" $articlesSectionPath }}
-    {{ $articles := first 3 $articles.Pages.ByDate.Reverse }}
+    {{ $postsSectionPath := printf "%s/%s" "blog" "beitraege" }}
+    {{ $posts := $.Site.GetPage "section" $postsSectionPath }}
+    {{ $posts := first 3 $posts.Pages.ByDate.Reverse }}
     
-    <h1 class="section-title">{{ i18n "recent-blog-posts" (len $articles) }}</h1>
+    <h1 class="section-title">{{ i18n "recent-blog-posts" (len $posts) }}</h1>
     
-    <ul class="article-teasers">
-        {{ range $articles }}
-        <li class="article-teaser">
+    <ul class="post-teasers">
+        {{ range $posts }}
+        <li class="post-teaser">
             {{ .Scratch.Set "teaser-text-length" 500 }}
-            {{ partial "components/article-preview.html" . }}
+            {{ partial "components/post-preview.html" . }}
         </li>
         {{ end }}
     </ul>

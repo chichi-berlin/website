@@ -1,0 +1,25 @@
+{{ $teaserTextLength := .Scratch.Get "teaser-text-length" | default 250 }}
+
+<article class="component__post--preview">
+    <h2>
+        <a title="{{ .Title }}"
+           href="{{ .URL | relLangURL }}">
+            {{ .Title }}
+        </a>
+    </h2>
+    <h5>
+        {{ printf "%02d.%02d.%d" .PublishDate.Day .PublishDate.Month .PublishDate.Year }}
+    </h5>
+    
+    <div class="content-preview">
+        {{ truncate $teaserTextLength "..." .Content | replaceRE "<h[^>]+>(.|\n)*</h[^>]+>" "" | replaceRE "<figure>(.|\n)*</figure>" "" | safeHTML }}
+    </div>
+    
+    <nav>
+        <a class="btn--primary"
+           title="{{ .Title }}"
+           href="{{ .URL | relLangURL }}">
+            <span>{{ i18n "read-more" }}</span>
+        </a>
+    </nav>
+</article>

@@ -4,8 +4,6 @@ title: 'CHICHI | Fahrradfachgeschäft'
 params:
   layout-name: 'master'
   piwikBaseURL: 'https://onwx.org/piwik/'
-  apiKeys:
-    google-maps: 'AIzaSyAohwIl-YXJiyxTf3kxk6RKWSKrNxXUfuQ'
 
 sitemap:
   changefreq: 'monthly'
@@ -14,8 +12,6 @@ sitemap:
 
 # See 'content-management/permalinks'
 permalinks:
-  post: '/:title/'
-  page: '/:slug/'
 
 # the length of text to show in a .Summary
 summaryLength:              70
@@ -55,8 +51,6 @@ buildExpired:               false
 rssLimit:                   1
 enableGitInfo:              false
 
-paginate:                   10
-
 footnoteAnchorPrefix:       ''
 footnoteReturnLinkContents: ''
 
@@ -64,8 +58,8 @@ footnoteReturnLinkContents: ''
 noChmod:                    true
 noTimes:                    false
 
-paginate:                   6
-paginatePath:               'page'
+paginate:                   10
+paginatePath:               'p'
 
 # Title Case style guide for the title func and other automatic title casing in Hugo.
 # // Valid values are 'AP' (default), 'Chicago' and 'Go' (which was what you had in Hugo <= 0.25.1).
@@ -103,6 +97,8 @@ languages:
   de:
     languageName: 'Deutsch'
     languageCode: 'de'
+    paginatePath: 'seite'
+    paginate:     6
     permalinks:
       tags: '/blog/tags/:slug'
 #      bicycles:     '/fahrraeder/:slug/'
