@@ -22,20 +22,20 @@ banner:
 
 
 offers:
-  - headline: 'This is the best offer ever !!11!1'
-    image: '/media/images/offers/placeholder-image.jpg'
+  - headline: 'Kopfschutz: "Hövding" Einstiegsangebot'
+    image: '/media/images/offers/hoevding-in-action.png'
     description: >
-      some nice little words to describe the offer
-      
-  - headline: 'offer B'
-    image: '/media/images/offers/placeholder-image.jpg'
+      Der Hövding Airbag ist neu in unserem Sortiment. Wir finden ihn super, denn er schützt Deinen Kopf 88% besser, als ein Hartschalenhelm. Bis er gebraucht wird, ist er jedoch ein unauffälliger Kragen, den Du einfach um den Hals tragen kannst. Die erster drei gehen bei uns für -15 € (vom Empfohlenen Verkaufspreis) über den Tisch!
+
+  - headline: 'Gebrauchträder reduziert'
+    image: '/media/images/offers/chichi-design-3gangkette_1.jpg'
     description: >
-      some nice little words to describe the offer. maybe a bit more text. just to be sure!
+      Den gesamten April hindurch bieten wir Dir 10% Nachlass auf viele unserer Gebrauchträder. Zum Beispiel dieses hier.
   
-  - headline: 'offer C'
-    image: '/media/images/offers/placeholder-image.jpg'
+  - headline: 'Sparangebot Singlespeed + Schloß'
+    image: '/media/images/offers/forelle-blau_1.jpg'
     description: >
-      some nice little words to describe the offer
+      Dieses Singlespeed bekommst Du zusammen mit einem Kryptonite "Evolution Mini-5" für laue 345 €! (Angebot gültig bis Ende April, solange der Vorrat reicht.)
 
 
 ---
