@@ -15,7 +15,7 @@ images:
   - '/media/images/rubrics/parts/items/drive/chainring-blb-superpista_5.jpeg'
 
 description: >
-    Das ganz und gar CNC - gefräste Kettenblatt glänzt mit Eleganz und vervollständigt klassische Aufbauten.
+    Das ganz und gar CNC- gefräste Kettenblatt glänzt mit Eleganz und vervollständigt klassische Aufbauten.
 
 specs:
   - bcd: '144'
