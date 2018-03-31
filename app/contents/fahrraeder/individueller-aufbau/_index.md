@@ -9,7 +9,7 @@ section: 'custom'
 
 title: 'Individueller Aufbau'
 description: 'Wir bauen Dein Wunschrad'
-i
+image: ''
 
 explanation: 'Wir bauen Dein Wunschrad'
 
