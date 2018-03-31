@@ -9,7 +9,7 @@ section: 'straps'
 
 title: 'Straps & Körbchen'
 description: 'TODO'
-image: '/media/images/rubrics/parts/items/straps-veganski-freestylepedal_08.jpeg'
+image: '/media/images/rubrics/parts/items/drive/straps-veganski-freestylepedal_08.jpeg'
 
 weight: 6
 menu:

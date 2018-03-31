@@ -9,7 +9,7 @@ section: 'chains'
 
 title: 'Ketten'
 description: 'TODO'
-image: '/media/images/rubrics/parts/items/chain-did-track_1'
+image: '/media/images/rubrics/parts/items/drive/chain-did-track_1'
 
 weight: 2
 menu:
