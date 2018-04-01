@@ -15,11 +15,11 @@ images:
   - '/media/images/rubrics/bicycles/items/gazzetta-2018_5.jpg'
 
 description: >
-     The Gazzetta is Cinelli’s classic style steel track bike, subtly optimized for all-day urban messenger use. At the heart of the Gazzetta’s all-day comfort and urban functionality is the Columbus Cromo triple-butted tubing, micro-TIG welded for greatest durability. The bike is offered in a single urban-ready build, featuring the Cinelli 20mm riser bar for comfortable handling, a single front brake for the cleanest aesthetic and easy-to-handle 46-17 fixed gear ratio and 46-18 freewheel gear ratio.
+    Das Gazzetta ist Cinellis Stahl Track- Rad im klassischen Stil, das subtil für den täglichen Gebrauch auf urbanan Straßen optimiert wurde. Das Herzstück ist der micro-TIG geschweißte dreifach konifizierte Cr-Mo Rohrsatz von Columbus für großartige Haltbarkeit. Das Rad kommt mit einem verkehrstauglichen Riser- Lenker und einer Bremse (vorn). Das Hinterrad verfügt über eine FlipFlop Nabe: 18T Freilauf / 17T Fixed.
 
 specs:
   - frametype: 'Diamant'
-  - frame: 'COLUMBUS Cr-Mo Double Butted Steel'
+  - frame: 'COLUMBUS Cr-Mo doppelt / dreifach konifiziert'
   - fork: ' COLUMBUS Cr-Mo Steel 1-1/8"'
   - wheel-size: '622 mm'
   - handlebar: 'CINELLI'

@@ -18,17 +18,12 @@ images:
   - '/media/images/rubrics/bicycles/items/audax-2018_8.jpg'
 
 description: >
-     Originally conceived as a more traditional road tourer the Audax has been transformed into a 
-     vision for modern endurance road riding. Gone, are the traditional 700c wheels in favor of the 
-     more compliant and equally fast 650B Adventure disc wheels courtesy of Hunt. The Audax uses 
-     components selected for performance but with the solid reliability required for endurance 
-     racing. The Shimano 105 is a true benchmark for any groupset and here on the Audax it keeps 
-     things rolling efficiently whilst the TRP mechanical disc brakes provide plenty of power to 
-     slow things down whenever needed.
+    Ursprünglich als ein eher traditioneller Tourenrenner konzipiert, wurde das Audax zu einem Traum für modernes Ausdauertraining.
+    Verworfen wurden die traditionellen 622er Laufräder zugunsten des fast genauso schnellen, jedoch gutmütigeren 650B Adventure Scheibenbrems- Laufradsatzes von Hunt. Für die Ausstattung wurden Komponenten gewählt, welche gute Performance liefern, zugleich jedoch robust genug für Endurance Anforderungen sind. Die 105er Gruppe von Shimano war hier die effizienteste Lösung. Mechanische TRP Scheibenbremsen runden den Aufbau ab.
 
 specs:
   - frametype: 'Diamant'
-  - frame: 'COLUMBUS "Cromor" double butted, Steuerrohr tapered'
+  - frame: 'COLUMBUS "Cromor" doppelt konifiziert, Steuerrohr tapered'
   - fork: 'BT BIKES "EXT" Vollcarbon, Scheibenbremse, 1.1/8"-1.1/2", tapered'
   - wheel-size: '650 mm'
   - headset: 'FSA "No21/12/44" sealed a-headset, 1.1/8"-1.1/2"'

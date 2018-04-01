@@ -13,7 +13,7 @@ images:
   - '/media/images/rubrics/bicycles/items/gazzetta-della-strada-2018_3.jpg'
 
 description: >
-     Das Gazzetta della Strada ist Cinelli’s gefeierte stadttaugliche Re-interpretation des klassischen französischen Randonneurs. Es wurde designt, um jedes Wetter und alle erdenklichen im Alltag anfallenden Transporte zu meistern.
+     Das Gazzetta della Strada ist Cinellis gefeierte stadttaugliche Re-interpretation des klassischen französischen Randonneurs. Es wurde designt, um jedes Wetter und alle erdenklichen im Alltag anfallenden Transporte zu meistern.
      Wie beim klassischen Randonneur liegt der Fokus auf einer Geometrie, welche etwas komfortabler ist, als die eines Rennrades, jedoch das Gefühl von Leichtigkeit und Schnelligkeit erhält.
      Das Rad kommt mit einem klassischen Brooks B-17 Ledersattel, festen Schutzblechen, Vorderrad- und Hinteradgepäckträger, sowie einer vielseitige Übersetzung.
 
