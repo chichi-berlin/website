@@ -21,6 +21,6 @@ description: >
 specs:
   - colors:
     - 'schwarz'
-    - 'kaki'
+    - 'khaki'
 
 ---
