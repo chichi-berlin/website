@@ -6,49 +6,16 @@ configurable: true
 model: 'Salerno'
 manufacturer: 'Contoura Manufaktur'
 
+image: '/media/images/rubrics/bicycles/items/salerno-2017_1.jpg'
 
 description: >
-    x
+    Das Starrgabelmodell „Salerno“ setzt auf ein Höchstmaß an Alltagstauglichkeit und ist in drei Rahmenformen und maximaler Optionsbandbreite individuell konfigurierbar. Hier findet der bekennende Manufaktur-Liebhaber alles was das Herz begehrt und kann sein Unikat erstellen. Sechs Naben- sowie vier Kettenschaltungsversionen stehen alternativ zur Wahl. Die Liste der individuellen Ausstattungsanpassungen ist zudem noch etwas größer als bei ähnlichen Modellen.
+    Für nähere Information sih Dir den Konfigurator an, oder komm vorbei und lass Dich unverbindlich beraten.
 
 specs:
-  - frametypes:
-    - 'Diamant'
-    - 'Trapez'
-    - 'Wave' 
-  - frame: 
-  - fork:
-  - wheel-size:
-  - headset:
-  - stem:
-  - handlebar:
-  - bottom-bracket:
-  - crankset:
-  - chainring:
-  - pedals:
-  - chain:
-  - cassette:
-  - speeds:
-  - hubs:
-  - rims:
-  - tyres:
-  - brakes:
-  - brake-levers:
-  - shifter: 
-  - derailleurs:
-  - seatpost:
-  - saddle:
-  - fender:
-  - rack:
-  - lights:
-  - weight:
-  - sizes:
-    - '50'
-    - '54'
-    - '58'
-    - '62'
-    - '66'
-    - '70'
-  - colors:
-    - 'z.B. beryllblau, lotusgrün, kristallrot, einfach schwarz, oder doch etwas anderes - schau doch mal im Konfigurator'
+  - material-frame: 'Stahl'
+  - material-fork: 'Stahl'
+  - wheel-size: '622mm'
+
 
 ---
