@@ -10,7 +10,7 @@ keywords:
  - 'Reparatur'
  - 'Werkstatt' 
 
-key-visual-url: '/media/images/pictures/key-visual_landing-page.jpg'
+key-visual-url: '/media/images/pictures/key-visual_landing-page_subopt.JPG'
 scroll-offset-coordinate: 'viewport'
 
 
