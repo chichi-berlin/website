@@ -13,7 +13,7 @@ images:
 
 description: >
     Die Dry Bag von Restrap mit zwei Öffnungen ist 100% wasserdicht und ermöglicht einfachen 
-    Zugriff auf all Deine Habseligkeiten. Die großartige multipurpose Dry Bag von Restrap haben wir 
+    Zugriff auf all Deine Habseligkeiten. Die großartige, vielseitig einsetzbare Dry Bag von Restrap haben wir 
     mit 8 Liter und 14 Liter Volumen. Subtil gebrandet passen die Taschen an jedes Rad und zu allen 
     Klamotten.
 
