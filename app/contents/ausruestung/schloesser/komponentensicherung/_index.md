@@ -9,7 +9,7 @@ section: 'component'
 
 title: 'Komponentensicherung'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/'
+image: '/media/images/rubrics/accessories/items/hexlox-assortment.jpg'
 
 weight: 6
 menu:

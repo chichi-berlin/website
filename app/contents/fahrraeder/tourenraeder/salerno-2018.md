@@ -1,7 +1,7 @@
 ---
 
 type: 'rubric'
-
+configurable: true
 
 model: 'Salerno'
 manufacturer: 'Contoura Manufaktur'
