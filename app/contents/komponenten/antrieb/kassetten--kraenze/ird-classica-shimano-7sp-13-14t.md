@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Kassette "Classica" Shimano 7S'
+model: 'Kranz "Classica" Shimano 7S'
 manufacturer: 'IRD'
 
 image: '/media/images/rubrics/parts/items/drive/cassette-ird-classica-shimano-7sp-13-24t_1.jpg'
