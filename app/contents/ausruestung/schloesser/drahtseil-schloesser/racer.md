@@ -18,7 +18,7 @@ specs:
   - type: 'Kabel'
   - length: '185cm'
   - weight: '550g'
-  - holder: 'ohne Halterung'
+  - holder: 'mit Halterung'
   - security-level: 'nicht agegeben'
 
 ---

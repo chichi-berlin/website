@@ -20,7 +20,7 @@ images:
   - '/media/images/rubrics/accessories/items/hexlox-verschlusskappen.jpg'
 
 description: >
-    Alle Komponenten sind einzeln erhältlich, sodaß Du indivieduell nachrüsten kannst ud nichts sinnlos mitebezahlst.
+    Alle Komponenten sind einzeln erhältlich, sodaß Du individuell nachrüsten kannst und nur das bezahlst, was Du wirklich brauchst.
     
 specs: 
   - type: 'Schraubensicherung'

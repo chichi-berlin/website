@@ -2,6 +2,8 @@
 
 type: 'rubric'
 configurable: true
+related-posts:
+  - 'manufaktur'
 
 model: 'Salerno'
 manufacturer: 'Contoura Manufaktur'
