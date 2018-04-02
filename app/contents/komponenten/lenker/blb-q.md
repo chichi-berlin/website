@@ -6,12 +6,12 @@ type: 'rubric'
 model: 'Q'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_2.jpg'
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_3.jpg'
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_4.jpg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_2.jpeg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_3.jpeg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-q_4.jpeg'
 
 description: >
     Der Q-Bar ist ein glatter, gerader Lenker mit bewölbten Enden.

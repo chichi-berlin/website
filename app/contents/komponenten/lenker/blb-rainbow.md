@@ -6,10 +6,10 @@ type: 'rubric'
 model: 'Rainbow'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-rainbow_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-rainbow_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-rainbow_2.jpg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-rainbow_2.jpeg'
 
 description: >
     Schmaler Lenker für einfaches Filtern. Die durch den Bogen entstehende Griffposition schont Deine Handgelenke.

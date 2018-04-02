@@ -6,10 +6,10 @@ type: 'rubric'
 model: 'Mini Me'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-minime_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-minime_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-minime_2.jpg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-minime_2.jpeg'
 
 description: >
     Superschmal mit hohem Rise.

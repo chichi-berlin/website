@@ -6,10 +6,10 @@ type: 'rubric'
 model: 'Escobar Verchromt'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-escobarpolished_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-escobarpolished_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-escobarpolished_2.jpg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-escobarpolished_2.jpeg'
 
 description: >
     Sehr klassischer Track Lenker mit Drop und Moustache- Schwung.

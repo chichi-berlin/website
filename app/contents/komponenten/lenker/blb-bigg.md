@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Big G'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-biggbar_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-biggbar_1.jpeg'
 
 description: >
     Dieser megabreite Freestylelenker gibt Dir mehr Kontrolle und Komfort auf längeren Alltagswegen und lässt Dich aufrechter sitzen.   

@@ -6,10 +6,10 @@ type: 'rubric'
 model: 'Big Smoke'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-bigsmoke_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-bigsmoke_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-bigsmoke_2.jpg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-bigsmoke_2.jpeg'
 
 description: >
     Dieser megabreite Freestylelenker gibt Dir mehr Kontrolle und Komfort auf längeren Alltagswegen und lässt Dich deutlich aufrechter sitzen.

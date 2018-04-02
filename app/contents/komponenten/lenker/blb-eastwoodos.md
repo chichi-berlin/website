@@ -6,12 +6,12 @@ type: 'rubric'
 model: 'Eastwood OS'
 manufacturer: 'BLB'
 
-image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_1.jpg'
+image: '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_1.jpeg'
 
 images:
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_2.jpg'
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_3.jpg'
-  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_4.jpg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_2.jpeg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_3.jpeg'
+  - '/media/images/rubrics/parts/items/cockpit/handlebar-blb-eastwoodos_4.jpeg'
 
 description: >
     Mit Oversize Klemmung für nochmehr Steifigkeit. Ansonsten wie der Eastwood.
