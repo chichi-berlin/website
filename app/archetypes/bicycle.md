@@ -1,7 +1,7 @@
 ---
 
 type: 'rubric'
-layout: 
+layout: 'categories'
 
 draft: true
 

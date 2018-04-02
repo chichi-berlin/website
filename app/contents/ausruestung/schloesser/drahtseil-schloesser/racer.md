@@ -20,7 +20,4 @@ specs:
   - holder: 'ohne Halterung'
   - security-level: 'nicht agegeben'
 
-
-© ABUS August Bremicker Söhne KG
-
 ---

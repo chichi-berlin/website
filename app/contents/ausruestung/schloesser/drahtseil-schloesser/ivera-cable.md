@@ -23,7 +23,4 @@ specs:
   - holder: 'ohne Halterung'
   - security-level: '7 (nur vergleichbar innerhalb des ABUS Level-Systems)'
 
-
-© ABUS August Bremicker Söhne KG
-
 ---

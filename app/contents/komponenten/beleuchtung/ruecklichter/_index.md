@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Rücklichter'
 slug: 'ruecklichter'
 section: 'rear'

@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'MTB'
 slug: 'mountainbike-bereifung'
 section: 'mtb'

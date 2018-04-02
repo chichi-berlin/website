@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Reflexartikel'
 slug: 'reflexartikel'
 section: 'reflex'

@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Renn'
 slug: 'rennrad-bereifung'
 section: 'road'

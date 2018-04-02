@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Dynamos'
 slug: 'dynamos'
 section: 'dynamos'

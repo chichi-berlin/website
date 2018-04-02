@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Cross'
 slug: 'crossrad-bereifung'
 section: 'cross'

@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Scheinwerfer'
 slug: 'scheinwerfer'
 section: 'front'

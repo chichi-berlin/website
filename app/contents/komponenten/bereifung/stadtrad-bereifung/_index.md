@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'City'
 slug: 'stadtrad-bereifung'
 section: 'city'

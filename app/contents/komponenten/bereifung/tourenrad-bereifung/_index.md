@@ -3,6 +3,8 @@
 type: 'rubric'
 layout: 'categories'
 
+draft: true
+
 linkTitle: 'Tour'
 slug: 'tourenrad-bereifung'
 section: 'tour'
