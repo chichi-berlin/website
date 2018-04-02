@@ -5,6 +5,7 @@ type: 'rubric'
 
 model: 'Catena Shadow'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-chain-catena_1.jpg'
 

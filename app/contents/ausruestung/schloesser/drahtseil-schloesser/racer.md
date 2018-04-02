@@ -5,6 +5,7 @@ type: 'rubric'
 
 model: 'Racer'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-cable-racer.jpg'
 

@@ -5,6 +5,7 @@ type: 'rubric'
 
 model: 'Primo'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-cable-primo_1.jpg'
 

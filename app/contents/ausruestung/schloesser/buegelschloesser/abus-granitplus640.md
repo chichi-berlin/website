@@ -5,12 +5,12 @@ type: 'rubric'
 
 model: 'Granit Plus 640'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-u-granitplus640_1.jpg'
 
 images:
   - '/media/images/rubrics/accessories/items/locks-abus-u-granitplus640_2.jpg'
-
 
 description: |
     Guter Schutz bei hohem Diebstahlrisiko

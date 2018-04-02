@@ -5,6 +5,7 @@ type: 'rubric'
 
 model: 'Cetero'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-cable-cetero.jpg'
 

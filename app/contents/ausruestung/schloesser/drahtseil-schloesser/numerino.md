@@ -5,6 +5,7 @@ type: 'rubric'
 
 model: 'Numerino'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-cable-numerino_1.jpg'
 

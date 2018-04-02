@@ -5,6 +5,7 @@ type: 'rubric'
 
 model: 'Ivera'
 manufacturer: 'ABUS'
+copyright: '© ABUS August Bremicker Söhne KG'
 
 image: '/media/images/rubrics/accessories/items/locks-abus-cable-ivera_1.jpg'
 
