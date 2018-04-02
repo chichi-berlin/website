@@ -3,7 +3,9 @@ title: 'CHICHI | Fahrradfachgeschäft'
 
 params:
   layout-name: 'master'
-  piwikBaseURL: 'https://onwx.org/piwik/'
+  version: '1.0.0'
+  hugo-version: '0.38'
+  piwik-base-url: 'https://onwx.org/piwik/'
 
 sitemap:
   changefreq: 'monthly'
@@ -101,6 +103,7 @@ languages:
   de:
     languageName: 'Deutsch'
     languageCode: 'de'
+    contentDir:   'app/contents'  
     paginatePath: 'seite'
     paginate:     6
     permalinks:

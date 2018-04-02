@@ -1,4 +1,4 @@
-{{ $baseURL := index $.Page.Site.Params "piwikBaseURL" | default $.Site.BaseURL }}
+{{ $baseURL := index $.Page.Site.Params "piwik-base-url" | default $.Site.BaseURL }}
 {{ $path := "style/exports" }}
 {{ $fileName := "piwik-opt-out" }}
 

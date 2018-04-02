@@ -1,5 +1,5 @@
 {{ $banner := $.Param "banner" | default dict }}
-{{ $enabled := default false $banner.isEnabled }}
+{{ $enabled := default false $banner.enabled }}
 {{ if $enabled }}
 <div id="page-banner" class="component__banner">
     <div class="edge-spacer--h">

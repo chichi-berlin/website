@@ -11,7 +11,7 @@ subtitle: 'Neuigkeiten und Wissenswertes'
 description: 'News, Techinfo, Pflegetipps'
 keywords:
 
-itemsPerPage: 5
+items-per-page: 5
 
 menu:
   top:

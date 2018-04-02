@@ -29,21 +29,34 @@
     
     {{ if $.IsPage }}
         {{ $.Scratch.Set "pageName" $.File.TranslationBaseName }}
-    {{ else if $.IsHome }}
-        {{ $.Scratch.Set "pageName" "home" }}
     {{ else if $.IsNode }}
-        {{ $dirName := (delimit (findRE "[^/]+" .File.Dir | last 1) "") }}
-        {{ $.Scratch.Set "pageName" $dirName }}
+        <!--
+        NOTE: as long as Hugo doesnt support `slug` in (sub-)sections, we do it manually by first ignoring 
+        folder names defined in contentDir and instead obtaining 'section' configuration in front matter 
+         -->
+        {{ $sectionPath := trim .File.Dir "/" }}
+        {{ $node := $.Site.GetPage "section" $sectionPath }}
+        {{ with $node }}
+            {{ $.Scratch.Set "pageName" $node.Params.section }}    
+        {{ end }}
     {{ else }}
         {{ $.Scratch.Set "pageName" $slug }}
     {{ end }}
     {{ $.Scratch.Set "pageName" ($.Param "name" | default ($.Scratch.Get "pageName")) }}
     {{ $page := $.Scratch.Get "pageName" }}
     
+    <!--
+    NOTE: see `if $.IsNode` condition
+    -->
+    {{ with .Section }}
+        {{ $sectionPage := $.Site.GetPage "section" . }}
+        {{ $.Scratch.Set "section" $sectionPage.Params.section }}
+    {{ end }}
+    
     <div id="site" 
-         class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} {{ with .Section }}section--{{ . }}{{ end }} page--{{ $page }}"
+         class="layout--{{ .Param "layout-name" | default "master" }} type--{{ .Type }} {{ with .Section }}section--{{ $.Scratch.Get "section" }}{{ end }} page--{{ $page }}"
          data-state_header="{{ if isset $.Params "scroll-offset-coordinate" }}changed{{ else }}untouched{{ end }}"
-         data-state_footer="{{ if ($.Param "showFooter" | default false) }}visible{{ else }}invisible{{ end }}"
+         data-state_footer="{{ if ($.Param "show-footer" | default false) }}visible{{ else }}invisible{{ end }}"
     >
     
         <header class="header__flow" id="page-header">

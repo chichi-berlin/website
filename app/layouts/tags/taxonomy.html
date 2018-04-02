@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $itemsPerPage := $.Param "itemsPerPage" | default 5 }}
+{{ $itemsPerPage := $.Param "items-per-page" | default 5 }}
 {{ $postList := .Data.Pages }}
 
 {{ $paginator := .Paginate ($postList.ByDate.Reverse) $itemsPerPage }}

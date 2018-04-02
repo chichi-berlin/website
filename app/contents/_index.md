@@ -15,7 +15,7 @@ scroll-offset-coordinate: 'viewport'
 
 
 banner:
-  isEnabled: true
+  enabled: true
   message: >
     Damit Du bei den ersten Sonnenstrahlen nicht Schlange stehst: hol Dir jetzt noch schnell ohne 
     viel Wartezeit Deine [Frühlingsinspektion](/blog/beitraege/inspektionen "Blog | Inspektionen")!

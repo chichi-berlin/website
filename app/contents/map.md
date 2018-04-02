@@ -8,7 +8,7 @@ description: 'An diesem Ort könnt ihr uns finden'
 
 layout: 'fullscreen'
 layout-name: 'fullscreen'
-showFooter: true
+show-footer: true
 
 heads:
   - 'leaflet'
