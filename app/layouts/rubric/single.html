@@ -119,6 +119,12 @@
     </div>
     {{ end }}
     
+    {{ with $.Params.copyright }}
+    <div class="copyright">
+        <em>{{ $.Params.copyright }}</em>
+    </div>
+    {{ end }}
+    
 </section>
 {{ end }}
 

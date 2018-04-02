@@ -15,6 +15,8 @@ images:
 description: >
     M
 
+copyright: 'copyleft note'
+
 specs: 
   - type: 'Bügel'
   - height: ''

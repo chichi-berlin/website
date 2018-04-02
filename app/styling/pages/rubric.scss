@@ -232,9 +232,16 @@
             
         .specs {
             max-width: 70%;
-            margin: rem(spacing(6)) auto rem($desktop_aside-gap);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: rem(spacing(6));
+            margin-bottom: 0;
             display: flex;
             flex-flow: row wrap;
+            
+            &:last-child {
+                margin-bottom: rem($desktop_aside-gap);    
+            }
         
             .col--left {
                 padding-right: rem(spacing(3));
@@ -255,6 +262,16 @@
                 &:after {
                     content: ':';
                 }
+            }
+        }
+        
+        .copyright {
+            max-width: 70%;
+            margin: rem(spacing(2)) auto rem($desktop_aside-gap);
+            
+            em {
+                font-family: 'Open Sans Italic';
+                @include type(m);
             }
         }
     }

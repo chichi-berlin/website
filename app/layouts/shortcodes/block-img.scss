@@ -1,4 +1,12 @@
 .shortcode__img-block {
     display: block; 
     line-height: 1;
+    
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    & + br {
+        display: none;
+    }
 }

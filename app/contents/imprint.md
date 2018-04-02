@@ -18,7 +18,7 @@ menu:
 ## Angaben gemäß § 5 TMG:
 
 CHICHI
-Salka Köther
+{{< block-img class="info-after-tmg" src="/media/images/data/imprint_sk.png" >}}
 Flughafenstr. 50
 12053 Berlin
 

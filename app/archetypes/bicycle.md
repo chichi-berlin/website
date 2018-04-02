@@ -15,6 +15,8 @@ description: >
 configurable: true
 related-posts:
   - 'BLOG_POST_FILE_NAME_WITHOUT_EXTENSION'
+  
+copyright: 'copyleft note'
 
 specs:
   - frametype:
