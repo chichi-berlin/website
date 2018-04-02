@@ -27,12 +27,12 @@ Wo es möglich ist, setzen wir auf Nachhaltigkeit.
 Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Lichtblick. Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben. Und tun, was wir können - dennoch ist es uns niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden unter Anleitung solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
 
 
-## Selbstverständnis
+## Selbstverständnis (Warum wir nicht andere Dein Rad reparieren lassen)
 
 Wir können, was wir tun.
 Und tun, was wir können - dennoch ist es uns niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden unter Anleitung solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
 
-Menschen, die zu uns aufsuchen, suchen Rat und Kompetenz.
+Wer zu uns kommt, sucht Rat und Kompetenz.
 Wer bei CHICHI ankommt, wird als Individuum betrachtet, und nicht nach Verkaufsstrategie oder Muster beraten. Wir möchten Dir nur solche Produkte verkaufen, die wirklich Deinen Ansprüchen und Bedürfnissen gerecht werden, und einen langfristigen Mehrwert beim Fahrradfahren versprechen. Unumgänglich ist hierbei, eine Idee von Deinen Nutzungsgewohnheiten zu bekommen. Unser Schwerpunkt liegt dementsprechend auf einer fundierten Beratung, die nicht mit der Stoppuhr gemessen wird.
 
 Transparenz wird gern inflationär beworben, ist jedoch selten wirklich erfahrbar. Wir ändern das. Schon bei der Reparaturannahme teilen wir Dir mit, wie sich die anfallenden Kosten zusammensetzen und was unsere Arbeitszeit wert ist. Während einer Reparatur kann immer noch etwas passieren, sei es eine durchdrehende Schraube, eines der vielen Sondermaße bei allen möglichen Komonenten, oder sich erst währenddessen offenbarender Verschleiß. Dann müssen die Kosten neu kalkuliert werden. Überschreitet der Mehraufwand die +/- 20% -Regelung bei Kostenvoranschlägen, bekommst Du einen Anruf. Wir besprechen dann die anfallenden Zusatzkosten, sowie Teileoptionen und bieten wenn möglich unterschiedliche Lösungen an.
@@ -43,7 +43,7 @@ Auch fies ist es, ein geklautes Fahrrad unwissentlich gekauft zu haben. Wir lass
 Das Ziel all unseren Wirkens ist letztendlich, den Zustand Deines Fahrrades funktionell auf einem hohen Niveau zu halten. Dabei spielen der richtige Umgang mit Verschleiß, sowie gewissenhafte, fehlerfreie und präventive Motagearbeit eine wichtige Rolle. Erfahrungsgemäß lassen sich durch regelmäßige Inspektionen (Wir empfehlen alle halbe Jahre) die bösesten und teuersten Überraschungen abwenden. Verschleiß kann gut überwacht und zur richtigen Zeit beseitigt werden. Du weißt dann zu jeder Zeit, wie es um Dein Rad steht und was es als nächstes brauchen wird, um Dich noch lange überall hin zu tragen. Das Vermeiden von Folgeschäden durch zu spät erfolgte Reparaturen und Pflege entspricht unserem Nachhaltigkeitsprinzip und bewahrt Dich außerdem vor Unfällen. Darüber hinaus bekommst Du wertvolle Tipps zur Pflege und zum richtigen Handling Deines Fahrrades.
 
 
-## Wir und alles andere
+## Und sonst?
 
 Wir sind dem Kiez treu.
 Uns interessieren keine reichen Leute, die unsere Nachbarn aus ihren Wohnungen klagen, und dann ein Schindelhauer bei uns kaufen wollen.
