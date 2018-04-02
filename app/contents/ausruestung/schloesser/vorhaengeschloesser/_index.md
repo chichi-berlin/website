@@ -15,4 +15,6 @@ weight: 5
 menu:
   - aside_accessories_locks
 
+draft: true
+
 ---

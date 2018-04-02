@@ -17,6 +17,10 @@ material:
 materials:
   other: 'Materiale'
 
+model:
+  one: 'Modell'
+  other: 'Modell'
+
 type:
   other: 'Typ'
 
