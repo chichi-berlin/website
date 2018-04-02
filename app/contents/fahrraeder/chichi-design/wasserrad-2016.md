@@ -16,7 +16,11 @@ images:
   - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_06.jpg'
 
 description: >
-     Mit einem Gang, der Möglichkeit bei Bedarf Schutzbleche hinzuzufügen und der semisportlichen Sitzposition eignet sich das Rad hervorragend für den täglichen Stadtverkehr. Durch etwas schmalere Bereifung und sehr reaktive Bremsen ist es auch für eine sportliche Fahrweise gut ausgestattet. Das Rad geriet in seiner Gesamtheit sehr leicht. Das Fahrverhalten ist lässig schnell, dabei wendig und bequem. 
+    Mit einem Gang, der Möglichkeit bei Bedarf Schutzbleche hinzuzufügen und der semisportlichen 
+    Sitzposition eignet sich das Rad hervorragend für den täglichen Stadtverkehr. Durch etwas 
+    schmalere Bereifung und sehr reaktive Bremsen ist es auch für eine sportliche Fahrweise gut 
+    ausgestattet. Das Rad geriet in seiner Gesamtheit sehr leicht. Das Fahrverhalten ist lässig 
+    schnell, dabei wendig und bequem. 
 
 specs:
   - frametype: 'Mixte'

@@ -12,7 +12,7 @@ description: >
    The Nemo TIG is Cinelli’s latest Made in Italy high-performance steel road frame. It looks and rides the way in which the legendary Supercorsa – the world’s longest running production steel frame – might have looked had it been designed for racing today rather than in the 1950s.
    The first prototypes of this frame were born according to the specifications of a recently retired Italian professional rider working at Cinelli who, seduced by the Columbus tubing being manufactured on the factory floor attached to the Cinelli offices, demanded that Cinelli produce a pure racing steel frame that took full advantage of the latest advances in high tech steel tubing manufacturing.
    Accordingly the Nemo has been designed for riders used to riding high-end carbon fiber racing frames, unwilling to sacrifice “race feeling”, but looking for something incomparably pleasurable to ride in the way only a steel frame can be. It employs custom-shaped Columbus Spirit triple-butted tubes (the seat stays, for example, are the identical shape of those found on the original 1981 Cinelli Laser road model), with a highly contemporary 44mm mega-oversized downtube, conical CNC’d head tube and Columbus’ latest Futura straight blade monocoque carbon fiber fork.
-   In the spirit of its older cousin, the Supercorsa, the Nemo is available not only made-to-measure, but also in 60 different colour options.
+   In the spirit of its older cousin, the Supercorsa, the Nemo is available not only made-to-measure, but also in 60 different color options.
 
 specs:
   - frametype: 'Diamant'

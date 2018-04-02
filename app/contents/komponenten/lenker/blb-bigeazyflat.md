@@ -20,6 +20,6 @@ specs:
   - diameter: '22,2mm'
   - rise: '12mm'
   - backsweep: '8º'
-  - colour: 'schwarz'
+  - color: 'schwarz'
 
 ---

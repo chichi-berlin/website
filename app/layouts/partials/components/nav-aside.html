@@ -14,10 +14,10 @@
         
         <ul class="menu__level menu__level--current">
         {{ if $currentPage.IsPage }}
-            {{ if not $currentPage.Params.headless }}
+            {{ if not $currentPage.Params.draft }}
             
             {{ range sort $parent.Pages ".Params.model" "asc" }}
-            {{ if not .Params.headless }}
+            {{ if not .Params.draft }}
             <li class="menu__item" data="page">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
                    data-submenu="submenu--{{ delimit (split (trim .URL "/") "/") "-" }}" 
@@ -38,7 +38,7 @@
             
             {{ range sort (.Scratch.Get "sections") ".Params.weight" "asc" }}
             {{ if .IsNode }}
-            {{ if not .Params.headless }}
+            {{ if not .Params.draft }}
             <li class="menu__item" data="node">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
                    data-submenu="submenu--{{ delimit (split (trim .URL "/") "/") "-" }}" 
@@ -68,7 +68,7 @@
         {{ template "breadcrumb" dict "parentPage" .parentPage.Parent "currentPage" .currentPage "global" .global }}
     {{ end }}
 
-    {{ if not .parentPage.Params.headless }}
+    {{ if not .parentPage.Params.draft }}
     <li>        
         <a href="{{ .parentPage.URL | relLangURL }}" class="">{{ .parentPage.LinkTitle }}</a>
     </li>

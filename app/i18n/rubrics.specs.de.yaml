@@ -167,8 +167,8 @@ spindle:
   other: 'Spindel'
   
 width:
-  other: 'Breite'
-
+  one: 'Breite'
+  other: 'Breiten'
 widths:
   other: 'Breiten'  
 
@@ -219,3 +219,15 @@ reach:
   
 internal-diameter:
   other: 'Innendurchmesser'
+  
+alloy:
+  other: 'Legierung'
+
+rise:
+  other: 'Rise'
+  
+backsweep:
+  other: 'Backsweep'
+  
+drop:
+  other: 'Drop'

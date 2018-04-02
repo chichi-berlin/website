@@ -1,16 +1,17 @@
 ---
 
-Title: 'Manufakturräder von Contoura'
-description: 'individuell, erschwinglich, wunschrad, manufaktur, handarbeit, regional, ökologisch, herstellung, farräder'
+title: 'Manufakturräder von Contoura'
+
 publishDate: '2018-04-01'
+
+draft: false
+
+description: 'individuell, erschwinglich, wunschrad, manufaktur, handarbeit, regional, ökologisch, herstellung, farräder'
 keywords:
   - Manufaktur
   - Handarbeit
   - Wunschrad
   - individuell
-
-
-draft: false
 
 tags:
   - news

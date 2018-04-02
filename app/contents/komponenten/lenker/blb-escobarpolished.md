@@ -19,6 +19,6 @@ specs:
   - width: '380mm'
   - clamp-size-stem: '25,4mm'
   - diameter: '22,2mm'
-  - colour: 'silber'
+  - color: 'silber'
 
 ---

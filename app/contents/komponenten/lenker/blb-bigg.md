@@ -16,6 +16,6 @@ specs:
   - clamp-size-stem: '25,4mm'
   - diameter: '22,2mm'
   - rise: '50mm'
-  - colour: 'schwarz'
+  - color: 'schwarz'
 
 ---

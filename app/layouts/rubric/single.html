@@ -42,7 +42,7 @@
     
     <div class="description">
         <p>
-            {{ index .Params "description" | default (i18n "no-description") }}
+            {{ index .Params "description" | default (i18n "no-description") | markdownify }}
         </p>
         
         {{ if gt (len $posts) 0 }}

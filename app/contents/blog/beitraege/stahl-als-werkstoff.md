@@ -1,8 +1,12 @@
 ---
 
-Title: 'Stahllegierungen im Fahrradbau'
+title: 'Stahllegierungen im Fahrradbau'
+
+publishDate: '1970-01-01'
+
+draft: true
+
 description: 'Warum Stahl einfach mal das geilste ist'
-# publishDate: 'TODO'
 keywords:
   - Material
   - Legierung
@@ -10,8 +14,6 @@ keywords:
   - Rahmen
   - Rahmenbau
   - Eigenschaften
-
-draft: true
 
 tags:
   - tips

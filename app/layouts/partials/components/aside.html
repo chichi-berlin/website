@@ -1,7 +1,7 @@
 {{ $depth := findRE "[^/]+" .File.Dir | len }}
 
 <div class="component__aside" data="{{$depth}}">
-    <div class="aside-nav" id="page-aside-nav" data-state="{{ if eq $depth 2 }}open{{ else }}closed{{ end }}">
+    <div class="aside-nav" id="page-aside-nav" data-state="{{ if and (.IsNode) (eq $depth 2) }}open{{ else }}closed{{ end }}">
         {{ partial "components/nav-aside.html" . }}
     </div>
 </div>

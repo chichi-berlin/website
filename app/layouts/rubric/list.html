@@ -31,7 +31,7 @@
     {{ if gt (len .Sections) 0 }}
     <ul class="rubric--grid for-categories">
         {{ range sort .Sections ".Params.weight" "asc" }}
-        {{ if not .Params.headless }}
+        {{ if not .Params.draft }}
         <li>
             <a href="{{ .URL | relLangURL }}">
                 <div class="wrap">
@@ -51,7 +51,7 @@
     {{ else if gt (len .Pages) 0}}
     <ul class="rubric--grid for-items">
         {{ range sort .Pages ".Params.model" "asc" }}
-        {{ if not .Params.headless }}
+        {{ if not .Params.draft }}
         <li>
             <a href="{{ .URL | relLangURL }}">
                 <div class="wrap">

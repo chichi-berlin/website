@@ -10,13 +10,13 @@ keywords:
  - 'Reparatur'
  - 'Werkstatt' 
 
-key-visual-url: '/media/images/pictures/key-visual_landing-page_subopt.JPG'
+key-visual-url: '/media/images/pictures/key-visual_landing-page.jpg'
 scroll-offset-coordinate: 'viewport'
 
 
 banner:
   isEnabled: true
-  message: |
+  message: >
     Damit Du bei den ersten Sonnenstrahlen nicht Schlange stehst: hol Dir jetzt noch schnell ohne 
     viel Wartezeit Deine [Frühlingsinspektion](/blog/beitraege/inspektionen "Blog | Inspektionen")!
 

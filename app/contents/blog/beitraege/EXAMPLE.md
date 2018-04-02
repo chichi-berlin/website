@@ -1,14 +1,18 @@
 ---
-Title: 'Title of this Post'
-description: 'a few SEO friendly words that will be mentioned in text and headlines as well'
-slug: 'last-url-part'
+
+title: 'Title of this Post'
 linkTitle: 'Name of the Link'
+subtitle: 'Subtitle contents to give away some more infos'
+
+slug: 'last-url-part'
 publishDate: '2018-03-09'
+
+draft: true
+
+description: 'This should summarize the contents of this post'
 keywords:
   - Sozial
   - Allgemein
-
-draft: true
 
 tags:
   - news

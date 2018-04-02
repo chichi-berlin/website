@@ -19,6 +19,6 @@ specs:
   - clamp-size-stem: '25,4mm'
   - diameter: '22,2mm'
   - weight: '241g (+/- 10g)'
-  - colour: 'silber'
+  - color: 'silber'
 
 ---

@@ -93,6 +93,10 @@ defaultContentLanguageInSubdir: false
 enableMissingTranslationPlaceholders: true
 hasCJKLanguage:             false
 
+blackfriday:
+  extensions:
+    - hardLineBreak
+
 languages:
   de:
     languageName: 'Deutsch'

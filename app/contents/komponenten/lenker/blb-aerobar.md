@@ -17,7 +17,7 @@ description: >
 specs:
   - width: '400mm'
   - clamp-size-stem: '31,8mm'
-  - internal diameter: '20,5mm'
-  - colour: 'schwarz'
+  - internal-diameter: '20,5mm'
+  - color: 'schwarz'
 
 ---

@@ -1,15 +1,16 @@
 ---
 
-Title: 'Inspektionen'
-description: 'Verschleiß, wirtschaftlich, Kontrolle, Pflege, Überblick, Kosten, Unterhalt, Instandhaltung'
+title: 'Inspektionen'
+
 publishDate: '2018-03-23'
+
+draft: false
+
+description: 'Verschleiß, wirtschaftlich, Kontrolle, Pflege, Überblick, Kosten, Unterhalt, Instandhaltung'
 keywords:
   - Instandhaltung
   - Pflege
   - Inspektion
-
-
-draft: false
 
 tags:
   - tips

@@ -1,7 +1,9 @@
 ---
 
 type: 'rubric'
+layout: 
 
+draft: true
 
 model: ''
 manufacturer: ''
@@ -9,6 +11,10 @@ manufacturer: ''
 image: '/media/images/rubrics/bicycles/items/'
 
 description: >
+
+configurable: true
+related-posts:
+  - 'BLOG_POST_FILE_NAME_WITHOUT_EXTENSION'
 
 specs:
   - frametype:

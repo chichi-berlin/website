@@ -35,7 +35,7 @@ specs:
   - chain: 'KMC "510HX" 1/2" x 1/8"'
   - cassette: 'Shimano; 20T'
   - speeds: '8-Gang'
-  - hubs: 'vorne:BT BIKES "Title-Disc", 6-Loch; hinten: Shimano Nexus'
+  - hubs: 'vorne: BT BIKES "Title-Disc", 6-Loch; hinten: Shimano Nexus'
   - rims: 'BT BIKES  "XCD22"'
   - tyres: 'KENDA "Tendril" 700c x 35c'
   - brakes: 'PROMAX "Render" Scheibenbremse, 160mm'

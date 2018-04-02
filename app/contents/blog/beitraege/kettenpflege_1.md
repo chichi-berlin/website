@@ -1,17 +1,19 @@
 ---
 
-Title: 'Kettenpflege'
-description: 'Fahrrad Kette Pflege Öl Verschleiß Tips Tech Mechaniker'
+title: 'Kettenpflege'
+
 slug: 'kettenpflege-teil-1'
 publishDate: '2018-03-10'
+
+draft: false
+
+description: 'Fahrrad Kette Pflege Öl Verschleiß Tips Tech Mechaniker'
 keywords:
   - Pflege
   - Wartung
   - Kette
   - Verschleiß
   - Antrieb
-
-draft: false
 
 tags:
   - tips

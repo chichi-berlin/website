@@ -1,7 +1,6 @@
 ---
 
 type: 'rubric'
-layout: 'categories'
 
 linkTitle: 'Crossräder'
 slug: 'crossraeder'

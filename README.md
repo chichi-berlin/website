@@ -9,7 +9,7 @@ the heart of Berlin Neukölln. The site can be found under [chichi.berlin](http:
 
 ## Editor
 
-+   To disable some contents set `headless: true` in 
++   To disable some contents set `draft: true` in 
     -   `_index.md` for a section
     -   `page-name.md` for a page 
 

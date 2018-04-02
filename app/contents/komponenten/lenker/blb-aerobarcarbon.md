@@ -20,7 +20,7 @@ specs:
   - clamp-size-stem: '31,8 OS'
   - material: 'Carbon'
   - weight: '258g'
-  - internal diameter: '20,5mm'
-  - colour: 'schwarz'
+  - internal-diameter: '20,5mm'
+  - color: 'schwarz'
 
 ---

@@ -1,16 +1,18 @@
 ---
 
-Title: 'STVZO'
-description: 'STVZO Verkehrssicher Fahrrad Vorschrift Sicherheit Strafe'
+title: 'STVZO'
+
 publishDate: '2018-03-17'
+
+draft: false
+
+description: 'STVZO Verkehrssicher Fahrrad Vorschrift Sicherheit Strafe'
 keywords:
   - Sicherheit
   - Gesetze
   - Vorschriften
   - STVZO
   - Strafe
-
-draft: false
 
 tags:
   - tips
