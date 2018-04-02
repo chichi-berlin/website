@@ -15,5 +15,6 @@ weight: 7
 menu:
   - aside_accessories_clothing
 
+draft: true
 
 ---

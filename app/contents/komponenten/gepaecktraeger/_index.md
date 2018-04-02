@@ -15,4 +15,6 @@ weight: 8
 menu:
   - aside_parts
 
+draft: true
+
 ---
