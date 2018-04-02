@@ -1,7 +1,8 @@
 ---
 
 type: 'rubric'
-
+related-posts:
+  - 'wasserrad'
 
 model: 'Die Lagune'
 manufacturer: 'CHICHI'
