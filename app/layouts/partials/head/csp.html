@@ -4,13 +4,13 @@
         default-src 'self';
         base-uri 'self';
         connect-src 'self' https://wwwapi.serviceeu.com {{ if eq (getenv "HUGO_ENV") "development" }}ws://localhost:*{{ end }};
-        frame-src 'self' {{ $.Param "piwikBaseURL" }};
+        frame-src 'self' {{ $.Param "piwik-base-url" }};
         form-action 'self';
         font-src 'self' https://wwwapi.serviceeu.com;
         img-src 'self' https://wwwapi.serviceeu.com http{{ if eq (getenv "HUGO_ENV") "production" }}s{{ end }}://*.thunderforest.com;
         media-src 'self';
         object-src 'none';
-        script-src 'self' https://wwwapi.serviceeu.com {{ $.Param "piwikBaseURL" }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
+        script-src 'self' https://wwwapi.serviceeu.com {{ $.Param "piwik-base-url" }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
         style-src 'self' 'unsafe-inline' https://wwwapi.serviceeu.com;
         worker-src 'self';
     ">
