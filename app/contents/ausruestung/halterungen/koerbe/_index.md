@@ -15,4 +15,6 @@ weight: 2
 menu:
   - aside_accessories_mounts 
 
+draft: true
+
 ---

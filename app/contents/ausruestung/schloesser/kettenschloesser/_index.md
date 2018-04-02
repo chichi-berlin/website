@@ -9,7 +9,7 @@ section: 'chain'
 
 title: 'Kettenschlösser'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/locks-abus-chain-city.jpg'
+image: '/media/images/rubrics/accessories/items/locks-abus-chain-city1010.jpg'
 
 weight: 1
 menu:
