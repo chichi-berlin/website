@@ -24,6 +24,7 @@ heads:
 +   Optimierung
 +   Laufradbau
 +   Wir bauen Dein Wunschrad
++   Als IHK- geprüfter Ausbildungsbetrieb kümmern wir uns um Nachwuchs im Handwerk
 
 
 ## Versicherung
