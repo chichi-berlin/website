@@ -27,7 +27,7 @@ Wo es möglich ist, setzen wir auf Nachhaltigkeit.
 Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Lichtblick. Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben. Und tun, was wir können - dennoch ist es uns niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden unter Anleitung solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
 
 
-## Selbstverständnis (Warum wir nicht andere Dein Rad reparieren lassen)
+## Selbstverständnis
 
 Wir können, was wir tun.
 Und tun, was wir können - dennoch ist es uns niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden unter Anleitung solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
