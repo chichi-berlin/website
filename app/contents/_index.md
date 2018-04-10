@@ -17,8 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    Damit Du bei den ersten Sonnenstrahlen nicht Schlange stehst: hol Dir jetzt noch schnell ohne 
-    viel Wartezeit Deine [Frühlingsinspektion](/blog/beitraege/inspektionen "Blog | Inspektionen")!
+    Bitte rechne im Moment mit etwas Wartezeit bei Reparaturen. Gern vereinbaren wir einen Termin, damit Du nicht so lang auf Dein Rad verzichten mußt.
 
 
 offers:
