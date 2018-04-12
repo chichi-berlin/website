@@ -24,8 +24,7 @@ offers:
   - headline: 'Kopfschutz: "Hövding" Einstiegsangebot'
     image: '/media/images/offers/hoevding-in-action.png'
     description: >
-      Der Hövding Airbag ist neu in unserem Sortiment. Wir finden ihn super, denn er schützt Deinen 
-      Kopf 88% besser, als ein Hartschalenhelm. Bis er gebraucht wird, ist er jedoch ein 
+      Der Hövding Airbag ist neu in unserem Sortiment. Wir finden ihn super, denn er revolutioniert den Kopfschutz mit unglaublich guten Testergebnissen. Bis er gebraucht wird, ist er jedoch ein 
       unauffälliger Kragen, den Du einfach um den Hals tragen kannst. Die erster drei gehen bei uns 
       für -15 € (vom Empfohlenen Verkaufspreis) über den Tisch!
 

@@ -18,13 +18,13 @@ menu:
 So ökologisch das Fahrradfahren selbst ist, so wenig grün, fair und nachhaltig sind die Herstellung und der Vertrieb von Fahrrädern, sowie von Teilen und oft auch Zubehör (Und nein, "Bambusräder" sind NICHT ökologisch!). Wir sind diesbezüglich stets auf der Suche nach Optimierungsmöglichkeiten - sei es ein kürzerer Transportweg, weniger Verpackung, ein umweltfreundlicheres Material oder zur Abwechslung mal eine nach Tarif bezahlte Arbeitskraft in der Fertigung. Wir sind dran!
 
 Ausbeutung ist scheiße. 
-Ja, wir finden, Räder sollten so lange wie irgend möglich benutzt werden - jedoch nur dann, wenn der nötige Aufwand, sie nachhaltig funktionsfähig und sicher zu machen, nicht einen absurd hohen Preis für Dich als Käufer_in zur Folge hat, oder wir uns für einen niedrigeren Preis selbst ausbeuten müssen. Wenn wir etwas dringendes zu transportieren haben, dann setzen wir auf die Kuriere vom "Fahrwerk", dem einzigen berliner Kurierkollektiv, welches es mittlerweile sogar geschafft hat, in einer absoluten Ausbeuterbranche für alle Mitglieder Mindestlohnniveau zu erreichen.
+Ja, wir finden, Räder sollten so lange wie irgend möglich benutzt werden - jedoch nur dann, wenn der nötige Aufwand, sie nachhaltig funktionsfähig und sicher zu machen, nicht einen absurd hohen Preis für Dich als Käufer_in zur Folge hat, oder wir uns für einen niedrigeren Preis selbst ausbeuten müssen. Deswegen findest Du bei uns selten etwas gebrauchtes unter zwei-, dreihundert Euro. Wenn wir etwas dringendes zu transportieren haben, dann setzen wir auf die Kuriere vom "Fahrwerk", dem einzigen berliner Kurierkollektiv, welches es mittlerweile sogar geschafft hat, in einer absoluten Ausbeuterbranche für alle Mitglieder Mindestlohnniveau zu erreichen.
 
 Wir optimieren unser Abfallmanagement.
 In der Werkstatt arbeiten wir möglichst mit Ölen und Fetten die biologisch abbaubar, und teilweise sogar trinkbar sind - Prost! Wir trennen unseren Abfall vollständig und nerven unsere Großhändler regelmäßig, weniger Verpackungen bei der Lieferung zu nutzen. Was bei uns Schrott ist, ist wirklich nicht mehr am Rad nutzbar und geht in die Wiederverwertung oder an Menschen, die damit basteln möchten. Bereifung ist giftig! Wir lassen diese für 1€/ Stk. auf Firmenkosten als Sondermüll entsorgen. Schläuche werden zum Recycling beim Hersteller zurückgeschickt.
 
 Wo es möglich ist, setzen wir auf Nachhaltigkeit.
-Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Lichtblick. Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben. Und tun, was wir können - dennoch ist es uns niemals genug. Dein Rad ist in den Händen von Fachkräften oder Auszubildenden unter Anleitung solcher. Wir bilden uns weiter und sind stets auf der Suche nach besseren Produkten für Dich.
+Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Lichtblick. Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben.
 
 
 ## Selbstverständnis
