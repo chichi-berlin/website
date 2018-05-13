@@ -1,3 +1,33 @@
+@import './constants.scss';
+
+$fonts-root-url: 'https://chichi.berlin/fonts';
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('#{$fonts-root-url}/opensans-regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans Regular'), local('OpenSans-Regular'), local('OpenSansRegular'),
+         url('#{$fonts-root-url}/opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('#{$fonts-root-url}/opensans-regular.woff2') format('woff2'),
+         url('#{$fonts-root-url}/opensans-regular.woff') format('woff'),
+         url('#{$fonts-root-url}/opensans-regular.ttf') format('truetype'),
+         url('#{$fonts-root-url}/opensans-regular.svg#OpenSansRegular') format('svg');
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    color: red;
+    font-family: $font-family;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    
+    margin: 0;
+    padding: 0;
 }

@@ -174,13 +174,17 @@ const selectors = {
             </div>
         `;
         const ZOOM = 15;
+        // NOTE: until https://github.com/leaflet-extras/leaflet-providers/blob/master/leaflet-providers.js#L197
+        // (enforcing https) is not released, we cannot use the providers package
         const MAP_PROVIDER_NAME = 'Thunderforest.OpenCycleMap';
+        const MAP_PROVIDER_URL = 'https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}';
         
         
-        const provider = leaflet.tileLayer.provider( 
-            MAP_PROVIDER_NAME,
+        const provider = leaflet.tileLayer( 
+            MAP_PROVIDER_URL,
             {
-                apikey: 'edc8a89afa764f77ae70e47c50359b4f'
+                apikey: 'edc8a89afa764f77ae70e47c50359b4f',
+                variant: 'cycle'
             }
         );
         

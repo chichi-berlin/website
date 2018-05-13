@@ -1,0 +1,12 @@
+.page--privacy-policy {
+    
+    .contents {
+        
+        p {
+            & + iframe {
+                margin-top: rem(30);
+            }
+        }    
+        
+    }
+}

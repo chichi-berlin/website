@@ -52,6 +52,7 @@ Sie können viele Online-Anzeigen-Cookies von Unternehmen über die US-amerikani
 ## Piwik
 
 Dieses Angebot benutzt Piwik, eine Open-Source-Software zur statistischen Auswertung der Nutzerzugriffe. Piwik verwendet sog. “Cookies”, Textdateien, die auf dem Computer der Nutzer gespeichert werden und die eine Analyse der Benutzung der Website durch die Nutzer ermöglichen. Die durch den Cookie erzeugten Informationen über die Benutzung dieses Agebotes werden auf dem Server des Anbieters in Deutschland gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Nutzer können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; Der Anbieter weisen die Nutzer jedoch darauf hin, dass sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können.
+
 {{< piwik-opt-out >}}
 
 

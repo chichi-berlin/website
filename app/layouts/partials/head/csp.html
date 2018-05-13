@@ -1,3 +1,5 @@
+{{ $trackingURL := $.Param "piwik-base-url" | urls.Parse }}
+
 <meta 
     http-equiv="Content-Security-Policy" 
     content="
@@ -7,10 +9,10 @@
         frame-src 'self' {{ $.Param "piwik-base-url" }};
         form-action 'self';
         font-src 'self' https://wwwapi.serviceeu.com;
-        img-src 'self' https://wwwapi.serviceeu.com http{{ if eq (getenv "HUGO_ENV") "production" }}s{{ end }}://*.thunderforest.com;
+        img-src 'self' https://wwwapi.serviceeu.com https://*.thunderforest.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }};
         media-src 'self';
         object-src 'none';
-        script-src 'self' https://wwwapi.serviceeu.com {{ $.Param "piwik-base-url" }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
+        script-src 'self' https://wwwapi.serviceeu.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
         style-src 'self' 'unsafe-inline' https://wwwapi.serviceeu.com;
         worker-src 'self';
     ">
