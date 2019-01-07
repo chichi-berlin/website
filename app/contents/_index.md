@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    Bitte rechne im Moment mit etwas Wartezeit bei Reparaturen. Gern vereinbaren wir einen Termin, damit Du nicht so lang auf Dein Rad verzichten mußt.
+    Wegen Umbauarbeiten geschlossen bis 21.01.2019 | 10:00 Uhr
 
 
 offers:
