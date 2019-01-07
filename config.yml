@@ -37,10 +37,22 @@ staticDir:                  'app/static'
 themesDir:                  'app/themes'
 i18ndir:                    'app/i18n'
 cacheDir:                   './.hugo-cache'
+resourceDir:                './.hugo-cache'
 source:                     ''
 #theme:                      'chi'
 
 publishDir:                 './dist'
+
+caches:
+  getjson:
+    dir: ':resourceDir'
+  getcsv:
+    dir: ':resourceDir'
+  images:
+    dir: ':resourceDir'
+  assets:
+    dir: ':resourceDir'
+  
 
 # NOTE: for theme authors
 # defaultExtension:           'html'
