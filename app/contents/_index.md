@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    Wegen Umbauarbeiten geschlossen bis 21.01.2019 | 10:00 Uhr
+    Die Saison beginnt! Möchtest Du langes Warten vermeiden, kümmere Dich jetzt um die Frühjahrsinspektion.
 
 
 offers:
