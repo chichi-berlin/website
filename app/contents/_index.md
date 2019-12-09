@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    Die Saison beginnt! Möchtest Du langes Warten vermeiden, kümmere Dich jetzt um die Frühjahrsinspektion.
+    Wir suchen Verstärkung für Werkstatt und Verkauf - hast Du eine abegeschlossene Ausbildung als Fahrradmonteur_in oder Einzelhandelskauffrau_mann, dann bewirb Dich bei uns!
 
 
 offers:

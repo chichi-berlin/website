@@ -24,7 +24,7 @@ Wir optimieren unser Abfallmanagement.
 In der Werkstatt arbeiten wir möglichst mit Ölen und Fetten die biologisch abbaubar, und teilweise sogar trinkbar sind - Prost! Wir trennen unseren Abfall vollständig und nerven unsere Großhändler regelmäßig, weniger Verpackungen bei der Lieferung zu nutzen. Was bei uns Schrott ist, ist wirklich nicht mehr am Rad nutzbar und geht in die Wiederverwertung oder an Menschen, die damit basteln möchten. Bereifung ist giftig! Wir lassen diese für 1€/ Stk. auf Firmenkosten als Sondermüll entsorgen. Schläuche werden zum Recycling beim Hersteller zurückgeschickt.
 
 Wo es möglich ist, setzen wir auf Nachhaltigkeit.
-Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Lichtblick. Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben.
+Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Greenpeace Energy. Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben.
 
 
 ## Selbstverständnis
