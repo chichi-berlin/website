@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    Wir suchen Verstärkung für Werkstatt und Verkauf - hast Du eine abegeschlossene Ausbildung als Fahrradmonteur_in oder Einzelhandelskauffrau_mann, dann bewirb Dich bei uns!
+    WIR HABEN GEÖFFNET
 
 
 offers:
