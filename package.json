@@ -2,7 +2,7 @@
   "name": "chichi-website",
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "command -v hugo >/dev/null 2>&1 && echo [WARN] Hugo binary is not installed yet!",
+    "postinstall": "which hugo >/dev/null 2>&1 || echo [WARN] Hugo binary is not installed yet!",
     "start": "npm run build:clean; npm run build:webpack; concurrently 'npm run watch:webpack' 'npm run watch:hugo'",
     "watch:webpack": "NODE_ENV='development' webpack --config ./.webpack.config --watch",
     "watch:hugo": "HUGO_ENV='development' hugo serve --port 3000 --noHTTPCache --i18n-warnings",
