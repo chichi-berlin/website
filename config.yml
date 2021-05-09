@@ -5,7 +5,7 @@ params:
   layout-name: 'master'
   version: '2.0.0'
   hugo-version: '0.38'
-  piwik-base-url: 'https://onwx.org/piwik/'
+  tracking-base-url: 'https://matomo.onwx.org/'
 
 sitemap:
   changefreq: 'monthly'

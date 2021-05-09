@@ -1,4 +1,4 @@
-{{ $trackingURL := $.Param "piwik-base-url" | urls.Parse }}
+{{ $trackingURL := $.Param "tracking-base-url" | urls.Parse }}
 
 <meta 
     http-equiv="Content-Security-Policy" 
@@ -6,7 +6,7 @@
         default-src 'self';
         base-uri 'self';
         connect-src 'self' https://wwwapi.serviceeu.com {{ if eq (getenv "HUGO_ENV") "development" }}ws://localhost:*{{ end }};
-        frame-src 'self' {{ $.Param "piwik-base-url" }};
+        frame-src 'self' {{ $.Param "tracking-base-url" }};
         form-action 'self';
         font-src 'self' https://wwwapi.serviceeu.com;
         img-src 'self' https://wwwapi.serviceeu.com https://*.thunderforest.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }};

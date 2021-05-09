@@ -1,11 +1,11 @@
 {{ if eq (getenv "HUGO_ENV") "production" }}
 
-{{ $src := printf "%spiwik.js" ($.Param "piwik-base-url") }}
+{{ $src := printf "%smatomo.js" ($.Param "tracking-base-url") }}
+<script src="/script/etc/tracking.js" 
+></script>
+
 <script async 
         defer
         src="{{ $src }}" 
-></script>
-
-<script src="/script/etc/tracking.js" 
 ></script>
 {{ end }}

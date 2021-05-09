@@ -1,6 +1,6 @@
-{{ $baseURL := index $.Page.Site.Params "piwik-base-url" | default $.Site.BaseURL }}
+{{ $baseURL := index $.Page.Site.Params "tracking-base-url" | default $.Site.BaseURL }}
 {{ $path := "style/exports" }}
-{{ $fileName := "piwik-opt-out" }}
+{{ $fileName := "tracking-opt-out" }}
 
 
 {{ $styleFolderPath := printf "%s/%s" "app/static" $path }}
@@ -16,7 +16,7 @@
 {{ end }}
 
 <iframe 
-    class="shortcode__piwik-opt-out shortcode"
+    class="shortcode__tracking-opt-out shortcode"
     frameborder="no"
     src="{{ $baseURL }}index.php?module=CoreAdminHome&action=optOut&idsite=6&language={{ $.Site.LanguageCode }}"
 ></iframe>
