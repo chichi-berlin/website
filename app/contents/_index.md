@@ -21,24 +21,24 @@ banner:
 
 
 offers:
-  - headline: 'Kopfschutz: "Hövding" Einstiegsangebot'
-    image: '/media/images/offers/hoevding-in-action.png'
+  - headline: 'Sparangebot Schwalbe Aerothan Tube'
+    image: '/media/images/offers/schwalbe-aerothan_01.png'
     description: >
-      Der Hövding Airbag ist neu in unserem Sortiment. Wir finden ihn super, denn er revolutioniert den Kopfschutz mit unglaublich guten Testergebnissen. Bis er gebraucht wird, ist er jedoch ein 
-      unauffälliger Kragen, den Du einfach um den Hals tragen kannst. Die erster drei gehen bei uns 
-      für -15 € (vom Empfohlenen Verkaufspreis) über den Tisch!
+      Der Schwalbe Aerothan Tube ist neu in unserem Sortiment. Er ist deutlich leichter und 
+      pannensicherer als herkömmliche Schläuche.
+      Erhalte beim Kauf eines unserer Gravelbikes zwei Aerothan Tubes zum Preis von einem!
+      Nähere Informationen über die Innovation von Schwalbe erfährst du in unseren News
 
   - headline: 'Gebrauchträder reduziert'
     image: '/media/images/offers/chichi-design-3gangkette_1.jpg'
     description: >
-      Den gesamten April hindurch bieten wir Dir 10% Nachlass auf viele unserer Gebrauchträder. Zum 
+      Wir brauchen Platz! Den gesamten Juni hindurch bieten wir Dir 20% Nachlass auf unsere Gebrauchträder. Zum 
       Beispiel dieses hier.
   
-  - headline: 'Sparangebot Singlespeed + Schloß'
+  - headline: 'Sonderangebot Helme'
     image: '/media/images/offers/forelle-blau_1.jpg'
     description: >
-      Dieses Singlespeed bekommst Du zusammen mit einem Kryptonite "Evolution Mini-5" für laue 
-      345 €! (Angebot gültig bis Ende April, solange der Vorrat reicht.)
+      Erhalte im Juni 7% auf alle Helme, um sicher in den Sommer zu starten!
 
 
 ---
