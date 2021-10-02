@@ -17,28 +17,24 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    WIR HABEN GEÖFFNET
+    LÄNGERE ÖFFNUGSZEITEN + REDUZIERTE PREISE JEDEN FREITAG + SAMSTAG IM OKTOBER
 
 
 offers:
-  - headline: 'Sparangebot Schwalbe Aerothan Tube'
-    image: '/media/images/offers/schwalbe-aerothan_01.png'
+  - headline: 'Neuräder zu Sonderpreisen'
+    image: '/media/images/offers/bt_21_arise_tour_blue_1.jpg'
     description: >
-      Der Schwalbe Aerothan Tube ist neu in unserem Sortiment. Er ist deutlich leichter und 
-      pannensicherer als herkömmliche Schläuche.
-      Erhalte beim Kauf eines unserer Gravelbikes zwei Aerothan Tubes zum Preis von einem!
-      Nähere Informationen über die Innovation von Schwalbe erfährst du in unseren News
+      Wir brauchen mehr Platz im Lager - komm mit all Deinen Freunden und entdecke super Neuräder zu Preisen, von denen Du nächstes Jahr nur noch träumen kannst, denn alles wird teurer! Sichere Dir jetzt noch Dein neues Gravelbike, Tourenrad, Crossrad oder einen gemütlichen City - Schlitten.
 
-  - headline: 'Gebrauchträder reduziert'
+  - headline: 'Fahrrad-Airbag "Hövding" im Sonderangebot'
+    image: '/media/images/offers/hoevding-in-action.png'
+    description: >
+      Im Oktober reduzieren wir den Hövding. Für schlappe 325€ (UVP: 349,95€) hängt der premium Kopfschutz zum günstigen Preis auch bald um Deinen Hals.
+  
+  - headline: 'Sparangebot Gebrauchtrad + Schloß'
     image: '/media/images/offers/chichi-design-3gangkette_1.jpg'
     description: >
-      Wir brauchen Platz! Den gesamten Juni hindurch bieten wir Dir 20% Nachlass auf unsere Gebrauchträder. Zum 
-      Beispiel dieses hier.
-  
-  - headline: 'Sonderangebot Helme'
-    image: '/media/images/offers/forelle-blau_1.jpg'
-    description: >
-      Erhalte im Juni 7% auf alle Helme, um sicher in den Sommer zu starten!
+      Zu jedem Gebrauchtrad bekommst Du 40€ Rabatt auf ein Schloß Deiner Wahl (Angebot gültig bis Ende 2021 solange der Vorrat reicht. Der Schloßwert muß sein: 40€ oder höher)
 
 
 ---
