@@ -11,9 +11,14 @@
                             Tel.: 030 / 62986005
                         </a>
                     </li>
-                    <li>
+                    <li class="opening-hours">
                         {{ partial "svgs/icon_clock.html"  ( dict "classes" ( slice "icon" "icon--clock" ) ) }}
-                        11 bis 14 Uhr | Do + So geschlossen
+                        <span>Mo<br/>11-14</span>
+                        <span>Di<br/>11-14</span>
+                        <span>Mi<br/>11-14</span>
+                        <span>Do<br/>-</span>
+                        <span>Fr<br/>11-18</span>
+                        <span>Sa<br/>11-16</span>
                     </li>
                     <li>
                         {{ $mapPage := $.Site.GetPage "page" "map" }}
