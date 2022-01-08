@@ -27,7 +27,7 @@ Wo es möglich ist, setzen wir auf Nachhaltigkeit.
 Die Energie für das Geschäft in Form von Strom und Gas beziehen wir von Green Planet Energy eG (vormals Greenpeace Energy eG). Deine Rechnung wird auf Umweltpapier gedruckt. Unser Firmenkonto ist bei der transparent agierenden, sozial-ökologischen GLS Gemeinschaftsbank gut aufgehoben.
 
 Wir verkaufen keine E-Bikes
-E-Bikes, sind angemessen im Lastenverkehr und für Menschen mit gesundheitliche bedingten Einschränkungen. Alle anderen benötigen keines und sollten davon auch Abstand nehmen, denn nach wie vor ist weder unser Strom nachhaltig, noch eine Lösung für die Tonnen an Alt-Akku-Müll gefunden.
+E-Bikes, sind angemessen im Lastenverkehr und für Menschen mit gesundheitlich bedingten Einschränkungen. Alle anderen benötigen keines und sollten davon auch Abstand nehmen, denn nach wie vor ist weder unser Strom nachhaltig, noch eine Lösung für die Tonnen an Alt-Akku-Müll gefunden.
 
 
 ## Selbstverständnis
