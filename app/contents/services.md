@@ -18,9 +18,9 @@ heads:
 
 ## Werkstatt
 
-+   Reparaturen
++   Reparatur
 +   Inspektion
-+   Unfallgutachten / Kostenvoranschläge
++   Unfallgutachten / Kostenvoranschlag
 +   Optimierung
 +   Laufradbau
 +   Wir bauen Dein Wunschrad
