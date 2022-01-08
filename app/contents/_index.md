@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    LÄNGERE ÖFFNUGSZEITEN + REDUZIERTE PREISE JEDEN FREITAG + SAMSTAG IM OKTOBER
+    BETRIEBSURLAUB BIS 10.01.
 
 
 offers:
