@@ -6,11 +6,14 @@ type: 'rubric'
 model: 'Hobootleg Easy Travel'
 manufacturer: 'Cinelli'
 
-image: '/media/images/rubrics/bicycles/items/cinelli-hobootleg-green-monkey_01.jpg'
+image: '/media/images/rubrics/bicycles/items/cinelli-hobootleg-easy-travel_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/cinelli-hobootleg-green-monkey_01.jpg'
-  - '/media/images/rubrics/bicycles/items/'
+  - '/media/images/rubrics/bicycles/items/cinelli-hobootleg-easy-travel_01.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-hobootleg-easy-travel_02.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-hobootleg-easy-travel_03.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-hobootleg-easy-travel_04.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-hobootleg-easy-travel_05.jpg'
 
 description: >
     Semmelt.
@@ -41,12 +44,11 @@ specs:
   - rack: 'Tubus (vorn und hinten)'
   - weight: '12,6kg'
   - sizes:
-    - '46 (26")'
-    - '49'
-    - '53'
-    - '56'
-    - '59'
-    - '61'
-  - color: 'green monkey'
+    - '48'
+    - '52'
+    - '55'
+    - '58'
+    - '60'
+  - color: 'brown sugar'
 
 ---
