@@ -192,6 +192,15 @@
             max-width: 70%;
             margin: rem(spacing(6)) auto;
             
+            ul {
+                list-style: inherit;
+                margin: rem(spacing(1)) auto;
+                
+                li {
+                    margin-left: rem(spacing(3));
+                }
+            }
+            
             .post-links {
                 margin-top: rem(spacing(2));
                 ul {
