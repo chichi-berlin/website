@@ -3,7 +3,7 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Reise'
+linkTitle: 'Tour & Reise'
 slug: 'reisetaschen'
 section: 'travel'
 

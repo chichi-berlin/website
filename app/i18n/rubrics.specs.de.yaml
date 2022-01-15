@@ -235,3 +235,36 @@ backsweep:
   
 drop:
   other: 'Drop'
+  
+bag type:
+  other: 'Taschentyp'
+  
+volume:
+  other: 'Volumen'
+
+depth:
+  other: 'Tiefe'
+
+standard:
+  other: 'Schutzgrad'
+
+max. capacity:
+  other: 'Zuladung max.'
+
+lower width:
+  other: 'Breite unten'
+
+upper width:
+  other: 'Breite oben'
+
+adapter:
+  other: 'Adapter'
+
+circumference:
+  other: 'Umfang'
+
+upper length:
+  other: 'obere Länge'
+
+lower length:
+  other: 'untere Länge'
