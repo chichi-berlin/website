@@ -198,7 +198,16 @@
                 
                 li {
                     margin-left: rem(spacing(3));
+                    padding-left: rem(spacing(0.5));
                 }
+            }
+            
+            em {
+                font-style: italic;
+            }
+            
+            strong {
+                font-weight: bold;
             }
             
             .post-links {
