@@ -23,6 +23,7 @@ description: |
     Oberrohrrahmentasche mit Klettgurten
 
     Super Features:
+
     + PVC-frei
     + wasserdichte Oberrohr-Rahmentasche mit TIZIP Reißverschluss (überarbeitete Version)
     + ideale Tasche für Bike-Packing, Alpencross und Trekking-Touren

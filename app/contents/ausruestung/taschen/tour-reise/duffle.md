@@ -28,6 +28,7 @@ description: |
     Tasche mit Schultergurten
 
     Super Features:
+
     + Wasserdichte Heavy-Duty Expeditions- und Reisetasche in vier Größen mit Rucksackfunktion
     + gepolsterte, abnehmbare Schulterträger, als Tragegriff zu verwenden
     + extrem abrieb- und reißfestes Gewebe
@@ -37,8 +38,7 @@ description: |
     + 2 Innentaschen mit Reißverschluss
     + 1 Netzaussentasche mit Reißverschluss (nicht wasserdicht!)
     + 2 Daisychains zum Verzurren und Befestigen weiterer Ausrüstung
-    + Tasche kann über Drahtbügel am Reißverschluss mit einem kleinen Vorhängeschloss (nicht enthalten) abgesperrt
-    werden
+    + Tasche kann über Drahtbügel am Reißverschluss mit einem kleinen Vorhängeschloss (nicht enthalten) abgesperrt werden
     + ideal für Trekking, Reise, Expedition, Bootstouren
 
 specs:

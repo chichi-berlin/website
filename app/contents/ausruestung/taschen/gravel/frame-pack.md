@@ -23,6 +23,7 @@ description: |
     Rahmentasche mit Klettgurten (Größe 4 l: 3 Klettgurte, Größe 6 l: 4 Klettgurte)
 
     Super Features:
+
     + PVC-frei
     + wasserdichte Rahmentasche mit TIZIP Reißverschluss (überarbeitete Version)
     + in zwei Größen erhältlich

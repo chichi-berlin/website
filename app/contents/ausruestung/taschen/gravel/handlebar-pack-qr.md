@@ -26,6 +26,7 @@ description: |
     Lenkertasche inkl. Bar-Lock Halterungssystem (ohne Handlebar Pack QR Inner Pocket)
 
     Super Features:
+
     + PVC-frei
     + wasserdichte Lenkertasche
     + einfaches und schnelles Anbringen und Abnehmen der Tasche mittels cleverer Seilbefestigung - Bar-Lock System
@@ -38,6 +39,7 @@ description: |
     + 2 Kompressionsriemen im Tascheninneren
 
     Optionales Zubehör:
+
     + Handlebar-Pack QR Inner Pocket (Art.Nr. F9924)
 
 specs:

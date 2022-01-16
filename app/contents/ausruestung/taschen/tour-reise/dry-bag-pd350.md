@@ -19,6 +19,7 @@ description: |
     Der Packsack PD350 macht auf jeder Tour eine gute Figur: Schlank im Preis und in modernem Farb-Design kommt der standfeste Reisebegleiter daher. Der bewährte Rollverschluss mit einfacher Versteifungsleiste hält das Gepäck trocken und bringt die Ausrüstung aufs optimale Packmaß. Für einfaches Packen und mehr Stabilität beim Aufstellen sorgt der verstärkte Boden. Erhältlich in verschiedenen Größen.
 
     Super Features:
+
     + der Packsack für den Normaleinsatz mit gutem Gewichts-/Haltbarkeits-Verhältnis
     + beschichtetes Polyestergewebe
     + ideal für wasserdichtes Verpacken (z.B. Schlafsäcke)

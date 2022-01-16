@@ -21,6 +21,7 @@ description: |
     Kuriertasche der Profis: Markantes Design, robuste Funktionalität und ein hervorragendes Tragesystem machen sie zum Klassiker – nicht nur für Fahrradkuriere. Hart im Nehmen und smart genug für den Großstadt-Dschungel: Die Messenger-Bag ist beliebt bei Fahrradkurieren und Vielradlern weltweit. Sie begeistert durch ihr schlankes, funktionales Design, das wasserdichte Planenmaterial, das jedem Wetter trotzt und den praktischen Rollverschluss, der eine flexible Packhöhe für insgesamt 39 l Volumen ermöglicht.
 
     Super Features:
+
     + festes Anliegen am Rücken durch Hüftgurt
     + konturierte Träger mit Reflexstreifen
     + Schaumpolsterrücken
@@ -31,6 +32,7 @@ description: |
     + auch als Rucksack für große Formate (Zeichnungen) verwendbar
 
     Optionales Zubehör:
+
     + Messenger-Bag Compartment A3
     + Messenger-Bag Waist Strap Pocket
     + Messenger-Bag Organizer

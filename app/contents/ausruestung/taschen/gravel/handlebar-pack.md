@@ -24,11 +24,12 @@ description: |
     Die kleinere Version lässt sich auch als Kompaktklasse unter den Bikepacker-Lenkerrollen bezeichnen: Mit nur 40 cm Länge ist diese wasserdichte Lenkertasche die richtige Wahl für alle, die mit Offroad Drop Bars, Renn- oder Crosslenkern auf Bikepacking-Tour gehen. Auch in Sachen Gewicht macht sich die geringe Breite positiv bemerkbar.
     Die 15 Liter fassende Tasche bietet dank zusätzlicher Kordelzüge die Möglichkeit weiteres Equipment unterzubringen.
 
-    Lieferumfang:
-    Lenkertasche mit Kompressionsriemen und Distanzstücken, Innenversteifung
+    Lieferumfang: Lenkertasche mit Kompressionsriemen und Distanzstücken, Innenversteifung
 
-    Super Features:
+    __Super Features__
+
     9 / 15 Liter:
+
     + wasserdichte Gepäckrolle mit beidseitigen Rollverschlüssen für den Lenker
     + ideale Lenkertasche für Bike-Packing
     + besonders geeignet für das Verpacken eines Schlafsackes oder einer Isomatte (zwei Öffnungen)
@@ -44,11 +45,14 @@ description: |
     + geeignet für die Montage an Carbon-Lenkern
     + Reflektor 3M Scotchlite
     + PVC-frei
+
     15 Liter:
+
     + elastische Kordelzüge auf der Außenseite
     + 2 Reflektoren 3M Scotchlite
 
     Optionales Zubehör:
+
     + Acessory-Pack
 
 specs:

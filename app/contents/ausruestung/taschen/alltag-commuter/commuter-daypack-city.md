@@ -24,6 +24,7 @@ description: |
     Hier passt alles rein für einen Tag im Büro – egal ob sich dein Büro auf der Wiese, im Café oder in der alten Fabrik am anderen Ende der Stadt befindet. Der Ortlieb Commuter Daypack City ist ein wasserdichter Stadtrucksack aus leichtem, strapazierfähigen Nylongewebe. Mit seinem Rollverschluss, dem großen Haupt- und dem gepolstertem Notebookfach (bis 15,4) ist er bei jedem Wetter ein sicherer Ort für deine Unterlagen und technischen Geräte – und dank seines enormen Tragekomforts ein angenehmer Weggefährte für dich.
 
     Super Features:
+
     + PVC-frei
     + City-Daypack mit Rollverschluss in zwei Größen: 21 l und 27 l
     + PU-beschichtetes Nylongewebe

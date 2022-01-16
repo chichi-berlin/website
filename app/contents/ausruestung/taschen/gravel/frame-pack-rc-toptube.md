@@ -22,6 +22,7 @@ description: |
     Rahmentasche mit 2 Klettbändern
 
     Super Features:
+
     + PVC-frei
     + wasserdichte Oberrohr-Rahmentasche mit Rollverschluss
     + ideale Tasche für Bike-Packing, Alpencross und Trekking-Touren

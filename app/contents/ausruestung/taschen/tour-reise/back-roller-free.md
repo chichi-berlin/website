@@ -24,6 +24,7 @@ description: |
     Taschenpaar mit 2 Tragegurten (Länge ca. 75 cm), Reduzierstücke 8, 10 und 12 mm (je 2 Paar)
 
     Super Features:
+
     + aus PVC-freiem, PU-beschichtetem Polyestergewebe
     + mit Quick-Lock 2.1 Aufhängesystem für Gepäckträger bis 16 mm Rohrdurchmesser
     + 18 mm & 20 mm Haken separat als Zubehör erhältlich (z.B. für E-Bikes)
@@ -38,6 +39,7 @@ description: |
     + innen leicht zu reinigen
 
     Optionales Zubehör:
+
     + Packing Cubes / Commuter Insert for Panniers
     + Carrying System Bike Pannier
     + Anti-Theft-Device (E125)

@@ -22,6 +22,7 @@ description: |
     Einzeltasche mit Tragegurt und Reduzierstücke 8, 10 und 12 mm (je Größe 1 Paar)
 
     Super Features:
+
     + PVC-freies Reflexgewebe
     + mit Quick-Lock 2.1 Aufhängesystem für Gepäckträger bis 16 mm Rohrdurchmesser
     + 20 mm Haken separat als Zubehör erhältlich (z.B. für E-Bikes)
@@ -36,6 +37,7 @@ description: |
     + innen leicht zu reinigen
 
     Optionales Zubehör:
+
     + Carrying System Bike Pannier
     + Anti-Theft-Device (E125)
     + Outer Pocket 1,8 L

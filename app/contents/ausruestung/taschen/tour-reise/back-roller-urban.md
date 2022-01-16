@@ -24,6 +24,7 @@ description: |
     Einzeltasche mit Tragegurt und Reduzierstücken 8, 10 und 12 mm (je Größe 1 Paar)
 
     Super Features:
+
     + PVC-frei
     + Robustes, PU-beschichtetes Cordura-Mischgewebe mit angenehmer Haptik
     + mit Quick-Lock 2.1 Aufhängesystem für Gepäckträger bis 16 mm Rohrdurchmesser
@@ -36,6 +37,7 @@ description: |
     + Innen leicht zu reinigen
 
     Optionales Zubehör:
+
     + Packing Cubes / Commuter Insert for Panniers
     + Carrying System Bike Pannier
     + Anti-Theft-Device (E125)

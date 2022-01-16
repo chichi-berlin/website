@@ -24,13 +24,13 @@ description: |
     Fork-Pack (215g) mit QLS Adapterplatte inkl. Befestigungszubehör und Schrauben (85g), Montageanleitung
 
     Super Features:
+
     + PVC-frei
     + ultraleichte, wasserdichte Tasche (Einzeltasche) mit Rollverschluss
     + das Fork-Pack ist primär für die Befestigung an der Fahrradgabel konzipiert worden, kann aber an allen vertikalen Rohren montiert werden
     + abriebfestes, PU-beschichtetes Corduragewebe
     + ermöglicht die Mitnahme von zusätzlichem Gepäck an Rädern ohne Gepäckträger, mit Hilfe des Quick-Lock S (QLS) Adaptersystems
-    + Adapter ist kompatibel mit Gabeln mit Schraubfixierung und Rohren mit konstantem Durchmesser
-    von 30 mm bis 42 mm
+    + Adapter ist kompatibel mit Gabeln mit Schraubfixierung und Rohren mit konstantem Durchmesser von 30 mm bis 42 mm
     + entweder durch Direktmontage (Gewinde im Rohr) oder mittels zweier Metallbänder (im Lieferumfang enthalten) wird die minimalistische Halterung sicher montiert
     + mit einem Klick rastet die Tasche blitzschnell ein und kann genauso problemlos wieder entfernt werden
     + zum schnellen Abnehmen den Entriegelungshebel oben an der Tasche einfach zur Seite bewegen und Tasche nach oben abziehen

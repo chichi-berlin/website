@@ -19,10 +19,10 @@ description: |
     Perfekt für eine mehrtägige Tour: Das Ortlieb Gravel-Pack Duo bietet dir 25 Liter Stauraum für zusätzliches Equipment wie Proviant, Kochgeschirr oder luxuriöse „Extras“. Durch die Anbringung am Lowrider-Gepäckträger hast du selbst mit viel Gepäck einen tiefen Schwerpunkt und unveränderte Agilität im Gelände.
     Gleichzeitig trotzt das leichte, abriebfeste Material selbst den härtesten Bedingungen von Stein- und Schotterpisten. Auch heftige Wetter können deinem Gepäck nichts anhaben, schließlich sind die wasserdichten Taschen mit dem bewährten Ortlieb Rollverschluss ausgestattet. Dank Quick-Lock 2.1-System und zweifachen Arretierungshaken ist das Gravel-Pack sicher und wackelfrei am Gepäckträger fixiert.
 
-    Lieferumfang:
-    Taschenpaar, Reduzierstücke 8, 10 und 12 mm (je 2 Paar)
+    Lieferumfang: Taschenpaar, Reduzierstücke 8, 10 und 12 mm (je 2 Paar)
 
     Super Features:
+
     + PVC-frei
     + wasserdichte Radtasche (Paar) mit Rollverschluss
     + ideale Tasche für Bike-Packing, Alpencross, Radrennen und Trekking-Touren
@@ -35,6 +35,7 @@ description: |
     + leuchtstarke Reflektoren aus 3M Scotchlite Reflexmaterial
 
     Optionales Zubehör:
+
     + Carrying System Bike Pannier
     + Anti-Theft-Device (E124)
     + Tragegurt (E172)
