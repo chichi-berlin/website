@@ -18,10 +18,9 @@ images:
 description: |
     Das Frame-Pack RC Toptube ist die Lösung für alle, die trotz Gepäckunterbringung im Rahmen weiterhin nicht auf die Mitnahme von Trinkflaschen verzichten möchten. Ebenso ist die wasserdichte Rahmentasche mit Rollverschluss ideal für alle Fullsuspension-MTB´s, deren Dämpfer den Platz im Rahmendreieck limitieren. Durch den wasserdichten Rollverschluss, der mit Silikonringen gesichert wird, erreicht die Tasche aus der Bikepacking-Serie den IP64-Standard und bewahrt dadurch das Equipment vor einem unfreiwilligen Bad. Das Frame-Pack RC Toptube ermöglicht durch die 4 Liter Volumen die Unterbringung von schweren Ausrüstungsgegenständen wie dem Zeltgestänge, Werkzeug oder Proviant innerhalb des Rahmendreiecks und verhilft damit zu einem niedrigen Schwerpunkt am Rad. Die variabel zu positionierenden, stabilen und haftstarken Klettverschlüße ermöglichen eine einfache und unkomplizierte Montage am Ober- und Sitzrohr des Rades.
 
-    Lieferumfang:
-    Rahmentasche mit 2 Klettbändern
+    Lieferumfang: Rahmentasche mit 2 Klettbändern
 
-    Super Features:
+    __Super Features:__
 
     + PVC-frei
     + wasserdichte Oberrohr-Rahmentasche mit Rollverschluss

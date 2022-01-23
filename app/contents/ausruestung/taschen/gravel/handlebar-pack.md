@@ -51,7 +51,7 @@ description: |
     + elastische Kordelzüge auf der Außenseite
     + 2 Reflektoren 3M Scotchlite
 
-    Optionales Zubehör:
+    __Optionales Zubehör:__
 
     + Acessory-Pack
 

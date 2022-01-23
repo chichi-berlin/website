@@ -20,10 +20,9 @@ images:
 description: |
     Die ultraleichte Tasche mit Rollverschluss kann mit Hilfe des Quick-Lock S Adapters sowohl an Gabeln mit dafür vorgesehenen Schraubbefestigungen, als auch an Gabeln ohne spezielle Schraubenaufnahme montiert werden. Die Rohre müssen hierfür einen konstanten Durchmesser von 30 mm bis 42 mm haben. Das einfache und schnelle Einhängen und Abnehmen des Fork-Pack von der montierten Adapterplatte ist mit einer Hand in Sekundenschnelle möglich. Die PVC-freie Gabeltasche ist natürlich nachhaltig in Deutschland hergestellt.
 
-    Lieferumfang:
-    Fork-Pack (215g) mit QLS Adapterplatte inkl. Befestigungszubehör und Schrauben (85g), Montageanleitung
+    Lieferumfang: Fork-Pack (215g) mit QLS Adapterplatte inkl. Befestigungszubehör und Schrauben (85g), Montageanleitung
 
-    Super Features:
+    __Super Features:__
 
     + PVC-frei
     + ultraleichte, wasserdichte Tasche (Einzeltasche) mit Rollverschluss

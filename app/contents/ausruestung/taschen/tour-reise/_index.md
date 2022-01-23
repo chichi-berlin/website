@@ -9,7 +9,7 @@ section: 'travel'
 
 title: 'Reisetaschen'
 description: 'Lange Tour- viel Gepäck'
-image: '/media/images/rubrics/accessories/items/carry-saddle-bag-dry-bag_1.jpeg'
+image: '/media/images/rubrics/accessories/items/bags-ortlieb-back-roller-classic_01.jpg'
 
 weight: 1
 menu:

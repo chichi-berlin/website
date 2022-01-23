@@ -20,7 +20,7 @@ images:
 description: |
     Wohin mit den kleinen, aber wichtigen Extras auf deiner Bikepacking-Tour? Snacks, Smartphone, Regenschutz usw. packst du am besten ins Ortlieb Accessory-Pack.
 
-    Super Features:
+    __Super Features:__
 
     + PVC-frei
     + Kann einzeln oder als Volumenerweiterung für das Handlebar-Pack eingesetzt werden
@@ -29,7 +29,7 @@ description: |
     + Montage am Handlebar-Pack an vier Befestigungspunkten mit Hilfe von verstellbaren Metallhaken
     + Klettbänder für direkte Montage am Lenker
 
-    Optionales Zubehör:
+    __Optionales Zubehör:__
 
     + Handlebar-Pack
 

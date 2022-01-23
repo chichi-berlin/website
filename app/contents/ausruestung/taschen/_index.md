@@ -9,7 +9,7 @@ section: 'bags'
 
 title: 'Fahrradtaschen'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/hip-bag_2.jpeg'
+image: '/media/images/rubrics/accessories/items/bags-ortlieb-sport-roller-classic_01.jpg'
 
 weight: 9
 menu:

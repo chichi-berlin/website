@@ -21,7 +21,7 @@ description: |
 
     Lieferumfang: Taschenpaar, Reduzierstücke 8, 10 und 12 mm (je 2 Paar)
 
-    Super Features:
+    __Super Features:__
 
     + PVC-frei
     + wasserdichte Radtasche (Paar) mit Rollverschluss
@@ -34,7 +34,7 @@ description: |
     + durch symmetrische Form links oder rechts verwendbar
     + leuchtstarke Reflektoren aus 3M Scotchlite Reflexmaterial
 
-    Optionales Zubehör:
+    __Optionales Zubehör:__
 
     + Carrying System Bike Pannier
     + Anti-Theft-Device (E124)

@@ -24,17 +24,16 @@ images:
 description: |
     Wer auf seinen Abenteuern gerne die Extreme auslotet, erwartet entsprechendes Durchhaltevermögen auch von seinem Equipment. Die Duffle schließt Bekleidung & Co. wasserdicht ein und ist durch ihre bequem gepolsterten, auch als Tragegriffe verwendbaren Schultergurte schnell zum praktischen Rucksack umfunktionierbar. Der lange wasserdichte TIZIP-Reißverschluss (überarbeitete Version) ermöglicht schnellen Zugriff auf die Ausrüstung, deren Packmaß sich mit dem innenliegenden Kompressionsgurt (nicht bei Größe40L) zusätzlich verkleinern lässt. Ihr verstärkter Boden aus abriebfestem Cordura-Gewebe macht sie zum langlebigen Expeditionspartner. Mit einem separaten kleinen Kabelschloss (nicht im Lieferumfang enthalten) kann die Tasche verschlossen werden.
 
-    Lieferumfang:
-    Tasche mit Schultergurten
+    Lieferumfang: Tasche mit Schultergurten
 
-    Super Features:
+    __Super Features:__
 
     + Wasserdichte Heavy-Duty Expeditions- und Reisetasche in vier Größen mit Rucksackfunktion
     + gepolsterte, abnehmbare Schulterträger, als Tragegriff zu verwenden
     + extrem abrieb- und reißfestes Gewebe
     + in der Hand oder auf dem Rücken zu tragen
     + langer, wasserdichter TIZIP-Reißverschluss (überarbeitete Version) ermöglicht große Öffnung für leichten Zugriff
-    + 1 Kompressionsgurt innen zur Volumenanpassung (nicht bei 40 L)
+    + 1 Kompressionsgurt innen zur Volumenanpassung (nicht bei 40 l)
     + 2 Innentaschen mit Reißverschluss
     + 1 Netzaussentasche mit Reißverschluss (nicht wasserdicht!)
     + 2 Daisychains zum Verzurren und Befestigen weiterer Ausrüstung

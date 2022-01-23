@@ -19,10 +19,9 @@ images:
 description: |
     Das Frame-Pack Toptube ist die Lösung für alle, die trotz Gepäckunterbringung im Rahmen weiterhin nicht auf die Mitnahme von Trinkflaschen verzichten möchten. Ebenso ist die Rahmentasche ideal für alle Fullsuspension-MTB´s, deren Dämpfer den Platz im Rahmendreieck limitieren. Das Frame-Pack Toptube ermöglicht durch die 4 Liter Volumen die Unterbringung von schweren Ausrüstungsgegenständen wie dem Zeltgestänge, Werkzeug oder Proviant innerhalb des Rahmendreiecks und verhilft damit zu einem niedrigen Schwerpunkt am Rad. Das bewährte, wasserdichte Nylongewebe sorgt in Verbindung mit dem wasserdichten Tizip Reißverschluss (überarbeitete Version) dafür, dass der Inhalt selbst bei widrigsten Bedingungen absolut trocken bleibt. Die variabel zu positionierenden, stabilen und haftstarken Klettverschlüße ermöglichen eine einfache und unkomplizierte Montage am Ober- und Sitzrohr des Rades.
 
-    Lieferumfang:
-    Oberrohrrahmentasche mit Klettgurten
+    Lieferumfang: Oberrohrrahmentasche mit Klettgurten
 
-    Super Features:
+    __Super Features:__
 
     + PVC-frei
     + wasserdichte Oberrohr-Rahmentasche mit TIZIP Reißverschluss (überarbeitete Version)

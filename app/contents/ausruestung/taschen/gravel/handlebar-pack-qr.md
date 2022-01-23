@@ -22,10 +22,9 @@ images:
 description: |
     Ein neues Befestigungssystem, das Bar-Lock, ermöglicht die Anbringung und die Demontage der wasserdichten Handlebar-Pack QR (Quick Release) in kürzester Zeit. Die Mitnahme ist dadurch beispielsweise beim Erreichen des Ziels innerhalb von Sekunden problemlos möglich. Dank der Bar-Lock Seilbefestigung sitzt diese Bikepackingtasche zudem absolut stabil am Lenker, auch bei rauerem Gelände. Innenkompressionen und die durch den Rollverschluss variable Höhe unterstützen das sichere Verstauen von Equipment. Zwei weitere Haken mit CamLock-Verschluss auf der Vorderseite schaffen zudem weitere Möglichkeiten zur Komprimierung. Die Anbringung der Bikepacking-Tasche erfolgt ausschließlich am Lenker bzw. dem Vorbau. Das elf Liter fassende und nur 530 Gramm leichte Handlebar-Pack QR wird von oben beladen und ist durch die schmale Bauweise von 32 Zentimetern auch ideal für Gravel- und Rennlenker geeignet. Seitliche Außentaschen gestatten das Verstauen von Kleinteilen oder Snacks auf welche auch während der Fahrt zugegriffen werden soll. Die PVC-freie Tasche aus abriebfestem Nylongewebe ist natürlich nachhaltig hergestellt in Deutschland. Die maximale Zuladung beträgt fünf Kilogramm. Das optionale Zubehör Handlebar-Pack QR Inner Pocket hilft Ordnung zu bewahren und schafft Raum für die Unterbringung von wichtigen Utensilien wie Bargeld, Karten oder dem Handy.
 
-    Lieferumfang:
-    Lenkertasche inkl. Bar-Lock Halterungssystem (ohne Handlebar Pack QR Inner Pocket)
+    Lieferumfang: Lenkertasche inkl. Bar-Lock Halterungssystem (ohne Handlebar Pack QR Inner Pocket)
 
-    Super Features:
+    __Super Features:__
 
     + PVC-frei
     + wasserdichte Lenkertasche
@@ -38,7 +37,7 @@ description: |
     + 2 Haken mit CamLock Verschluss zur Komprimierung auf der Vorderseite
     + 2 Kompressionsriemen im Tascheninneren
 
-    Optionales Zubehör:
+    __Optionales Zubehör:__
 
     + Handlebar-Pack QR Inner Pocket (Art.Nr. F9924)
 
