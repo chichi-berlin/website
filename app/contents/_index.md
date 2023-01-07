@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    BETRIEBSURLAUB BIS 10.01.
+    Wieder geöffnet: 02.01.2023
 
 
 offers:
