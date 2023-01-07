@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    Wieder geöffnet: 02.01.2023
+    WIR HABEN GEÖFFNET!
 
 
 offers:
