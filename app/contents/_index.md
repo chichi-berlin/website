@@ -21,10 +21,10 @@ banner:
 
 
 offers:
-  - headline: '-10% auf Inspektionen im Januar'
+  - headline: '-6% auf Inspektionen im Januar'
     image: '/media/images/offers/inspektions-bob.png'
     description: >
-      Umgehe lange Wartezeiten wegen gestiegener Nachfrage und Teileknappheit und lass' Dein Rad frühjahrsauglich machen. (Normalpreis: 60€ excl. zu ersetzende Teile+ evtl anfallende Montage)
+      Umgehe lange Wartezeiten wegen gestiegener Nachfrage und Teileknappheit und lass' Dein Rad frühjahrsauglich machen. (Normalpreis: 80€ excl. zu ersetzende Teile + evtl. anfallende Montage)
   
   - headline: 'Sparangebot Gebrauchtrad + Schloß'
     image: '/media/images/offers/chichi-design-3gangkette_1.jpg'
