@@ -40,7 +40,7 @@ specs:
   - brake-levers: 'Shimano BL-M200'
   - saddle: 'Seido Origin'
   - weight: '10,7 kg (Größe 52)'
-    - sizes:
+  - sizes:
     - '49'
     - '52'
     - '55'
