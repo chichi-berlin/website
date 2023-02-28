@@ -5,14 +5,14 @@
     content="
         default-src 'self';
         base-uri 'self';
-        connect-src 'self' https://wwwapi.serviceeu.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}ws://localhost:*{{ end }};
+        connect-src 'self' https://insurance.wertgarantie.com https://categories.wertgarantie.com https://shop-connect.wertgarantie.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}ws://localhost:*{{ end }};
         frame-src 'self' {{ $.Param "tracking-base-url" }};
         form-action 'self';
-        font-src 'self' https://wwwapi.serviceeu.com;
-        img-src 'self' https://wwwapi.serviceeu.com https://*.thunderforest.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }};
+        font-src 'self';
+        img-src 'self' https://*.thunderforest.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }};
         media-src 'self';
         object-src 'none';
-        script-src 'self' https://wwwapi.serviceeu.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
-        style-src 'self' 'unsafe-inline' https://wwwapi.serviceeu.com;
+        script-src 'self' https://siteconnect.wertgarantie-services.de {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
+        style-src 'self' 'unsafe-inline';
         worker-src 'self';
     ">
