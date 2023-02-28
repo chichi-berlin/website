@@ -4,7 +4,7 @@ linkTitle: 'Service'
 slug: 'service'
 
 title: 'Unser Service' 
-description: 'TODO'
+description: 'Werkstatt, Beratung, Inspektion, Versicherung'
 
 menu:
   top:
