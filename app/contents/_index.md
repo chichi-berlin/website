@@ -21,10 +21,10 @@ banner:
 
 
 offers:
-  - headline: '-6% auf Inspektionen im Januar'
-    image: '/media/images/offers/inspektions-bob.png'
+  - headline: 'einzelne Helme stark reduziert'
+    image: '/media/images/offers/bell-star-pro-shield-16.jpg'
     description: >
-      Umgehe lange Wartezeiten wegen gestiegener Nachfrage und Teileknappheit und lass' Dein Rad frühjahrsauglich machen. (Normalpreis: 80€ excl. zu ersetzende Teile + evtl. anfallende Montage)
+      Wir haben vereinzelt Helme, die nicht oft gekauft werden. Damit sie nicht überlagert werden und noch jemand Freude daran hat, verkaufen wir diese reduziert, z.B. den Star Pro Shield 16 von Bell. Hier findet ihr einen Testbericht: https://www.bike-components.de/blog/testen/im-test-bell-star-pro-aero-helm/
   
   - headline: 'Sparangebot Gebrauchtrad + Schloß'
     image: '/media/images/offers/chichi-design-3gangkette_1.jpg'

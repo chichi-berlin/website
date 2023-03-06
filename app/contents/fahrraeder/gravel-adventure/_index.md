@@ -3,13 +3,13 @@
 type: 'rubric'
 layout: 'categories'
 
-linkTitle: 'Rennräder & Gravelbikes'
-slug: 'rennraeder'
-section: 'road-gravel'
+linkTitle: 'Gravel & Adventure'
+slug: 'gravel'
+section: 'gravel-adventure'
 
-title: 'Rennräder & Gravelbikes'
+title: 'Gravel & Adventure'
 description: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
-image: '/media/images/rubrics/bicycles/items/hook2-2018_1.jpg'
+image: '/media/images/rubrics/bicycles/items/audax-al-2023_01.jpeg'
 
 explanation: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
 

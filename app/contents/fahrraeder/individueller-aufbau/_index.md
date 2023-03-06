@@ -9,7 +9,7 @@ section: 'custom'
 
 title: 'Individueller Aufbau'
 description: 'Wir bauen Dein Wunschrad'
-image: ''
+image: '/media/images/rubrics/bicycles/items/custom-cinelli-tutto_1.jpg'
 
 explanation: 'Wir bauen Dein Wunschrad'
 

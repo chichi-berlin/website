@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Arise'
+model: 'Arise Geared'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/arise-geared-2018_1.jpg'

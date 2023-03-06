@@ -9,7 +9,7 @@ section: 'city'
 
 title: 'Cityräder'
 description: 'Alltagswege, Komfort, Allwetter, Kurz- und Mitteldistanz, befestigte Wege'
-image: '/media/images/rubrics/bicycles/items/jade-retro-2018_1.jpg'
+image: '/media/images/rubrics/bicycles/items/odessa-2018_1.jpeg'
 
 explanation: 'Alltagswege, Komfort, Allwetter, Kurz- und Mitteldistanz, befestigte Wege'
 
