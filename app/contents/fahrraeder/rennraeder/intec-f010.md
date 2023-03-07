@@ -1,0 +1,38 @@
+---
+
+type: 'rubric'
+
+
+model: 'F010 Klassik'
+manufacturer: 'Intec'
+
+image: '/media/images/rubrics/bicycles/items/intec-f010-2023_1.png'
+
+description: >
+    Das Klassik Modell ist der Sportler der F010 Serie. Rennlenker, Systemlaufräder, gerade Gabel, als auch die kurzen Kettenstreben unterstreichen seinen sportlichen Charakter. Weiterhin besteht die Möglichkeit, Schutzbleche und Gepäckträger als Option zu wählen. Somit wird der „Sportler” auch im Alltag ein richtig guter Begleiter. Die verbaute Shimano 105 R7000 Rennrad Baugruppe sorgt zudem für eine ideale Umsetzung Deiner Muskelkraft in Vortrieb.
+    Durch die große Auswahl bei Farbe, Dekor, Komponenten und Accessoires ist das Intec F010 individuell konfigurierbar.
+
+specs:
+  - frametype: 'Diamant'
+  - frame: 'Stahl 25 Cr-Mo4 doppelt konifiziert'
+  - fork: 'Cr-Mo'
+  - wheel-size: '622 mm'
+  - brakes: 'Scheibenbremsen'
+  - speeds: '2x11'
+  - sizes:
+    - '51'
+    - '54'
+    - '57'
+    - '60'
+    - '63'
+  - colors:
+    - 'Tiefschwarz'
+    - 'Basaltgrau'
+    - 'Blue Ultra Pearl'
+    - 'British Racing Green'
+    - 'Night Blue'
+    - 'Violett'
+    - 'Fire Red'
+    - 'Arabic Rot'
+
+---

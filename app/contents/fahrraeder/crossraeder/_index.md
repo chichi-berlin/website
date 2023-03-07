@@ -8,12 +8,12 @@ slug: 'crossraeder'
 section: 'cross'
 
 title: 'Crossräder'
-description: 'für diversen Untergrund, sportlich, Mitteldistanz'
+description: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
 image: '/media/images/rubrics/bicycles/items/aventon-kijote-2023_2.jpeg'
 
-explanation: 'für diversen Untergrund, sportlich, Mitteldistanz'
+explanation: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
 
-weight: 5
+weight: 3
 menu:
   - aside_bicycles
 

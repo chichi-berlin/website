@@ -53,7 +53,7 @@ Uns interessieren keine reichen Leute, die unsere Nachbarn aus ihren Wohnungen k
 Wenn es uns möglich ist, unterstützen wir wechselnde interessante Projekte  - manchmal mit Sachspenden oder mit Material gegen kleines Geld. Seit 2018 sind wir Pate verschiedener Tiere im Tierpark Neukölln in der Hasenheide. Wer sich interessiert, findet hier den Link: https://tierpark-neukoelln.berlin/
 
 Wir sind für eine andere Verkehrspolitik.
-Mitglied im Netzwerk Fahrradfreundliches Neukölln zu sein, ist Ehrensache. Wenn wir es zeitlich einrichten können, findest Du uns bei der Critical Mass. Wir vertreten die Auffassung, daß der Stadtverkehr neu überdacht und radikal geändert werden sollte. Das öffentliche Nahverkehrsnetz ist gut und selbst weite Wege mit dem Rad eigentlich kein Problem. Mit ständig wachsender Bevölkerungsdichte sollten Fehlinvestitionen wie private PKWs im Innenstadtbereich einem gesünderen, sozialeren und sichereren Fahrradverkehr restlos weichen.
+Wir vertreten die Auffassung, daß der Stadtverkehr neu überdacht und radikal geändert werden sollte. Das öffentliche Nahverkehrsnetz ist gut und selbst weite Wege mit dem Rad eigentlich kein Problem. Mit ständig wachsender Bevölkerungsdichte sollten Fehlinvestitionen wie private PKWs im Innenstadtbereich einem gesünderen, sozialeren und sichereren Fahrradverkehr restlos weichen.
 
 Wir entscheiden nicht, wer oder was Du bist.
 Auch nicht, wenn Du ein Versicherungsformular bei uns ausfüllst. Darum kümmern wir uns. Wir bemühen uns aktiv um einen möglichst „safen space“, sind aber nicht Deine Mutti.

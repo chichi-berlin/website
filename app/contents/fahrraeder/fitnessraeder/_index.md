@@ -13,7 +13,7 @@ image: '/media/images/rubrics/bicycles/items/heizzwerk-2017_1.jpg'
 
 explanation: 'leicht, schnell, komfortabel, Kurz- und Mitteldistanz, Alltag, befestigte Wege'
 
-weight: 4
+weight: 6
 menu:
   - aside_bicycles
 

@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Audax AL 2023'
+model: 'Audax AL'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/audax-al-2023_01.jpeg'

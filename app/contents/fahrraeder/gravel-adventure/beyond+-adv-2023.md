@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Beyond+ ADV 2023'
+model: 'Beyond+ ADV'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/beyond+-adv-2023_01.jpeg'

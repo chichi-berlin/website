@@ -20,7 +20,7 @@ description: >
 specs:
   - frametype: 'Diamant'
   - frame: 'COLUMBUS Cr-Mo doppelt konifiziert'
-  - fork: ' COLUMBUS Cr-Mo Steel 1-1/8"'
+  - fork: ' COLUMBUS Cr-Mo Steel'
   - wheel-size: '622 mm'
   - handlebar: 'CINELLI 6061'
   - bottom-bracket: 'FSA / BSA 68mm'
@@ -29,7 +29,7 @@ specs:
   - chain: 'KMC Z510'
   - cassette: '17T Fixed Cog / 18T Freewheel'
   - hubs: 'KT Hubs Fix/Free Flipflop'
-  - tyres: 'DURO Hypersonic 25-622; max breite 25mm'
+  - tyres: 'DURO Hypersonic 25-622; max. Breite 25mm'
   - brakes: 'PROMAX RC-452'
   - saddle: 'DDK Black'
   - sizes:

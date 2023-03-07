@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Munroe SG 2023'
+model: 'Munroe SG'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/munroe-sg-2023_01.jpeg'

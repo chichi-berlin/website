@@ -8,10 +8,10 @@ slug: 'gravel'
 section: 'gravel-adventure'
 
 title: 'Gravel & Adventure'
-description: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
+description: 'für diversen Untergrund, sportliche Touren, Bikepacking'
 image: '/media/images/rubrics/bicycles/items/audax-al-2023_01.jpeg'
 
-explanation: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
+explanation: 'für diversen Untergrund, sportliche Touren, Bikepacking'
 
 weight: 2
 menu:

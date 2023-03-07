@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Munroe AL 2023'
+model: 'Munroe AL'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/munroe-al-2023_01.jpeg'

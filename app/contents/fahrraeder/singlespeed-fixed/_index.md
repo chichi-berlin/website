@@ -13,7 +13,7 @@ image: '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2021_1.jpg'
 
 explanation: 'leicht, schnell, wendig, minimalistisch, Kurz- und Mitteldistanz, befestigte Wege'
 
-weight: 3
+weight: 5
 menu:
   - aside_bicycles
 

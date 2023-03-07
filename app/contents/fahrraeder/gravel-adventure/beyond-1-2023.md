@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Beyond 1 2023'
+model: 'Beyond 1'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/beyond-1-2023_01.jpeg'

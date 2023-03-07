@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Hook EXT 2023'
+model: 'Hook EXT'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/hook-ext-2023_01.jpeg'

@@ -13,7 +13,7 @@ image: '/media/images/rubrics/bicycles/items/u20-3g-2018.jpg'
 
 explanation: 'kleine Räder mit kindgerechter Ausstattung'
 
-weight: 7
+weight: 8
 menu:
   - aside_bicycles
 

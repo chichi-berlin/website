@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Arise 2023'
+model: 'Arise'
 manufacturer: 'Bombtrack'
 
 image: '/media/images/rubrics/bicycles/items/arise-2023_01.jpeg'

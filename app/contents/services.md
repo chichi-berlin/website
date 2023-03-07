@@ -40,4 +40,4 @@ heads:
 +   Einsatzzweck
 
 
-## Kostenlose Erstinspektion in den ersten 4 Monaten für bei uns gekaufte Neuräder
+## Kostenlose Erstinspektion in den ersten 3 Monaten für bei uns gekaufte Neuräder
