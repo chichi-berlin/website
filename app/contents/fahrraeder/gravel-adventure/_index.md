@@ -13,7 +13,7 @@ image: '/media/images/rubrics/bicycles/items/audax-al-2023_01.jpeg'
 
 explanation: 'für diversen Untergrund, sportliche Touren, Bikepacking'
 
-weight: 2
+weight: 3
 menu:
   - aside_bicycles
 

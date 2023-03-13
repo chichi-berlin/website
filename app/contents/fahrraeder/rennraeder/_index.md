@@ -9,7 +9,7 @@ section: 'road'
 
 title: 'Rennräder'
 description: 'Training, befestigte Wege'
-image: '/media/images/rubrics/bicycles/items/nemo-tig-disc-2023_1.jpg'
+image: '/media/images/rubrics/bicycles/items/cinelli-veltrix-disc_01.jpg'
 
 explanation: 'Training, befestigte Wege'
 

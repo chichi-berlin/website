@@ -9,7 +9,7 @@ section: 'helmets'
 
 title: 'Klassische Helme'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/'
+image: '/media/images/rubrics/accessories/items/helmet-stormchaser_01.jpg'
 
 weight: 2
 menu:

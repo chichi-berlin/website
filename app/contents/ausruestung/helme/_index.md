@@ -9,9 +9,9 @@ section: 'protection'
 
 title: 'Helme'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/'
+image: '/media/images/rubrics/accessories/items/helmet-stormchaser_01.jpg'
 
-weight: 5
+weight: 
 menu:
   - aside_accessories  
 

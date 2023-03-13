@@ -6,13 +6,13 @@ type: 'rubric'
 model: 'Gazzetta'
 manufacturer: 'Cinelli'
 
-image: '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2021_1.jpg'
+image: '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2023_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2021_2.jpg'
-  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2021_3.jpg'
-  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2021_4.jpg'
-  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2021_5.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2023_02.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2023_03.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2023_04.jpg'
+  - '/media/images/rubrics/bicycles/items/cinelli-gazzetta-2023_05.jpg'
 
 description: >
     Das Gazzetta ist Cinellis Stahl Track- Rad im klassischen Stil, das subtil für den täglichen Gebrauch auf urbanan Straßen optimiert wurde. Das Herzstück ist der micro-TIG geschweißte doppelt konifizierte Cr-Mo Rohrsatz von Columbus für großartige Haltbarkeit. Das Rad kommt mit einem verkehrstauglichen Riser- Lenker und einer Bremse (vorn). Das Hinterrad verfügt über eine FlipFlop Nabe: 18T Freilauf / 17T Fixed.
