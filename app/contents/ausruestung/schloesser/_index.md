@@ -9,7 +9,7 @@ section: 'locks'
 
 title: 'Schlösser'
 description: 'TODO'
-image: '/media/images/rubrics/accessories/items/krypto-evo-mini5_1.jpg'
+image: '/media/images/rubrics/accessories/items/schloesser.png'
 
 weight: 8
 menu:
