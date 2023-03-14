@@ -18,6 +18,12 @@ heads:
 
 ## Werkstatt
 
+{{< figure 
+    class="figure--ihk-seal"
+    title="IHK Siegel: Exzellente-Ausbildungsqualität"
+    src="/media/images/assets/ihk_exzellente-ausbildungsqualität_2022-09.jpg"
+>}}
+
 +   Reparatur
 +   Inspektion
 +   Unfallgutachten / Kostenvoranschlag
