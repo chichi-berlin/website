@@ -33,17 +33,17 @@ heads:
 +   Als IHK- geprüfter Ausbildungsbetrieb kümmern wir uns um Nachwuchs im Handwerk
 
 
-## Versicherung
-
-{{< insurance-fee-calculator >}}
-
-
 ## Beratung entsprechend individueller Anforderungen an Rad und Ausstattung
 
 +   Materialien
 +   Rahmengeometrie
 +   Sitzposition
 +   Einsatzzweck
+
+
+## Versicherung
+
+{{< insurance-fee-calculator >}}
 
 
 ## Kostenlose Erstinspektion in den ersten 3 Monaten für bei uns gekaufte Neuräder

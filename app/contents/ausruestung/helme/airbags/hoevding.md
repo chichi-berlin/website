@@ -3,7 +3,7 @@
 type: 'rubric'
 
 
-model: 'Hövding 2.0'
+model: 'Hövding 3.0'
 manufacturer: 'Hövding'
 
 image: '/media/images/rubrics/accessories/items/helmet-hoevding-opened-and-closed.jpg'
@@ -19,6 +19,6 @@ description: |
     Komm vorbei und lass Dich zum Hövding beraten, Du kannst ihn gern auch einmal anprobieren.
 
 specs:
-  - model: 'Hövding 2.0'
+  - model: 'Hövding 3.0'
     
 ---
