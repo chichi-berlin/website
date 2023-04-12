@@ -11,7 +11,7 @@ title: 'Helme'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/helmet-stormchaser_01.jpg'
 
-weight: 
+weight: 2
 menu:
   - aside_accessories  
 

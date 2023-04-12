@@ -16,6 +16,7 @@ images:
   - '/media/images/rubrics/accessories/items/bags-ortlieb-ultimate-six-classic-5l_06.jpg'
   - '/media/images/rubrics/accessories/items/bags-ortlieb-ultimate-six-classic-5l_07.jpg'
   - '/media/images/rubrics/accessories/items/bags-ortlieb-ultimate-six-classic-5l_08.jpg'
+  - '/media/images/rubrics/accessories/items/bags-ortlieb-ultimate-six-classic-5l_09.jpg'
 
 description: |
     Ein Ortlieb-Klassiker, der auf keiner Radtour fehlen darf! Die Ultimate Six Classic aus wasserdichtem Polyestergewebe gehört zur Basisausrüstung jedes Tourenradlers. Für das Plus an Stabilität sorgt der verstärkte Deckel mit Magnetverschluss. Kompatibel ist die Ultimate Six Classic mit allen Ortlieb Mounting Sets und Rixen & Kaul Adaptern. Mit abnehmbarem Schultergurt für komfortablen Transport zu Fuß.
@@ -48,6 +49,7 @@ specs:
     - 'red - black'
     - 'black'
     - 'sun yellow - black'
+    - 'white - black'
   - bag type: 'Einzeltasche'
   - width: '24 cm'
   - height: '13,5 cm'

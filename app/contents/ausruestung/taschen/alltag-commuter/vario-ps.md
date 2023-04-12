@@ -55,7 +55,7 @@ specs:
   - colors: 
     - 'petrol'
     - 'rooibos'
-    - 'schwarz'
+    - 'black'
   - bag type: 'Einzeltasche'
   - width: '31 cm'
   - height: '47 cm'

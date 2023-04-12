@@ -34,8 +34,8 @@ specs:
     - 'cranberry - signal red'
   - bag type: 'Einzeltasche'
   - height: '34 cm'
-  - diameter: 19 cm
-  - circumference: 60 cm
+  - diameter: '19 cm'
+  - circumference: '60 cm'
   - volume: '10 l'
   - weight: '190 g'
   - standard: 'IP64'

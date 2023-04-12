@@ -65,7 +65,7 @@ specs:
   - volume: '2 x 12,5 l'
   - weight: '2 x 795 g'
   - max. capacity: '9 kg'
-  - adapter: QL2.1
+  - adapter: 'QL2.1'
   - standard: 'IP64'
   - material: 'PD620, PS490'
 

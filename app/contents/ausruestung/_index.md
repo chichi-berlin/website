@@ -12,6 +12,6 @@ description: 'TODO'
 
 menu:
   top:
-    weight: 3
+    weight: 6
 
 ---

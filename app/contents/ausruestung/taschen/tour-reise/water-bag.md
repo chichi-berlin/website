@@ -14,6 +14,7 @@ images:
   - '/media/images/rubrics/accessories/items/bags-ortlieb-water-bag_04.jpg'
   - '/media/images/rubrics/accessories/items/bags-ortlieb-water-bag_05.jpg'
   - '/media/images/rubrics/accessories/items/bags-ortlieb-water-bag_06.jpg'
+  - '/media/images/rubrics/accessories/items/bags-ortlieb-water-bag_07.jpg'
 
 description: |
     Schluss mit unhandlichen Wasserflaschen oder Kanistern. Der kompakte Wasserbeutel (erhältlich für 2, 4 und 10 L) ist mit Gurtbandgriffen mit Steckschnallen ausgestattet und kann am Rucksack befestigt werden. Das Gewebe außen ist reiß- und wasserfest, die Beschichtung innen für Trinkwasser geeignet.
@@ -42,8 +43,9 @@ description: |
 specs:
   - colors: 
     - 'blue'
+    - 'black'
   - bag type: 'Einzeltasche'
-  - width: 20 cm / 25 cm / 36 cm
+  - width: '20 cm / 25 cm / 36 cm'
   - height: '30 cm / 38 cm / 44 cm'
   - volume: '2 l / 4 l / 10 l'
   - weight: '80 g / 130 g / 160 g'

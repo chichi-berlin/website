@@ -40,8 +40,6 @@ description: |
 specs:
   - colors: 
     - 'black matt'
-    - 'black'
-    - 'signal red - dark chili'
   - bag type: 'Einzeltasche'
   - width: '16,5 cm'
   - height: '22 cm'

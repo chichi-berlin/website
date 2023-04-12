@@ -15,7 +15,6 @@ images:
   - '/media/images/rubrics/accessories/items/bags-ortlieb-back-roller-urban_05.jpg'
   - '/media/images/rubrics/accessories/items/bags-ortlieb-back-roller-urban_06.jpg'
   - '/media/images/rubrics/accessories/items/bags-ortlieb-back-roller-urban_07.jpg'
-  - '/media/images/rubrics/accessories/items/bags-ortlieb-back-roller-urban_08.jpg'
 
 description: |
     Der multifunktionale Back-Roller Urban (Einzeltasche) ist ideal für alle, die eine geräumige, wasserdichte Tasche für den Weg zu Arbeit, Uni oder Schule benötigen. Passend zum Casual- oder Business- Outfit, ist die Tasche aus einem Cordura-Mix im textilen Look gefertigt. Dank der PU-Beschichtung auf der Innenseite ist sie trotzdem absolut wasserdicht. Ein schnelles und unkompliziertes Befestigen am Gepäckträger gewährleistet das praktische Quick-Lock Halterungssystem. Eine fest montierte Innentasche, bestehend aus Hauptfach und Netztasche mit Reißverschluss sorgt für Ordnung und Übersicht. Mit dem Schultergurt lässt sich der Back-Roller Urban bequem als Umhängetasche tragen.
@@ -50,7 +49,6 @@ specs:
     - 'ink'
     - 'pepper'
     - 'ash rose'
-    - 'pine'
   - bag type: 'Einzeltasche'
   - lower width: '23 cm'
   - upper width: '32 cm'
@@ -59,7 +57,7 @@ specs:
   - volume: '20 l'
   - weight: '840 g'
   - max. capacity: '9 kg'
-  - adapter: QL2.1
+  - adapter: 'QL2.1'
   - standard: 'IP64'
   - material: 'PS55C'
 

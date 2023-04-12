@@ -19,7 +19,7 @@ images:
 
 description: |
     Es muss nicht immer die große Outdoor-Tour sein: Die Sport-Roller schenken auch City-Bikern mehr Flexibilität. Ob beidseitige Vorder- und Hinterrad-Beladung oder Benutzung einer einzigen Tasche: Sie liefern das Picknick ins Grüne, das Sport-Equipment ins Fitness-Studio und den Großeinkauf nach Hause.
-    Leuchtstarke Reflektoren aus 3M-Scotchlite-Reflexmaterial an den Taschenseiten setzen auf gesteigerte Verkehrssicherheit. Und die kostengünstigen Basics sind ausbaufähig: Die Sport-Roller City besitzen einen Kanten­schutz mit Schlitzen, an dem das ORTLIEB Radtaschentragesystem angebracht werden kann. 
+    Leuchtstarke Reflektoren aus 3M-Scotchlite-Reflexmaterial an den Taschenseiten setzen auf gesteigerte Verkehrssicherheit. Und die kostengünstigen Basics sind ausbaufähig: Die Sport-Roller City besitzen einen Kantenschutz mit Schlitzen, an dem das ORTLIEB Radtaschentragesystem angebracht werden kann. 
 
     Lieferumfang: Taschenpaar und Reduzierstücke 8, 11 und 16 mm (je 2 Paar)
 
@@ -54,7 +54,7 @@ specs:
   - volume: '2 x 12,5 l'
   - weight: '2 x 605 g'
   - max. capacity: '9 kg'
-  - adapter: QL1
+  - adapter: 'QL1'
   - standard: 'IP64'
   - material: 'PD620, PS490'
 
