@@ -30,7 +30,7 @@ heads:
 +   Optimierung
 +   Laufradbau
 +   Wir bauen Dein Wunschrad
-+   Als IHK- geprüfter Ausbildungsbetrieb kümmern wir uns um Nachwuchs im Handwerk
++   Wir kümmern uns um hochwertige Ausbildung zukünftiger Fachkräfte
 
 
 ## Beratung entsprechend individueller Anforderungen an Rad und Ausstattung
@@ -46,4 +46,4 @@ heads:
 {{< insurance-fee-calculator >}}
 
 
-## Kostenlose Erstinspektion in den ersten 3 Monaten für bei uns gekaufte Neuräder
+## Kostenlose Sicherheitsüberprüfung in den ersten 3 Monaten für bei uns gekaufte Neuräder
