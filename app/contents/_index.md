@@ -17,7 +17,7 @@ scroll-offset-coordinate: 'viewport'
 banner:
   enabled: true
   message: >
-    WIR HABEN GEÖFFNET!
+    Ab sofort länger geöffnet!
 
 
 offers:
