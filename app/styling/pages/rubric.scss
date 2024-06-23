@@ -14,63 +14,18 @@
         
         
         .rubric--grid {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             
-            $desktop-tile-margin: spacing(4);
-
-            & > * {
-                @include bp-desktop() {
-                    width: calc(100% / 3);
-                }
-                @include bp-mobile() {
-                    width: 100%;
-                }
-            }
-        
-            & > :nth-child(3n + 1) {
-                @include bp-desktop() {
-                    padding-right: rem($desktop-tile-margin * 2/3);
-                }
-            }
-            & > :nth-child(3n + 2) {
-                @include bp-desktop() {
-                    padding-left: rem($desktop-tile-margin * 1/3);
-                    padding-right: rem($desktop-tile-margin * 1/3);
-                }                
-            }
-            & > :nth-child(3n + 3) {
-                @include bp-desktop() {
-                    padding-left: rem($desktop-tile-margin * 2/3);
-                }
-            }
-            
-            & > :nth-last-child(2):nth-child(3n + 1){
-                @include bp-desktop() {
-                    padding-left: rem($desktop-tile-margin * 1/6);
-                    padding-right: rem($desktop-tile-margin * 1/2);   
-                }
-            }
-            & > :nth-last-child(1):nth-child(3n + 2) {
-                @include bp-desktop() {
-                    padding-left: rem($desktop-tile-margin * 1/2);
-                    padding-right: rem($desktop-tile-margin * 1/6);   
-                }
-            }
-            
-            & > :nth-last-child(1):nth-child(3n + 1){
-                @include bp-desktop() {
-                    padding-left: rem($desktop-tile-margin * 1/3);
-                    padding-right: rem($desktop-tile-margin * 1/3);                    
-                }
+            @include bp-medium() {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            & > :nth-child(n + 4) {
-                @include bp-desktop() {
-                    margin-top: rem($desktop-tile-margin);
-                }
+            @include bp-desktop() {
+                grid-template-columns: repeat(3, 1fr);
             }
+            
+            gap: rem(spacing(3));
             
             & > li {
                 a {
@@ -109,12 +64,10 @@
                         top: 0;
                         left: 0;
                         width: 100%;
+                        height: rem(200);
                         
-                        @include bp-desktop() {
+                        @include bp-medium() {
                             height: rem(250);
-                        }
-                        @include bp-mobile() {
-                            height: rem(200);
                         }
                     }
                     
@@ -147,6 +100,8 @@
                             font-family: $decorative-font-family;
                             line-height: 1.2;
                             margin: 0;
+                            word-break: break-word;
+                            hyphens: auto;
                         }
                         
                         &.is-explanation {
@@ -262,10 +217,16 @@
             }
         
             .col--left {
-                padding-right: rem(spacing(3));
+                margin-bottom: rem(spacing(3));    
+
+                @include bp-medium() {
+                    padding-right: rem(spacing(3));
+                }
             }
             .col--right {
-                padding-left: rem(spacing(3));
+                @include bp-medium() {
+                    padding-left: rem(spacing(3));
+                }
             }
             
             ul {

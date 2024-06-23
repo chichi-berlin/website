@@ -1,7 +1,9 @@
 .page--services {
 
     .figure--ihk-seal {
-        float: right;
+        @include bp-medium() {
+            float: right;
+        }
 
         img {
             display: block;

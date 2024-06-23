@@ -69,8 +69,12 @@
         }
         
         .component__blog-sidebar {
-            max-width: rem(350);
-            margin-left: rem(spacing(10));
+            margin-top: rem(spacing(10));
+
+            @include bp-medium() {
+                max-width: rem(350);
+                margin-left: rem(spacing(10));
+            }
         }
         
         

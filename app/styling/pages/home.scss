@@ -45,19 +45,31 @@
     
     .section-title {
         text-align: center;
-        margin: rem(spacing(4)) auto rem(spacing(3));            
+        margin: rem(spacing(2)) auto;
         
         max-width: 80%;
         font-weight: bold;
+
+        @include bp-medium() {
+            margin: rem(spacing(4)) auto rem(spacing(3));
+        }
         
         & + :not(.subtitle) {
-            margin-top: rem($headline-section-gap);
+            margin-top: rem(spacing(4));
+            @include bp-medium() {
+                margin-top: rem($headline-section-gap);
+            }
         }
     }
     
     .post-teasers {
-        display: flex;
-        flex-flow: row nowrap;
+        padding-left: 0 !important;
+        
+        @include bp-medium() {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: rem(spacing(4));
+        }
         
         .post-teaser {
             list-style: none;
@@ -73,16 +85,6 @@
             min-width: 30%;
             max-width: 100%;
             flex-grow: 3;
-            
-            padding: 0 rem(spacing(4));
-            
-            &:first-child {
-                padding-left: 0;
-            }
-            
-            &:last-child {
-                padding-right: 0;
-            }
         }
         
         nav {
@@ -93,6 +95,7 @@
     
     .special-offers {
         padding: 0 rem(spacing(3));
+        margin: 0;
         
         
         li {

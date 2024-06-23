@@ -1,6 +1,7 @@
 .component__image-gallery {
 
-    $viewport-height: 520;
+    $viewport-height-desktop: 520;
+    $viewport-height-mobile: 300;
     $controls-height: 100;
     
     .viewport {
@@ -12,11 +13,21 @@
         // properly when reaching the end of the page.
         // The following rule ensures this, because viewport height is equal to the height of its
         // containing items
-        height: rem($viewport-height);
+        height: rem($viewport-height-mobile);
+        margin-left: rem(spacing(3));
+        
+        @include bp-medium() {
+            height: rem($viewport-height-desktop);
+            margin: 0;
+        }
         
         .item {
-            height: rem($viewport-height);
+            height: rem($viewport-height-mobile);
             padding: rem(8);
+        
+            @include bp-medium() {
+                height: rem($viewport-height-desktop);
+            }
         }
         
         opacity: 0;
@@ -27,10 +38,14 @@
     }
     
     .controls {
-        max-width: 50%;
+        max-width: 80%;
         margin: rem(spacing(3)) auto 0;
         
         height: rem($controls-height);
+
+        @include bp-medium() {
+            max-width: 50%;
+        }
         
         .item {
             height: rem($controls-height);

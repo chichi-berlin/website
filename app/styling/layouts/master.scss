@@ -21,8 +21,12 @@
     
     h1 {
         line-height: 1.3;
-        font-size: rem(50);
+        font-size: rem(40);
         margin: rem(35) 0;
+
+        @include bp-medium() {
+            font-size: rem(50);
+        }
     }
     h2 {
         line-height: 1.3;
@@ -92,10 +96,13 @@
         
         .page-title {
             text-align: center;
-            margin: 0 auto rem(spacing(2));            
+            margin: 0 auto;         
             
             font-weight: bold;
             max-width: 80%;
+
+            word-wrap: break-word;
+            hyphens: auto;
             
             & + :not(.page-subtitle) {
                 margin-top: rem($headline-section-gap);
@@ -109,7 +116,11 @@
             color: color(grey-dark);
             
             & + * {
-                margin-top: rem($headline-section-gap);
+                margin-top: rem($headline-section-gap - 50);
+
+                @include bp-medium() {
+                    margin-top: rem($headline-section-gap);
+                }
             }
         }
     }
