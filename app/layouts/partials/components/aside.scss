@@ -14,9 +14,14 @@
     // NOTE: compensate header height
     &:before {
         content: '';
-        height: ($desktop_header-height_row-thick_rel + $desktop_header-height_row-thin_rel) * 1vh;
+        height: ($mobile_header-height_row-thin_rel) * 1vh;
         display: block;
-        min-height: rem($desktop_header-height_min);
+        min-height: rem($mobile_header-height_min);
+
+        @include bp-medium() {
+            height: ($desktop_header-height_row-thick_rel + $desktop_header-height_row-thin_rel) * 1vh;
+            min-height: rem($desktop_header-height_min);
+        }
     }
     
     // NOTE: compensate footer height

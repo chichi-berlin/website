@@ -178,7 +178,19 @@ const selectors = {
             .bindPopup( popup )
             .openPopup();
 
-    }
+    },
+
+    'button.menu-toggle': function(){
+        const element = this;
+
+        this.addEventListener( 'click', function( event ){
+            event.preventDefault();
+            const { site } = global;
+            const { dataset } = site;
+
+           dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
+        });
+    },
 };
 
 

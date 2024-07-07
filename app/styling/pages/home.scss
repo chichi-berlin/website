@@ -14,7 +14,7 @@
     
     .key-visual {
         width: 100%;
-        height: calc(100vh - #{rem($desktop_header-height_row-thin)});
+        height: calc(100svh - #{rem($desktop_header-height_row-thin)});
         
         background-repeat: no-repeat;
         background-size: cover;

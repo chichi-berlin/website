@@ -1,6 +1,14 @@
 <div id="page-header-inner" class="header__container" data-offset="{{ $.Param "scroll-offset-coordinate" | default 0 }}">
     <div class="header__inner">
-        
+        <button class="menu-toggle" aria-expanded="false">
+            <svg class="menu-toggle__svg" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 100 100">
+                <g class="group">
+                    <path class="line line-1" d="M5 13h90v14H5z" />
+                    <path class="line line-2" d="M5 43h90v14H5z"/>
+                    <path class="line line-3" d="M5 73h90v14H5z"/>
+                </g>
+            </svg>
+        </button>
         <div class="row-wrap__contacts">
             <div class="row-wrap__contacts--inner edge-spacer--h">
                 <ul class="contact">

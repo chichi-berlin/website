@@ -71,6 +71,10 @@ $desktop_header-height_row-thin: 80;
 $desktop_header-height_row-thin_rel: 3.78;
 $desktop_header-height_min: $desktop_header-height_row-thick + $desktop_header-height_row-thin;
 
+$mobile_header-height_row-thin: 164;
+$mobile_header-height_row-thin_rel: 23.633;
+$mobile_header-height_min: $mobile_header-height_row-thin;
+
 $desktop_footer-height_rel: 9;
 $desktop_footer-height_max: 100;
 

@@ -1,18 +1,30 @@
 .component__nav-top {
-    
-    width: 100%;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    
-    ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: flex-end;
+
+    @include bp-medium() {
         width: 100%;
-        max-width: rem(770);
+    }
+
+    ul {
+       align-self: center;
+       display: flex;
+       flex-flow: column wrap;
+       gap: rem(10);
+
+        @include bp-medium() {
+            gap: 0;
+            justify-content: space-between;
+            align-items: center;
+            max-width: rem(770);
+            width: 100%;
+        }
+
+        @include bp-medium() {
+            flex-flow: row nowrap;
+            align-items: flex-end;
+        }
 
         li {
             font-family: $decorative-font-family;

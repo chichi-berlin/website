@@ -35,13 +35,19 @@
 }
 
 @mixin bp-desktop() {
-    @include bp(min, breakpoint(0)) {
+    @include bp(min, breakpoint(4)) {
+        @content;
+    }
+}
+
+@mixin bp-medium() {
+    @include bp(min, breakpoint(2)) {
         @content;
     }
 }
 
 @mixin bp-mobile() {
-    @include bp(max, breakpoint(0)) {
+    @include bp(max, breakpoint(2)) {
         @content;
     }
 }
