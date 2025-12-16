@@ -7,9 +7,10 @@
     align-items: stretch;
     
     max-width: rem(300);
-    min-width: rem(200);  
+    min-width: rem(200);
     width: 20vw;
     height: 100vh;
+    height: 100dvh;
     
     // NOTE: compensate header height
     &:before {
@@ -27,11 +28,17 @@
     // NOTE: compensate footer height
     &:after {
         content: '';
-        height: 0;
         display: block;
-        max-height: 0;
-        
         transition: all 0.18s;
+
+        // Mobile: footer always visible
+        height: calc(#{rem($mobile_footer-height)} + env(safe-area-inset-bottom));
+
+        // Desktop: footer only visible when scrolled
+        @include bp-medium() {
+            height: 0;
+            max-height: 0;
+        }
     }
 }
 
