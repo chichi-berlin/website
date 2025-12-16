@@ -16,3 +16,4 @@ app/static/script
 app/static/media/images/assets/vendors
 app/layouts/partials/svgs
 app/i18n
+.hugo_build.lock
