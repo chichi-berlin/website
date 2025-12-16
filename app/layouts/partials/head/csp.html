@@ -12,7 +12,7 @@
         img-src 'self' https://*.thunderforest.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }};
         media-src 'self';
         object-src 'none';
-        script-src 'self' https://siteconnect.wertgarantie-services.de {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline'{{ end }};
+        script-src 'self' https://siteconnect.wertgarantie-services.de {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline' 'unsafe-eval'{{ end }};
         style-src 'self' 'unsafe-inline';
         worker-src 'self';
     ">
