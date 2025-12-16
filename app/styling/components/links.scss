@@ -19,11 +19,13 @@ $underline-thickness: 1;
                 transition: width 0.3s ease-in-out 0s;
             }
             
-            &:hover, &:focus {
-                color: color(black);
-                
-                &:after {
-                    width: 100%;    
+            @include bp-medium() {
+                &:hover, &:focus {
+                    color: color(black);
+
+                    &:after {
+                        width: 100%;
+                    }
                 }
             }    
         }
