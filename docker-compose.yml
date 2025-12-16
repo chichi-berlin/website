@@ -1,7 +1,17 @@
 services:
-  app:
+  dev:
     build: .
     volumes:
       - .:/app
+      - /app/node_modules
     ports:
-        - "3000:3000"
+      - "3000:3000"
+    command: sh -c "npm install && npm run start"
+
+  build:
+    profiles: ["build"]
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm run build:prod"

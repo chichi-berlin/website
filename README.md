@@ -18,28 +18,37 @@ the heart of Berlin Neukölln. The site can be found under [chichi.berlin](https
 
 ### How to get started?
 
-__Prerequisites:__ 
+__Prerequisites:__
 
-*   Node/NPM
-*   Hugo
+*   Node.js >= 18.12.0
+*   Hugo >= 0.139 (extended version)
+
+Or use Docker (recommended for consistent builds).
 
 
-#### Installation
+### Local Development
 
 ```sh
-$   npm install
+npm install
+npm start
 ```
 
-
-#### Development
+### Docker Development
 
 ```sh
-$   npm start
+# Start development server
+docker compose up
+
+# Production build (outputs to ./dist)
+docker compose run --rm build
 ```
 
-
-#### Build and Deploy
+### Build Commands
 
 ```sh
-$   npm build[:prod]
+# Development build
+npm run build
+
+# Production build
+npm run build:prod
 ```
