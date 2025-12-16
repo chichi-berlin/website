@@ -44,15 +44,20 @@ source:                     ''
 publishDir:                 './dist'
 
 caches:
-  getjson:
-    dir: ':resourceDir'
-  getcsv:
-    dir: ':resourceDir'
-  images:
-    dir: ':resourceDir'
   assets:
-    dir: ':resourceDir'
-  
+    dir: ':cacheDir/_gen'
+  getresource:
+    dir: ':cacheDir/:project'
+  images:
+    dir: ':cacheDir/_gen'
+  misc:
+    dir: ':cacheDir/:project'
+  # NOTE: only supported as of v0.155.0
+  #modulequeries:
+  #  dir: ':cacheDir/modules'
+  modules:
+    dir: ':cacheDir/modules'
+
 
 # NOTE: for theme authors
 # defaultExtension:           'html'
@@ -72,8 +77,9 @@ footnoteReturnLinkContents: ''
 noChmod:                    true
 noTimes:                    false
 
-paginate:                   10
-paginatePath:               'p'
+pagination:
+  pagerSize:                10
+  path:                     'p'
 
 # Title Case style guide for the title func and other automatic title casing in Hugo.
 # // Valid values are 'AP' (default), 'Chicago' and 'Go' (which was what you had in Hugo <= 0.25.1).
@@ -117,9 +123,10 @@ languages:
   de:
     languageName: 'Deutsch'
     languageCode: 'de'
-    contentDir:   'app/contents'  
-    paginatePath: 'seite'
-    paginate:     6
+    contentDir:   'app/contents'
+    pagination:
+      pagerSize:  6
+      path:       'seite'
     permalinks:
       tags: '/blog/tags/:slug'
 #      bicycles:     '/fahrraeder/:slug/'
