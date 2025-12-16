@@ -7,7 +7,7 @@ linkTitle: 'Gepäckträger'
 slug: 'gepaecktraeger'
 section: 'racks'
 
-title: 'Gepäckträger'
+title: 'Gepäck&shy;träger'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

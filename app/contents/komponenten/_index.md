@@ -7,7 +7,7 @@ linkTitle: 'Komponenten'
 slug: 'komponenten'
 section: 'parts'
 
-title: 'Fahrradteile'
+title: 'Fahrrad&shy;teile'
 description: 'TODO'
 
 menu:

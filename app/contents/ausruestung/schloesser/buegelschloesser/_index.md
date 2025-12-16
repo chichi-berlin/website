@@ -7,7 +7,7 @@ linkTitle: 'Bügel'
 slug: 'buegelschloesser'
 section: 'u-lock'
 
-title: 'Bügelschlösser'
+title: 'Bügel&shy;schlösser'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/locks-abus-u-granitplus640_1.jpg'
 

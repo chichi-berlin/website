@@ -7,7 +7,7 @@ linkTitle: 'Sonnenbrillen'
 slug: 'sonnenbrillen'
 section: 'glasses'
 
-title: 'Sonnenbrillen'
+title: 'Sonnen&shy;brillen'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

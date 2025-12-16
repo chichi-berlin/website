@@ -7,7 +7,7 @@ linkTitle: 'Fahrradtransport'
 slug: 'fahrradtransport'
 section: 'transportation'
 
-title: 'Fahrradtransport'
+title: 'Fahrrad&shy;transport'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

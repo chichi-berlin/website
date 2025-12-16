@@ -23,7 +23,7 @@
 
 <section class="edge-spacer--h">
     
-    <h1 class="page-title">{{ .Title }}</h1>
+    <h1 class="page-title">{{ .Title | safeHTML }}</h1>
     {{ with $.Params.subtitle }}
     <p class="page-subtitle">{{ . }}</p>
     {{ end }}
@@ -37,11 +37,11 @@
                 <div class="wrap">
                     <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
                     <div class="fg {{ if isset .Params "explanation" }}is-explanation{{ end }}">
-                        <h2>{{ index .Params "explanation" | default .LinkTitle }}</h2>
+                        <h2>{{ index .Params "explanation" | default ( .LinkTitle | safeHTML ) }}</h2>
                     </div>
                 </div>
                 <div class="subtitle">
-                    <h3>{{ .LinkTitle }}</h3>
+                    <h3>{{ .LinkTitle | safeHTML }}</h3>
                 </div>
             </a>
         </li>

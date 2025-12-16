@@ -7,7 +7,7 @@ linkTitle: 'Bremshebel'
 slug: 'bremshebel'
 section: 'levers'
 
-title: 'Bremshebel'
+title: 'Brems&shy;hebel'
 description: 'TODO'
 image: '/media/images/rubrics/parts/items/brakes/kategoriebild-bremshebel.jpg'
 

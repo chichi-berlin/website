@@ -9,7 +9,7 @@ linkTitle: 'Scheinwerfer'
 slug: 'scheinwerfer'
 section: 'front'
 
-title: 'Scheinwerfer'
+title: 'Schein&shy;werfer'
 description: 'TODO'
 image: '/media/images/rubrics/parts/items/'
 

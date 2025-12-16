@@ -1,6 +1,6 @@
 ---
 
-title: 'Einbremsverfahren bei Scheibenbremsen'
+title: 'Einbrems&shy;verfahren bei Scheiben&shy;bremsen'
 
 slug: 'einbremsen'
 publishDate: '2023-05-24'

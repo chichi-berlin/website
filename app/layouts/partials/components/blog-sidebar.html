@@ -33,7 +33,7 @@
         <ul>
             {{ range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
             <li class="{{ if or (in $tagList .Data.Term) (in $currentPage.RelPermalink .RelPermalink) }}active{{end}}">
-                <a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ len .Pages }})</a>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }} ({{ len .Pages }})</a>
             </li>
             {{ end }}
         </ul>

@@ -1,6 +1,6 @@
 ---
 
-title: 'Kettenpflege'
+title: 'Ketten&shy;pflege'
 
 slug: 'kettenpflege-teil-1'
 publishDate: '2018-03-10'

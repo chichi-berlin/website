@@ -7,7 +7,7 @@ linkTitle: 'Kartuschenpumpen'
 slug: 'kartuschenpumpen'
 section: 'cartridge'
 
-title: 'Kartuschenpumpen'
+title: 'Kartuschen&shy;pumpen'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

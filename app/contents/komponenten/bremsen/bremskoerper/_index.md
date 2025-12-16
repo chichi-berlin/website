@@ -7,7 +7,7 @@ linkTitle: 'Bremskörper'
 slug: 'bremskoerper'
 section: 'bodies'
 
-title: 'Bremskörper'
+title: 'Brems&shy;körper'
 description: 'TODO'
 image: '/media/images/rubrics/parts/items/brakes/kategoriebild-bremskoerper.jpg'
 

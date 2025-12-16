@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     {{ $title := delimit (slice .Title "·" .Site.Title) " " }}
-    <title>{{ $title }}</title>
+    <title>{{ $title | safeHTML }}</title>
 
     <link rel="canonical" href="{{ .Permalink }}">
     
@@ -12,8 +12,8 @@
     {{ partial "head/icon.html" . }}
 
     {{ with .OutputFormats.Get "RSS" }}
-    <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}"/>
-    <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}"/>
+    <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $title | safeHTML }}"/>
+    <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $title | safeHTML }}"/>
     {{ end }}
 
     {{ partial "head/csp.html" . }}

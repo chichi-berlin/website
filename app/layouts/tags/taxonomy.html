@@ -6,7 +6,7 @@
 {{ $paginator := .Paginate ($postList.ByDate.Reverse) $itemsPerPage }}
 <section class="edge-spacer--h">
 
-    <h1 class="page-title">{{ i18n "tag" 1 }}: {{ .Title }}</h1>
+    <h1 class="page-title">{{ i18n "tag" 1 }}: {{ .Title | safeHTML }}</h1>
     <p class="page-subtitle">
         {{ i18n "page" 1 }}
         {{ $paginator.PageNumber }}

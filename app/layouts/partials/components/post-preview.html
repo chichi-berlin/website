@@ -4,7 +4,7 @@
     <h2>
         <a title="{{ .Title }}"
            href="{{ .RelPermalink }}">
-            {{ .Title }}
+            {{ .Title | safeHTML }}
         </a>
     </h2>
     <h5>

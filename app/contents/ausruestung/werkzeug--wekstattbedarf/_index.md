@@ -7,7 +7,7 @@ linkTitle: 'Werkzeug & Werkstattbedarf'
 slug: 'werkzeug--wekstattbedarf'
 section: 'tooling'
 
-title: 'Werkzeug & Werkstattbedarf'
+title: 'Werkzeug & Werkstatt&shy;bedarf'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/kategoriebild-werkzeug-werkstattbedarf.jpg'
 

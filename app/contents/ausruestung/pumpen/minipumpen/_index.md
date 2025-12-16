@@ -7,7 +7,7 @@ linkTitle: 'Minipumpen'
 slug: 'minipumpen'
 section: 'mini'
 
-title: 'Minipumpen'
+title: 'Mini&shy;pumpen'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

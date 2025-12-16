@@ -8,7 +8,7 @@
 {{ $paginator := .Paginate ($posts.Pages.ByDate.Reverse) $itemsPerPage }}
 <section class="edge-spacer--h">
 
-    <h1 class="page-title">{{ .Title }}</h1>
+    <h1 class="page-title">{{ .Title | safeHTML }}</h1>
     {{ with $.Params.subtitle }}
     <p class="page-subtitle">{{ . }}</p>
     {{ end }}

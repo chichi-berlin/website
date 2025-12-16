@@ -53,7 +53,7 @@
                 {{ $path := printf "blog/beitraege/%s" . }}
                 {{ with $.Site.GetPage "page" $path }}
                 <li>
-                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    <a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a>
                 </li>
                 {{ end }}
                 {{ end }}

@@ -1,6 +1,6 @@
 ---
 
-title: 'Stahllegierungen im Fahrradbau'
+title: 'Stahl&shy;legierungen im Fahrrad&shy;bau'
 
 publishDate: '1970-01-01'
 

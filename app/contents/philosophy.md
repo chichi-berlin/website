@@ -3,7 +3,7 @@
 linkTitle: 'Philosophie'
 slug: 'philosophie'
 
-title: 'Firmenphilosophie' 
+title: 'Firmen&shy;philosophie' 
 description: 'TODO'
 
 menu:

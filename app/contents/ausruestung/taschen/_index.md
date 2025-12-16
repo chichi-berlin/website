@@ -7,7 +7,7 @@ linkTitle: 'Taschen'
 slug: 'taschen'
 section: 'bags'
 
-title: 'Fahrradtaschen'
+title: 'Fahrrad&shy;taschen'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/bags-ortlieb-sport-roller-classic_01.jpg'
 

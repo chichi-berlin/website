@@ -7,7 +7,7 @@ linkTitle: 'Kettenradgarnituren'
 slug: 'kettenradgarnituren'
 section: 'cranks'
 
-title: 'Kettenradgarnituren'
+title: 'Ketten&shy;rad&shy;garnituren'
 description: 'TODO'
 image: '/media/images/rubrics/parts/items/drive/crankset-blb-pista-vera_1.jpeg'
 

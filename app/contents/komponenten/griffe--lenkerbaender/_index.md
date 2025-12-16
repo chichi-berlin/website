@@ -7,7 +7,7 @@ linkTitle: 'Griffe / Lenkerbänder'
 slug: 'griffe--lenkerbaender'
 section: 'grips-tape'
 
-title: 'Griffe / Lenkerbänder' 
+title: 'Griffe / Lenker&shy;bänder' 
 description: 'Griffe + Lenkerbänder'
 image: '/media/images/rubrics/parts/items/cockpit/kategoriebild-griffe.jpg'
 

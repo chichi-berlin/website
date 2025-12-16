@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="edge-spacer--h">
     
-    <h1 class="page-title">{{ .Title }}</h1>
+    <h1 class="page-title">{{ .Title | safeHTML }}</h1>
     
     {{ .Content }}
     

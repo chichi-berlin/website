@@ -26,7 +26,7 @@
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
                    data-submenu="submenu-{{ $subSection }}" 
                    href="{{ .RelPermalink }}">
-                    {{ .LinkTitle }}
+                    {{ .LinkTitle | safeHTML }}
                 </a>
             </li>
             {{ end }}
