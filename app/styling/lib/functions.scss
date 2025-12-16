@@ -1,22 +1,25 @@
+@use 'sass:math';
+@use 'sass:map';
+
 @function rem($size) {
-  $remSize: $size / 10;
+  $remSize: math.div($size, 10);
   @return #{$remSize}rem;
 }
 
 @function font-size($key) {
-  @return map-get($font-sizes, $key);
+  @return map.get($font-sizes, $key);
 }
 
 @function line-height($key) {
-  @return map-get($line-heights, $key);
+  @return map.get($line-heights, $key);
 }
 
 @function breakpoint($key) {
-  @return map-get($breakpoints, $key);
+  @return map.get($breakpoints, $key);
 }
 
 @function color($key) {
-  @return map-get($colors, $key);
+  @return map.get($colors, $key);
 }
 
 @function spacing($multiplier){
@@ -25,9 +28,9 @@
 }
 
 @function percentageDesktopPageWidth($pixels) {
-    @return $pixels / $desktop_max-page-width * 100%;
+    @return math.div($pixels, $desktop_max-page-width) * 100%;
 }
 
 @function percentageDesktopPageHeight($pixels) {
-    @return $pixels / 900 * 100%;
+    @return math.div($pixels, 900) * 100%;
 }
