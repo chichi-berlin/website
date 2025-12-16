@@ -2,7 +2,7 @@
 
 
 
-import bind from './lib/bind-events.js'
+import bind from './lib/bind-events.js';
 import initialize from './lib/selective-initializer.js';
 
 import events from './main/global-event-handlers.js';

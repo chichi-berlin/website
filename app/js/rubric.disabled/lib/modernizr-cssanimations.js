@@ -35,42 +35,42 @@ var tests = [];
  */
 
 var ModernizrProto = {
-  // The current version, dummy
-  _version: '3.5.0',
+    // The current version, dummy
+    _version: '3.5.0',
 
-  // Any settings that don't work as separate modules
-  // can go in here as configuration.
-  _config: {
-    'classPrefix': '',
-    'enableClasses': true,
-    'enableJSClass': true,
-    'usePrefixes': true
-  },
+    // Any settings that don't work as separate modules
+    // can go in here as configuration.
+    _config: {
+        'classPrefix': '',
+        'enableClasses': true,
+        'enableJSClass': true,
+        'usePrefixes': true
+    },
 
-  // Queue of tests
-  _q: [],
+    // Queue of tests
+    _q: [],
 
-  // Stub these for people who are listening
-  on: function(test, cb) {
+    // Stub these for people who are listening
+    on: function(test, cb) {
     // I don't really think people should do this, but we can
     // safe guard it a bit.
     // -- NOTE:: this gets WAY overridden in src/addTest for actual async tests.
     // This is in case people listen to synchronous tests. I would leave it out,
     // but the code to *disallow* sync tests in the real version of this
     // function is actually larger than this.
-    var self = this;
-    setTimeout(function() {
-      cb(self[test]);
-    }, 0);
-  },
+        var self = this;
+        setTimeout(function() {
+            cb(self[test]);
+        }, 0);
+    },
 
-  addTest: function(name, fn, options) {
-    tests.push({name: name, fn: fn, options: options});
-  },
+    addTest: function(name, fn, options) {
+        tests.push({name: name, fn: fn, options: options});
+    },
 
-  addAsyncTest: function(fn) {
-    tests.push({name: null, fn: fn});
-  }
+    addAsyncTest: function(fn) {
+        tests.push({name: null, fn: fn});
+    }
 };
 
 
@@ -99,7 +99,7 @@ var classes = [];
  */
 
 function is(obj, type) {
-  return typeof obj === type;
+    return typeof obj === type;
 }
 ;
 
@@ -110,66 +110,66 @@ function is(obj, type) {
  */
 
 function testRunner() {
-  var featureNames;
-  var feature;
-  var aliasIdx;
-  var result;
-  var nameIdx;
-  var featureName;
-  var featureNameSplit;
+    var featureNames;
+    var feature;
+    var aliasIdx;
+    var result;
+    var nameIdx;
+    var featureName;
+    var featureNameSplit;
 
-  for (var featureIdx in tests) {
-    if (tests.hasOwnProperty(featureIdx)) {
-      featureNames = [];
-      feature = tests[featureIdx];
-      // run the test, throw the return value into the Modernizr,
-      // then based on that boolean, define an appropriate className
-      // and push it into an array of classes we'll join later.
-      //
-      // If there is no name, it's an 'async' test that is run,
-      // but not directly added to the object. That should
-      // be done with a post-run addTest call.
-      if (feature.name) {
-        featureNames.push(feature.name.toLowerCase());
+    for (var featureIdx in tests) {
+        if (Object.prototype.hasOwnProperty.call(tests, featureIdx)) {
+            featureNames = [];
+            feature = tests[featureIdx];
+            // run the test, throw the return value into the Modernizr,
+            // then based on that boolean, define an appropriate className
+            // and push it into an array of classes we'll join later.
+            //
+            // If there is no name, it's an 'async' test that is run,
+            // but not directly added to the object. That should
+            // be done with a post-run addTest call.
+            if (feature.name) {
+                featureNames.push(feature.name.toLowerCase());
 
-        if (feature.options && feature.options.aliases && feature.options.aliases.length) {
-          // Add all the aliases into the names list
-          for (aliasIdx = 0; aliasIdx < feature.options.aliases.length; aliasIdx++) {
-            featureNames.push(feature.options.aliases[aliasIdx].toLowerCase());
-          }
+                if (feature.options && feature.options.aliases && feature.options.aliases.length) {
+                    // Add all the aliases into the names list
+                    for (aliasIdx = 0; aliasIdx < feature.options.aliases.length; aliasIdx++) {
+                        featureNames.push(feature.options.aliases[aliasIdx].toLowerCase());
+                    }
+                }
+            }
+
+            // Run the test, or use the raw value if it's not a function
+            result = is(feature.fn, 'function') ? feature.fn() : feature.fn;
+
+
+            // Set each of the names on the Modernizr object
+            for (nameIdx = 0; nameIdx < featureNames.length; nameIdx++) {
+                featureName = featureNames[nameIdx];
+                // Support dot properties as sub tests. We don't do checking to make sure
+                // that the implied parent tests have been added. You must call them in
+                // order (either in the test, or make the parent test a dependency).
+                //
+                // Cap it to TWO to make the logic simple and because who needs that kind of subtesting
+                // hashtag famous last words
+                featureNameSplit = featureName.split('.');
+
+                if (featureNameSplit.length === 1) {
+                    Modernizr[featureNameSplit[0]] = result;
+                } else {
+                    // cast to a Boolean, if not one already
+                    if (Modernizr[featureNameSplit[0]] && !(Modernizr[featureNameSplit[0]] instanceof Boolean)) {
+                        Modernizr[featureNameSplit[0]] = new Boolean(Modernizr[featureNameSplit[0]]);
+                    }
+
+                    Modernizr[featureNameSplit[0]][featureNameSplit[1]] = result;
+                }
+
+                classes.push((result ? '' : 'no-') + featureNameSplit.join('-'));
+            }
         }
-      }
-
-      // Run the test, or use the raw value if it's not a function
-      result = is(feature.fn, 'function') ? feature.fn() : feature.fn;
-
-
-      // Set each of the names on the Modernizr object
-      for (nameIdx = 0; nameIdx < featureNames.length; nameIdx++) {
-        featureName = featureNames[nameIdx];
-        // Support dot properties as sub tests. We don't do checking to make sure
-        // that the implied parent tests have been added. You must call them in
-        // order (either in the test, or make the parent test a dependency).
-        //
-        // Cap it to TWO to make the logic simple and because who needs that kind of subtesting
-        // hashtag famous last words
-        featureNameSplit = featureName.split('.');
-
-        if (featureNameSplit.length === 1) {
-          Modernizr[featureNameSplit[0]] = result;
-        } else {
-          // cast to a Boolean, if not one already
-          if (Modernizr[featureNameSplit[0]] && !(Modernizr[featureNameSplit[0]] instanceof Boolean)) {
-            Modernizr[featureNameSplit[0]] = new Boolean(Modernizr[featureNameSplit[0]]);
-          }
-
-          Modernizr[featureNameSplit[0]][featureNameSplit[1]] = result;
-        }
-
-        classes.push((result ? '' : 'no-') + featureNameSplit.join('-'));
-      }
     }
-  }
 }
 ;
 
@@ -208,7 +208,7 @@ ModernizrProto._cssomPrefixes = cssomPrefixes;
  */
 
 function contains(str, substr) {
-  return !!~('' + str).indexOf(substr);
+    return !!~('' + str).indexOf(substr);
 }
 
 ;
@@ -245,15 +245,15 @@ var isSVG = docElement.nodeName.toLowerCase() === 'svg';
  */
 
 function createElement() {
-  if (typeof document.createElement !== 'function') {
+    if (typeof document.createElement !== 'function') {
     // This is the case in IE7, where the type of createElement is "object".
     // For this reason, we cannot call apply() as Object is not a Function.
-    return document.createElement(arguments[0]);
-  } else if (isSVG) {
-    return document.createElementNS.call(document, 'http://www.w3.org/2000/svg', arguments[0]);
-  } else {
-    return document.createElement.apply(document, arguments);
-  }
+        return document.createElement(arguments[0]);
+    } else if (isSVG) {
+        return document.createElementNS.call(document, 'http://www.w3.org/2000/svg', arguments[0]);
+    } else {
+        return document.createElement.apply(document, arguments);
+    }
 }
 
 ;
@@ -265,24 +265,24 @@ function createElement() {
  */
 
 var modElem = {
-  elem: createElement('modernizr')
+    elem: createElement('modernizr')
 };
 
 // Clean up this element
 Modernizr._q.push(function() {
-  delete modElem.elem;
+    delete modElem.elem;
 });
 
 
 
 var mStyle = {
-  style: modElem.elem.style
+    style: modElem.elem.style
 };
 
 // kill ref for gc, must happen before mod.elem is removed, so we unshift on to
 // the front of the queue.
 Modernizr._q.unshift(function() {
-  delete mStyle.style;
+    delete mStyle.style;
 });
 
 
@@ -298,16 +298,16 @@ Modernizr._q.unshift(function() {
  */
 
 function getBody() {
-  // After page load injecting a fake body doesn't work so check if body exists
-  var body = document.body;
+    // After page load injecting a fake body doesn't work so check if body exists
+    var body = document.body;
 
-  if (!body) {
+    if (!body) {
     // Can't use the real body create a fake one.
-    body = createElement(isSVG ? 'svg' : 'body');
-    body.fake = true;
-  }
+        body = createElement(isSVG ? 'svg' : 'body');
+        body.fake = true;
+    }
 
-  return body;
+    return body;
 }
 
 ;
@@ -325,63 +325,63 @@ function getBody() {
  */
 
 function injectElementWithStyles(rule, callback, nodes, testnames) {
-  var mod = 'modernizr';
-  var style;
-  var ret;
-  var node;
-  var docOverflow;
-  var div = createElement('div');
-  var body = getBody();
+    var mod = 'modernizr';
+    var style;
+    var ret;
+    var node;
+    var docOverflow;
+    var div = createElement('div');
+    var body = getBody();
 
-  if (parseInt(nodes, 10)) {
+    if (parseInt(nodes, 10)) {
     // In order not to give false positives we create a node for each test
     // This also allows the method to scale for unspecified uses
-    while (nodes--) {
-      node = createElement('div');
-      node.id = testnames ? testnames[nodes] : mod + (nodes + 1);
-      div.appendChild(node);
+        while (nodes--) {
+            node = createElement('div');
+            node.id = testnames ? testnames[nodes] : mod + (nodes + 1);
+            div.appendChild(node);
+        }
     }
-  }
 
-  style = createElement('style');
-  style.type = 'text/css';
-  style.id = 's' + mod;
+    style = createElement('style');
+    style.type = 'text/css';
+    style.id = 's' + mod;
 
-  // IE6 will false positive on some tests due to the style element inside the test div somehow interfering offsetHeight, so insert it into body or fakebody.
-  // Opera will act all quirky when injecting elements in documentElement when page is served as xml, needs fakebody too. #270
-  (!body.fake ? div : body).appendChild(style);
-  body.appendChild(div);
+    // IE6 will false positive on some tests due to the style element inside the test div somehow interfering offsetHeight, so insert it into body or fakebody.
+    // Opera will act all quirky when injecting elements in documentElement when page is served as xml, needs fakebody too. #270
+    (!body.fake ? div : body).appendChild(style);
+    body.appendChild(div);
 
-  if (style.styleSheet) {
-    style.styleSheet.cssText = rule;
-  } else {
-    style.appendChild(document.createTextNode(rule));
-  }
-  div.id = mod;
+    if (style.styleSheet) {
+        style.styleSheet.cssText = rule;
+    } else {
+        style.appendChild(document.createTextNode(rule));
+    }
+    div.id = mod;
 
-  if (body.fake) {
+    if (body.fake) {
     //avoid crashing IE8, if background image is used
-    body.style.background = '';
-    //Safari 5.13/5.1.4 OSX stops loading if ::-webkit-scrollbar is used and scrollbars are visible
-    body.style.overflow = 'hidden';
-    docOverflow = docElement.style.overflow;
-    docElement.style.overflow = 'hidden';
-    docElement.appendChild(body);
-  }
+        body.style.background = '';
+        //Safari 5.13/5.1.4 OSX stops loading if ::-webkit-scrollbar is used and scrollbars are visible
+        body.style.overflow = 'hidden';
+        docOverflow = docElement.style.overflow;
+        docElement.style.overflow = 'hidden';
+        docElement.appendChild(body);
+    }
 
-  ret = callback(div, rule);
-  // If this is done after page load we don't want to remove the body so check if body exists
-  if (body.fake) {
-    body.parentNode.removeChild(body);
-    docElement.style.overflow = docOverflow;
-    // Trigger layout so kinetic scrolling isn't disabled in iOS6+
-    // eslint-disable-next-line
+    ret = callback(div, rule);
+    // If this is done after page load we don't want to remove the body so check if body exists
+    if (body.fake) {
+        body.parentNode.removeChild(body);
+        docElement.style.overflow = docOverflow;
+        // Trigger layout so kinetic scrolling isn't disabled in iOS6+
+        // eslint-disable-next-line
     docElement.offsetHeight;
-  } else {
-    div.parentNode.removeChild(div);
-  }
+    } else {
+        div.parentNode.removeChild(div);
+    }
 
-  return !!ret;
+    return !!ret;
 
 }
 
@@ -398,9 +398,9 @@ function injectElementWithStyles(rule, callback, nodes, testnames) {
  */
 
 function domToCSS(name) {
-  return name.replace(/([A-Z])/g, function(str, m1) {
-    return '-' + m1.toLowerCase();
-  }).replace(/^ms-/, '-ms-');
+    return name.replace(/([A-Z])/g, function(str, m1) {
+        return '-' + m1.toLowerCase();
+    }).replace(/^ms-/, '-ms-');
 }
 ;
 
@@ -417,27 +417,27 @@ function domToCSS(name) {
  */
 
 function computedStyle(elem, pseudo, prop) {
-  var result;
+    var result;
 
-  if ('getComputedStyle' in window) {
-    result = getComputedStyle.call(window, elem, pseudo);
-    var console = window.console;
+    if ('getComputedStyle' in window) {
+        result = getComputedStyle.call(window, elem, pseudo);
+        var console = window.console;
 
-    if (result !== null) {
-      if (prop) {
-        result = result.getPropertyValue(prop);
-      }
+        if (result !== null) {
+            if (prop) {
+                result = result.getPropertyValue(prop);
+            }
+        } else {
+            if (console) {
+                var method = console.error ? 'error' : 'log';
+                console[method].call(console, 'getComputedStyle returning null, its possible modernizr test results are inaccurate');
+            }
+        }
     } else {
-      if (console) {
-        var method = console.error ? 'error' : 'log';
-        console[method].call(console, 'getComputedStyle returning null, its possible modernizr test results are inaccurate');
-      }
+        result = !pseudo && elem.currentStyle && elem.currentStyle[prop];
     }
-  } else {
-    result = !pseudo && elem.currentStyle && elem.currentStyle[prop];
-  }
 
-  return result;
+    return result;
 }
 
 ;
@@ -456,30 +456,30 @@ function computedStyle(elem, pseudo, prop) {
 // Accepts a list of property names and a single value
 // Returns `undefined` if native detection not available
 function nativeTestProps(props, value) {
-  var i = props.length;
-  // Start with the JS API: http://www.w3.org/TR/css3-conditional/#the-css-interface
-  if ('CSS' in window && 'supports' in window.CSS) {
+    var i = props.length;
+    // Start with the JS API: http://www.w3.org/TR/css3-conditional/#the-css-interface
+    if ('CSS' in window && 'supports' in window.CSS) {
     // Try every prefixed variant of the property
-    while (i--) {
-      if (window.CSS.supports(domToCSS(props[i]), value)) {
-        return true;
-      }
+        while (i--) {
+            if (window.CSS.supports(domToCSS(props[i]), value)) {
+                return true;
+            }
+        }
+        return false;
     }
-    return false;
-  }
-  // Otherwise fall back to at-rule (for Opera 12.x)
-  else if ('CSSSupportsRule' in window) {
+    // Otherwise fall back to at-rule (for Opera 12.x)
+    else if ('CSSSupportsRule' in window) {
     // Build a condition string for every prefixed variant
-    var conditionText = [];
-    while (i--) {
-      conditionText.push('(' + domToCSS(props[i]) + ':' + value + ')');
+        var conditionText = [];
+        while (i--) {
+            conditionText.push('(' + domToCSS(props[i]) + ':' + value + ')');
+        }
+        conditionText = conditionText.join(' or ');
+        return injectElementWithStyles('@supports (' + conditionText + ') { #modernizr { position: absolute; } }', function(node) {
+            return computedStyle(node, null, 'position') == 'absolute';
+        });
     }
-    conditionText = conditionText.join(' or ');
-    return injectElementWithStyles('@supports (' + conditionText + ') { #modernizr { position: absolute; } }', function(node) {
-      return computedStyle(node, null, 'position') == 'absolute';
-    });
-  }
-  return undefined;
+    return undefined;
 }
 ;
 
@@ -494,9 +494,9 @@ function nativeTestProps(props, value) {
  */
 
 function cssToDOM(name) {
-  return name.replace(/([a-z])-([a-z])/g, function(str, m1, m2) {
-    return m1 + m2.toUpperCase();
-  }).replace(/^-/, '');
+    return name.replace(/([a-z])-([a-z])/g, function(str, m1, m2) {
+        return m1 + m2.toUpperCase();
+    }).replace(/^-/, '');
 }
 ;
 
@@ -514,82 +514,85 @@ function cssToDOM(name) {
 // Property names can be provided in either camelCase or kebab-case.
 
 function testProps(props, prefixed, value, skipValueTest) {
-  skipValueTest = is(skipValueTest, 'undefined') ? false : skipValueTest;
+    skipValueTest = is(skipValueTest, 'undefined') ? false : skipValueTest;
 
-  // Try native detect first
-  if (!is(value, 'undefined')) {
-    var result = nativeTestProps(props, value);
-    if (!is(result, 'undefined')) {
-      return result;
-    }
-  }
-
-  // Otherwise do it properly
-  var afterInit, i, propsLength, prop, before;
-
-  // If we don't have a style element, that means we're running async or after
-  // the core tests, so we'll need to create our own elements to use
-
-  // inside of an SVG element, in certain browsers, the `style` element is only
-  // defined for valid tags. Therefore, if `modernizr` does not have one, we
-  // fall back to a less used element and hope for the best.
-  // for strict XHTML browsers the hardly used samp element is used
-  var elems = ['modernizr', 'tspan', 'samp'];
-  while (!mStyle.style && elems.length) {
-    afterInit = true;
-    mStyle.modElem = createElement(elems.shift());
-    mStyle.style = mStyle.modElem.style;
-  }
-
-  // Delete the objects if we created them.
-  function cleanElems() {
-    if (afterInit) {
-      delete mStyle.style;
-      delete mStyle.modElem;
-    }
-  }
-
-  propsLength = props.length;
-  for (i = 0; i < propsLength; i++) {
-    prop = props[i];
-    before = mStyle.style[prop];
-
-    if (contains(prop, '-')) {
-      prop = cssToDOM(prop);
-    }
-
-    if (mStyle.style[prop] !== undefined) {
-
-      // If value to test has been passed in, do a set-and-check test.
-      // 0 (integer) is a valid property value, so check that `value` isn't
-      // undefined, rather than just checking it's truthy.
-      if (!skipValueTest && !is(value, 'undefined')) {
-
-        // Needs a try catch block because of old IE. This is slow, but will
-        // be avoided in most cases because `skipValueTest` will be used.
-        try {
-          mStyle.style[prop] = value;
-        } catch (e) {}
-
-        // If the property value has changed, we assume the value used is
-        // supported. If `value` is empty string, it'll fail here (because
-        // it hasn't changed), which matches how browsers have implemented
-        // CSS.supports()
-        if (mStyle.style[prop] != before) {
-          cleanElems();
-          return prefixed == 'pfx' ? prop : true;
+    // Try native detect first
+    if (!is(value, 'undefined')) {
+        var result = nativeTestProps(props, value);
+        if (!is(result, 'undefined')) {
+            return result;
         }
-      }
-      // Otherwise just return true, or the property name if this is a
-      // `prefixed()` call
-      else {
-        cleanElems();
-        return prefixed == 'pfx' ? prop : true;
-      }
     }
-  }
-  cleanElems();
-  return false;
+
+    // Otherwise do it properly
+    var afterInit, i, propsLength, prop, before;
+
+    // If we don't have a style element, that means we're running async or after
+    // the core tests, so we'll need to create our own elements to use
+
+    // inside of an SVG element, in certain browsers, the `style` element is only
+    // defined for valid tags. Therefore, if `modernizr` does not have one, we
+    // fall back to a less used element and hope for the best.
+    // for strict XHTML browsers the hardly used samp element is used
+    var elems = ['modernizr', 'tspan', 'samp'];
+    while (!mStyle.style && elems.length) {
+        afterInit = true;
+        mStyle.modElem = createElement(elems.shift());
+        mStyle.style = mStyle.modElem.style;
+    }
+
+    // Delete the objects if we created them.
+    function cleanElems() {
+        if (afterInit) {
+            delete mStyle.style;
+            delete mStyle.modElem;
+        }
+    }
+
+    propsLength = props.length;
+    for (i = 0; i < propsLength; i++) {
+        prop = props[i];
+        before = mStyle.style[prop];
+
+        if (contains(prop, '-')) {
+            prop = cssToDOM(prop);
+        }
+
+        if (mStyle.style[prop] !== undefined) {
+
+            // If value to test has been passed in, do a set-and-check test.
+            // 0 (integer) is a valid property value, so check that `value` isn't
+            // undefined, rather than just checking it's truthy.
+            if (!skipValueTest && !is(value, 'undefined')) {
+
+                // Needs a try catch block because of old IE. This is slow, but will
+                // be avoided in most cases because `skipValueTest` will be used.
+                try {
+                    mStyle.style[prop] = value;
+                // eslint-disable-next-line no-unused-vars
+                } catch (_e) {
+                    // IE throws on invalid CSS values
+                }
+
+                // If the property value has changed, we assume the value used is
+                // supported. If `value` is empty string, it'll fail here (because
+                // it hasn't changed), which matches how browsers have implemented
+                // CSS.supports()
+                if (mStyle.style[prop] != before) {
+                    cleanElems();
+                    return prefixed == 'pfx' ? prop : true;
+                }
+            }
+            // Otherwise just return true, or the property name if this is a
+            // `prefixed()` call
+            else {
+                cleanElems();
+                return prefixed == 'pfx' ? prop : true;
+            }
+        }
+    }
+    cleanElems();
+    return false;
 }
 
 ;
@@ -627,9 +630,9 @@ ModernizrProto._domPrefixes = domPrefixes;
  */
 
 function fnBind(fn, that) {
-  return function() {
-    return fn.apply(that, arguments);
-  };
+    return function() {
+        return fn.apply(that, arguments);
+    };
 }
 
 ;
@@ -646,29 +649,29 @@ function fnBind(fn, that) {
  * @returns {false|*} returns false if the prop is unsupported, otherwise the value that is supported
  */
 function testDOMProps(props, obj, elem) {
-  var item;
+    var item;
 
-  for (var i in props) {
-    if (props[i] in obj) {
+    for (var i in props) {
+        if (props[i] in obj) {
 
-      // return the property name as a string
-      if (elem === false) {
-        return props[i];
-      }
+            // return the property name as a string
+            if (elem === false) {
+                return props[i];
+            }
 
-      item = obj[props[i]];
+            item = obj[props[i]];
 
-      // let's bind a function
-      if (is(item, 'function')) {
-        // bind to obj unless overriden
-        return fnBind(item, elem || obj);
-      }
+            // let's bind a function
+            if (is(item, 'function')) {
+                // bind to obj unless overriden
+                return fnBind(item, elem || obj);
+            }
 
-      // return the unbound function or obj or value
-      return item;
+            // return the unbound function or obj or value
+            return item;
+        }
     }
-  }
-  return false;
+    return false;
 }
 
 ;
@@ -690,18 +693,18 @@ function testDOMProps(props, obj, elem) {
  */
 function testPropsAll(prop, prefixed, elem, value, skipValueTest) {
 
-  var ucProp = prop.charAt(0).toUpperCase() + prop.slice(1),
-    props = (prop + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
+    var ucProp = prop.charAt(0).toUpperCase() + prop.slice(1),
+        props = (prop + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
 
-  // did they call .prefixed('boxSizing') or are we just testing a prop?
-  if (is(prefixed, 'string') || is(prefixed, 'undefined')) {
-    return testProps(props, prefixed, value, skipValueTest);
+    // did they call .prefixed('boxSizing') or are we just testing a prop?
+    if (is(prefixed, 'string') || is(prefixed, 'undefined')) {
+        return testProps(props, prefixed, value, skipValueTest);
 
     // otherwise, they called .prefixed('requestAnimationFrame', window[, elem])
-  } else {
-    props = (prop + ' ' + (domPrefixes).join(ucProp + ' ') + ucProp).split(' ');
-    return testDOMProps(props, prefixed, elem);
-  }
+    } else {
+        props = (prop + ' ' + (domPrefixes).join(ucProp + ' ') + ucProp).split(' ');
+        return testDOMProps(props, prefixed, elem);
+    }
 }
 
 // Modernizr.testAllProps() investigates whether a given style property,
@@ -741,39 +744,39 @@ ModernizrProto.testAllProps = testPropsAll;
  */
 
 var atRule = function(prop) {
-  var length = prefixes.length;
-  var cssrule = window.CSSRule;
-  var rule;
+    var length = domPrefixes.length;
+    var cssrule = window.CSSRule;
+    var rule;
 
-  if (typeof cssrule === 'undefined') {
-    return undefined;
-  }
-
-  if (!prop) {
-    return false;
-  }
-
-  // remove literal @ from beginning of provided property
-  prop = prop.replace(/^@/, '');
-
-  // CSSRules use underscores instead of dashes
-  rule = prop.replace(/-/g, '_').toUpperCase() + '_RULE';
-
-  if (rule in cssrule) {
-    return '@' + prop;
-  }
-
-  for (var i = 0; i < length; i++) {
-    // prefixes gives us something like -o-, and we want O_
-    var prefix = prefixes[i];
-    var thisRule = prefix.toUpperCase() + '_' + rule;
-
-    if (thisRule in cssrule) {
-      return '@-' + prefix.toLowerCase() + '-' + prop;
+    if (typeof cssrule === 'undefined') {
+        return undefined;
     }
-  }
 
-  return false;
+    if (!prop) {
+        return false;
+    }
+
+    // remove literal @ from beginning of provided property
+    prop = prop.replace(/^@/, '');
+
+    // CSSRules use underscores instead of dashes
+    rule = prop.replace(/-/g, '_').toUpperCase() + '_RULE';
+
+    if (rule in cssrule) {
+        return '@' + prop;
+    }
+
+    for (var i = 0; i < length; i++) {
+    // domPrefixes gives us something like -o-, and we want O_
+        var prefix = domPrefixes[i];
+        var thisRule = prefix.toUpperCase() + '_' + rule;
+
+        if (thisRule in cssrule) {
+            return '@-' + prefix.toLowerCase() + '-' + prop;
+        }
+    }
+
+    return false;
 };
 
 ModernizrProto.atRule = atRule;
@@ -845,21 +848,21 @@ ModernizrProto.atRule = atRule;
  * If you want a similar lookup, but in kebab-case, you can use [prefixedCSS](#modernizr-prefixedcss).
  */
 
-var prefixed = ModernizrProto.prefixed = function(prop, obj, elem) {
-  if (prop.indexOf('@') === 0) {
-    return atRule(prop);
-  }
+ModernizrProto.prefixed = function(prop, obj, elem) {
+    if (prop.indexOf('@') === 0) {
+        return atRule(prop);
+    }
 
-  if (prop.indexOf('-') != -1) {
+    if (prop.indexOf('-') != -1) {
     // Convert kebab-case to camelCase
-    prop = cssToDOM(prop);
-  }
-  if (!obj) {
-    return testPropsAll(prop, 'pfx');
-  } else {
+        prop = cssToDOM(prop);
+    }
+    if (!obj) {
+        return testPropsAll(prop, 'pfx');
+    } else {
     // Testing DOM property e.g. Modernizr.prefixed('requestAnimationFrame', window) // 'mozRequestAnimationFrame'
-    return testPropsAll(prop, obj, elem);
-  }
+        return testPropsAll(prop, obj, elem);
+    }
 };
 
 
@@ -902,7 +905,7 @@ var prefixed = ModernizrProto.prefixed = function(prop, obj, elem) {
  */
 
 function testAllProps(prop, value, skipValueTest) {
-  return testPropsAll(prop, undefined, undefined, value, skipValueTest);
+    return testPropsAll(prop, undefined, undefined, value, skipValueTest);
 }
 ModernizrProto.testAllProps = testAllProps;
 
@@ -935,7 +938,7 @@ delete ModernizrProto.addAsyncTest;
 
 // Run the things that are supposed to run after the tests
 for (var i = 0; i < Modernizr._q.length; i++) {
-  Modernizr._q[i]();
+    Modernizr._q[i]();
 }
 
 

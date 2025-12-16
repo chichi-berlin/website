@@ -57,7 +57,7 @@ const selectors = {
             }
         };
         
-        viewport.addEventListener( 'scroll', function( event ) {
+        viewport.addEventListener( 'scroll', function( _event ) {
             
             lastKnownOffset = viewport.scrollY;
             if( requestedNewFrame === false ){          
@@ -118,7 +118,7 @@ const selectors = {
             infinite: false,
             variableWidth: true,
             draggable: false
-       });
+        });
     },
     
     
@@ -145,7 +145,6 @@ const selectors = {
         const ZOOM = 15;
         // NOTE: until https://github.com/leaflet-extras/leaflet-providers/blob/master/leaflet-providers.js#L197
         // (enforcing https) is not released, we cannot use the providers package
-        const MAP_PROVIDER_NAME = 'Thunderforest.OpenCycleMap';
         const MAP_PROVIDER_URL = 'https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}';
         
         
@@ -181,14 +180,12 @@ const selectors = {
     },
 
     'button.menu-toggle': function(){
-        const element = this;
-
         this.addEventListener( 'click', function( event ){
             event.preventDefault();
             const { site } = global;
             const { dataset } = site;
 
-           dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
+            dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
         });
     },
 };

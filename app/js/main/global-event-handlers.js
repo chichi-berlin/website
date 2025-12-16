@@ -1,7 +1,8 @@
 
 const events = {
-    'click #site' : function( e ){
-        const element = this;
+    'click #site' : function( _e ){
+        // eslint-disable-next-line no-unused-vars
+        const _element = this;
     }
 };
 

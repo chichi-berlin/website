@@ -10,12 +10,13 @@ const selectors = {
     '#side-menu' : function(){
         let menuElement = this;
         
-        const sideMenu = new SideMenu(menuElement, {
+        // eslint-disable-next-line no-unused-vars
+        const _sideMenu = new SideMenu(menuElement, {
             // breadcrumbsCtrl : true, // show breadcrumbs
             // initialBreadcrumb : 'all', // initial breadcrumb text
             backCtrl : false, // show back button
             // itemsDelayInterval : 60, // delay between each menu item sliding animation
-            onItemClick( ev, itemName ){
+            onItemClick( _ev, _itemName ){
                 // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])   
             }
         });

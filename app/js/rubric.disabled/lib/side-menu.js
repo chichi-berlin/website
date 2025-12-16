@@ -45,7 +45,7 @@ function SideMenu( el, options = {} ){
     let current_menu;
     this.menus.forEach( function( menuEl, pos ){
         let items = menuEl.querySelectorAll( '.menu__item' );
-        items.forEach( function( itemEl, iPos ){
+        items.forEach( function( itemEl, _iPos ){
             let currentLink = itemEl.querySelector( '.menu__link--current' );
             if( currentLink ){
                 // This is the actual menu__level that should have current
@@ -73,7 +73,7 @@ Object.assign( SideMenu.prototype, {
         itemsDelayInterval: 60, // direction 
         direction: 'r2l', // callback: item that doesn´t have a submenu gets clicked
         // onItemClick([event], [inner HTML of the clicked item])
-        onItemClick: function( ev, itemName ){ return false; }
+        onItemClick: function( _ev, _itemName ){ return false; }
     },
     
     _init(){
@@ -99,19 +99,18 @@ Object.assign( SideMenu.prototype, {
                 menuEl.classList.add( 'menu__level--current' );
             }
     
-            var menu_x = menuEl.getAttribute( 'data-menu' );
             var links = menuEl.querySelectorAll( '.menu__link' );
-            links.forEach( function( linkEl, lPos ){
+            links.forEach( function( linkEl, _lPos ){
                 var submenu = linkEl.getAttribute( 'data-submenu' );
                 if( submenu ){
                     var pushMe = {
-                        "menu": submenu,
-                        "name": linkEl.innerHTML
+                        'menu': submenu,
+                        'name': linkEl.innerHTML
                     };
                     if( submenus[ pos ] ){
                         submenus[ pos ].push( pushMe );
                     }else{
-                        submenus[ pos ] = []
+                        submenus[ pos ] = [];
                         submenus[ pos ].push( pushMe );
                     }
                 }
@@ -120,10 +119,10 @@ Object.assign( SideMenu.prototype, {
     
         /* For each MENU, find their parent MENU */
         this.menus.forEach( function( menuEl, pos ){
-            var menu_x = menuEl.getAttribute( 'data-menu' );
+            var menu_id = menuEl.getAttribute( 'data-menu' );
             submenus.forEach( function( subMenuEl, menu_root ){
-                subMenuEl.forEach( function( subMenuItem, subPos ){
-                    if( subMenuItem.menu == menu_x ){
+                subMenuEl.forEach( function( subMenuItem, _subPos ){
+                    if( subMenuItem.menu == menu_id ){
                         self.menusArr[ pos ].backIdx = menu_root;
                         self.menusArr[ pos ].name = subMenuItem.name;
                     }
@@ -253,10 +252,10 @@ Object.assign( SideMenu.prototype, {
         // slide out current menu items - first, set the delays for the items
         this.menusArr[ this.current_menu ].menuItems.forEach( function( item, pos ){
             item.style.WebkitAnimationDelay = item.style.animationDelay = isBackNavigation ?
-                                                                          parseInt( pos *
+                parseInt( pos *
                                                                                     self.options.itemsDelayInterval ) +
                                                                           'ms' : parseInt( Math.abs(
-                        clickPosition - pos ) * self.options.itemsDelayInterval ) + 'ms';
+                    clickPosition - pos ) * self.options.itemsDelayInterval ) + 'ms';
         });
         // animation class
         if( this.options.direction === 'r2l' ){
@@ -272,22 +271,22 @@ Object.assign( SideMenu.prototype, {
             isBackNavigation = typeof clickPosition === 'undefined' ? true : false,
             nextMenuIdx = this.menus.indexOf( nextMenuEl ),
     
-            nextMenu = this.menusArr[ nextMenuIdx ], nextMenuEl = nextMenu.menuEl,
+            nextMenu = this.menusArr[ nextMenuIdx ], nextMenuElement = nextMenu.menuEl,
             nextMenuItems = nextMenu.menuItems, nextMenuItemsTotal = nextMenuItems.length;
     
         // slide in next menu items - first, set the delays for the items
         nextMenuItems.forEach( function( item, pos ){
             item.style.WebkitAnimationDelay = item.style.animationDelay = isBackNavigation ?
-                                                                          parseInt( pos *
+                parseInt( pos *
                                                                                     self.options.itemsDelayInterval ) +
                                                                           'ms' : parseInt( Math.abs(
-                        clickPosition - pos ) * self.options.itemsDelayInterval ) + 'ms';
+                    clickPosition - pos ) * self.options.itemsDelayInterval ) + 'ms';
     
             // we need to reset the classes once the last item animates in
             // the "last item" is the farthest from the clicked item
             // let's calculate the index of the farthest item
             var farthestIdx = clickPosition <= nextMenuItemsTotal / 2 || isBackNavigation ?
-                              nextMenuItemsTotal - 1 : 0;
+                nextMenuItemsTotal - 1 : 0;
     
             if( pos === farthestIdx ){
                 onEndAnimation( item, function(){
@@ -295,16 +294,16 @@ Object.assign( SideMenu.prototype, {
                     if( self.options.direction === 'r2l' ){
                         currentMenu.classList.remove(
                             !isBackNavigation ? 'animate-outToLeft' : 'animate-outToRight' );
-                        nextMenuEl.classList.remove(
+                        nextMenuElement.classList.remove(
                             !isBackNavigation ? 'animate-inFromRight' : 'animate-inFromLeft' );
                     }else{
                         currentMenu.classList.remove(
                             isBackNavigation ? 'animate-outToLeft' : 'animate-outToRight' );
-                        nextMenuEl.classList.remove(
+                        nextMenuElement.classList.remove(
                             isBackNavigation ? 'animate-inFromRight' : 'animate-inFromLeft' );
                     }
                     currentMenu.classList.remove( 'menu__level--current' );
-                    nextMenuEl.classList.add( 'menu__level--current' );
+                    nextMenuElement.classList.add( 'menu__level--current' );
     
                     //reset current
                     self.current_menu = nextMenuIdx;
@@ -327,19 +326,19 @@ Object.assign( SideMenu.prototype, {
                     self.isAnimating = false;
     
                     // focus retention
-                    nextMenuEl.focus();
+                    nextMenuElement.focus();
                 });
             }
         });
     
         // animation class
         if( this.options.direction === 'r2l' ){
-            nextMenuEl.classList.add( !isBackNavigation ? 'animate-inFromRight' : 'animate-inFromLeft' );
+            nextMenuElement.classList.add( !isBackNavigation ? 'animate-inFromRight' : 'animate-inFromLeft' );
         }else{
-            nextMenuEl.classList.add( isBackNavigation ? 'animate-inFromRight' : 'animate-inFromLeft' );
+            nextMenuElement.classList.add( isBackNavigation ? 'animate-inFromRight' : 'animate-inFromLeft' );
         }
     },
-    
+
     _addBreadcrumb( idx ){
         if( !this.options.breadcrumbsCtrl ){
             return false;
@@ -368,7 +367,7 @@ Object.assign( SideMenu.prototype, {
     
             // remove breadcrumbs that are ahead
             var siblingNode;
-            while( siblingNode = bc.nextSibling ){
+            while( (siblingNode = bc.nextSibling) ){
                 self.breadcrumbsCtrl.removeChild( siblingNode );
             }
         });
