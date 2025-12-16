@@ -1,10 +1,12 @@
-{{ if isset .  "src" }}
-<img 
-    src="{{ .src }}" 
+{{ if reflect.IsMap . }}
+<img
+    src="{{ .src }}"
     alt="{{ .alt }}"
 >
-{{ else }}
-<img 
+{{ else if . }}
+<img
     src="{{ . }}"
 >
+{{ else }}
+    {{ errorf "Invalid value for img component: %s" .  }}
 {{ end }}

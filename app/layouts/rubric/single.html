@@ -135,7 +135,7 @@
 
     {{ if $value }}
     <li>
-    {{ if not (isset $value 0) }}
+    {{ if not ( reflect.IsSlice $value ) }}
         <span class="label">{{ i18n $spec 1 }}</span>
         <span class="value">{{ $value }}</span>
     {{ else }}
