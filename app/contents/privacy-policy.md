@@ -3,7 +3,7 @@
 linkTitle: 'Datenschutzerklärung'
 slug: 'datenschutzerklaerung'
 
-title: 'Datenschutzerklärung' 
+title: 'Datenschutz&shy;erklärung' 
 description: 'Informationen und Erklärung zum Datenschutz auf dieser Seite'
 
 src: 'https://datenschutz-generator.de'

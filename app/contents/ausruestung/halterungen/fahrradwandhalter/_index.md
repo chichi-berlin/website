@@ -7,7 +7,7 @@ linkTitle: 'Fahrradwandhalter'
 slug: 'fahrradwandhalter'
 section: 'wall'
 
-title: 'Fahrradwandhalter'
+title: 'Fahrrad&shy;wand&shy;halter'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

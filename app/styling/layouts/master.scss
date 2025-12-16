@@ -102,7 +102,7 @@
             max-width: 80%;
 
             word-wrap: break-word;
-            hyphens: auto;
+            hyphens: manual;
             
             & + :not(.page-subtitle) {
                 margin-top: rem($headline-section-gap);

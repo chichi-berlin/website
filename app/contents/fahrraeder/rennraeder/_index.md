@@ -7,7 +7,7 @@ linkTitle: 'Rennräder'
 slug: 'rennraeder'
 section: 'road'
 
-title: 'Rennräder'
+title: 'Renn&shy;räder'
 description: 'Training, befestigte Wege'
 image: '/media/images/rubrics/bicycles/items/cinelli-veltrix-disc_01.jpg'
 

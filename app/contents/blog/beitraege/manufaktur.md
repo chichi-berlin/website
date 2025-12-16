@@ -1,6 +1,6 @@
 ---
 
-title: 'Manufakturräder von Contoura'
+title: 'Manufaktur&shy;räder von Contoura'
 
 publishDate: '2018-04-01'
 

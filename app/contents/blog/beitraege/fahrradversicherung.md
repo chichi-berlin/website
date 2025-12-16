@@ -1,6 +1,6 @@
 ---
 
-title: 'Fahrradversicherung'
+title: 'Fahrrad&shy;versicherung'
 
 publishDate: '2023-01-14'
 

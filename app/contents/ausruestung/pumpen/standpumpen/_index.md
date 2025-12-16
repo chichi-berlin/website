@@ -7,7 +7,7 @@ linkTitle: 'Standpumpen'
 slug: 'standpumpen'
 section: 'stand'
 
-title: 'Standpumpen'
+title: 'Stand&shy;pumpen'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

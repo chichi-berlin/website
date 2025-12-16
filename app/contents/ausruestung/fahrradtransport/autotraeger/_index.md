@@ -7,7 +7,7 @@ linkTitle: 'Autoträger'
 slug: 'autotraeger'
 section: 'car-racks'
 
-title: 'Autoträger'
+title: 'Auto&shy;träger'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

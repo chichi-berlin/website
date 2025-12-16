@@ -7,7 +7,7 @@ linkTitle: 'Komponentensicherung'
 slug: 'komponentensicherung'
 section: 'component'
 
-title: 'Komponentensicherung'
+title: 'Komponenten&shy;sicherung'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/hexlox-assortment.jpg'
 

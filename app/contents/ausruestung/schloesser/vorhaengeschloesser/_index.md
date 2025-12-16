@@ -7,7 +7,7 @@ linkTitle: 'Vorhänge'
 slug: 'vorhaengeschloesser'
 section: 'padlock'
 
-title: 'Vorhängeschlösser'
+title: 'Vorhänge&shy;schlösser'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

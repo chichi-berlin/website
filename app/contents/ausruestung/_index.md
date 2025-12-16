@@ -7,7 +7,7 @@ linkTitle: 'Ausrüstung'
 slug: 'ausruestung'
 section: 'accessories'
 
-title: 'Fahrradausrüstung'
+title: 'Fahrrad&shy;ausrüstung'
 description: 'TODO'
 
 menu:

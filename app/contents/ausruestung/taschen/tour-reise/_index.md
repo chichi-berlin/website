@@ -7,7 +7,7 @@ linkTitle: 'Tour & Reise'
 slug: 'reisetaschen'
 section: 'travel'
 
-title: 'Reisetaschen'
+title: 'Reise&shy;taschen'
 description: 'Lange Tour - viel Gepäck'
 image: '/media/images/rubrics/accessories/items/bags-ortlieb-back-roller-classic_01.jpg'
 

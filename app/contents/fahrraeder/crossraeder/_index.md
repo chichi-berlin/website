@@ -7,7 +7,7 @@ linkTitle: 'Crossräder'
 slug: 'crossraeder'
 section: 'cross'
 
-title: 'Crossräder'
+title: 'Cross&shy;räder'
 description: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
 image: '/media/images/rubrics/bicycles/items/aventon-kijote-2023_02.jpeg'
 

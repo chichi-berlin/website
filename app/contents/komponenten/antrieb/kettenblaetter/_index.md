@@ -7,7 +7,7 @@ linkTitle: 'Kettenblätter'
 slug: 'kettenblaetter'
 section: 'chainrings'
 
-title: 'Kettenblätter'
+title: 'Ketten&shy;blätter'
 description: 'TODO'
 image: '/media/images/rubrics/parts/items/drive/chainring-blb-track_1.jpeg'
 

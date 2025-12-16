@@ -7,7 +7,7 @@ linkTitle: 'Ketten'
 slug: 'kettenschloesser'
 section: 'chain'
 
-title: 'Kettenschlösser'
+title: 'Ketten&shy;schlösser'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/locks-abus-chain-city1010.jpg'
 

@@ -7,7 +7,7 @@ linkTitle: 'Kindersitze'
 slug: 'kindersitze'
 section: 'childrens-seats'
 
-title: 'Kindersitze'
+title: 'Kinder&shy;sitze'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

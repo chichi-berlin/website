@@ -7,7 +7,7 @@ linkTitle: 'Fitnessräder'
 slug: 'fitnessraeder'
 section: 'fitness'
 
-title: 'Fitnessräder'
+title: 'Fitness&shy;räder'
 description: 'leicht, schnell, komfortabel, Kurz- und Mitteldistanz, Alltag, befestigte Wege'
 image: '/media/images/rubrics/bicycles/items/heizzwerk-2017_1.jpg'
 

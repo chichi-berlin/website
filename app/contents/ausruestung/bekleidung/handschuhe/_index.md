@@ -7,7 +7,7 @@ linkTitle: 'Handschuhe'
 slug: 'handschuhe'
 section: 'gloves'
 
-title: 'Handschuhe'
+title: 'Hand&shy;schuhe'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

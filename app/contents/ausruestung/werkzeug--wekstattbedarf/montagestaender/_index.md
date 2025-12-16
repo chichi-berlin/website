@@ -7,7 +7,7 @@ linkTitle: 'Montageständer'
 slug: 'montagestaender'
 section: 'workstands'
 
-title: 'Montageständer'
+title: 'Montage&shy;ständer'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/tool-parktool-workstand-pcs4ext.png'
 

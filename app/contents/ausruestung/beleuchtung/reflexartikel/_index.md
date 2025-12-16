@@ -7,7 +7,7 @@ linkTitle: 'Reflexartikel'
 slug: 'reflexartikel'
 section: 'reflex'
 
-title: 'Reflexartikel'
+title: 'Reflex&shy;artikel'
 description: 'TODO'
 image: '/media/images/rubrics/accessories/items/'
 

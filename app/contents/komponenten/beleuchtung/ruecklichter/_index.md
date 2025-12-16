@@ -9,7 +9,7 @@ linkTitle: 'Rücklichter'
 slug: 'ruecklichter'
 section: 'rear'
 
-title: 'Rücklichter'
+title: 'Rück&shy;lichter'
 description: 'TODO'
 image: '/media/images/rubrics/parts/items/'
 
