@@ -16,14 +16,10 @@
         @include bp-medium() {
             gap: 0;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
             max-width: rem(770);
             width: 100%;
-        }
-
-        @include bp-medium() {
             flex-flow: row nowrap;
-            align-items: flex-end;
         }
 
         li {
