@@ -183,12 +183,13 @@ const selectors = {
     'button.menu-toggle': function(){
         const element = this;
 
-        this.addEventListener( 'click', function( event ){
+        element.addEventListener( 'click', function( event ){
             event.preventDefault();
             const { site } = global;
             const { dataset } = site;
 
             dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
+            element.setAttribute( 'aria-expanded', dataset.state_header_menu === 'closed' );
         });
     },
 };
