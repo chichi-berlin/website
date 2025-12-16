@@ -137,4 +137,80 @@
     .slick-dots li button::before {
         font-size: rem(16);
     }
+
+    .image-zoom {
+        border: none;
+        background: transparent;
+        max-width: 95vw;
+        max-height: 95vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: rem(16);
+        overflow: visible;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+
+        &[open] {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &::backdrop {
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.25s ease;
+        }
+
+        &[open]::backdrop {
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        img {
+            max-width: calc(95vw - 100px);
+            max-height: 95vh;
+            object-fit: contain;
+        }
+
+        .zoom-prev,
+        .zoom-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: white;
+            width: rem(40);
+            height: rem(70);
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.3);
+            }
+
+            svg {
+                width: rem(24);
+                height: rem(24);
+            }
+        }
+
+        .zoom-prev {
+            left: rem(-56);
+        }
+
+        .zoom-next {
+            right: rem(-56);
+        }
+    }
+
+    @include bp-medium() {
+        .viewport .item {
+            cursor: zoom-in;
+        }
+    }
 }
