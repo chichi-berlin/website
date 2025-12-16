@@ -1,3 +1,58 @@
+# Blog translations
+back-to-list:
+  other: 'Zurück zur Liste'
+back-to-overview:
+  other: 'Zurück zur Übersicht'
+
+newer-posts:
+  other: 'Neuere Beiträge'
+
+older-posts:
+  other: 'Ältere Beiträge'
+
+news:
+  other: 'Neuigkeiten'
+
+tag:
+  one: 'Kategorie'
+  other: 'Kategorien'
+
+page:
+  one: 'Seite'
+  other: 'Seiten'
+
+page-number-separator:
+  other: 'von'
+
+read-more:
+  other: 'weiterlesen'
+
+figure-caption-photographer:
+  other: '(Bild: {{.Count}})'
+
+error.no-post:
+  other: 'Kein Artikel zu dieser Kategorie vorhanden.'
+
+# Home translations
+special-offers:
+  one: 'Super Sonderangebot'
+  other: 'Super Sonderangebote'
+
+recent-blog-posts:
+  one: 'Aktueller Blogeintrag'
+  other: 'Aktuelle Blogeinträge'
+
+# Rubrics translations
+no-description:
+  other: 'Keine Beschreibung vorhanden.'
+
+configure-now:
+  other: 'Jetzt konfigurieren'
+
+related-posts:
+  other: 'Weitere Informationen im Blog unter'
+
+# Rubrics specs translations
 size:
   one: 'Grösse'
   other: 'Grössen'
@@ -169,25 +224,25 @@ body:
 
 spindle:
   other: 'Spindel'
-  
+
 width:
   one: 'Breite'
   other: 'Breiten'
 widths:
-  other: 'Breiten'  
+  other: 'Breiten'
 
 bearing:
   other: 'Lager'
-  
+
 rail:
   other: 'Strebe'
 
 season:
   other: 'Saison'
-  
+
 lenght:
   other: 'Länge'
-  
+
 extras:
   other: 'Extras'
 
@@ -202,10 +257,10 @@ piston:
   other: 'Kolben'
 pistons:
   other: 'Kolben'
-  
+
 chain-fit:
   other: 'Kettenpassung'
-  
+
 clamp-size-stem:
   other: 'Klemm-Maß VB'
 
@@ -214,31 +269,31 @@ clamp-size:
   other: 'Klemm-Maß'
 clamp-sizes:
   other: 'Klemm-Maß'
-  
+
 diameter:
   other: 'Durchmesser'
-  
+
 reach:
   other: 'reach'
-  
+
 internal-diameter:
   other: 'Innendurchmesser'
-  
+
 alloy:
   other: 'Legierung'
 
 rise:
   other: 'Rise'
-  
+
 backsweep:
   other: 'Backsweep'
-  
+
 drop:
   other: 'Drop'
-  
+
 bag type:
   other: 'Taschentyp'
-  
+
 volume:
   other: 'Volumen'
 

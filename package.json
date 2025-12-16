@@ -5,7 +5,7 @@
     "postinstall": "which hugo >/dev/null 2>&1 || echo [WARN] Hugo binary is not installed yet!",
     "start": "npm run build:clean; npm run build:webpack; concurrently 'npm run watch:webpack' 'npm run watch:hugo'",
     "watch:webpack": "NODE_ENV='development' webpack --config ./.webpack.config --watch",
-    "watch:hugo": "HUGO_ENV='development' hugo serve --bind 0.0.0.0 --port 3000 --noHTTPCache --i18n-warnings",
+    "watch:hugo": "HUGO_ENV='development' hugo serve --bind 0.0.0.0 --port 3000 --noHTTPCache",
     "build:webpack": "NODE_ENV='development' webpack --config ./.webpack.config",
     "build:hugo": "HUGO_ENV='development' hugo",
     "build:clean": "rm -rf ./dist ./app/static/style ./app/static/script/*.js* ./app/layouts/partials/svgs app/static/media/images/assets/vendors",

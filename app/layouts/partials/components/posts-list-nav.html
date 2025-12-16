@@ -4,7 +4,7 @@
 <nav class="component__posts-list-nav">
     <span>
         {{ if $paginator.HasNext }}
-        <a href="{{ $paginator.Next.URL | relLangURL }}">← <span>{{ i18n "older-posts" }}</span></a>
+        <a href="{{ $paginator.Next.URL }}">← <span>{{ i18n "older-posts" }}</span></a>
         {{ end }}
     </span>
     
@@ -14,7 +14,7 @@
     
     <span>
         {{ if $paginator.HasPrev}}
-        <a href="{{ $paginator.Prev.URL | relLangURL }}"><span>{{ i18n "newer-posts" }}</span> →</a>
+        <a href="{{ $paginator.Prev.URL }}"><span>{{ i18n "newer-posts" }}</span> →</a>
         {{ end }}
     </span>
 </nav>

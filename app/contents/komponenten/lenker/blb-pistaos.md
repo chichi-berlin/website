@@ -13,7 +13,7 @@ images:
   - '/media/images/rubrics/parts/items/cockpit/handlebar-pistaos_3.jpeg'
   - '/media/images/rubrics/parts/items/cockpit/handlebar-pistaos_4.jpeg'
 
-description: >
+description: ''
 
 specs:
   - clamp-size-stem: '31,8mm'

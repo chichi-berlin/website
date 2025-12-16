@@ -2,10 +2,10 @@
 <nav class="component__nav-top edge-spacer--h">
     <ul>
         {{ $currentPage := . }}
-        {{ $currentRootSection := index (split $currentPage.URL "/") 1 }}
+        {{ $currentRootSection := index (split $currentPage.RelPermalink "/") 1 }}
         
         {{ range .Site.Menus.top }}
-        <li class="{{ if or ($currentPage.IsMenuCurrent "top" .) ($currentPage.HasMenuCurrent "top" .) (in $currentPage.URL .URL) }}active{{end}}">
+        <li class="{{ if or ($currentPage.IsMenuCurrent "top" .) ($currentPage.HasMenuCurrent "top" .) (in $currentPage.RelPermalink .URL) }}active{{end}}">
             <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         </li>
         {{ end }}

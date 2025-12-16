@@ -4,13 +4,13 @@
     
     {{ if .IsPage }}
     <a class="go-up" 
-       href="{{ ($.Site.GetPage "section" "blog").URL | relLangURL }}"
+       href="{{ ($.Site.GetPage "section" "blog").RelPermalink }}"
     >
         ← <span>{{ i18n "back-to-list" }}</span>
     </a>
     {{ else if eq .Kind "taxonomy"}}
     <a class="go-up"
-       href="{{ ($.Site.GetPage "section" "blog").URL | relLangURL }}"
+       href="{{ ($.Site.GetPage "section" "blog").RelPermalink }}"
     >
         ← <span>{{ i18n "back-to-overview" }}</span>
     </a>
@@ -32,8 +32,8 @@
         <h4><span>{{ i18n "tag" $tagCount }}</span></h4>
         <ul>
             {{ range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
-            <li class="{{ if or (in $tagList .Data.Term) (in $currentPage.URL .URL) }}active{{end}}">
-                <a href="{{ .URL | relLangURL }}">{{ .LinkTitle }} ({{ len .Pages }})</a>
+            <li class="{{ if or (in $tagList .Data.Term) (in $currentPage.RelPermalink .RelPermalink) }}active{{end}}">
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ len .Pages }})</a>
             </li>
             {{ end }}
         </ul>

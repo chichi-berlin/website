@@ -3,12 +3,12 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.footer }}
         <li class="{{ if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }}active{{end}}">
-            <a  href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            <a  href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
         
         <li class="logo__black">
-            <a href="{{ ($.Site.GetPage "home").URL }}">{{ partial "svgs/logo_mono.html" }}</a>
+            <a href="{{ ($.Site.GetPage "home").RelPermalink }}">{{ partial "svgs/logo_mono.html" }}</a>
         </li>
     </ul>
 </nav>

@@ -20,8 +20,8 @@
             {{ if not .Params.draft }}
             <li class="menu__item" data="page">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
-                   data-submenu="submenu--{{ delimit (split (trim .URL "/") "/") "-" }}" 
-                   href="{{ .URL | relLangURL }}">
+                   data-submenu="submenu--{{ delimit (split (trim .RelPermalink "/") "/") "-" }}"
+                   href="{{ .RelPermalink }}">
                     {{ .Params.model }} ({{ .Params.manufacturer }})
                 </a>
             </li>
@@ -41,8 +41,8 @@
             {{ if not .Params.draft }}
             <li class="menu__item" data="node">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}"
-                   data-submenu="submenu--{{ delimit (split (trim .URL "/") "/") "-" }}" 
-                   href="{{ .URL | relLangURL }}">
+                   data-submenu="submenu--{{ delimit (split (trim .RelPermalink "/") "/") "-" }}"
+                   href="{{ .RelPermalink }}">
                     {{ .LinkTitle }}
                 </a>
             </li>
@@ -60,7 +60,7 @@
 
 
 {{ define "breadcrumb" }}
-    {{ $pagesInTopMenu := where .global.Site.Menus.top ".Page.UniqueID" .parentPage.UniqueID }}    
+    {{ $pagesInTopMenu := where .global.Site.Menus.top ".Page.File.UniqueID" .parentPage.File.UniqueID }}    
 
     {{ if and (not .parentPage.IsHome) }}
 
@@ -70,7 +70,7 @@
 
     {{ if not .parentPage.Params.draft }}
     <li>        
-        <a href="{{ .parentPage.URL | relLangURL }}" class="">{{ .parentPage.LinkTitle }}</a>
+        <a href="{{ .parentPage.RelPermalink }}" class="">{{ .parentPage.LinkTitle }}</a>
     </li>
     {{ end }}
 
