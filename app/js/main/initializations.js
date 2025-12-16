@@ -123,19 +123,25 @@ const selectors = {
             arrows: false,
             fade: true,
             asNavFor: controls,
-            dots: true
+            dots: false
         });
         jQuery( controls ).slick({
             initialSlide: 0,
             slidesToShow: 1,
             slidesToScroll: 1,
             asNavFor: viewport,
-            centerMode: false,
+            centerMode: true,
             focusOnSelect: true,
             arrows: true,
-            infinite: false,
+            infinite: true,
             variableWidth: true,
             draggable: false
+        });
+
+        // Remove inline styles added by slick that break centering
+        element.querySelectorAll('.slick-slide > div, .item').forEach(function(el) {
+            el.style.removeProperty('display');
+            el.style.removeProperty('width');
         });
     },
     
