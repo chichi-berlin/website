@@ -81,7 +81,7 @@ const selectors = {
     
     '#page-aside-nav': function(){
         const element = this;
-        
+
         // FUTUREWORK: refactor the mobile indicator to be a global const instead of compute on-the-fly
         const isMobile = window.matchMedia('(max-width: 1023px)').matches;
 
@@ -143,6 +143,54 @@ const selectors = {
                    item.style.removeProperty( 'display' );
                    item.style.removeProperty( 'width' );
                });
+
+        // FUTUREWORK: refactor the desktop indicator to be a global const instead of compute on-the-fly
+        const isDesktop = window.matchMedia( '(min-width: 1024px)' ).matches;
+        if( isDesktop ){
+            const dialog = element.querySelector( '.image-zoom' );
+            const dialogImg = dialog.querySelector( 'img' );
+            const prevBtn = dialog.querySelector( '.zoom-prev' );
+            const nextBtn = dialog.querySelector( '.zoom-next' );
+
+            const images = Array.from( viewport.querySelectorAll( '.item img' ) );
+            let currentIndex = 0;
+
+            const showImage = function( index ) {
+                currentIndex = ( index + images.length ) % images.length;
+                dialogImg.src = images[ currentIndex ].src;
+                dialogImg.alt = images[ currentIndex ].alt || '';
+            };
+
+            viewport.addEventListener( 'click', function( event ){
+                const img = event.target.closest( '.item' )?.querySelector('img');
+                if( typeof img !== 'undefined' && img !== null ){
+                    currentIndex = images.indexOf( img );
+                    showImage( currentIndex );
+                    dialog.showModal();
+                }
+            });
+
+            prevBtn.addEventListener( 'click', function( event ){
+                event.stopPropagation();
+                showImage( currentIndex - 1 );
+            });
+
+            nextBtn.addEventListener( 'click', function( event ){
+                event.stopPropagation();
+                showImage( currentIndex + 1 );
+            });
+
+            dialog.addEventListener( 'click', function( event ){
+                if( event.target === dialog || event.target === dialogImg ){
+                    dialog.close();
+                }
+            });
+
+            dialog.addEventListener( 'keydown', function( event ){
+                if( event.key === 'ArrowLeft' ) showImage( currentIndex - 1 );
+                if( event.key === 'ArrowRight' ) showImage( currentIndex + 1 );
+            });
+        }        
     },
     
     
