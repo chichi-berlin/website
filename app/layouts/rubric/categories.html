@@ -3,7 +3,7 @@
 
 
 {{ define "aside" }}
-{{ $pagesInTopMenu := where $.Site.Menus.top ".Page.UniqueID" .UniqueID }}    
+{{ $pagesInTopMenu := where $.Site.Menus.top ".Page.File.UniqueID" .File.UniqueID }}    
 
 {{ if le (len $pagesInTopMenu) 0 }}
 <aside class="aside__flow" id="page-aside">
@@ -33,7 +33,7 @@
         {{ range sort .Sections ".Params.weight" "asc" }}
         {{ if not .Params.draft }}
         <li>
-            <a href="{{ .URL | relLangURL }}">
+            <a href="{{ .RelPermalink }}">
                 <div class="wrap">
                     <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
                     <div class="fg {{ if isset .Params "explanation" }}is-explanation{{ end }}">
@@ -53,7 +53,7 @@
         {{ range sort .Pages ".Params.model" "asc" }}
         {{ if not .Params.draft }}
         <li>
-            <a href="{{ .URL | relLangURL }}">
+            <a href="{{ .RelPermalink }}">
                 <div class="wrap">
                     <div class="bg" style="background-image: url('{{ default "/media/images/pictures/default.png" .Params.image }}')"></div>
                     <div class="fg">

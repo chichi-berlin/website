@@ -12,7 +12,7 @@
         <div class="row-wrap__contacts">
             <div class="row-wrap__contacts--inner edge-spacer--h">
                 <ul class="contact">
-                    <li><a href="{{ ($.Site.GetPage "home").URL }}">Fahrradgeschäft CHICHI</a></li>
+                    <li><a href="{{ ($.Site.GetPage "home").RelPermalink }}">Fahrradgeschäft CHICHI</a></li>
                     <li>
                         {{ partial "svgs/icon_phone.html" ( dict "classes" ( slice "icon" "icon--phone" ) ) }}
                         <a href="tel:00493062986005">
@@ -30,7 +30,7 @@
                     </li>
                     <li>
                         {{ $mapPage := $.Site.GetPage "page" "map" }}
-                        <a href="{{ $mapPage.URL | relLangURL }}">
+                        <a href="{{ $mapPage.RelPermalink }}">
                             <address>
                                 Flughafenstraße 50 | 12053 Berlin
                             </address>

@@ -3,7 +3,7 @@
 <article class="component__post--preview">
     <h2>
         <a title="{{ .Title }}"
-           href="{{ .URL | relLangURL }}">
+           href="{{ .RelPermalink }}">
             {{ .Title }}
         </a>
     </h2>
@@ -18,7 +18,7 @@
     <nav>
         <a class="btn--primary"
            title="{{ .Title }}"
-           href="{{ .URL | relLangURL }}">
+           href="{{ .RelPermalink }}">
             <span>{{ i18n "read-more" }}</span>
         </a>
     </nav>

@@ -169,25 +169,25 @@ body:
 
 spindle:
   other: 'Spindel'
-  
+
 width:
   one: 'Breite'
   other: 'Breiten'
 widths:
-  other: 'Breiten'  
+  other: 'Breiten'
 
 bearing:
   other: 'Lager'
-  
+
 rail:
   other: 'Strebe'
 
 season:
   other: 'Saison'
-  
+
 lenght:
   other: 'Länge'
-  
+
 extras:
   other: 'Extras'
 
@@ -202,10 +202,10 @@ piston:
   other: 'Kolben'
 pistons:
   other: 'Kolben'
-  
+
 chain-fit:
   other: 'Kettenpassung'
-  
+
 clamp-size-stem:
   other: 'Klemm-Maß VB'
 
@@ -214,31 +214,31 @@ clamp-size:
   other: 'Klemm-Maß'
 clamp-sizes:
   other: 'Klemm-Maß'
-  
+
 diameter:
   other: 'Durchmesser'
-  
+
 reach:
   other: 'reach'
-  
+
 internal-diameter:
   other: 'Innendurchmesser'
-  
+
 alloy:
   other: 'Legierung'
 
 rise:
   other: 'Rise'
-  
+
 backsweep:
   other: 'Backsweep'
-  
+
 drop:
   other: 'Drop'
-  
+
 bag type:
   other: 'Taschentyp'
-  
+
 volume:
   other: 'Volumen'
 

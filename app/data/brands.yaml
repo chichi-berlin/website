@@ -263,6 +263,7 @@ accessories:
   - label:  'Zéfal'
     img:    '/media/images/brands/zefal_logo.jpg'
     link:   'https://www.zefal.com/de/'
+  - label:  'Fidlock'
     img:    '/media/images/brands/fidlock_logo.png'
     link:   'https://www.fidlock.com/'
   - label:  'Römer'

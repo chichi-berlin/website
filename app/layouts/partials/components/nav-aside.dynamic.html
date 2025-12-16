@@ -6,7 +6,7 @@
     {{ $currentPage := . }}    
     
     <nav class="menu__breadcrumbs" aria-label="You are here">
-        <a href="{{ $parent.URL | relLangURL }}">
+        <a href="{{ $parent.RelPermalink }}">
             {{ if $parent.IsHome }}
                 /
             {{ else }}
@@ -25,7 +25,7 @@
             <li class="menu__item">
                 <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
                    data-submenu="submenu-{{ $subSection }}" 
-                   href="{{ .URL | relLangURL }}">
+                   href="{{ .RelPermalink }}">
                     {{ .LinkTitle }}
                 </a>
             </li>
@@ -45,7 +45,7 @@
                 {{ with $.Site.GetPage "page" (printf "%s/%s/%s" $section $subSection .Name) }}
                 <li class="menu__item">
                     <a class="menu__link {{ if eq . $currentPage }}menu__link--current{{ end }}" 
-                       href="{{ .URL | relLangURL }}">
+                       href="{{ .RelPermalink }}">
                         {{ .LinkTitles }}
                     </a>
                 </li>

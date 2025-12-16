@@ -11,21 +11,21 @@ older-posts:
 
 news:
   other: 'Neuigkeiten'
-  
+
 tag:
   one: 'Kategorie'
   other: 'Kategorien'
-  
-page: 
+
+page:
   one: 'Seite'
   other: 'Seiten'
-  
+
 page-number-separator:
   other: 'von'
-  
+
 read-more:
   other: 'weiterlesen'
-  
+
 figure-caption-photographer:
   other: '(Bild: {{.Count}})'
 

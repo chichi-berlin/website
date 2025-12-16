@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $itemsPerPage := $.Param "items-per-page" | default 5 }}
-{{ $postsSectionPath := printf "%s%s" .Dir "beitraege" }}
+{{ $postsSectionPath := printf "%s%s" .File.Dir "beitraege" }}
 {{ $posts := $.Site.GetPage "section" $postsSectionPath }}
 
 {{ if $posts }}

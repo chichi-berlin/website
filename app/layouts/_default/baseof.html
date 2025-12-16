@@ -11,9 +11,9 @@
     {{ partial "head/meta.html" . }}    
     {{ partial "head/icon.html" . }}
 
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}"/>
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}"/>
+    {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}"/>
+    <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}"/>
     {{ end }}
 
     {{ partial "head/csp.html" . }}
@@ -31,13 +31,15 @@
         {{ $.Scratch.Set "pageName" $.File.TranslationBaseName }}
     {{ else if $.IsNode }}
         <!--
-        NOTE: as long as Hugo doesnt support `slug` in (sub-)sections, we do it manually by first ignoring 
-        folder names defined in contentDir and instead obtaining 'section' configuration in front matter 
-         -->
-        {{ $sectionPath := trim .File.Dir "/" }}
-        {{ $node := $.Site.GetPage "section" $sectionPath }}
-        {{ with $node }}
-            {{ $.Scratch.Set "pageName" $node.Params.section }}    
+        NOTE: as long as Hugo doesnt support `slug` in (sub-)sections, we do it manually by first ignoring
+        folder names defined in contentDir and instead obtaining 'section' configuration in front matter
+        -->
+        {{ with .File }}
+            {{ $sectionPath := trim .Dir "/" }}
+            {{ $node := $.Site.GetPage "section" $sectionPath }}
+            {{ with $node }}
+                {{ $.Scratch.Set "pageName" $node.Params.section }}
+            {{ end }}
         {{ end }}
     {{ else }}
         {{ $.Scratch.Set "pageName" $slug }}
