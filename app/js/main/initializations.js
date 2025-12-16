@@ -79,12 +79,30 @@ const selectors = {
     },
     
     
-    '#page-aside-nav[data-state="open"]': function(){
+    '#page-aside-nav': function(){
         const element = this;
-        
-        global.setTimeout(()=>{
-            element.dataset.state = 'closed';
-        }, 200 );
+        const isMobile = window.matchMedia('(max-width: 1023px)');
+
+        if (element.dataset.state === 'open') {
+            global.setTimeout(() => {
+                element.dataset.state = 'closed';
+            }, 500);
+        }
+
+        element.addEventListener('click', function(event) {
+            if (!isMobile.matches) {
+                return;
+            }
+
+            const isOpen = element.dataset.state === 'open';
+
+            if (!isOpen) {
+                event.preventDefault();
+                element.dataset.state = 'open';
+            } else if (!event.target.closest('a')) {
+                element.dataset.state = 'closed';
+            }
+        });
     },
     
     
