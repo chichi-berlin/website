@@ -116,27 +116,37 @@ const selectors = {
         
         const controls = element.querySelector( '.controls' );
         const viewport = element.querySelector( '.viewport' );
+        const items = viewport.querySelectorAll( '.item' );
+
+        const slickDefaults = {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
 
         jQuery( viewport ).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            ...slickDefaults,
             arrows: false,
             fade: true,
-            asNavFor: controls,
-            dots: false
+            asNavFor: items.length >= 2 ? controls : null,
+            dots: false,
+            infinite: items.length >= 2
         });
-        jQuery( controls ).slick({
-            initialSlide: 0,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: viewport,
-            centerMode: true,
-            focusOnSelect: true,
-            arrows: true,
-            infinite: true,
-            variableWidth: true,
-            draggable: false
-        });
+
+        if( items.length >= 2 ){
+            jQuery( controls ).slick({
+                ...slickDefaults,
+                initialSlide: 0,
+                asNavFor: viewport,
+                centerMode: true,
+                focusOnSelect: true,
+                arrows: true,
+                infinite: true,
+                variableWidth: true,
+                draggable: false
+            });
+        }else{
+            controls.style.display = 'none';
+        }
 
         element.querySelectorAll('.slick-slide > div, .item')
                .forEach( function( item ){
