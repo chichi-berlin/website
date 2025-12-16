@@ -1,4 +1,6 @@
+@use 'sass:math';
+
 .info-after-tmg {
-    height: rem(45 / 2);
-    width: rem(187 / 2);
+    height: rem(math.div(45, 2));
+    width: rem(math.div(187, 2));
 }
