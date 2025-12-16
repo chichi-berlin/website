@@ -180,12 +180,15 @@ const selectors = {
     },
 
     'button.menu-toggle': function(){
-        this.addEventListener( 'click', function( event ){
+        const button = this;
+        button.addEventListener( 'click', function( event ){
             event.preventDefault();
             const { site } = global;
             const { dataset } = site;
 
-            dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
+            const isOpen = dataset.state_header_menu === 'open';
+            dataset.state_header_menu = isOpen ? 'closed' : 'open';
+            button.setAttribute( 'aria-expanded', !isOpen );
         });
     },
 };
