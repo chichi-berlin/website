@@ -79,12 +79,30 @@ const selectors = {
     },
     
     
-    '#page-aside-nav[data-state="open"]': function(){
+    '#page-aside-nav': function(){
         const element = this;
         
-        global.setTimeout(()=>{
-            element.dataset.state = 'closed';
-        }, 200 );
+        // FUTUREWORK: refactor the mobile indicator to be a global const instead of compute on-the-fly
+        const isMobile = window.matchMedia('(max-width: 1023px)').matches;
+
+        if( element.dataset.state === 'open' ){
+            global.setTimeout(() => {
+                element.dataset.state = 'closed';
+            }, 200 );
+        }
+
+        element.addEventListener( 'click', function( event ){
+            if( isMobile === false ){
+                return;
+            }
+
+            if( element.dataset.state !== 'open' ){
+                event.preventDefault();
+                element.dataset.state = 'open';
+            }else if( ! event.target.closest( 'a' ) ){
+                element.dataset.state = 'closed';
+            }
+        });
     },
     
     
