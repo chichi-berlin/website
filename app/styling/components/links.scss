@@ -2,7 +2,7 @@
 $underline-thickness: 1;
 
 .component__nav-footer, .component__nav-top {
-    li {
+    li:not(.logo__black) {
         a {
             display: inline-block;
                     
