@@ -4,7 +4,7 @@ title: 'CHICHI | Fahrradfachgeschäft'
 params:
   layout-name: 'master'
   version: '2.0.0'
-  hugo-version: '0.38'
+  hugo-version: '0.139'
   tracking-base-url: 'https://matomo.onwx.org/'
 
 sitemap:
@@ -97,19 +97,21 @@ disableHugoGeneratorInject: true
 
 googleAnalytics:            ''
 
-# code block syntax highlighting
-pygmentsCodeFencesGuessSyntax: false
-pygmentsStyle:              'monokai'
-pygmentsUseClasses:         false
+# Markup configuration (replaces deprecated blackfriday and pygments settings)
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+      unsafe: false
+  highlight:
+    style: 'monokai'
+    guessSyntax: false
+    noClasses: true
 
 defaultContentLanguage:     'de'
 defaultContentLanguageInSubdir: false
 enableMissingTranslationPlaceholders: true
 hasCJKLanguage:             false
-
-blackfriday:
-  extensions:
-    - hardLineBreak
 
 languages:
   de:
@@ -125,8 +127,6 @@ languages:
 #      accessories:  '/:sections/:slug/'
 #      blog:         '/blog/:url/'
 
-# Preserve special characters in taxonomy names ('Gérard Depardieu' vs 'Gerard Depardieu')
-preserveTaxonomyNames:      false
 taxonomies:
   tag:    'tags'
 #  bicycle:      'bicycles'
