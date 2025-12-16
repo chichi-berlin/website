@@ -46,7 +46,17 @@
         @include bp-medium() {
             max-width: 50%;
         }
-        
+
+        .slick-slide {
+            margin: 0 rem(5);
+            opacity: 0.4;
+            transition: opacity 0.2s;
+
+            &.slick-current {
+                opacity: 1;
+            }
+        }
+
         .item {
             height: rem($controls-height);
             background-color: color(white);

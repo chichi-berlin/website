@@ -123,20 +123,26 @@ const selectors = {
             arrows: false,
             fade: true,
             asNavFor: controls,
-            dots: true
+            dots: false
         });
         jQuery( controls ).slick({
             initialSlide: 0,
             slidesToShow: 1,
             slidesToScroll: 1,
             asNavFor: viewport,
-            centerMode: false,
+            centerMode: true,
             focusOnSelect: true,
             arrows: true,
-            infinite: false,
+            infinite: true,
             variableWidth: true,
             draggable: false
         });
+
+        element.querySelectorAll('.slick-slide > div, .item')
+               .forEach( function( item ){
+                   item.style.removeProperty( 'display' );
+                   item.style.removeProperty( 'width' );
+               });
     },
     
     
