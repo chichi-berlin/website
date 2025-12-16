@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
+    {{ $title := delimit (slice .Title "·" .Site.Title) " " }}
     <title>{{ $title }}</title>
 
     <link rel="canonical" href="{{ .Permalink }}">
