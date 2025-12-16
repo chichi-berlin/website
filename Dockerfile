@@ -1,4 +1,4 @@
-FROM node:20-slim
+FROM node:24-slim
 
 ENV HUGO_VERSION=0.152.2
 
