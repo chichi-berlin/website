@@ -12,26 +12,40 @@
         width: 100%;
         height: 100%;
         bottom: 0;
-        
+
         background-color: color(brand-pink);
-        
+
         transition: bottom 0.2s;
+
+        @include bp-mobile() {
+            position: fixed;
+            bottom: env(safe-area-inset-bottom);
+            height: auto;
+        }
     }
     
     .footer-nav--inner {
         @include flex-center;
         height: 100%;
+
+        @include bp-mobile() {
+            padding: rem(10) 0;
+        }
     }
 
 }
 
 
 #site[data-state_footer="visible"] {
-    
+
     .footer-nav {
-        
+
         .footer-nav-wrap {
             bottom: 100%;
+
+            @include bp-mobile() {
+                bottom: env(safe-area-inset-bottom);
+            }
         }
     }
 }
