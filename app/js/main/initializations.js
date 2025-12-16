@@ -116,27 +116,35 @@ const selectors = {
         
         const controls = element.querySelector( '.controls' );
         const viewport = element.querySelector( '.viewport' );
+        const items = viewport.querySelectorAll( '.item' );
+        const hasMultipleImages = items.length > 1;
+
+        const slickDefaults = { slidesToShow: 1, slidesToScroll: 1 };
 
         jQuery( viewport ).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            ...slickDefaults,
             arrows: false,
             fade: true,
-            asNavFor: controls,
+            infinite: hasMultipleImages,
+            asNavFor: hasMultipleImages ? controls : null,
             dots: false
         });
-        jQuery( controls ).slick({
-            initialSlide: 0,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: viewport,
-            centerMode: true,
-            focusOnSelect: true,
-            arrows: true,
-            infinite: true,
-            variableWidth: true,
-            draggable: false
-        });
+
+        if( hasMultipleImages ){
+            jQuery( controls ).slick({
+                ...slickDefaults,
+                initialSlide: 0,
+                asNavFor: viewport,
+                centerMode: true,
+                focusOnSelect: true,
+                arrows: true,
+                infinite: true,
+                variableWidth: true,
+                draggable: false
+            });
+        } else {
+            controls.style.display = 'none';
+        }
 
         // Remove inline styles added by slick that break centering
         element.querySelectorAll('.slick-slide > div, .item').forEach(function(el) {
