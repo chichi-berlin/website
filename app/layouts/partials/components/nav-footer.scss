@@ -1,44 +1,56 @@
 .component__nav-footer {
     ul {
-        
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        
+
         li {
             font-family: $decorative-font-family;
             @include type(xxl);
             font-weight: 400;
-            
+
             & ~ * {
                 margin-left: rem(36);
+
+                @include bp-mobile() {
+                    margin-left: rem(20);
+                }
             }
 
-            
+            @include bp-mobile() {
+                @include type(ml);
+            }
+
             &:first-child {
                 order: 1;
             }
-            
+
             &:nth-child(2) {
                 order: 3;
             }
-            
+
             &.logo__black {
                 height: rem(38);
                 width: rem(46);
                 position: relative;
-                
+
                 order: 2;
-                
+
                 a {
                     display: inline;
                 }
-                
+
                 svg {
                     position: absolute;
                     height: 100%;
                     fill: color(black);
+                }
+
+                @include bp-mobile() {
+                    height: rem(28);
+                    width: rem(34);
                 }
             }
         }
