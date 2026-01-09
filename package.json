@@ -35,7 +35,7 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0",
     "svgo": "^1.0.3",
-    "webpack": "^3.10.0"
+    "webpack": "^5.104.1"
   },
   "engines": {
     "node": ">=8.9.0",
