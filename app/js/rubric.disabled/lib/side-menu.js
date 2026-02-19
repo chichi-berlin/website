@@ -111,7 +111,7 @@ Object.assign( SideMenu.prototype, {
                     if( submenus[ pos ] ){
                         submenus[ pos ].push( pushMe );
                     }else{
-                        submenus[ pos ] = []
+                        submenus[ pos ] = [];
                         submenus[ pos ].push( pushMe );
                     }
                 }

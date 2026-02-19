@@ -118,7 +118,7 @@ const selectors = {
             infinite: false,
             variableWidth: true,
             draggable: false
-       });
+        });
     },
     
     
@@ -188,7 +188,7 @@ const selectors = {
             const { site } = global;
             const { dataset } = site;
 
-           dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
+            dataset.state_header_menu = dataset.state_header_menu === 'open' ? 'closed' : 'open';
         });
     },
 };
