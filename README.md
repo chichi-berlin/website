@@ -20,7 +20,8 @@ the heart of Berlin Neukölln. The site can be found under [chichi.berlin](https
 
 __Prerequisites:__
 
-*   Node.js >= 20.0
+*   Node.js >= 24.0
+*   NPM >= 11.0
 *   Hugo >= 0.152.0
 
 Or use Docker (recommended for consistent builds).

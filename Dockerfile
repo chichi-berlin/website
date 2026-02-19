@@ -1,4 +1,4 @@
-FROM registry-1.docker.io/library/node:20-slim
+FROM registry-1.docker.io/library/node:24-slim
 
 ENV HUGO_VERSION=0.152.2
 
