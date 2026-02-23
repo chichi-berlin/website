@@ -24,8 +24,6 @@ __Prerequisites:__
 *   NPM >= 11.0
 *   Hugo >= 0.152.0
 
-Or use Docker (recommended for consistent builds).
-
 
 ### Local Development
 
@@ -34,15 +32,8 @@ npm install
 npm start
 ```
 
-### Docker Development
-
-```sh
-# Start development server
-docker compose up
-
-# Production build (outputs to ./dist)
-docker compose run --rm build
-```
+If needed, a container runtime may be used to run the development process in
+an isolated context (see `./Containerfile` for more details).
 
 ### Build Commands
 
