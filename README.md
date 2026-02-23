@@ -18,11 +18,9 @@ the heart of Berlin Neukölln. The site can be found under [chichi.berlin](https
 
 ### How to get started?
 
-__Prerequisites:__
-
-*   Node.js >= 24.0
-*   NPM >= 11.0
-*   Hugo >= 0.152.0
+__Prerequisites:__ please refer to the `./mise.toml` file for detailed
+version information. Either install the listed software manually or utilize
+[Mise](https://mise.jdx.dev).
 
 
 ### Local Development

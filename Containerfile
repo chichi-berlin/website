@@ -1,6 +1,6 @@
 FROM registry-1.docker.io/library/node:24-slim
 
-ENV HUGO_VERSION=0.152.2
+ARG HUGO_VERSION
 
 RUN apt-get update \
     && apt-get install --yes --no-install-recommends wget ca-certificates \
