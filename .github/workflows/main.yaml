@@ -1,0 +1,87 @@
+name: 'Publish to web server'
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'editor'
+  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  buildPath: './.local/dist'
+  ftpDestinationPath: './'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: >-
+        ${{ 
+          case(
+            github.ref_name == 'editor', 'test',
+            github.ref_name == 'main'  , 'prod',
+            'test'
+          )
+        }}
+        
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd   # v6.0.2
+
+      - name: 'Set up build tooling in runtime'
+        uses: jdx/mise-action@6d1e696aa24c1aa1bcc1adea0212707c71ab78a8    # v3.6.1
+        with:
+          version: '2026.2.19'
+      - name: 'Install software not available with Mise'
+        run: |
+          sudo apt update
+          sudo apt install --yes lftp
+      - name: 'Install all package dependencies'
+        run: |
+          npm install
+
+      - name: 'Build site with Webpack and Hugo'
+        env:
+          NODE_ENV: 'production'
+          HUGO_ENV: 'production'
+          HUGO_CACHEDIR: ${{ format( '{0}/.local/cache', github.workspace ) }}
+        run: |
+          webpack --config ./.webpack.config
+          hugo \
+            --config ./config.yml \
+            --destination '${{ env.buildPath }}' \
+            --baseURL '${{ secrets.ROOT_URL }}'
+
+      - name: 'Upload build result to web server via FTP'
+        run: |
+          lftp \
+              --norc \
+              -u '${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }}' \
+              -p '21' \
+              'ftp://${{ secrets.FTP_HOST }}' <<FTPCOMMANDS
+
+              set ftps:initial-prot P;
+              
+              set ftp:ssl-force yes;
+              set ssl:verify-certificate no;
+              set ssl:check-hostname yes;
+              set ssl:use-sni yes;
+              
+              set ftp:use-utf8 yes;
+              set ftp:list-options -a;
+
+              mirror \
+                  --continue \
+                  --verbose=0 \
+                  --parallel=4 \
+                  --delete \
+                  --exclude-glob=.htaccess \
+                  --exclude=.well-known \
+                  --reverse \
+                  ${{ format( '{0}/', env.buildPath ) }} ${{ env.ftpDestinationPath }};
+
+              quit;
+          FTPCOMMANDS
