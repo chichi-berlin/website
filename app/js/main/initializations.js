@@ -193,6 +193,8 @@ const selectors = {
             dialog.addEventListener( 'click', function( event ){
                 if( event.target === dialog || event.target === dialogImg ){
                     dialog.close();
+                    dialogImg.src = '';
+                    dialogImg.alt = '';
                 }
             });
 
