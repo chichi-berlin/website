@@ -14,6 +14,6 @@ dist/
 app/static/style
 app/static/script
 app/static/media/images/assets/vendors
-app/layouts/partials/svgs
+app/layouts/_partials/svgs
 app/i18n
 .hugo_build.lock
