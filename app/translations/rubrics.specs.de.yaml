@@ -271,3 +271,9 @@ lower length:
 
 wheels:
   other: 'Laufradsatz'
+
+front derailleur:
+  other: 'Umwerfer'
+
+rear derailleur:
+  other: 'Schaltwerk'
