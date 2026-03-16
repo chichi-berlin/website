@@ -23,5 +23,5 @@
 @import './layouts/page.scss';
 
 @import './pages/**/*.scss';
-@import './../layouts/partials/components/**/*.scss';
-@import './../layouts/shortcodes/**/*.scss';
+@import '../layouts/_partials/components/**/*.scss';
+@import './../layouts/_shortcodes/**/*.scss';
