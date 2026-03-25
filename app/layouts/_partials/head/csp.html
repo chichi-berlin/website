@@ -1,18 +1,16 @@
-{{ $trackingURL := $.Param "tracking-base-url" | urls.Parse }}
-
 <meta 
     http-equiv="Content-Security-Policy" 
     content="
         default-src 'self';
         base-uri 'self';
-        connect-src 'self' https://insurance.wertgarantie.com https://categories.wertgarantie.com https://shop-connect.wertgarantie.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}ws://localhost:*{{ end }};
+        connect-src 'self' https://insurance.wertgarantie.com https://categories.wertgarantie.com https://shop-connect.wertgarantie.com {{ if eq (getenv "HUGO_ENV") "development" }}ws://localhost:*{{ end }};
         frame-src 'self' {{ $.Param "tracking-base-url" }};
         form-action 'self';
         font-src 'self';
-        img-src 'self' https://*.thunderforest.com {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }};
+        img-src 'self' https://*.thunderforest.com;
         media-src 'self';
         object-src 'none';
-        script-src 'self' https://siteconnect.wertgarantie-services.de {{ $trackingURL.Scheme }}://{{ $trackingURL.Host }} {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline' 'unsafe-eval'{{ end }};
+        script-src 'self' https://siteconnect.wertgarantie-services.de {{ if eq (getenv "HUGO_ENV") "development" }}'unsafe-inline' 'unsafe-eval'{{ end }};
         style-src 'self' 'unsafe-inline';
         worker-src 'self';
     ">
