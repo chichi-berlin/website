@@ -3,7 +3,6 @@ title: 'CHICHI | Fahrradfachgeschäft'
 
 params:
   layout-name: 'master'
-  tracking-base-url: 'https://matomo.onwx.org/'
 
 sitemap:
   changefreq: 'monthly'
