@@ -6,11 +6,11 @@ type: 'rubric'
 model: 'Disc Trucker'
 manufacturer: 'Surly'
 
-image: '/media/images/rubrics/bicycles/items/surly-disc-trucker-2023_01.jpg'
+image: '/media/images/rubrics/bicycles/items/surly/disc-trucker/2023_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/surly-disc-trucker-2023_02.jpg'
-  - '/media/images/rubrics/bicycles/items/surly-disc-trucker-2023_03.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/2023_02.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/2023_03.jpg'
 
 description: |
     Das Disc Trucker genießt den gleichen Ruf wie das Long Haul Trucker: Es ist eines der am besten zu fahrenden und wertvollsten Drop-Bar-Tourenräder auf dem Markt. Manchmal erfordert jedoch eine Kombination aus Beladung, Klima und Gelände etwas mehr Bremsleistung, als ein Standard-Felgenbremsen Long Haul Trucker bieten kann.

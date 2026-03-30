@@ -6,11 +6,11 @@ type: 'rubric'
 model: 'Bridge Club'
 manufacturer: 'Surly'
 
-image: '/media/images/rubrics/bicycles/items/surly-bridge-club-2023_01.jpg'
+image: '/media/images/rubrics/bicycles/items/surly/bridge-club/2023_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/surly-bridge-club-2023_02.jpg'
-  - '/media/images/rubrics/bicycles/items/surly-bridge-club-2023_03.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/2023_02.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/2023_03.jpg'
 
 description: |
     Bridge Club ist für Ausflüge auf verschiedenen Untergründen – geplant oder ungeplant. Wenn Du auf Deiner nächsten Straßentour ein wenig Abwechslung suchst, ist Bridge Club bereit für Umleitungen durch den Wald.

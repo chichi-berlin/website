@@ -9,7 +9,7 @@ section: 'custom'
 
 title: 'custom build'
 description: 'Individueller Aufbau'
-image: '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_01.jpg'
+image: '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/01.jpg'
 
 explanation: 'Wir bauen Dein Wunschrad'
 

@@ -6,12 +6,12 @@ type: 'rubric'
 model: 'Oxbridge'
 manufacturer: 'Bombtrack'
 
-image: '/media/images/rubrics/bicycles/items/oxbridge-2018_1.jpg'
+image: '/media/images/rubrics/bicycles/items/bombtrack/oxbridge/2018_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/oxbridge-2018_2.jpg'
-  - '/media/images/rubrics/bicycles/items/oxbridge-2018_3.jpg'
-  - '/media/images/rubrics/bicycles/items/oxbridge-2018_4.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/oxbridge/2018_02.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/oxbridge/2018_03.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/oxbridge/2018_04.jpg'
 
 description: >
     Far from being a homage to the vintage cycling era, the Oxbridge is less velo-pastiche and more 

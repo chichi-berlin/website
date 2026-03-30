@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Oslo (Diamant)'
 manufacturer: 'BBF Bike'
 
-image: '/media/images/rubrics/bicycles/items/oslo-diamant-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/bbf/oslo/diamant/schwarz-2026_01.jpg'
 
 description: >
      Unser preisgünstigstes Alltagsrad mit Vollausstattung.
@@ -20,7 +20,7 @@ specs:
   - hubs: 'vorne: Shimano Nabendynamo; hinten: Shimano "Nexus" Rücktritt'
   - rims: 'Kastenfelge, Alu'
   - brakes: 'V-Brake und Rücktritt'
-  - lights: 'Trelock Mini LS592 LED, Schalter; AXA Spark m. Standlicht'
+  - lights: 'Büchel Retro LED; Büchel Piccadilly LED'
   - weight: '17,5 kg'
   - sizes:
     - '50'  

@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Urban 2.0'
 manufacturer: 'BBF Bike'
 
-image: '/media/images/rubrics/bicycles/items/urban2.0-2018_1.jpg'
+image: '/media/images/rubrics/bicycles/items/bbf/urban2.0/2018_01.jpg'
 
 description: >
      Alles was Du brauchst, um auf befestigten Wegen schnell zu sein. Leicht genug, um für ein paar 

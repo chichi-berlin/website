@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Maru'
 manufacturer: 'Checker Pig'
 
-image: '/media/images/rubrics/bicycles/items/maru-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/checker-pig/maru/2018_01.jpg'
 
 description: >
      Das Maru ist ein puristisches Bike für Freizeit und City. Die Shimano Nexus 8-Gang Getriebenabe 

@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Pig Patrol'
 manufacturer: 'Checker Pig'
 
-image: '/media/images/rubrics/bicycles/items/pig-patrol-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/checker-pig/pig-patrol/2018_01.jpg'
 
 description: >
     Das Pig Patrol beweist, dass auch preisgünstige Bikes einen äußerst souveränen Eindruck 

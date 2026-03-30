@@ -6,7 +6,7 @@ type: 'rubric'
 model: 'Needle'
 manufacturer: 'Bombtrack'
 
-image: '/media/images/rubrics/bicycles/items/needle-2018.jpg'
+image: '/media/images/rubrics/bicycles/items/bombtrack/needle/2018_01.jpg'
 
 description: >
     Beim Needle dreht sich alles um Ausgeglichenheit. In Crit Rennen brauchst Du ein Rad, das steif genug ist, um auf jeden kleinen Input sofort zu reagieren, jedoch nachgiebig genug, um die gern einmal etwas unebene Fahrbahn auszugleichen. Aus diesem Grunde ist das Needle aus Stahl. Jedes Detail wurde in Abstimmung mit täglichen Nutzern dieses Rades vervollkommnet. Zum Beispiel das kürzere Sattelrohr, das der Sattelstütze mehr Flexion erlaubt, oder das optimierte Nachlaufmaß für größere Stabilität bei hoher Geschwindigkeit. Alle Komonenten am Needle sind "race ready" - von der Sram Omnium Kettenradgarnitur bis zum Drome Laufradsatz von Bombtrack!

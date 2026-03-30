@@ -9,7 +9,7 @@ section: 'tour-commuter'
 
 title: 'Tour & Vielfahrer'
 description: 'Vollausgestattet, Allwetter, Commuting, Mittel- und Langdistanz, ausgedehnte Touren mit Gepäck'
-image: '/media/images/rubrics/bicycles/items/cinelli-hobootleg-2022_01.jpeg'
+image: '/media/images/rubrics/bicycles/items/contoura/fe-4/2023_01.jpg'
 
 explanation: 'Vollausgestattet, Allwetter, Commuting, Mittel- und Langdistanz, ausgedehnte Touren mit Gepäck'
 

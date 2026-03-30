@@ -7,14 +7,14 @@ related-posts:
 model: 'Die Lagune'
 manufacturer: 'CHICHI'
 
-image: '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_01.jpg'
+image: '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_02.jpg'
-  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_03.jpg'
-  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_04.jpg'
-  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_05.jpg'
-  - '/media/images/rubrics/bicycles/items/chichi-design-wasserrad_06.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/02.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/03.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/04.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/05.jpg'
+  - '/media/images/rubrics/bicycles/items/chichi/chichi-design-wasserrad/06.jpg'
 
 description: >
     Mit einem Gang, der Möglichkeit bei Bedarf Schutzbleche hinzuzufügen und der semisportlichen 
