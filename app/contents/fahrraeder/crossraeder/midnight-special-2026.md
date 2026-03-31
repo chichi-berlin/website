@@ -16,7 +16,7 @@ images:
   - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_04.webp'
   - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_05.webp'
 
-description:
+description: >
     Midnight Special glänzt auf löchrigem Asphalt und gelegentlichen Schotterstrecken. Seine Bereifung schluckt Straßenlärm und absorbiert alle Unebenheiten auf der Straße.
     Wenn es um Rennräder geht, willst Du nur ein paar Bananen in die Tasche werfen und sehen, wohin die Straße Dich führt. Du bewegst Dich auf Deinen Fahrten auf verschiedenen Untergründen und wechselst häufig von Asphalt auf Schotter. Mit Midnight Special kannst Du all das ganz bequem.
 

@@ -28,10 +28,8 @@ specs:
   - frame: '4130 CrMo, doppelt konifiziert'
   - fork: '4130 CrMo'
   - wheel-size: '584mm  (Größe 46 & 49) / 622mm (Größe 52, 55 & 58)'
-  - headset: 'Neco H282 gedichtet, 1.1/8" '
   - stem: 'Bombtrack Roam'
   - handlebar: 'Bombtrack Origin'
-  - bottom-bracket: 'BSA gedichtet'
   - crankset: 'Bombtrack TAF19'
   - chainring: 'Bombtrack Ridge 42T'
   - pedals: 'Wellgo B109N'
@@ -42,6 +40,8 @@ specs:
   - tyres: 'Vee Tire Speedster 38-584 / 40-622'
   - brakes: 'Shimano BR-MT200 hydraulisch'
   - brake-levers: 'Shimano BL-MT200'
+  - shifter: 'Microshift Advent SL-M8195-R 1x9'
+  - rear derailleur: 'Microshift Advent RD-M6195M'
   - seatpost: 'Bombtrack Beech'
   - saddle: 'Bombtrack Origin'
   - weight: '12,6 kg (Größe 52)'
@@ -54,6 +54,5 @@ specs:
   - colors:
     - 'matt petrol blue'
     - 'metallic black'
-
 
 ---

@@ -41,10 +41,10 @@ specs:
   - saddle: 'Bombtrack Fuzz'
   - weight: '13,7 kg (Größe 45,7)'
   - sizes:
-    - '40,6'
-    - '45,7'
-    - '50,8'
-    - '55,9'
+    - '41'
+    - '46'
+    - '51'
+    - '56'
   - color: 'matt black'
 
 

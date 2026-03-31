@@ -3,48 +3,47 @@
 type: 'rubric'
 
 
-model: 'Arise Geared'
+model: 'Arise SG Apex'
 manufacturer: 'Bombtrack'
 
-image: '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/matt-petrol-blue-2026_01.jpg'
+image: '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_01.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_02.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_03.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_04.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_05.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_06.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_07.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_08.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_09.jpg'
-  - '/media/images/rubrics/bicycles/items/bombtrack/arise-geared/metallic-black-2026_10.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-black-2026_01.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_02.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_03.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_04.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_05.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_06.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_07.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_08.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_09.jpg'
+  - '/media/images/rubrics/bicycles/items/bombtrack/arise-sg-apex/metallic-grey-blue-2026_10.jpg'
 
 description: >
-     Ist es ein Pendlerfahrrad, ein Lieferrad oder ein praktisches Arbeitsrad? Das Arise Geared ist all das und noch viel mehr. Es werden dieselben hochwertigen, doppelt konifizierten Rohre verwendet wie bei allen Arise-Modellen, ergänzt durch einen Frontgepäckträger, einen 1x9-Antrieb mit einer 11-42T-Kassette, einen geraden Lenker und hydraulische Bremsen. Die breite Bereifung eignet sich ideal für den Stadtverkehr und bietet hervorragenden Geradeauslauf sowie Grip. Das Arise Geared ist das perfekte Fahrrad für Einkaufsfahrten, den Arbeitsweg oder einfach, um es vollzupacken und am Wochenende in den Wald zu fahren.
+     Das Arise SG Apex ist bestens gerüstet für jedes Abenteuer auf unterschiedlichem Terrain. Es basiert auf dem bewährten, doppelt konifizierten Arise-Rahmen und verfügt über größenangepasste Laufräder, damit jeder das gleiche Bombtrack-Fahrgefühl erlebt. Zusätzlich ist die zuverlässige SRAM Apex 1x11 verbaut. Die 11-42T-Kassette in Kombination mit dem 40T-Kettenblatt macht das Bergauffahren zum Kinderspiel, und mit dem Bombtrack-Cockpit und den mechanischen Tektro-Scheibenbremsen hast du auch bergab immer die volle Kontrolle. Mit tubeless ready WTB-Felgen und einer Vielzahl von Befestigungsmöglichkeiten am Rahmen ist die Basis für einen fantastischen Abenteuerbegleiter geschaffen.
 
 specs:
   - frametype: 'Diamant'
-  - frame: '4130 crmo, doppelt konifiziert'
-  - fork: '4130 crmo'
+  - frame: '4130 CrMo, doppelt konifiziert'
+  - fork: '4130 CrMo'
   - wheel-size: '584mm / 622mm'
-  - headset: 'Neco H282 gedichtet, 1.1/8" '
   - stem: 'Bombtrack Roam'
-  - handlebar: 'Bombtrack Origin'
-  - bottom-bracket: 'BSA gedichtet'
+  - handlebar: 'Bombtrack CX-10'
   - crankset: 'Bombtrack TAF19'
-  - chainring: 'Bombtrack Ridge 42T'
-  - pedals: 'Wellgo B109N'
-  - chain: 'KMC X9'
-  - cassette: 'Microshift Advent CS-H093, 9-fach, 11-42T'
+  - chainring: 'Bombtrack Ridge 40T'
+  - chain: 'KMC X11'
+  - cassette: 'Sram PG-1130, 11-fach, 11-42T'
   - hubs: 'Bombtrack Arc gedichtet'
   - rims: 'WTB ST i19'
-  - tyres: 'Vee Tire Speedster'
-  - brakes: 'Shimano BR-MT200 hydraulisch'
-  - brake-levers: 'Shimano BL-MT200'
+  - tyres: 'Vee Tire Speedster 38-584 / 40-622'
+  - brakes: 'Tektro Mira PM mechanisch'
+  - brake-levers: 'Sram Apex'
+  - shifter: 'Sram Apex 1x11'
+  - rear derailleur: 'Sram Apex 1'
   - seatpost: 'Bombtrack Beech'
-  - saddle: 'Bombtrack Origin'
-  - weight: '12,6 kg (Größe 52)'
+  - saddle: 'Bombtrack Fuzz'
+  - weight: '12,25 kg (Größe 52)'
   - sizes:
     - '46'
     - '49'
@@ -52,7 +51,7 @@ specs:
     - '55'
     - '58'
   - colors:
-    - 'matt petrol blue'
+    - 'metallic grey blue'
     - 'metallic black'
 
 
