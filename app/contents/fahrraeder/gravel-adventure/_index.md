@@ -9,7 +9,7 @@ section: 'gravel-adventure'
 
 title: 'Gravel & Adventure'
 description: 'für diversen Untergrund, sportliche Touren, Bikepacking'
-image: '/media/images/rubrics/bicycles/items/bombtrack/audax-al-road/2023_01.jpeg'
+image: '/media/images/rubrics/bicycles/items/bombtrack/hook-ext-apex-eagle/metallic-sunglow-fade-2026_01.jpg'
 
 explanation: 'für diversen Untergrund, sportliche Touren, Bikepacking'
 

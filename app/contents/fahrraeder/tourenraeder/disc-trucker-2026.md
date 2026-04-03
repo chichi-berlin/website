@@ -6,16 +6,16 @@ type: 'rubric'
 model: 'Disc Trucker'
 manufacturer: 'Surly'
 
-image: '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_01.png'
+image: '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-559-2026_01.png'
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/hi-viz-black-622-2026_01.png'
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/hi-viz-black-559-2026_01.png'
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_02.webp'
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_03.webp'
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_04.webp'
-  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_05.webp'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-559-2026_01.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/hi-viz-black-622-2026_01.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/hi-viz-black-559-2026_01.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_02.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_03.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_04.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/disc-trucker/grandpas-khakis-622-2026_05.jpg'
 
 description: |
     Das Disc Trucker bietet zuverlässige Bremskraft und zahlreiche praktische Befestigungspunkte. Die verkürzten Kettenstreben erhöhen die Steifigkeit und Wendigkeit des Disc Trucker in Kurven. Dank verbesserter Passform und optimiertem Handling unter Last sowie gesicherten Steckachsen für werkzeuglose Montage und Demontage ist das Disc Trucker bestens gerüstet, um deine täglichen Aufgaben zu erledigen – oder ihnen auszuweichen.

@@ -9,7 +9,7 @@ section: 'road'
 
 title: 'Renn&shy;räder'
 description: 'Training, befestigte Wege'
-image: '/media/images/rubrics/bicycles/items/bombtrack/audax/2023_01.jpeg'
+image: '/media/images/rubrics/bicycles/items/bombtrack/audax-al-road/matt-warm-grey-2026_01.jpg'
 
 explanation: 'Training, befestigte Wege'
 

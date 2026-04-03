@@ -6,15 +6,15 @@ type: 'rubric'
 model: 'Midnight Special'
 manufacturer: 'Surly'
 
-image: '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_01.webp'
+image: '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/surly/midnight-special/fools-gold-2026_01.webp'
-  - '/media/images/rubrics/bicycles/items/surly/midnight-special/black-2026_01.webp'
-  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_02.webp'
-  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_03.webp'
-  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_04.webp'
-  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_05.webp'
+  - '/media/images/rubrics/bicycles/items/surly/midnight-special/fools-gold-2026_01.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/midnight-special/black-2026_01.jpeg'
+  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_02.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_03.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_04.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/midnight-special/hi-viz-black-2026_05.jpg'
 
 description: >
     Midnight Special glänzt auf löchrigem Asphalt und gelegentlichen Schotterstrecken. Seine Bereifung schluckt Straßenlärm und absorbiert alle Unebenheiten auf der Straße.

@@ -6,14 +6,14 @@ type: 'rubric'
 model: 'Bridge Club'
 manufacturer: 'Surly'
 
-image: '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_01.png'
+image: '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_01.jpg'
 
 images:
-  - '/media/images/rubrics/bicycles/items/surly/bridge-club/whipped-butter-2026_01.png'
-  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_02.webp'
-  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_03.webp'
-  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_04.webp'
-  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_05.webp'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/whipped-butter-2026_01.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_02.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_03.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_04.jpg'
+  - '/media/images/rubrics/bicycles/items/surly/bridge-club/lingering-cranberry-2026_05.jpg'
 
 description: |
     Bridge Club ist für Ausflüge auf verschiedenen Untergründen – geplant oder ungeplant. Wenn Du auf Deiner nächsten Straßentour ein wenig Abwechslung suchst, ist Bridge Club bereit für Umleitungen durch den Wald.

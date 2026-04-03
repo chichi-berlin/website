@@ -9,7 +9,7 @@ section: 'cross'
 
 title: 'Cross&shy;räder'
 description: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
-image: '/media/images/rubrics/bicycles/items/bombtrack/hook/2023_01.jpeg'
+image: '/media/images/rubrics/bicycles/items/bombtrack/hook/metallic-teal-black-fade-2026_01.jpg'
 
 explanation: 'Training, schnelle Bewältigung langer Alltagswege, Wintertraining, befestigte und unbefestigte Wege'
 

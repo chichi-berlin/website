@@ -9,7 +9,7 @@ section: 'singlespeed-fixed'
 
 title: 'Singlespeed & Fixed'
 description: 'leicht, schnell, wendig, minimalistisch, Kurz- und Mitteldistanz, befestigte Wege'
-image: '/media/images/rubrics/bicycles/items/bombtrack/needle/2018_01.jpg'
+image: '/media/images/rubrics/bicycles/items/6ku/single-speed/nebula-1-2026_01.jpeg'
 
 explanation: 'leicht, schnell, wendig, minimalistisch, Kurz- und Mitteldistanz, befestigte Wege'
 
