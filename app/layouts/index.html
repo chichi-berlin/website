@@ -30,9 +30,9 @@
 </section>
 
 
+{{ $offers := $.Param "offers" | default slice }}
+{{ if gt (len $offers) 0 }} 
 <section class="edge-spacer--h">
-    {{ $offers := $.Param "offers" | default slice }}
-    
     <h1 class="section-title">{{ i18n "special-offers" (len $offers) }}</h1>
 
     <ul class="special-offers">
@@ -43,5 +43,6 @@
         {{ end }}
     </ul>
 </section>
+{{ end }}
 
 {{ end }}
