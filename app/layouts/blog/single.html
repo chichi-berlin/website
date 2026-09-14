@@ -10,10 +10,6 @@
     <h1 class="page-title">{{ .Title | safeHTML }}</h1>
     {{ with $.Params.subtitle }}
     <p class="page-subtitle">{{ . }}</p>
-    {{ else }}
-        {{ with $.Params.publishDate }}
-        <p class="page-subtitle">{{ printf "%02d.%02d.%d" .Day .Month .Year }}</p>
-        {{ end }}
     {{ end }}
     
     <div class="row-2-cols">

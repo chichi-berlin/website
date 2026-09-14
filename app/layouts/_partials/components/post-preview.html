@@ -7,9 +7,6 @@
             {{ .Title | safeHTML }}
         </a>
     </h2>
-    {{ with $.Params.publishDate }}
-    <p class="page-subtitle">{{ printf "%02d.%02d.%d" .Day .Month .Year }}</p>
-    {{ end }}
     
     <div class="content-preview">
         {{ truncate $teaserTextLength "..." .Content | replaceRE "<h[^>]+>(.|\n)*</h[^>]+>" "" | replaceRE "<figure>(.|\n)*</figure>" "" | safeHTML }}
